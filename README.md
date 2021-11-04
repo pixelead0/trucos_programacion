@@ -4,9 +4,11 @@ El objetivo de este repo, es compartir conocimiento sobre algunos trucos y mejor
 
 Sientete libre de agregar y modificar lo que creas necesario.
 
-## Referencias:
+## Libros:
 
-- El libro negro del programador. Rafael Gómez Blanes
-- The Pragmatic Programmer: Your Journey to Mastery.  David Thomas, Andrew Hunt
-- Scrum: El Arte de Hacer El Doble de Trabajo En La Mitad de Tiempo. Jeff Sutherland
-- Python Tricks: A Buffet of Awesome Python Features. Dan Bader.
+| Libro | Autor | Descripción |
+| ----- | ------| ------------|
+|El libro negro del programador | Rafael Gómez Blanes||
+|The Pragmatic Programmer: Your Journey to Mastery. | David Thomas, Andrew Hunt||
+|Scrum: El Arte de Hacer El Doble de Trabajo En La Mitad de Tiempo. |Jeff Sutherland||
+|Python Tricks: A Buffet of Awesome Python Features.| Dan Bader.||
