@@ -94,9 +94,13 @@ http://46.101.4.154/Art%c3%adculos%20t%c3%a9cnicos/Python/ [consultado 2020-11-0
 - Paramiko - Conexiones SSH y SFTP
 - Text User Interfaces (TUI)
 - Wrappers y decoradores
+ 
+**MCLIBRE - MATERIAL CURRICULAR LIBRE**
 
- 
- 
+Página que contienen enlaces a revistas, libros y manuales dedicados al software libre, a las distribuciones GNU/Linux y a los contenidos libres.
+
+https://www.mclibre.org/consultar/documentacion/  [consultado 2020-11-11]
+
 
 ## Libros:
 
