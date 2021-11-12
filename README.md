@@ -13,11 +13,9 @@ Definición: https://es.wikipedia.org/wiki/Zen_de_Python [consultado 2020-11-04]
 ## Tim Peters
 
 > **Tim Peters** es un desarrollador de software estadounidense conocido por la creación del algoritmo de ordenación híbrido Timsort y por sus importantes contribuciones al lenguaje de programación Python y su implementación original CPython.
-> 
+>
 > Peters también escribió el Zen de Python, pensado como una declaración de la filosofía de diseño de Python, que se incorporó a la literatura oficial de Python como Propuesta de Mejora 20 de Python y en el intérprete de Python como un easter egg.
 > https://es.wikipedia.org/wiki/Tim_Peters [consultado 2020-11-04]
-
-
 
 Se puede mostrar desde el interprete de python con la siguiente instrucción
 
@@ -50,6 +48,55 @@ Zen de python con código de ejemplo: https://gist.github.com/evandrix/2030615 [
 | 17  | Si la implementación es difícil de explicar, es una mala idea.                         | https://gist.github.com/evandrix/2030615#file-pep20_by_example-py-L68-L507  |
 | 18  | Si la implementación es fácil de explicar, puede que sea una buena idea.               | https://gist.github.com/evandrix/2030615#file-pep20_by_example-py-L468-L507 |
 | 19  | Los espacios de nombres son una gran idea, ¡tengamos más de esos!                      | https://gist.github.com/evandrix/2030615#file-pep20_by_example-py-L509-L528 |
+
+---
+
+**Yield en python**
+
+> **yield** es una orden muy similar a un return, con una gran diferencia, yield pausará la ejecución de tu función y guardará el estado de la misma hasta que decidas usarla de nuevo. ¿Confuso? Vamos a verlo en un ejemplo.
+
+https://alvarohurtado.es/2020/06/08/que-hace-yield-en-python/ [consultado 2020-11-04]
+
+**Generadores en Python**
+
+> Son funciones que nos permitirán obtener sus resultados poco a poco. Es decir, cada vez que llamemos a la función nos darán un nuevo resultado. Por ejemplo, una función para generar todos los números pares que cada vez que la llamemos nos devuelva el siguiente número par. ¿Podemos construir una función que nos devuelva todos los números pares? Esto no es posible si no usamos generadores. Como sabemos los números pares son infinitos.
+
+- https://alvarohurtado.es/2013/08/31/generadores-en-python/ [consultado 2020-11-08]
+- https://realpython.com/introduction-to-python-generators/ [consultado 2020-11-08]
+
+**Decoradores**
+
+> Un decorador es básicamente un patrón de diseño. Estos alteran de forma dinámica la funcionalidad de una función, un método o una clase, sin necesidad de añadir subclases o modificar el código fuente de la clase que se desea decorar.
+
+- http://46.101.4.154/Art%C3%ADculos%20t%C3%A9cnicos/Python/Wrappers%20y%20decoradores.pdf [consultado 2020-11-08]
+- https://realpython.com/primer-on-python-decorators/ [consultado 2020-11-08]
+
+**Excepciones en python**
+
+https://realpython.com/python-exceptions/ [consultado 2020-11-10]
+
+**Revista `The Original Hacker`**
+
+> The Original Hacker número 1 es la primera publicación de esta revista electrónica que viene de la mano de su autora Eugenia Bahit, GLAMP Hacker y programadora extrema, como ella gusta nombrarse. El espíritu de la revista se basa en la libertad y el verdadero hacking con el objetivo de retroalimentar a hacker avanzados y darle un empujoncito a programadores que quieran convertirse en hackers. https://www.espaciolinux.com/2013/11/original-hacker-numero-1-nueva-revista-sobre-hacking-y-programacion/ [consultado 2021-11-08]
+
+- Descargar revistas: https://www.mclibre.org/consultar/documentacion/revistas-titulos/revistas-the-original-hacker.html [consultado 2020-11-08]
+
+**Articulos técnicos sobre python escritos por Eugenia Bahit**
+
+http://46.101.4.154/Art%c3%adculos%20t%c3%a9cnicos/Python/ [consultado 2020-11-08]
+
+- ArgParse
+- Beaker (Sesiones sobre WSGI)
+- ConfigParser
+- Distribución de aplicaciones propias en PyPi
+- Lambdas y Closures
+- Manipulación de WebForms y Upload de Archivos con Python desde Apache con WSGI
+- Paramiko - Conexiones SSH y SFTP
+- Text User Interfaces (TUI)
+- Wrappers y decoradores
+
+ 
+ 
 
 ## Libros:
 
