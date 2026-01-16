@@ -1,26 +1,61 @@
 # Decoradores en Python
 
-## ¿Qué son los Decoradores?
-Los decoradores son una característica de Python que permite modificar el comportamiento de funciones o clases sin cambiar su código fuente. Son una forma de aplicar el patrón de diseño "Decorator" de manera elegante y concisa.
+## ¿Qué son los decoradores y cuándo los necesitas?
+
+Imagina que tienes 10 funciones y quieres medir cuánto tiempo tarda cada una en ejecutarse. Podrías agregar código de medición en cada función, pero eso es repetitivo y hace el código más difícil de leer.
+
+**Los decoradores resuelven esto:** Te permiten "envolver" funciones para agregar funcionalidad sin modificar su código original. Es como poner una función dentro de otra que le agrega superpoderes.
+
+**Casos reales donde los usas:**
+- Medir tiempo de ejecución
+- Agregar logging automático
+- Validar argumentos
+- Cachear resultados
+- Controlar acceso (autenticación)
+- Reintentar operaciones que pueden fallar
+
+**Ventaja clave:** Escribes la funcionalidad una vez, la aplicas a muchas funciones con solo agregar `@decorador` arriba.
+
+> **Antes de continuar**: Asegúrate de entender bien [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Clases](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md). Los decoradores son conceptos avanzados.
 
 ## Conceptos Básicos
 
 ### Decorador Simple
+
+Un decorador es una función que toma otra función y devuelve una función modificada:
+
 ```python
 def mi_decorador(funcion):
+    # Esta función recibe una función como parámetro
     def wrapper():
+        # Esta función "envuelve" la función original
         print("Antes de la función")
-        funcion()
+        funcion()  # Ejecuta la función original
         print("Después de la función")
-    return wrapper
+    return wrapper  # Devuelve la función envuelta
 
+# Aplicar el decorador con @
 @mi_decorador
 def saludar():
     print("¡Hola!")
 
-# Uso
+# Cuando llamas saludar(), en realidad se ejecuta wrapper()
 saludar()
+
+# Salida:
+# Antes de la función
+# ¡Hola!
+# Después de la función
 ```
+
+**¿Qué está pasando aquí?**
+1. `@mi_decorador` es azúcar sintáctico para `saludar = mi_decorador(saludar)`
+2. `mi_decorador` recibe la función `saludar` original
+3. Crea una nueva función `wrapper` que ejecuta código antes y después
+4. Devuelve `wrapper`, que reemplaza a `saludar`
+5. Cuando llamas `saludar()`, en realidad ejecutas `wrapper()`
+
+**En la práctica:** Esto te permite agregar funcionalidad (logging, timing, validación) sin tocar el código de `saludar()`.
 
 ### Decorador con Argumentos
 ```python

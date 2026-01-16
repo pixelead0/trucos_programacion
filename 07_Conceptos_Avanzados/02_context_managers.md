@@ -1,22 +1,83 @@
 # Context Managers en Python
 
-## ¿Qué son Context Managers?
-Los Context Managers (gestores de contexto) son objetos que definen los métodos `__enter__` y `__exit__` para manejar la entrada y salida de un bloque de código. Son útiles para gestionar recursos como archivos, conexiones de base de datos o locks.
+## ¿Qué son los context managers y por qué usarlos?
+
+Probablemente ya usas context managers sin saberlo. Cuando escribes:
+
+```python
+with open('archivo.txt', 'r') as f:
+    contenido = f.read()
+# El archivo se cierra automáticamente aquí
+```
+
+Ese `with` es un context manager. **¿Por qué es útil?** Porque garantiza que el archivo se cierre, incluso si hay un error.
+
+**Sin context manager (problemático):**
+```python
+f = open('archivo.txt', 'r')
+contenido = f.read()
+# ¿Qué pasa si hay un error aquí? El archivo nunca se cierra
+f.close()  # Esta línea puede no ejecutarse
+```
+
+**Con context manager (seguro):**
+```python
+with open('archivo.txt', 'r') as f:
+    contenido = f.read()
+# El archivo SIEMPRE se cierra, incluso si hay un error
+```
+
+**Casos reales donde los necesitas:**
+- Abrir y cerrar archivos
+- Conexiones a bases de datos
+- Locks (candados) para threading
+- Cambios temporales de configuración
+- Recursos que necesitan limpieza
+
+**Ventaja clave:** Garantiza que la limpieza siempre ocurra, incluso si hay excepciones.
+
+> **Antes de continuar**: Asegúrate de entender [Manejo de Errores](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md) y [Clases](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md).
 
 ## Conceptos Básicos
 
 ### Uso Básico con `with`
+
+El `with` statement es la forma de usar context managers. La sintaxis es:
+
+```python
+with objeto_context_manager as variable:
+    # Código que usa el recurso
+    pass
+# Aquí el recurso se limpia automáticamente
+```
+
+**Ejemplo real: Abrir archivos**
+
 ```python
 # Abrir y cerrar archivo
 with open('archivo.txt', 'r') as f:
     contenido = f.read()
-# El archivo se cierra automáticamente
+    # Puedes usar 'f' aquí
+# El archivo se cierra automáticamente aquí, incluso si hay un error
+```
 
-# Conexión a base de datos
+**¿Qué está pasando?**
+1. `open()` devuelve un context manager (un objeto archivo)
+2. `as f` asigna el archivo abierto a la variable `f`
+3. El código dentro del `with` se ejecuta
+4. Al salir del bloque (normal o por error), Python llama automáticamente a `f.close()`
+
+**Ejemplo: Conexión a base de datos**
+
+```python
+# Conexión a base de datos (ejemplo conceptual)
 with conexion_db() as db:
     db.ejecutar_query("SELECT * FROM usuarios")
-# La conexión se cierra automáticamente
+    # Puedes hacer más operaciones aquí
+# La conexión se cierra automáticamente aquí
 ```
+
+**Ventaja:** No importa si hay un error dentro del `with`, la conexión siempre se cierra. Sin `with`, tendrías que usar `try/finally` manualmente.
 
 ### Crear un Context Manager
 ```python
@@ -255,3 +316,8 @@ def directorio_temporal():
 - [Documentación de contextlib](https://docs.python.org/3/library/contextlib.html)
 - [PEP 343](https://peps.python.org/pep-0343/)
 - [Context Managers Tutorial](https://realpython.com/python-with-statement/)
+
+---
+
+## Siguiente paso
+Ahora que conoces los context managers, aprende a optimizar el rendimiento de tu código. Continúa con: **[Performance](./03_performance.md)**

@@ -1,4 +1,10 @@
-# Git y Control de Versiones en Python
+# Git y Control de Versiones
+
+## Introducción
+
+Git es un sistema de control de versiones que permite rastrear cambios en tu código a lo largo del tiempo. Es como tener un registro detallado de todos los cambios en tu proyecto, permitiéndote "viajar en el tiempo" para ver versiones anteriores o deshacer errores. Aunque Git no es específico de Python, es una herramienta esencial para cualquier programador profesional.
+
+> **Nota**: Este capítulo cubre Git de manera general. Es útil aprenderlo temprano para poder versionar tus proyectos desde el inicio.
 
 ## ¿Qué es Git?
 Git es un sistema de control de versiones que permite rastrear cambios en tu código a lo largo del tiempo. Es como tener un registro detallado de todos los cambios en tu proyecto, permitiéndote "viajar en el tiempo" para ver versiones anteriores o deshacer errores.
@@ -373,3 +379,7 @@ git merge rama-grande
 - [Git Flight Rules (Guía de soluciones)](https://github.com/k88hudson/git-flight-rules)
 - [Pro Git Book (Gratuito)](https://git-scm.com/book)
 
+---
+
+## Siguiente paso
+Ahora que conoces Git, puedes versionar tus proyectos. Continúa aprendiendo Python con: **[Estructuras de Datos](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md)**

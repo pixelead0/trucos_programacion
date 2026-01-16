@@ -1,22 +1,72 @@
 # Clases y Objetos en Python
 
-## ¿Qué es la Programación Orientada a Objetos (POO)?
+## ¿Qué es POO y cuándo la necesitas?
 
-La Programación Orientada a Objetos (POO) es un paradigma de programación que organiza el código en "clases" y "objetos". Nos permite modelar conceptos del mundo real (como un usuario, un producto, una transacción) dentro de nuestro software, encapsulando datos y comportamientos juntos.
+Hasta ahora has usado funciones y estructuras de datos por separado. Pero imagina que trabajas con usuarios: cada usuario tiene nombre, email, edad, y puede hacer cosas como "iniciar sesión" o "actualizar perfil".
+
+**Sin POO:** Tendrías variables sueltas y funciones que reciben esos datos:
+```python
+nombre = "Ana"
+email = "ana@email.com"
+edad = 25
+
+def iniciar_sesion(nombre, email):
+    # código...
+```
+
+**Con POO:** Agrupas datos y comportamientos relacionados:
+```python
+class Usuario:
+    def __init__(self, nombre, email, edad):
+        self.nombre = nombre
+        self.email = email
+        self.edad = edad
+
+    def iniciar_sesion(self):
+        # código...
+```
+
+**¿Cuándo usar POO?**
+- Cuando tienes entidades con datos Y comportamientos (Usuario, Producto, Carrito)
+- Cuando necesitas crear múltiples "instancias" similares
+- Cuando tu código crece y necesitas organización
+
+**¿Cuándo NO usar POO?**
+- Scripts simples de una sola función
+- Procesamiento de datos simple
+- Cuando las funciones son suficientes
+
+> **Antes de continuar**: Asegúrate de entender [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Diccionarios](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md).
 
 ## Conceptos Fundamentales
 
-### Clase
-Una clase es como un plano, molde o plantilla. Define la estructura y el comportamiento que tendrán los objetos creados a partir de ella.
+### Conceptos clave (en términos simples)
 
-### Objeto
-Un objeto es una instancia concreta de una clase. Si la clase es el plano de una casa, el objeto es la casa construida.
+**Clase = Plano o molde**
+- Es la definición, el "cómo debe ser" algo
+- Ejemplo: La clase `Usuario` define que un usuario tiene nombre, email y puede iniciar sesión
+- No es un usuario real, solo la plantilla
 
-### Atributos
-Son las variables asociadas a un objeto (sus datos o estado). Ejemplo: color, tamaño, nombre.
+**Objeto = Instancia real**
+- Es la "cosa" creada a partir de la clase
+- Ejemplo: `usuario1 = Usuario("Ana", "ana@email.com", 25)` crea un objeto usuario real
+- Puedes crear muchos objetos de la misma clase
 
-### Métodos
-Son las funciones asociadas a un objeto (su comportamiento o acciones). Ejemplo: abrir(), guardar(), calcular().
+**Atributos = Datos del objeto**
+- Son las variables que guardan información del objeto
+- Ejemplo: `self.nombre`, `self.email`, `self.edad`
+- Cada objeto tiene sus propios valores
+
+**Métodos = Acciones del objeto**
+- Son funciones que el objeto puede ejecutar
+- Ejemplo: `def iniciar_sesion(self):` - el usuario puede iniciar sesión
+- Usan `self` para acceder a los atributos del objeto
+
+**Analogía real:**
+- Clase `Coche` = el diseño de un coche (tiene ruedas, motor, puede acelerar)
+- Objeto `mi_coche` = tu coche específico (rojo, marca Toyota, con 50000 km)
+- Atributos = color, marca, kilometraje
+- Métodos = acelerar(), frenar(), encender()
 
 ## Crear una Clase Básica
 
@@ -32,33 +82,48 @@ class NombreClase:
         pass
 ```
 
-### Ejemplo práctico
+### Ejemplo práctico completo
+
+Vamos a crear una clase `Persona` que tenga datos (nombre, edad, energía) y comportamientos (saludar, trabajar):
+
 ```python
 class Persona:
     def __init__(self, nombre, edad):
-        self.nombre = nombre
-        self.edad = edad
-        self.energia = 100
+        # __init__ es el constructor - se ejecuta al crear el objeto
+        self.nombre = nombre      # Atributo: guarda el nombre
+        self.edad = edad          # Atributo: guarda la edad
+        self.energia = 100        # Atributo: todos empiezan con 100 de energía
 
     def saludar(self):
+        # Método: acción que puede hacer la persona
         print(f"Hola, soy {self.nombre}")
 
     def trabajar(self):
+        # Método: otra acción, pero con lógica condicional
         if self.energia > 20:
-            self.energia -= 20
+            self.energia -= 20  # Gasta energía
             print(f"{self.nombre} está trabajando...")
         else:
             print(f"{self.nombre} está demasiado cansado para trabajar")
 
 # Crear objetos (Instanciación)
+# Cada objeto es independiente - tienen sus propios valores
 persona1 = Persona("Ana", 28)
 persona2 = Persona("Carlos", 35)
 
-# Usar los objetos
-persona1.saludar()
-persona2.trabajar()
-print(f"Energía de {persona2.nombre}: {persona2.energia}")
+# Usar los objetos - llamar sus métodos
+persona1.saludar()        # "Hola, soy Ana"
+persona2.trabajar()       # "Carlos está trabajando..."
+print(f"Energía de {persona2.nombre}: {persona2.energia}")  # 80 (100 - 20)
 ```
+
+**¿Qué está pasando aquí?**
+1. `__init__` se ejecuta automáticamente cuando creas un objeto
+2. `self` se refiere al objeto actual (persona1 o persona2)
+3. Cada objeto mantiene sus propios valores (Ana tiene 28 años, Carlos tiene 35)
+4. Los métodos pueden modificar los atributos del objeto (`self.energia -= 20`)
+
+**Prueba esto:** Crea `persona3` y haz que trabaje 6 veces. ¿Qué pasa con su energía?
 
 ## Atributos de Clase vs Instancia
 
@@ -378,7 +443,11 @@ class Persona:
 - [PEP 8 - Guía de estilo para código Python](https://www.python.org/dev/peps/pep-0008/)
 
 ### Conceptos relacionados
-- **Decoradores** (concepto avanzado)
-- **Metaclases** (concepto avanzado)
-- **Mixins** (concepto avanzado)
-- **Módulos y paquetes** (Módulo 8)
+- **Dataclasses** - [Siguiente capítulo](./02_dataclasses.md)
+- **Decoradores** - [Concepto avanzado](../07_Conceptos_Avanzados/01_decorators.md)
+- **Módulos y paquetes** - [Módulos](../03_Funciones_y_Modulos/02_modulos_paquetes.md)
+
+---
+
+## Siguiente paso
+Ahora que entiendes las clases básicas, aprende sobre dataclasses, una forma moderna y concisa de crear clases. Continúa con: **[Dataclasses](./02_dataclasses.md)**

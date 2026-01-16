@@ -1,42 +1,88 @@
 # Seguridad en Python
 
-## ¿Qué es la Seguridad en Python?
-La seguridad en Python se refiere a las prácticas y técnicas para proteger aplicaciones contra vulnerabilidades comunes, como inyección de código, exposición de datos sensibles y ataques de seguridad.
+## ¿Por qué importa la seguridad en Python?
+
+Un pequeño error de seguridad puede exponer datos sensibles, permitir acceso no autorizado, o causar que tu aplicación sea comprometida. La seguridad no es opcional en código que maneja datos reales.
+
+**Vulnerabilidades comunes:**
+- **Contraseñas en texto plano**: Si alguien accede a tu base de datos, ve todas las contraseñas
+- **Inyección de código**: Ejecutar código arbitrario desde entrada del usuario
+- **Exposición de secretos**: API keys, tokens, credenciales en el código
+- **Validación insuficiente**: Aceptar datos maliciosos sin verificar
+
+**Este capítulo cubre:**
+- Cómo manejar contraseñas de forma segura
+- Proteger secretos y credenciales
+- Validar y sanitizar entrada del usuario
+- Mejores prácticas para código seguro
+
+**Importante:** La seguridad es un proceso continuo, no algo que agregas al final. Piensa en seguridad desde el diseño.
+
+> **Antes de continuar**: Asegúrate de entender [Manejo de Errores](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md) y [Funciones](../03_Funciones_y_Modulos/01_funciones.md).
 
 ## Conceptos Básicos
 
 ### Manejo Seguro de Contraseñas
+
+**⚠️ NUNCA guardes contraseñas en texto plano.** Si alguien accede a tu base de datos, vería todas las contraseñas. En su lugar, guarda un "hash" (versión irreversible) de la contraseña.
+
+**¿Qué es un hash?**
+- Es una función matemática que convierte texto en un valor fijo
+- Es unidireccional: no puedes obtener la contraseña original del hash
+- Mismo texto siempre produce el mismo hash
+- Pequeños cambios producen hashes completamente diferentes
+
+**Biblioteca recomendada: `bcrypt`**
+
+```bash
+pip install bcrypt
+```
+
 ```python
-import hashlib
-import os
 import bcrypt
 
 def hash_password(password: str) -> bytes:
     """
-    Hashea una contraseña de forma segura.
+    Hashea una contraseña de forma segura usando bcrypt.
 
-    Args:
-        password: Contraseña en texto plano
-
-    Returns:
-        Contraseña hasheada
+    bcrypt automáticamente:
+    - Genera un salt único (evita que dos contraseñas iguales tengan el mismo hash)
+    - Usa un algoritmo seguro y lento (dificulta ataques de fuerza bruta)
     """
-    salt = bcrypt.gensalt()
-    return bcrypt.hashpw(password.encode(), salt)
+    salt = bcrypt.gensalt()  # Genera un salt aleatorio
+    return bcrypt.hashpw(password.encode(), salt)  # Hashea la contraseña con el salt
 
 def verify_password(password: str, hashed: bytes) -> bool:
     """
-    Verifica una contraseña contra su hash.
+    Verifica si una contraseña coincide con su hash.
 
-    Args:
-        password: Contraseña en texto plano
-        hashed: Contraseña hasheada
-
-    Returns:
-        True si la contraseña coincide
+    Esto es lo que haces cuando un usuario intenta iniciar sesión:
+    1. El usuario ingresa su contraseña
+    2. Hasheas esa contraseña con el mismo salt
+    3. Comparas con el hash guardado
     """
     return bcrypt.checkpw(password.encode(), hashed)
 ```
+
+**Uso:**
+```python
+# Al registrar un usuario
+password_plain = "mi_contraseña_secreta"
+password_hashed = hash_password(password_plain)
+# Guardas password_hashed en la base de datos, NUNCA password_plain
+
+# Al verificar login
+entrada_usuario = "mi_contraseña_secreta"
+if verify_password(entrada_usuario, password_hashed):
+    print("Contraseña correcta")
+else:
+    print("Contraseña incorrecta")
+```
+
+**¿Por qué bcrypt y no MD5 o SHA?**
+- MD5 y SHA son rápidos → fáciles de atacar con fuerza bruta
+- bcrypt es lento por diseño → hace los ataques inviables
+- bcrypt incluye salt automático → protege contra rainbow tables
 
 ### Manejo de Secretos
 ```python
@@ -359,3 +405,8 @@ def setup_logging():
 - [Python Security Best Practices](https://docs.python.org/3/library/security.html)
 - [Cryptography Documentation](https://cryptography.io/)
 - [JWT Documentation](https://pyjwt.readthedocs.io/)
+
+---
+
+## Siguiente paso
+¡Felicitaciones! Has completado las herramientas profesionales. Continúa explorando otros temas del curso o revisa los [Proyectos Prácticos](../Proyectos_y_Ejercicios) para aplicar lo aprendido.

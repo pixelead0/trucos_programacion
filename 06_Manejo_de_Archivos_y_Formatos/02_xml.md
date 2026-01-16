@@ -1,14 +1,24 @@
 # Procesamiento de XML en Python
 
-XML (eXtensible Markup Language) es un formato de datos estructurado ampliamente utilizado para el intercambio de información. Python proporciona varias bibliotecas para trabajar con XML, siendo `xml.etree.ElementTree` la más común y fácil de usar.
+## ¿Qué es XML y cuándo lo necesitas?
 
-## ¿Qué es XML?
+XML (eXtensible Markup Language) es un formato de datos estructurado que usa etiquetas, similar a HTML pero para datos. Aunque JSON es más popular hoy en día, XML todavía se usa en muchos lugares.
 
-XML es un lenguaje de marcado que permite estructurar datos de manera jerárquica usando etiquetas. Es especialmente útil para:
-- Intercambio de datos entre sistemas
-- Configuración de aplicaciones
-- Almacenamiento de datos estructurados
-- APIs web (REST, SOAP)
+**¿Cuándo trabajas con XML?**
+- Sistemas legacy o enterprise (muchos sistemas antiguos usan XML)
+- Configuraciones de aplicaciones (Android, algunos frameworks)
+- Documentos estructurados (Office, SVG)
+- APIs SOAP (aunque REST con JSON es más común ahora)
+- Intercambio de datos entre sistemas enterprise
+
+**¿Cuándo NO usar XML?**
+- APIs modernas (usa JSON)
+- Configuraciones simples (usa YAML o JSON)
+- Datos simples (usa JSON)
+
+**En Python:** La biblioteca estándar `xml.etree.ElementTree` es la más común y fácil de usar. No necesitas instalar nada.
+
+> **Antes de continuar**: Asegúrate de entender [Pathlib](./01_pathlib.md) y [Diccionarios](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md).
 
 ## Estructura Básica de XML
 
@@ -38,18 +48,41 @@ import xml.etree.ElementTree as ET
 
 ### Crear XML desde Cero
 
+Puedes construir XML programáticamente en Python:
+
 ```python
-# Crear elemento raíz
+import xml.etree.ElementTree as ET
+
+# Crear elemento raíz (el contenedor principal)
 root = ET.Element("datos")
 
-# Crear elementos hijos
-fila1 = ET.SubElement(root, "fila")
-fila1.set("ip", "192.168.1.1")
-fila1.set("ruta_script", "/home/user/script.sh")
+# Crear elementos hijos (dentro del raíz)
+fila1 = ET.SubElement(root, "fila")  # Crea <fila> dentro de <datos>
+fila1.set("ip", "192.168.1.1")  # Agrega atributo ip="192.168.1.1"
+fila1.set("ruta_script", "/home/user/script.sh")  # Agrega otro atributo
 
 fila2 = ET.SubElement(root, "fila")
 fila2.set("ip", "10.0.0.1")
 fila2.set("ruta_script", "/opt/scripts/test.sh")
+
+# Convertir a string para ver el resultado
+xml_string = ET.tostring(root, encoding='unicode')
+print(xml_string)
+```
+
+**Salida:**
+```xml
+<datos>
+  <fila ip="192.168.1.1" ruta_script="/home/user/script.sh" />
+  <fila ip="10.0.0.1" ruta_script="/opt/scripts/test.sh" />
+</datos>
+```
+
+**¿Qué está pasando?**
+- `ET.Element("datos")` crea el elemento raíz `<datos>`
+- `ET.SubElement(root, "fila")` crea un elemento hijo `<fila>` dentro de `root`
+- `.set("atributo", "valor")` agrega atributos al elemento
+- `ET.tostring()` convierte el árbol XML a string para guardarlo o mostrarlo
 
 # Crear árbol XML
 tree = ET.ElementTree(root)
@@ -275,3 +308,8 @@ def exportar_datos_xml(df, archivo_salida, config):
 - [Tutorial de XML en Python](https://docs.python.org/3/library/xml.html)
 - [XML Schema Definition (XSD)](https://www.w3.org/XML/Schema)
 - [XPath para navegación XML](https://docs.python.org/3/library/xml.etree.elementtree.html#xpath-support)
+
+---
+
+## Siguiente paso
+Ahora que conoces XML, aprende sobre JSON, el formato más popular para APIs. Continúa con: **[JSON](./03_json.md)**

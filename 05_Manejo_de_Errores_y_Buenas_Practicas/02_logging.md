@@ -1,35 +1,92 @@
 # Logging en Python
 
-## ¿Qué es Logging?
-Logging es un sistema para registrar eventos que ocurren durante la ejecución de un programa. Es más robusto que usar `print()` y permite diferentes niveles de detalle y múltiples destinos de salida.
+## ¿Qué es logging y por qué no usar print()?
+
+Cuando depuras código, probablemente usas `print()` para ver qué está pasando. Funciona, pero tiene problemas:
+
+- **No puedes controlar qué se muestra**: En producción quieres menos detalle, en desarrollo más
+- **No puedes guardar en archivo fácilmente**: Los `print()` se pierden cuando cierras la terminal
+- **No sabes la importancia**: ¿Es un error crítico o solo información?
+- **Difícil de filtrar**: No puedes decir "solo muéstrame errores"
+
+**Logging resuelve esto:** Te da un sistema profesional para registrar eventos con niveles de importancia, formatos personalizados, y múltiples destinos (consola, archivo, etc.).
+
+**Casos reales:**
+- En desarrollo: Ver todos los detalles (DEBUG)
+- En producción: Solo errores y advertencias (ERROR, WARNING)
+- Guardar logs en archivo para análisis posterior
+- Filtrar logs por módulo o componente
+
+> **Antes de continuar**: Asegúrate de entender [Manejo de Excepciones](./01_excepciones.md). Logging y excepciones van de la mano.
 
 ## Conceptos Básicos
 
 ### Configuración Básica
+
+La forma más simple de empezar:
+
 ```python
 import logging
 
-# Configuración básica
+# Configuración básica (solo necesitas hacerlo una vez al inicio)
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.INFO,  # Solo muestra INFO y niveles superiores
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    # Formato: fecha - nombre - nivel - mensaje
 )
 
-# Uso
+# Usar logging
 logging.info("Mensaje informativo")
 logging.warning("Advertencia")
 logging.error("Error")
 ```
 
-### Niveles de Logging
-```python
-# De menor a mayor severidad
-logging.debug("Mensaje de depuración")
-logging.info("Mensaje informativo")
-logging.warning("Advertencia")
-logging.error("Error")
-logging.critical("Error crítico")
+**Salida esperada:**
 ```
+2024-01-15 14:30:25,123 - root - INFO - Mensaje informativo
+2024-01-15 14:30:25,124 - root - WARNING - Advertencia
+2024-01-15 14:30:25,125 - root - ERROR - Error
+```
+
+**¿Qué está pasando?**
+- `level=logging.INFO` significa "solo muestra mensajes de nivel INFO o superior"
+- El formato incluye fecha/hora, nombre del logger, nivel y mensaje
+- `logging.info()`, `logging.warning()`, etc. son funciones para registrar eventos
+
+### Niveles de Logging (De Menor a Mayor Severidad)
+
+Python tiene 5 niveles estándar:
+
+```python
+# DEBUG - Detalles para depuración (más verboso)
+logging.debug("Detalles internos del proceso")
+# Solo se muestra si level=logging.DEBUG
+
+# INFO - Información general del programa
+logging.info("Usuario inició sesión")
+# Se muestra si level=logging.INFO o superior
+
+# WARNING - Algo inesperado pero no es un error
+logging.warning("Conexión lenta detectada")
+# Se muestra si level=logging.WARNING o superior
+
+# ERROR - Error que impide una funcionalidad
+logging.error("No se pudo conectar a la base de datos")
+# Se muestra si level=logging.ERROR o superior
+
+# CRITICAL - Error crítico que puede detener el programa
+logging.critical("Sistema de archivos lleno")
+# Siempre se muestra
+```
+
+**¿Cuándo usar cada nivel?**
+- **DEBUG**: Detalles técnicos solo para desarrolladores
+- **INFO**: Eventos normales del programa (usuario hizo X, proceso completado)
+- **WARNING**: Algo raro pero el programa puede continuar
+- **ERROR**: Algo falló pero el programa puede recuperarse
+- **CRITICAL**: El programa puede fallar completamente
+
+**En la práctica:** En desarrollo usas `DEBUG`, en producción `INFO` o `WARNING`.
 
 ## Configuración Avanzada
 
@@ -194,3 +251,8 @@ logger.error("Error en operación")
 - [Documentación oficial de logging](https://docs.python.org/3/library/logging.html)
 - [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html)
 - [Buenas Prácticas de Logging](https://docs.python-guide.org/writing/logging/)
+
+---
+
+## Siguiente paso
+Ahora que sabes registrar eventos, aprende a documentar tipos en tu código. Continúa con: **[Type Hints](./03_type_hints.md)**

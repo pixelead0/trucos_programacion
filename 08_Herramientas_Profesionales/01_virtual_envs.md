@@ -1,24 +1,78 @@
 # Entornos Virtuales en Python
 
-## ¿Qué son los Entornos Virtuales?
-Los entornos virtuales son espacios aislados donde puedes instalar paquetes Python sin afectar al sistema global. Esto permite tener diferentes versiones de paquetes para diferentes proyectos.
+## ¿Qué son los entornos virtuales y por qué son esenciales?
+
+Imagina este escenario: Tienes dos proyectos:
+- Proyecto A necesita `pandas==1.2.0`
+- Proyecto B necesita `pandas==2.0.0`
+
+Si instalas pandas globalmente, solo puedes tener una versión. ¿Qué haces?
+
+**Los entornos virtuales resuelven esto:** Cada proyecto tiene su propio "mundo" de paquetes aislado. Puedes tener diferentes versiones en diferentes proyectos sin conflictos.
+
+**Problemas que resuelven:**
+- **Conflictos de versiones**: Proyecto A usa Django 3, Proyecto B usa Django 4
+- **Contaminación global**: No llenas tu Python del sistema con paquetes de todos los proyectos
+- **Reproducibilidad**: Puedes compartir exactamente qué versiones usa tu proyecto
+- **Limpieza**: Eliminas un proyecto y sus dependencias sin afectar otros
+
+**En la práctica:** Cada proyecto tiene su propio entorno virtual. Es la primera cosa que haces al empezar un proyecto nuevo.
+
+> **Importante**: Aprende esto temprano. Es fundamental y te ahorrará muchos dolores de cabeza.
 
 ## Conceptos Básicos
 
 ### Crear y Activar Entornos
-```bash
-# Crear entorno virtual
-python -m venv mi_entorno
 
-# Activar en Windows
+**Paso 1: Crear el entorno virtual**
+
+```bash
+# Crear entorno virtual (crea una carpeta con Python y pip aislados)
+python -m venv mi_entorno
+```
+
+Esto crea una carpeta `mi_entorno/` con:
+- Una copia de Python
+- Una copia de pip
+- Espacio para instalar paquetes (aislado del sistema)
+
+**Paso 2: Activar el entorno**
+
+Una vez creado, debes "activarlo" para usarlo:
+
+```bash
+# En Windows (PowerShell o CMD)
 mi_entorno\Scripts\activate
 
-# Activar en Unix/MacOS
+# En Unix/MacOS (Linux, macOS)
 source mi_entorno/bin/activate
-
-# Desactivar
-deactivate
 ```
+
+**¿Cómo sabes que está activado?** Verás el nombre del entorno al inicio de tu prompt:
+```bash
+(mi_entorno) usuario@computadora:~/proyecto$
+#      ↑ Esto indica que el entorno está activo
+```
+
+**Paso 3: Trabajar normalmente**
+
+Una vez activado, `python` y `pip` apuntan al entorno virtual, no al sistema:
+```bash
+pip install requests  # Se instala solo en este entorno
+python mi_script.py   # Usa el Python del entorno
+```
+
+**Paso 4: Desactivar cuando termines**
+
+```bash
+deactivate  # Vuelves al Python del sistema
+```
+
+**Flujo típico:**
+1. `python -m venv venv` (crear)
+2. `source venv/bin/activate` (activar)
+3. Trabajar en tu proyecto
+4. `deactivate` (desactivar cuando termines)
 
 ### Verificar Entorno
 ```bash
@@ -229,3 +283,8 @@ python_functions = test_*
 - [pip Documentation](https://pip.pypa.io/)
 - [poetry Documentation](https://python-poetry.org/)
 - [pip-tools Documentation](https://pip-tools.readthedocs.io/)
+
+---
+
+## Siguiente paso
+Ahora que sabes usar entornos virtuales, aprende a empaquetar y distribuir tu código. Continúa con: **[Empaquetado](./02_packaging.md)**

@@ -1,8 +1,19 @@
 # Listas, Tuplas y Diccionarios en Python
 
-## ¿Qué son las estructuras de datos?
+## ¿Por qué necesitas estructuras de datos?
 
-Las estructuras de datos son formas de organizar y almacenar información en Python. Cada tipo de estructura tiene sus propias características y usos específicos para manejar datos eficientemente.
+Hasta ahora has trabajado con variables individuales: `nombre = "Ana"`, `edad = 25`. Pero ¿qué pasa cuando necesitas guardar 100 nombres? ¿Crear 100 variables? Eso no tiene sentido.
+
+**Las estructuras de datos resuelven esto:** te permiten agrupar y organizar información relacionada.
+
+**En Python tienes 3 estructuras principales:**
+- **Listas**: Para colecciones ordenadas que pueden cambiar (como una lista de compras)
+- **Tuplas**: Para colecciones ordenadas que NO cambian (como coordenadas GPS)
+- **Diccionarios**: Para información con etiquetas (como un perfil de usuario con nombre, email, edad)
+
+Cada una tiene su propósito. Aprender cuándo usar cada una te ahorrará tiempo y hará tu código más claro.
+
+> **Antes de continuar**: Asegúrate de entender [Variables](../01_Introduccion_y_Fundamentos/01_variables_y_tipos.md), [Condicionales](../01_Introduccion_y_Fundamentos/02_condicionales_y_logica.md) y [Bucles](../01_Introduccion_y_Fundamentos/04_bucles.md).
 
 ## Listas (Lists)
 
@@ -12,41 +23,75 @@ Las listas son colecciones ordenadas y mutables de elementos. Son extremadamente
 
 ### Crear listas
 
+Las listas se crean con corchetes `[]`. Pueden empezar vacías o con elementos:
+
 ```python
-# Crear una lista vacía
+# Crear una lista vacía - útil cuando vas a agregar elementos después
 clientes = []
 
-# Crear una lista con elementos
+# Crear una lista con elementos - separados por comas
 bebidas = ["Agua", "Café", "Té", "Jugo"]
 
-# Crear una lista con diferentes tipos de datos
+# Las listas pueden tener diferentes tipos de datos mezclados
 inventario = ["Agua", 50, 1.50, True]
+#              ↑      ↑   ↑     ↑
+#            texto  int  float  bool
 ```
+
+**¿Por qué mezclar tipos?** A veces es útil, pero en la práctica es mejor mantener tipos consistentes. Si tienes `["Agua", 50]`, ¿qué significa el 50? ¿Cantidad? ¿Precio? Es confuso. Mejor usar un diccionario: `{"producto": "Agua", "cantidad": 50}`.
 
 ### Operaciones básicas con listas
 
+**Acceder a elementos:** Las listas usan índices que empiezan en 0:
+
 ```python
-# Acceder a elementos
 bebidas = ["Agua", "Café", "Té", "Jugo"]
-print(bebidas[0])    # Primer elemento
-print(bebidas[-1])   # Último elemento
-print(bebidas[1:3])  # Elementos del índice 1 al 2
+#           ↑      ↑      ↑     ↑
+# índice:   0      1      2     3
 
-# Modificar elementos
-bebidas[0] = "Agua Mineral"
-print(bebidas)
-
-# Agregar elementos
-bebidas.append("Refresco")      # Al final
-bebidas.insert(1, "Leche")      # En posición específica
-print(bebidas)
-
-# Quitar elementos
-bebidas.remove("Té")            # Por valor
-bebida_eliminada = bebidas.pop(0)  # Por índice
-print(f"Eliminada: {bebida_eliminada}")
-print(bebidas)
+print(bebidas[0])    # "Agua" - primer elemento (índice 0)
+print(bebidas[-1])   # "Jugo" - último elemento (índice negativo cuenta desde el final)
+print(bebidas[1:3])  # ["Café", "Té"] - del índice 1 al 2 (el 3 no se incluye)
 ```
+
+**Modificar elementos:** Las listas son mutables, puedes cambiar sus elementos:
+
+```python
+bebidas[0] = "Agua Mineral"  # Cambia el primer elemento
+print(bebidas)  # ["Agua Mineral", "Café", "Té", "Jugo"]
+```
+
+**Agregar elementos:** Dos formas principales:
+
+```python
+# append() - agrega al final (más común)
+bebidas.append("Refresco")
+# Resultado: ["Agua", "Café", "Té", "Jugo", "Refresco"]
+
+# insert() - agrega en una posición específica
+bebidas.insert(1, "Leche")
+# Resultado: ["Agua", "Leche", "Café", "Té", "Jugo"]
+#            (inserta en posición 1, desplaza el resto)
+```
+
+**Quitar elementos:** También dos formas:
+
+```python
+# remove() - quita por valor (busca y elimina la primera coincidencia)
+bebidas.remove("Té")
+# Si hay dos "Té", solo quita el primero
+
+# pop() - quita por índice y devuelve el valor
+bebida_eliminada = bebidas.pop(0)
+# Quita el elemento en índice 0 y lo guarda en la variable
+print(f"Eliminada: {bebida_eliminada}")  # "Agua"
+```
+
+**¿Cuándo usar cada método?**
+- `append()`: Cuando solo quieres agregar al final (99% de los casos)
+- `insert()`: Cuando necesitas insertar en una posición específica
+- `remove()`: Cuando sabes el valor pero no el índice
+- `pop()`: Cuando necesitas el valor que estás quitando, o quieres quitar por índice
 
 ### Métodos útiles de listas
 
@@ -556,5 +601,9 @@ numeros = [num for num in numeros if num % 2 != 0]
 
 ---
 
-*"La organización de los datos es la base de un buen software."*
+## Siguiente paso
+Ahora que conoces las estructuras de datos básicas, es momento de aprender a organizar tu código en funciones reutilizables. Continúa con: **[Funciones](../03_Funciones_y_Modulos/01_funciones.md)**
 
+---
+
+*"La organización de los datos es la base de un buen software."*

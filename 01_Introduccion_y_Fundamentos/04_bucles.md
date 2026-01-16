@@ -1,52 +1,154 @@
-# Bucles y Manejo de Errores en Python
+# Bucles en Python
 
-## ¿Qué son los bucles?
-Los bucles permiten repetir una acción varias veces sin tener que escribir el mismo código una y otra vez. Son fundamentales para automatizar tareas repetitivas.
+## ¿Qué son los bucles y por qué los necesitas?
 
-## Bucle for - Para cuando sabes cuántas veces repetir
+Imagina que tienes una lista de 100 productos y quieres mostrar cada uno. ¿Escribirías 100 líneas de `print()`? Eso sería terrible.
+
+**Los bucles resuelven esto:** te permiten repetir código automáticamente. En lugar de escribir la misma acción 100 veces, escribes la acción una vez y le dices "repítela para cada elemento".
+
+**Casos reales donde los usas:**
+- Procesar todos los archivos en una carpeta
+- Enviar emails a una lista de contactos
+- Validar cada fila de un archivo CSV
+- Repetir una acción hasta que se cumpla una condición
+
+**En Python tienes dos tipos:**
+- `for`: Cuando sabes cuántas veces repetir (o quieres iterar sobre una lista)
+- `while`: Cuando no sabes cuántas veces, pero sabes la condición para parar
+
+> **Antes de continuar**: Asegúrate de entender [Variables](./01_variables_y_tipos.md) y [Condicionales](./02_condicionales_y_logica.md).
+
+## Bucle for - Para cuando sabes qué elementos procesar
+
+El bucle `for` itera sobre una secuencia (lista, string, rango, etc.) y ejecuta código para cada elemento.
 
 ### Sintaxis básica
+
 ```python
 # Estructura básica del bucle for
 for variable in secuencia:
-    # Código que se repite
+    # Código que se repite para cada elemento
     print(variable)
 ```
 
+**¿Qué está pasando?**
+- `for` = palabra clave que inicia el bucle
+- `variable` = nombre que le das al elemento actual (puede ser cualquier nombre)
+- `in` = palabra clave que indica "dentro de"
+- `secuencia` = la colección sobre la que iteras (lista, string, etc.)
+- El código indentado se ejecuta **una vez por cada elemento**
+
 ### Iterar sobre listas
+
+El caso más común: procesar cada elemento de una lista:
+
 ```python
 # Inventario de productos
 productos = ["manzanas", "peras", "naranjas", "plátanos", "uvas"]
 
 print("=== Inventario ===")
 for producto in productos:
+    # En cada iteración, 'producto' toma el valor del elemento actual
     print(f"- {producto}")
 
 print(f"\nTotal de productos: {len(productos)}")
+
+# Salida:
+# === Inventario ===
+# - manzanas
+# - peras
+# - naranjas
+# - plátanos
+# - uvas
+#
+# Total de productos: 5
 ```
 
+**¿Qué está pasando paso a paso?**
+1. Primera iteración: `producto = "manzanas"` → imprime "- manzanas"
+2. Segunda iteración: `producto = "peras"` → imprime "- peras"
+3. Y así hasta terminar la lista
+
+**El nombre `producto` es arbitrario:** Podrías usar `item`, `p`, `fruta`, lo que quieras. Pero usa nombres descriptivos.
+
 ### Usar enumerate() para obtener índice
+
+A veces necesitas el índice (posición) del elemento además de su valor. `enumerate()` te da ambos:
+
 ```python
 # Lista numerada
 tareas = ["revisar correos", "actualizar reporte", "reunión de equipo"]
 
 print("=== Tareas del día ===")
 for i, tarea in enumerate(tareas, 1):
+    # i = índice (empezando en 1 por el segundo parámetro)
+    # tarea = valor del elemento
     print(f"{i}. {tarea}")
+
+# Salida:
+# === Tareas del día ===
+# 1. revisar correos
+# 2. actualizar reporte
+# 3. reunión de equipo
 ```
 
+**¿Por qué `enumerate(tareas, 1)`?**
+- `enumerate(tareas)` devuelve índices empezando en 0
+- `enumerate(tareas, 1)` empieza en 1 (más natural para listas numeradas)
+- `enumerate(tareas, 10)` empezaría en 10
+
+**¿Cuándo usar `enumerate()`?**
+- Cuando necesitas mostrar números (1, 2, 3...)
+- Cuando necesitas modificar elementos por posición
+- Cuando quieres saber en qué posición estás dentro del bucle
+
 ### Iterar sobre rangos
+
+`range()` genera una secuencia de números. Útil cuando necesitas repetir algo un número específico de veces:
+
 ```python
 # Contar hasta 10
 print("=== Conteo simple ===")
 for i in range(1, 11):
+    # range(1, 11) genera: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    # Nota: el 11 NO se incluye (como las listas, el último índice no se incluye)
     print(f"Número: {i}")
 
-# Contar de 2 en 2
+# Salida:
+# === Conteo simple ===
+# Número: 1
+# Número: 2
+# ... (hasta 10)
+```
+
+**Sintaxis de `range()`:**
+- `range(10)` → 0, 1, 2, ..., 9 (10 números, empezando en 0)
+- `range(1, 11)` → 1, 2, 3, ..., 10 (del 1 al 10)
+- `range(0, 11, 2)` → 0, 2, 4, 6, 8, 10 (de 2 en 2)
+
+**Contar de 2 en 2 (números pares):**
+
+```python
 print("\n=== Conteo de pares ===")
 for i in range(0, 11, 2):
+    # range(0, 11, 2) genera: 0, 2, 4, 6, 8, 10
+    # El tercer parámetro es el "paso" (step)
     print(f"{i}...")
+
+# Salida:
+# === Conteo de pares ===
+# 0...
+# 2...
+# 4...
+# 6...
+# 8...
+# 10...
 ```
+
+**¿Cuándo usar `range()`?**
+- Cuando necesitas repetir algo N veces: `for i in range(5):`
+- Cuando necesitas índices numéricos: `for i in range(len(lista)):`
+- Cuando necesitas secuencias numéricas con pasos específicos
 
 ### Iterar sobre strings
 ```python
@@ -59,16 +161,29 @@ for letra in palabra:
 
 ## Bucle while - Para cuando no sabes cuántas veces repetir
 
+El bucle `while` repite código **mientras** una condición sea verdadera. A diferencia de `for`, no iteras sobre una lista, sino que repites hasta que algo cambie.
+
 ### Sintaxis básica
+
 ```python
 # Estructura básica del bucle while
 while condicion:
-    # Código que se repite
+    # Código que se repite mientras la condición sea True
     print("Repitiendo...")
-    # Importante: modificar la condición para evitar bucle infinito
+    # ⚠️ IMPORTANTE: modificar la condición para evitar bucle infinito
 ```
 
+**¿Cuándo usar `while`?**
+- Cuando no sabes cuántas veces necesitas repetir
+- Cuando esperas una condición externa (usuario presiona "salir", conexión exitosa, etc.)
+- Cuando necesitas repetir hasta que algo cambie
+
+**⚠️ CUIDADO:** Si la condición nunca se vuelve `False`, tendrás un **bucle infinito**. Tu programa se quedará ejecutándose para siempre (o hasta que lo detengas con Ctrl+C).
+
 ### Ejemplo práctico: Conexión a servidor
+
+Un caso real: intentar conectar a un servidor hasta que funcione o se agoten los intentos:
+
 ```python
 # Simular intentos de conexión
 intentos = 0
@@ -77,22 +192,34 @@ max_intentos = 5
 
 print("=== Intentando conectar al servidor ===")
 while not conectado and intentos < max_intentos:
-    intentos += 1
+    # Condición: seguir mientras NO esté conectado Y no hayamos superado el límite
+    intentos += 1  # Incrementar contador
     print(f"Intento {intentos}: Conectando...")
 
-    # Simular probabilidad de éxito
+    # Simular probabilidad de éxito (en la vida real sería una conexión real)
     import random
     if random.random() < 0.3:  # 30% de probabilidad de éxito
         print("¡Éxito! Conexión establecida")
-        conectado = True
+        conectado = True  # Esto hace que la condición del while sea False
     else:
         print("Fallo en la conexión. Reintentando...")
 
+# Después del bucle, verificar si se conectó
 if conectado:
     print(f"¡Conectado en {intentos} intentos!")
 else:
     print("No se pudo conectar después de 5 intentos")
 ```
+
+**¿Qué está pasando aquí?**
+1. El bucle se ejecuta mientras `not conectado and intentos < max_intentos`
+2. En cada iteración, intenta conectar
+3. Si tiene éxito, `conectado = True` y el bucle termina
+4. Si falla 5 veces, `intentos >= max_intentos` y el bucle termina
+5. Después del bucle, verificamos si se conectó o no
+
+**¿Por qué `while` y no `for`?**
+Porque no sabes cuántos intentos necesitarás. Podría ser 1, 3, o 5. `while` se adapta a la situación.
 
 ### Bucle con entrada del usuario
 ```python
@@ -113,74 +240,6 @@ while intentos < 3:
         print(f"Contraseña incorrecta. Intento {intentos}/3.")
 else:
     print("Cuenta bloqueada. Demasiados intentos fallidos.")
-```
-
-## Manejo de errores con try/except
-
-### Sintaxis básica
-```python
-# Estructura básica del manejo de errores
-try:
-    # Código que puede fallar
-    resultado = 10 / 0
-except ZeroDivisionError:
-    # Qué hacer si hay error
-    print("Error: No se puede dividir por cero")
-```
-
-### Tipos de errores comunes
-```python
-# Manejo de múltiples errores
-def procesar_dato(dato):
-    try:
-        if dato == "texto_invalido":
-            # Simular error de valor
-            raise ValueError("El formato del texto no es válido")
-        elif dato == "error_acceso":
-            # Simular error de clave/acceso
-            raise KeyError("Clave no encontrada")
-        else:
-            print(f"Procesando: {dato}")
-            return True
-    except ValueError as e:
-        print(f"Error de valor: {e}")
-        return False
-    except KeyError as e:
-        print(f"Error de acceso: {e}")
-        return False
-    except Exception as e:
-        print(f"Error inesperado: {e}")
-        return False
-
-# Probar diferentes casos
-casos = ["dato_valido", "texto_invalido", "error_acceso"]
-for caso in casos:
-    procesar_dato(caso)
-```
-
-### Manejo de errores con else y finally
-```python
-# Operación con limpieza de recursos
-def guardar_archivo():
-    try:
-        print("Abriendo archivo...")
-        # Simular operación
-        import random
-        if random.random() < 0.7:  # 70% de éxito
-            print("Guardando datos...")
-            return True
-        else:
-            raise Exception("Error de escritura en disco")
-    except Exception as e:
-        print(f"Error: {e}")
-        return False
-    else:
-        print("¡Archivo guardado correctamente!")
-    finally:
-        print("Cerrando archivo y liberando recursos.")
-
-# Ejecutar la operación
-guardar_archivo()
 ```
 
 ## Bucles anidados
@@ -404,19 +463,7 @@ while i < 10:
     i += 1
 ```
 
-### 2. No manejar excepciones
-```python
-# ❌ Error común
-numero = int(input("Número: "))  # Si el usuario escribe texto, el programa se cierra
-
-# ✅ Correcto
-try:
-    numero = int(input("Número: "))
-except ValueError:
-    print("Por favor, ingresa un número válido")
-```
-
-### 3. Usar break fuera de un bucle
+### 2. Usar break fuera de un bucle
 ```python
 # ❌ Error común
 if condicion:
@@ -431,6 +478,11 @@ for i in range(10):
 ## Recursos Adicionales
 - [Documentación oficial - Control Flow](https://docs.python.org/3/tutorial/controlflow.html)
 - [Tutorial de Python - Bucles](https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming)
-- [Manejo de excepciones](https://docs.python.org/3/tutorial/errors.html)
 - [PEP 8 - Guía de estilo](https://peps.python.org/pep-0008/)
 
+---
+
+## Siguiente paso
+Ahora que dominas los bucles, es momento de aprender a organizar tu código en estructuras de datos. Continúa con: **[Listas, Tuplas y Diccionarios](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md)**
+
+> **Nota**: En los ejercicios de este capítulo usamos `try/except` para manejar errores. Si quieres aprender más sobre esto, consulta el capítulo de [Manejo de Excepciones](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md).

@@ -1,33 +1,83 @@
 # Testing en Python
 
-## ¿Qué es Testing?
-El testing es el proceso de verificar que el código funciona como se espera. En Python, el módulo `unittest` y la biblioteca `pytest` son las herramientas más comunes para escribir y ejecutar pruebas.
+## ¿Qué es testing y por qué escribir tests?
+
+Imagina que cambias una función que usan 10 partes de tu código. ¿Cómo sabes que no rompiste nada? Podrías probar manualmente cada parte, pero eso es lento y propenso a errores.
+
+**Los tests resuelven esto:** Escribes código que verifica automáticamente que tu código funciona. Ejecutas los tests después de cada cambio y sabes inmediatamente si algo se rompió.
+
+**Beneficios reales:**
+- **Confianza al cambiar código**: Sabes que no rompiste nada existente
+- **Documentación viva**: Los tests muestran cómo se usa el código
+- **Detección temprana de bugs**: Encuentras errores antes de que lleguen a producción
+- **Refactoring seguro**: Puedes mejorar código sabiendo que los tests te avisan si algo falla
+
+**Casos reales:**
+- Después de agregar una nueva funcionalidad
+- Antes de hacer deploy a producción
+- Cuando encuentras un bug (escribes un test que reproduce el bug, luego lo arreglas)
+- Al refactorizar código existente
+
+**En Python:** Tienes `unittest` (incluido) y `pytest` (más popular, más fácil de usar). Ambos funcionan bien.
 
 ## Conceptos Básicos
 
-### Estructura Básica de Tests
+### Estructura Básica de Tests con unittest
+
+`unittest` es el framework de testing incluido en Python. La estructura básica:
+
 ```python
 import unittest
 
+# Tu clase debe heredar de unittest.TestCase
 class TestCalculadora(unittest.TestCase):
+
     def setUp(self):
-        # Configuración inicial para cada test
-        self.calc = Calculadora()
+        # Se ejecuta ANTES de cada test
+        # Útil para crear objetos que todos los tests necesitan
+        self.calc = Calculadora()  # Cada test tiene su propia calculadora limpia
 
     def test_suma(self):
+        # Los métodos que empiezan con 'test_' son ejecutados como tests
         resultado = self.calc.sumar(2, 3)
-        self.assertEqual(resultado, 5)
+        self.assertEqual(resultado, 5)  # Verifica que resultado == 5
 
     def test_resta(self):
         resultado = self.calc.restar(5, 3)
         self.assertEqual(resultado, 2)
 
     def tearDown(self):
-        # Limpieza después de cada test
+        # Se ejecuta DESPUÉS de cada test
+        # Útil para limpiar recursos (cerrar archivos, conexiones, etc.)
         pass
 
+# Esto permite ejecutar los tests directamente: python test.py
 if __name__ == '__main__':
     unittest.main()
+```
+
+**¿Qué está pasando?**
+- `setUp()` se ejecuta antes de cada test → cada test empieza con un estado limpio
+- Cada método `test_*` es un test independiente
+- `self.assertEqual()` verifica que el resultado sea el esperado
+- `tearDown()` se ejecuta después de cada test → limpieza
+
+**Ejecutar tests:**
+```bash
+# Desde la línea de comandos
+python test.py
+
+# O usando unittest directamente
+python -m unittest test.py
+```
+
+**Salida esperada:**
+```
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
 ```
 
 ### Assertions Comunes
@@ -263,3 +313,8 @@ def test_crear_usuario(db_session):
 - [Documentación de pytest](https://docs.pytest.org/)
 - [TDD Tutorial](https://realpython.com/python-testing/)
 - [Coverage.py Documentation](https://coverage.readthedocs.io/)
+
+---
+
+## Siguiente paso
+Ahora que sabes escribir tests, aprende sobre seguridad para proteger tus aplicaciones. Continúa con: **[Seguridad](./04_security.md)**

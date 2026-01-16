@@ -1,7 +1,24 @@
 # Empaquetado y Distribución en Python
 
-## ¿Qué es el Empaquetado?
-El empaquetado en Python es el proceso de organizar y distribuir código de manera que pueda ser fácilmente instalado y utilizado por otros. Esto incluye la creación de archivos de configuración, manejo de dependencias y distribución del código.
+## ¿Qué es el empaquetado y cuándo lo necesitas?
+
+Tienes un módulo útil que quieres compartir. Podrías decirle a la gente "copia este archivo a tu proyecto", pero eso no escala. ¿Qué pasa si actualizas el módulo? ¿Cómo manejan las dependencias?
+
+**El empaquetado resuelve esto:** Organizas tu código como un paquete que otros pueden instalar con `pip install tu-paquete`. Es la forma profesional de compartir código Python.
+
+**Casos reales:**
+- Crear una biblioteca reutilizable
+- Compartir código entre proyectos de tu equipo
+- Publicar en PyPI para que cualquiera lo use
+- Distribuir herramientas internas de tu empresa
+
+**Beneficios:**
+- **Instalación simple**: `pip install` en lugar de copiar archivos
+- **Gestión de versiones**: Puedes actualizar y los usuarios pueden elegir versiones
+- **Dependencias automáticas**: `pip` instala lo que necesitas
+- **Distribución fácil**: Un comando para instalar en cualquier máquina
+
+> **Antes de continuar**: Asegúrate de entender [Módulos](../03_Funciones_y_Modulos/02_modulos_paquetes.md) y [Entornos Virtuales](./01_virtual_envs.md).
 
 ## Estructura Básica de un Paquete
 
@@ -272,3 +289,8 @@ python_functions = test_*
 - [setuptools Documentation](https://setuptools.readthedocs.io/)
 - [PyPI](https://pypi.org/)
 - [TestPyPI](https://test.pypi.org/)
+
+---
+
+## Siguiente paso
+Ahora que sabes empaquetar código, aprende a escribir tests para asegurar su calidad. Continúa con: **[Testing](./03_testing.md)**

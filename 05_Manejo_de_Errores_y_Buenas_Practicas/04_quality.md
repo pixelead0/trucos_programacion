@@ -1,7 +1,26 @@
 # Calidad de Código en Python
 
-## ¿Qué es la Calidad de Código?
-La calidad de código se refiere a las prácticas y herramientas que ayudan a mantener el código limpio, mantenible y eficiente. Incluye aspectos como estilo de código, documentación, pruebas y análisis estático.
+## ¿Qué es la calidad de código y por qué importa?
+
+Escribir código que funciona es solo la mitad del trabajo. El código también debe ser:
+- **Legible**: Otros (o tú en 6 meses) pueden entenderlo
+- **Mantenible**: Fácil de modificar y extender
+- **Consistente**: Sigue las mismas convenciones en todo el proyecto
+- **Sin errores obvios**: Herramientas encuentran problemas antes de ejecutar
+
+**¿Por qué importa?**
+- **Colaboración**: Otros desarrolladores pueden trabajar contigo
+- **Mantenimiento**: Es más fácil arreglar bugs y agregar features
+- **Profesionalismo**: Código de calidad es señal de experiencia
+- **Ahorro de tiempo**: Encuentras errores antes, no después de deploy
+
+**Este capítulo cubre herramientas profesionales:**
+- **Formateadores** (black): Formato automático consistente
+- **Linters** (flake8): Encuentran problemas de estilo y errores comunes
+- **Type checkers** (mypy): Verifican tipos antes de ejecutar
+- **Pre-commit hooks**: Verificaciones automáticas antes de hacer commit
+
+> **Antes de continuar**: Asegúrate de entender [Type Hints](./03_type_hints.md) y [Funciones](../03_Funciones_y_Modulos/01_funciones.md).
 
 ## Herramientas de Análisis
 
@@ -271,3 +290,8 @@ def procesar_datos(
 - [black Documentation](https://black.readthedocs.io/)
 - [flake8 Documentation](https://flake8.pycqa.org/)
 - [mypy Documentation](https://mypy.readthedocs.io/)
+
+---
+
+## Siguiente paso
+Ahora que conoces las herramientas de calidad, aprende a trabajar con archivos y formatos de datos. Continúa con: **[Pathlib](../06_Manejo_de_Archivos_y_Formatos/01_pathlib.md)**

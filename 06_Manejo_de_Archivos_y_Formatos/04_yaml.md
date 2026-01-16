@@ -1,24 +1,40 @@
 # Configuración con YAML en Python
 
-## ¿Qué es YAML?
-YAML (YAML Ain't Markup Language) es un formato de serialización de datos legible por humanos. Es comúnmente usado para archivos de configuración por su simplicidad y claridad.
+## ¿Qué es YAML y por qué usarlo?
+
+YAML (YAML Ain't Markup Language) es un formato de datos que se lee casi como texto normal. Si ya trabajaste con JSON, YAML es similar pero más legible para humanos.
+
+**¿Cuándo usar YAML?**
+- Archivos de configuración (Docker, CI/CD, aplicaciones)
+- Cuando necesitas que alguien edite la configuración manualmente
+- Cuando quieres que el archivo sea fácil de leer sin herramientas especiales
+
+**¿Cuándo NO usar YAML?**
+- APIs o comunicación entre sistemas (usa JSON)
+- Cuando necesitas máximo rendimiento (JSON es más rápido)
+- Datos muy simples (un archivo `.env` puede ser suficiente)
+
+> **Nota**: Si ya conoces [JSON](./03_json.md) y [Diccionarios](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md), YAML te resultará familiar.
 
 ## Conceptos Básicos
 
 ### Estructura Básica de YAML
+
+YAML usa indentación (como Python) para estructurar datos. Veamos un ejemplo completo:
+
 ```yaml
-# Configuración básica
+# Configuración básica - valores simples
 nombre: "Mi Aplicación"
 version: 1.0
 debug: true
 
-# Listas
+# Listas - cada elemento con guión
 servidores:
   - servidor1
   - servidor2
   - servidor3
 
-# Diccionarios anidados
+# Diccionarios anidados - como objetos JSON
 base_datos:
   host: localhost
   puerto: 5432
@@ -26,18 +42,36 @@ base_datos:
   password: secret
 ```
 
+**¿Qué está pasando aquí?**
+- `nombre`, `version`, `debug` son valores simples (string, número, booleano)
+- `servidores` es una lista (array) - nota los guiones `-`
+- `base_datos` es un diccionario anidado - los valores están indentados
+
 ### Cargar YAML en Python
+
+Para usar YAML en Python necesitas instalar `pyyaml`:
+```bash
+pip install pyyaml
+```
+
+Luego puedes cargar y usar el archivo:
+
 ```python
 import yaml
 
 # Cargar archivo YAML
+# safe_load es más seguro que load (evita ejecutar código malicioso)
 with open('config.yaml', 'r') as f:
     config = yaml.safe_load(f)
 
-# Acceder a valores
-print(config['nombre'])
-print(config['base_datos']['host'])
+# Ahora config es un diccionario de Python normal
+print(config['nombre'])  # "Mi Aplicación"
+print(config['base_datos']['host'])  # "localhost"
+print(config['servidores'][0])  # "servidor1"
 ```
+
+**¿Por qué `safe_load`?**
+`yaml.load()` puede ejecutar código Python arbitrario si el archivo YAML está manipulado. `safe_load()` solo carga datos, es más seguro para archivos que no controlas completamente.
 
 ## Configuración Avanzada
 
@@ -234,3 +268,8 @@ except Exception as e:
 - [Documentación de PyYAML](https://pyyaml.org/wiki/PyYAMLDocumentation)
 - [YAML Specification](https://yaml.org/spec/1.2/spec.html)
 - [Buenas Prácticas de YAML](https://yaml.org/type/index.html)
+
+---
+
+## Siguiente paso
+Ahora que conoces los formatos básicos, aprende sobre serialización avanzada. Continúa con: **[Serialización Avanzada](./05_serialization_advanced.md)** o explora [Conceptos Avanzados](../07_Conceptos_Avanzados/01_decorators.md)

@@ -1,26 +1,70 @@
 # Type Hints en Python
 
-## ¿Qué son Type Hints?
-Los Type Hints (anotaciones de tipo) son una característica de Python que permite especificar el tipo de datos esperado para variables, parámetros de función y valores de retorno. Ayudan a mejorar la legibilidad del código y permiten la detección temprana de errores.
+## ¿Qué son type hints y por qué usarlos?
+
+Python es de tipado dinámico: no necesitas declarar tipos. Esto es flexible, pero puede causar problemas:
+
+```python
+def calcular_total(precio, cantidad):
+    return precio * cantidad
+
+# ¿Qué pasa si alguien llama esto?
+calcular_total("10", 5)  # Error en tiempo de ejecución, no en desarrollo
+```
+
+**Los type hints resuelven esto:** Te permiten documentar qué tipos esperas, sin cambiar cómo Python funciona. Son como comentarios que las herramientas pueden verificar.
+
+**Beneficios reales:**
+- **Documentación viva**: El código se explica a sí mismo
+- **Detección temprana**: Herramientas como `mypy` encuentran errores antes de ejecutar
+- **Mejor autocompletado**: Los IDEs saben qué tipos esperar
+- **Refactoring más seguro**: Cambias código con más confianza
+
+**Importante:** Python ignora los type hints en tiempo de ejecución. Son solo para desarrolladores y herramientas, no afectan el rendimiento.
+
+> **Antes de continuar**: Asegúrate de entender [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Clases](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md).
 
 ## Conceptos Básicos
 
 ### Anotaciones Básicas
-```python
-# Variables
-nombre: str = "Juan"
-edad: int = 25
-altura: float = 1.75
-activo: bool = True
 
-# Funciones
+La sintaxis es simple: después del nombre de la variable o parámetro, pones `: tipo`:
+
+```python
+# Variables - anotas el tipo después del nombre
+nombre: str = "Juan"      # nombre es un string
+edad: int = 25            # edad es un entero
+altura: float = 1.75      # altura es un flotante
+activo: bool = True       # activo es un booleano
+```
+
+**¿Qué está pasando?**
+- `nombre: str` dice "esta variable debe ser un string"
+- Python no verifica esto en tiempo de ejecución, pero herramientas como `mypy` sí
+- Si asignas `nombre = 123`, Python funciona, pero `mypy` te avisará del error
+
+### Funciones con Type Hints
+
+Para funciones, anotas parámetros y el valor de retorno:
+
+```python
+# Función simple - parámetro y retorno anotados
 def saludar(nombre: str) -> str:
+    # nombre: str = el parámetro debe ser string
+    # -> str = la función devuelve un string
     return f"¡Hola, {nombre}!"
 
-# Múltiples parámetros
+# Múltiples parámetros - todos anotados
 def calcular_imc(peso: float, altura: float) -> float:
+    # Ambos parámetros son float, y devuelve float
     return peso / (altura ** 2)
 ```
+
+**Ventaja:** Ahora cualquiera que lea el código sabe exactamente qué esperar:
+- `saludar()` necesita un string y devuelve un string
+- `calcular_imc()` necesita dos floats y devuelve un float
+
+**En la práctica:** Esto hace tu código mucho más legible y reduce errores.
 
 ### Tipos Básicos
 ```python
@@ -240,3 +284,8 @@ disallow_untyped_defs = True
 - [PEP 484](https://peps.python.org/pep-0484/)
 - [mypy Documentation](https://mypy.readthedocs.io/)
 - [Type Hints Cheat Sheet](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
+
+---
+
+## Siguiente paso
+Ahora que sabes usar type hints, aprende sobre herramientas para mantener la calidad de código. Continúa con: **[Calidad de Código](./04_quality.md)**

@@ -1,11 +1,45 @@
 # Dataclasses en Python
 
-## ¿Qué son las Dataclasses?
-Las dataclasses son una característica introducida en Python 3.7 que simplifica la creación de clases para almacenar datos. Reducen la cantidad de código boilerplate necesario para crear clases con atributos.
+## ¿Qué son las dataclasses y cuándo usarlas?
+
+Imagina que necesitas una clase solo para guardar datos (como un usuario, una configuración, o un producto). Con clases normales escribirías:
+
+```python
+class Persona:
+    def __init__(self, nombre, edad, email):
+        self.nombre = nombre
+        self.edad = edad
+        self.email = email
+
+    def __repr__(self):
+        return f"Persona(nombre={self.nombre}, edad={self.edad}, email={self.email})"
+
+    def __eq__(self, other):
+        return (self.nombre, self.edad, self.email) == (other.nombre, other.edad, other.email)
+```
+
+Mucho código repetitivo, ¿verdad?
+
+**Las dataclasses resuelven esto:** Con un simple decorador, Python genera automáticamente `__init__`, `__repr__`, `__eq__` y más. Escribes menos código y es más legible.
+
+**¿Cuándo usar dataclasses?**
+- Clases que principalmente almacenan datos (estructuras de datos)
+- Configuraciones
+- Resultados de funciones que devuelven múltiples valores
+- Cuando necesitas comparación automática entre objetos
+
+**¿Cuándo NO usar dataclasses?**
+- Clases con mucha lógica de negocio (usa clases normales)
+- Cuando necesitas control total sobre `__init__` o métodos especiales
+
+> **Antes de continuar**: Asegúrate de entender [Clases](./01_clases_objetos.md) y [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md).
 
 ## Conceptos Básicos
 
 ### Creación Básica
+
+Con el decorador `@dataclass`, Python genera automáticamente los métodos necesarios:
+
 ```python
 from dataclasses import dataclass
 
@@ -16,14 +50,50 @@ class Persona:
     email: str
 ```
 
+**¿Qué hace `@dataclass` automáticamente?**
+- Genera `__init__()` con los parámetros
+- Genera `__repr__()` para mostrar el objeto
+- Genera `__eq__()` para comparar objetos
+- Y más métodos útiles
+
+**Uso:**
+```python
+# Crear objeto - igual que una clase normal
+persona1 = Persona("Ana", 28, "ana@email.com")
+persona2 = Persona("Ana", 28, "ana@email.com")
+
+print(persona1)  # Persona(nombre='Ana', edad=28, email='ana@email.com')
+print(persona1 == persona2)  # True (comparación automática)
+```
+
+**Comparación con clase normal:** Esto es equivalente a ~20 líneas de código en una clase normal.
+
 ### Con Valores por Defecto
+
+Puedes dar valores por defecto a los atributos:
+
 ```python
 @dataclass
 class Configuracion:
-    host: str = "localhost"
-    puerto: int = 8080
-    debug: bool = False
+    host: str = "localhost"  # Valor por defecto
+    puerto: int = 8080        # Valor por defecto
+    debug: bool = False       # Valor por defecto
 ```
+
+**Uso:**
+```python
+# Usar todos los valores por defecto
+config1 = Configuracion()  # host="localhost", puerto=8080, debug=False
+
+# Sobrescribir algunos
+config2 = Configuracion(host="192.168.1.1", puerto=3000)
+# host="192.168.1.1", puerto=3000, debug=False (usa el default)
+
+# Especificar todos
+config3 = Configuracion(host="prod.server.com", puerto=443, debug=True)
+```
+
+**Importante:** Los atributos con valores por defecto deben ir **después** de los que no tienen. Python requiere esto.
 
 ## Características Avanzadas
 
@@ -178,5 +248,10 @@ class Orden:
 
 ## Recursos Adicionales
 - [Documentación oficial de dataclasses](https://docs.python.org/3/library/dataclasses.html)
-- [PEP 557 - Data Classes](https://www.python.org/dev/peps/pep-0557/)
+- [PEP 557 - Data Classes](https://www.python.org/dev/pep-0557/)
 - [Type Hints en Python](https://docs.python.org/3/library/typing.html)
+
+---
+
+## Siguiente paso
+Ahora que conoces las dataclasses, aprende a manejar errores de manera profesional. Continúa con: **[Manejo de Excepciones](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md)**

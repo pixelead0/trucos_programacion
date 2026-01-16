@@ -1,24 +1,55 @@
 # Condicionales Avanzados y Lógica en Python
 
+## Introducción
+
+Las condicionales avanzadas permiten crear lógica compleja y tomar decisiones sofisticadas en tus programas. Este capítulo profundiza en técnicas más avanzadas de control de flujo que te permitirán escribir código más elegante y eficiente.
+
+> **Prerequisitos**: Antes de continuar, asegúrate de dominar [Condicionales Básicas](./02_condicionales_y_logica.md) y [Variables y Tipos](./01_variables_y_tipos.md).
+
 ## ¿Qué son las condicionales avanzadas?
-Las condicionales avanzadas permiten crear lógica compleja y tomar decisiones sofisticadas en tus programas.
+
+Ya conoces `if/elif/else` básico. Ahora vamos a ver técnicas más sofisticadas para manejar lógica compleja de manera elegante.
+
+**¿Cuándo necesitas condicionales avanzadas?**
+- Cuando tienes múltiples condiciones relacionadas
+- Cuando necesitas validar múltiples cosas a la vez
+- Cuando quieres escribir código más compacto y legible
+- Cuando trabajas con lógica de negocio compleja
+
+**En este capítulo verás:**
+- Anidamiento de condicionales (condicionales dentro de condicionales)
+- Operadores lógicos avanzados (combinaciones complejas)
+- Operador ternario (if/else en una línea)
+- Validación de entrada avanzada
+
+> **Antes de continuar**: Asegúrate de dominar [Condicionales Básicas](./02_condicionales_y_logica.md) y [Variables](./01_variables_y_tipos.md).
 
 ## Anidamiento de Condicionales
 
 ### Estructura básica
+
+Puedes poner condicionales dentro de condicionales. Esto es útil cuando una condición depende de otra:
+
 ```python
 # Condicionales dentro de condicionales
 if condicion_externa:
+    # Solo entra aquí si la externa es True
     if condicion_interna:
-        # Código si ambas condiciones son verdaderas
+        # Solo entra aquí si AMBAS son True
         print("Ambas condiciones se cumplen")
     else:
-        # Código si solo la externa es verdadera
+        # Entra aquí si externa es True pero interna es False
         print("Solo la condición externa se cumple")
 else:
-    # Código si la condición externa es falsa
+    # Entra aquí si la condición externa es False (no evalúa la interna)
     print("Ninguna condición se cumple")
 ```
+
+**¿Cuándo usar anidamiento?**
+- Cuando una condición solo tiene sentido si otra es verdadera
+- Ejemplo: "Si es empleado Y tiene nivel alto, dar acceso completo" → primero verificas si es empleado, luego el nivel
+
+**⚠️ Cuidado:** Demasiado anidamiento hace el código difícil de leer. Si tienes más de 2-3 niveles, considera refactorizar.
 
 ### Ejemplo práctico: Sistema de acceso
 ```python
@@ -345,3 +376,8 @@ if edad >= 18 or edad < 65:  # Siempre será True
 - [Tutorial de Python - Condicionales](https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming)
 - [PEP 8 - Guía de estilo](https://peps.python.org/pep-0008/)
 - [Python Operators](https://docs.python.org/3/library/operator.html)
+
+---
+
+## Siguiente paso
+Ahora que dominas las condicionales avanzadas, es momento de aprender a repetir código eficientemente. Continúa con: **[Bucles](./04_bucles.md)**

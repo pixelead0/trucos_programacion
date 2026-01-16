@@ -1,30 +1,74 @@
 # Optimización de Rendimiento en Python
 
-## ¿Qué es la Optimización de Rendimiento?
-La optimización de rendimiento es el proceso de mejorar la eficiencia y velocidad del código. En Python, esto incluye técnicas como profiling, optimización de algoritmos y uso eficiente de estructuras de datos.
+## ¿Cuándo y cómo optimizar el rendimiento?
 
-## Profiling
+**Regla de oro:** No optimices prematuramente. Primero haz que funcione, luego mide, y solo entonces optimiza lo que realmente es lento.
 
-### cProfile
+**¿Cuándo optimizar?**
+- Cuando el código es demasiado lento para el uso real
+- Cuando procesas grandes volúmenes de datos
+- Cuando los usuarios se quejan de lentitud
+- Cuando el costo computacional es alto (servidores, recursos)
+
+**¿Cuándo NO optimizar?**
+- Si el código funciona bien y es rápido suficiente
+- Si la optimización hace el código ilegible
+- Si no has medido primero (puedes optimizar lo incorrecto)
+
+**Proceso de optimización:**
+1. **Mide** (profiling) - encuentra dónde está el cuello de botella
+2. **Optimiza** - mejora solo lo que es lento
+3. **Mide de nuevo** - verifica que mejoró
+
+> **Antes de continuar**: Asegúrate de entender [Generadores](./04_generadores_iteradores.md) y tener experiencia con [Funciones](../03_Funciones_y_Modulos/01_funciones.md).
+
+## Profiling: Encontrar Dónde Está el Problema
+
+Antes de optimizar, necesitas saber **qué** es lento. El profiling te muestra exactamente dónde tu código pasa más tiempo.
+
+### cProfile (Incluido en Python)
+
+`cProfile` es el profiler incluido en Python. Te muestra qué funciones se llaman y cuánto tiempo toman:
+
 ```python
 import cProfile
 import pstats
 
 def perfil_funcion():
     profiler = cProfile.Profile()
-    profiler.enable()
+    profiler.enable()  # Empieza a medir
 
-    # Código a perfilar
+    # Código a perfilar - esto es lo que quieres medir
     mi_funcion()
 
-    profiler.disable()
+    profiler.disable()  # Deja de medir
     stats = pstats.Stats(profiler)
-    stats.sort_stats('cumulative')
-    stats.print_stats()
+    stats.sort_stats('cumulative')  # Ordena por tiempo acumulado
+    stats.print_stats()  # Muestra los resultados
 
 # Uso
 perfil_funcion()
 ```
+
+**Salida típica:**
+```
+         1000 function calls in 0.123 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.123    0.123 script.py:1(mi_funcion)
+      500    0.100    0.000    0.100    0.000 script.py:5(funcion_lenta)
+      499    0.023    0.000    0.023    0.000 script.py:8(funcion_rapida)
+```
+
+**¿Qué significa?**
+- `ncalls`: Cuántas veces se llamó la función
+- `tottime`: Tiempo total en esa función (sin incluir funciones llamadas)
+- `cumtime`: Tiempo acumulado (incluyendo funciones llamadas)
+- La función con más `cumtime` es tu cuello de botella
+
+**En la práctica:** Ejecutas esto, ves qué función es lenta, y optimizas esa función específica.
 
 ### line_profiler
 ```python
@@ -229,3 +273,8 @@ def filtrar_datos_optimizado(lista):
 - [cProfile Documentation](https://docs.python.org/3/library/profile.html)
 - [line_profiler Documentation](https://github.com/pyutils/line_profiler)
 - [multiprocessing Documentation](https://docs.python.org/3/library/multiprocessing.html)
+
+---
+
+## Siguiente paso
+Ahora que conoces técnicas de optimización, explora otros conceptos avanzados o revisa las [Herramientas Profesionales](../08_Herramientas_Profesionales/01_virtual_envs.md) para llevar tu código a producción.

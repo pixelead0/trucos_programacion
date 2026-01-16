@@ -1,6 +1,24 @@
 # Serialización JSON y Metadatos en Python
 
-JSON (JavaScript Object Notation) es un formato de datos ligero y fácil de leer que se ha convertido en el estándar de facto para el intercambio de datos en aplicaciones web y APIs. Python proporciona excelente soporte para JSON a través del módulo `json` de la biblioteca estándar.
+## ¿Qué es JSON y por qué es tan popular?
+
+JSON (JavaScript Object Notation) es el formato de datos más usado en la web. Si trabajas con APIs, servicios web, o configuraciones modernas, te encontrarás con JSON constantemente.
+
+**¿Por qué JSON es tan popular?**
+- **Legible por humanos**: A diferencia de XML, es fácil de leer y escribir
+- **Ligero**: Menos verboso que XML
+- **Universal**: Casi todos los lenguajes lo soportan
+- **Estándar de APIs**: REST APIs, GraphQL, servicios web usan JSON
+
+**Casos reales:**
+- APIs REST devuelven datos en JSON
+- Archivos de configuración (package.json, tsconfig.json, etc.)
+- Comunicación entre servicios
+- Almacenamiento de datos estructurados
+
+**Ventaja para Python:** JSON se mapea naturalmente a diccionarios y listas de Python. Es casi como trabajar con estructuras nativas.
+
+> **Antes de continuar**: Asegúrate de entender [Pathlib](./01_pathlib.md), [Diccionarios](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) y [Funciones](../03_Funciones_y_Modulos/01_funciones.md).
 
 ## ¿Qué es JSON?
 
@@ -47,7 +65,7 @@ JSON es un formato de datos basado en texto que representa objetos de JavaScript
 
 ## Módulo json de Python
 
-### Importación
+Python incluye el módulo `json` en la biblioteca estándar (no necesitas instalar nada):
 
 ```python
 import json
@@ -55,13 +73,53 @@ import json
 
 ### Funciones Principales
 
+El módulo `json` tiene 4 funciones principales. La diferencia entre `dumps`/`loads` y `dump`/`load` es:
+
+- **`dumps`/`loads`** (con 's' de string): Trabajan con strings en memoria
+- **`dump`/`load`** (sin 's'): Trabajan directamente con archivos
+
 #### Serialización (Python → JSON)
-- `json.dumps()`: Convierte objeto Python a string JSON
-- `json.dump()`: Escribe objeto Python a archivo JSON
+
+Convertir datos de Python a formato JSON:
+
+```python
+# json.dumps() - Python a string JSON
+datos_python = {"nombre": "Ana", "edad": 25}
+json_string = json.dumps(datos_python)
+print(json_string)  # '{"nombre": "Ana", "edad": 25}'
+
+# json.dump() - Python a archivo JSON
+with open('datos.json', 'w') as f:
+    json.dump(datos_python, f)  # Escribe directamente al archivo
+```
+
+**¿Cuándo usar cada una?**
+- `dumps()`: Cuando necesitas el JSON como string (para enviar por API, guardar en variable, etc.)
+- `dump()`: Cuando quieres escribir directamente a un archivo (más eficiente)
 
 #### Deserialización (JSON → Python)
-- `json.loads()`: Convierte string JSON a objeto Python
-- `json.load()`: Lee archivo JSON a objeto Python
+
+Convertir JSON a datos de Python:
+
+```python
+# json.loads() - String JSON a Python
+json_string = '{"nombre": "Ana", "edad": 25}'
+datos_python = json.loads(json_string)
+print(datos_python)  # {'nombre': 'Ana', 'edad': 25}
+print(type(datos_python))  # <class 'dict'>
+
+# json.load() - Archivo JSON a Python
+with open('datos.json', 'r') as f:
+    datos_python = json.load(f)  # Lee directamente del archivo
+```
+
+**Mapeo automático:**
+- JSON object → Python dict
+- JSON array → Python list
+- JSON string → Python str
+- JSON number → Python int o float
+- JSON boolean → Python bool
+- JSON null → Python None
 
 ## Conversión de DataFrame a JSON
 
@@ -390,3 +448,8 @@ es_valido = validar_estructura_json(datos_json, esquema)
 - [JSONPath para consultas](https://goessner.net/articles/JsonPath/)
 - [JSON Lines (JSONL)](https://jsonlines.org/)
 - [JSON Web Tokens (JWT)](https://jwt.io/)
+
+---
+
+## Siguiente paso
+Ahora que conoces JSON, aprende sobre YAML, otro formato popular para configuración. Continúa con: **[YAML](./04_yaml.md)**
