@@ -1,0 +1,34 @@
+archivos:
+  entrada: "../datos_simulados.csv"
+  validos: "datos_validos.csv"
+  invalidos: "datos_invalidos.csv"
+  xml_validos: "datos_validos.xml"
+  xml_invalidos: "datos_invalidos.xml"
+  json_validos: "datos_validos.json"
+  json_invalidos: "datos_invalidos.json"
+
+logging:
+  nivel: "INFO"
+  formato: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+validaciones:
+  ip:
+    habilitada: true
+    mensaje_error: "IP inválida: debe ser una dirección IPv4 válida"
+  ruta_script:
+    habilitada: true
+    extension: ".sh"
+    mensaje_error: "La ruta debe terminar en .sh"
+
+exportacion:
+  xml:
+    habilitada: true
+    elemento_raiz: "datos"
+    elemento_fila: "fila"
+    atributos: true
+    indentacion: 2
+  json:
+    habilitada: true
+    indentacion: 2
+    formato_fecha: "%Y-%m-%d %H:%M:%S"
+    incluir_metadatos: true

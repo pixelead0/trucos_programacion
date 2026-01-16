@@ -1,0 +1,17 @@
+archivos:
+  entrada: "../datos.csv"
+  validos: "datos_validos.csv"
+  invalidos: "datos_invalidos.csv"
+
+logging:
+  nivel: "INFO"
+  formato: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+validaciones:
+  ip:
+    habilitada: true
+    mensaje_error: "IP inválida: debe ser una dirección IPv4 válida"
+  ruta_script:
+    habilitada: true
+    extension: ".sh"
+    mensaje_error: "La ruta debe terminar en .sh"
