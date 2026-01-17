@@ -285,10 +285,25 @@ python_functions = test_*
 5. Usa entornos virtuales
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Python Packaging User Guide](https://packaging.python.org/)
 - [setuptools Documentation](https://setuptools.readthedocs.io/)
 - [PyPI](https://pypi.org/)
 - [TestPyPI](https://test.pypi.org/)
+- [PEP 517 - Build System](https://peps.python.org/pep-0517/)
+- [PEP 518 - Specifying Build System](https://peps.python.org/pep-0518/)
+
+### Bibliografía Recomendada
+- **Python Tricks** (Dan Bader) - Capítulo sobre empaquetado
+- **Effective Python** (Brett Slatkin) - Item 84: Write Docstrings for Every Function, Class, and Module
+- **The Hitchhiker's Guide to Python** (Kenneth Reitz) - Sección sobre packaging
+- **Python Packaging User Guide** (https://packaging.python.org/) - Guía oficial completa
+
+### Conceptos Relacionados
+- [Entornos Virtuales](./01_virtual_envs.md) - Prepara el entorno antes de empaquetar
+- [Testing](./03_testing.md) - Prueba tu paquete antes de publicarlo
+- [Documentación](./05_documentacion.md) - Documenta tu paquete profesionalmente
 
 ---
 

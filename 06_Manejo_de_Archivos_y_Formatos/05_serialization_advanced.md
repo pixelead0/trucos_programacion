@@ -438,7 +438,22 @@ class TransformadorFormato:
 
 ## Recursos Adicionales
 
+### Documentación Oficial
 - [Patrón Strategy en Python](https://refactoring.guru/design-patterns/strategy/python/example)
 - [Concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html)
 - [Functools.lru_cache](https://docs.python.org/3/library/functools.html#functools.lru_cache)
 - [Validación de Configuración](https://pydantic-docs.helpmanual.io/)
+- [pickle Documentation](https://docs.python.org/3/library/pickle.html)
+- [PEP 3154 - Pickle protocol](https://peps.python.org/pep-3154/)
+
+### Bibliografía Recomendada
+- **Python Tricks** (Dan Bader) - Capítulo sobre serialización
+- **Effective Python** (Brett Slatkin) - Items sobre serialización
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre serialización
+- **Design Patterns: Elements of Reusable OOP** (Gang of Four) - Patrón Strategy
+
+### Conceptos Relacionados
+- [JSON](./03_json.md) - Serialización JSON
+- [XML](./02_xml.md) - Serialización XML
+- [YAML](./04_yaml.md) - Serialización YAML
+- [Decoradores](../07_Conceptos_Avanzados/01_decorators.md) - Patrón Strategy con decoradores

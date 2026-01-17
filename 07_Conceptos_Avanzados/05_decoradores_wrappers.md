@@ -198,9 +198,23 @@ operacion_riesgosa()
 
 ## Recursos Adicionales
 
+### Documentación Oficial
 - [Documentación de functools.wraps](https://docs.python.org/3/library/functools.html#functools.wraps)
+- [PEP 318 - Decorators for Functions and Methods](https://peps.python.org/pep-0318/)
 - [Wrappers y Decoradores (PDF)](http://46.101.4.154/Art%C3%ADculos%20t%C3%A9cnicos/Python/Wrappers%20y%20decoradores.pdf)
 - [Primer on Python Decorators (Real Python)](https://realpython.com/primer-on-python-decorators/)
+
+### Bibliografía Recomendada
+- **Fluent Python** (Luciano Ramalho) - Capítulo 7: Function Decorators and Closures
+- **Effective Python** (Brett Slatkin) - Items sobre decoradores y wrappers
+- **Python Tricks** (Dan Bader) - Capítulo completo sobre decoradores
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre decoradores
+- **Design Patterns: Elements of Reusable OOP** (Gang of Four) - Patrón Decorator
+
+### Conceptos Relacionados
+- [Decoradores](./01_decorators.md) - Fundamentos de decoradores
+- [Funciones](../03_Funciones_y_Modulos/01_funciones.md) - Base para wrappers
+- [Clases y Objetos](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md) - Decoradores de clase
 
 ---
 

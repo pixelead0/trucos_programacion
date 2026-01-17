@@ -476,9 +476,22 @@ for i in range(10):
 ```
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación oficial - Control Flow](https://docs.python.org/3/tutorial/controlflow.html)
 - [Tutorial de Python - Bucles](https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming)
 - [PEP 8 - Guía de estilo](https://peps.python.org/pep-0008/)
+
+### Bibliografía Recomendada
+- **Python Tricks** (Dan Bader) - Capítulo sobre bucles y iteración eficiente
+- **Effective Python** (Brett Slatkin) - Item 27: Use Comprehensions Instead of map and filter
+- **Automate the Boring Stuff** (Al Sweigart) - Capítulo 2: Flow Control (bucles)
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre iteración y bucles
+- **Fluent Python** (Luciano Ramalho) - Capítulo 14: Iterables, Iterators, and Generators
+
+### Conceptos Relacionados
+- [Estructuras de Datos](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) - Aprende a trabajar con colecciones
+- [Generadores e Iteradores](../07_Conceptos_Avanzados/04_generadores_iteradores.md) - Iteración avanzada
 
 ---
 

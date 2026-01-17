@@ -269,10 +269,25 @@ def filtrar_datos_optimizado(lista):
 5. Usa generadores para grandes conjuntos de datos
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Python Performance Tips](https://wiki.python.org/moin/PythonSpeed/PerformanceTips)
 - [cProfile Documentation](https://docs.python.org/3/library/profile.html)
 - [line_profiler Documentation](https://github.com/pyutils/line_profiler)
 - [multiprocessing Documentation](https://docs.python.org/3/library/multiprocessing.html)
+- [timeit Documentation](https://docs.python.org/3/library/timeit.html)
+
+### Bibliografía Recomendada
+- **High Performance Python** (Micha Gorelick & Ian Ozsvald) - Guía completa de optimización
+- **Effective Python** (Brett Slatkin) - Items sobre performance
+- **Python Tricks** (Dan Bader) - Capítulo sobre optimización
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre performance
+- **Fluent Python** (Luciano Ramalho) - Capítulos sobre eficiencia
+
+### Conceptos Relacionados
+- [Generadores e Iteradores](./04_generadores_iteradores.md) - Eficiencia en memoria
+- [Testing](../08_Herramientas_Profesionales/03_testing.md) - Mide performance con tests
+- [Debugging](../08_Herramientas_Profesionales/04_debugging_profiling.md) - Profiling avanzado
 
 ---
 

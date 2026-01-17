@@ -304,10 +304,22 @@ def exportar_datos_xml(df, archivo_salida, config):
 
 ## Recursos Adicionales
 
+### Documentación Oficial
 - [Documentación oficial de ElementTree](https://docs.python.org/3/library/xml.etree.elementtree.html)
 - [Tutorial de XML en Python](https://docs.python.org/3/library/xml.html)
 - [XML Schema Definition (XSD)](https://www.w3.org/XML/Schema)
 - [XPath para navegación XML](https://docs.python.org/3/library/xml.etree.elementtree.html#xpath-support)
+- [lxml Documentation](https://lxml.de/) - Librería avanzada para XML
+
+### Bibliografía Recomendada
+- **Python Tricks** (Dan Bader) - Capítulo sobre procesamiento XML
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre XML
+- **XML in a Nutshell** (Harold & Means) - Referencia completa de XML
+
+### Conceptos Relacionados
+- [JSON](./03_json.md) - Formato alternativo más ligero
+- [YAML](./04_yaml.md) - Formato de configuración legible
+- [Pathlib](./01_pathlib.md) - Maneja rutas de archivos XML
 
 ---
 

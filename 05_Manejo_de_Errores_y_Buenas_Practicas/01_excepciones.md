@@ -408,9 +408,24 @@ resultado = validar_y_procesar_archivo("datos.txt")
 7. **Documenta por qué** ignoras ciertas excepciones
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación oficial de excepciones](https://docs.python.org/3/tutorial/errors.html)
 - [Lista de excepciones built-in](https://docs.python.org/3/library/exceptions.html)
 - [Buenas prácticas de manejo de errores](https://docs.python-guide.org/writing/style/#exceptions)
+- [PEP 3134 - Exception Chaining](https://peps.python.org/pep-3134/)
+
+### Bibliografía Recomendada
+- **Effective Python** (Brett Slatkin) - Item 65: Take Advantage of Each Block in try/except/else/finally
+- **Python Tricks** (Dan Bader) - Capítulo sobre manejo de errores
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre excepciones
+- **Clean Code** (Robert C. Martin) - Capítulo sobre manejo de errores
+- **The Pragmatic Programmer** (Thomas & Hunt) - Capítulo sobre defensa en profundidad
+
+### Conceptos Relacionados
+- [Logging](./02_logging.md) - Registra errores y eventos
+- [Type Hints](./03_type_hints.md) - Previene errores de tipo
+- [Testing](../08_Herramientas_Profesionales/03_testing.md) - Prueba tu código para encontrar errores
 
 ---
 

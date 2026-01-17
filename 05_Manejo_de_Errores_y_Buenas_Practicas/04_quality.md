@@ -285,11 +285,28 @@ def procesar_datos(
 5. Mantén el código simple y legible
 
 ## Recursos Adicionales
-- [PEP 8](https://peps.python.org/pep-0008/)
+
+### Documentación Oficial
+- [PEP 8 - Style Guide for Python Code](https://peps.python.org/pep-0008/)
+- [PEP 257 - Docstring Conventions](https://peps.python.org/pep-0257/)
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
 - [black Documentation](https://black.readthedocs.io/)
 - [flake8 Documentation](https://flake8.pycqa.org/)
-- [mypy Documentation](https://mypy.readthedocs.io/)
+- [pylint Documentation](https://pylint.pycqa.org/)
+- [ruff Documentation](https://docs.astral.sh/ruff/)
+
+### Bibliografía Recomendada
+- **Clean Code** (Robert C. Martin) - Principios fundamentales de código limpio
+- **The Clean Coder** (Robert C. Martin) - Profesionalismo en programación
+- **Refactoring** (Martin Fowler) - Técnicas para mejorar código existente
+- **Effective Python** (Brett Slatkin) - 59 formas de escribir mejor Python
+- **Python Tricks** (Dan Bader) - Trucos y mejores prácticas
+- **Code Complete** (Steve McConnell) - Construcción de software profesional
+
+### Conceptos Relacionados
+- [Type Hints](./03_type_hints.md) - Mejora la calidad con tipos
+- [Testing](../08_Herramientas_Profesionales/03_testing.md) - Pruebas de calidad
+- [Documentación](../08_Herramientas_Profesionales/05_documentacion.md) - Documenta tu código
 
 ---
 

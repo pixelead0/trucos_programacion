@@ -247,9 +247,23 @@ class Orden:
 4. Usa `__post_init__` para validaciones y cálculos
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación oficial de dataclasses](https://docs.python.org/3/library/dataclasses.html)
 - [PEP 557 - Data Classes](https://www.python.org/dev/pep-0557/)
 - [Type Hints en Python](https://docs.python.org/3/library/typing.html)
+- [attrs Documentation](https://www.attrs.org/) - Alternativa a dataclasses
+
+### Bibliografía Recomendada
+- **Fluent Python** (Luciano Ramalho) - Capítulo 5: Data Class Builders
+- **Effective Python** (Brett Slatkin) - Item 37: Use Comprehensions Instead of map and filter
+- **Python Tricks** (Dan Bader) - Capítulo sobre dataclasses
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre dataclasses
+
+### Conceptos Relacionados
+- [Clases y Objetos](./01_clases_objetos.md) - Base para entender dataclasses
+- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md) - Usa type hints con dataclasses
+- [Estructuras de Datos](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) - Dataclasses organizan datos
 
 ---
 

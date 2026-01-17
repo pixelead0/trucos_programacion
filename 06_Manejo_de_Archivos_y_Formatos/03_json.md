@@ -443,11 +443,23 @@ es_valido = validar_estructura_json(datos_json, esquema)
 
 ## Recursos Adicionales
 
+### Documentación Oficial
 - [Documentación oficial de json](https://docs.python.org/3/library/json.html)
 - [JSON Schema](https://json-schema.org/)
 - [JSONPath para consultas](https://goessner.net/articles/JsonPath/)
 - [JSON Lines (JSONL)](https://jsonlines.org/)
 - [JSON Web Tokens (JWT)](https://jwt.io/)
+
+### Bibliografía Recomendada
+- **Python Tricks** (Dan Bader) - Capítulo sobre serialización JSON
+- **Effective Python** (Brett Slatkin) - Item 46: Use Built-in Algorithms and Data Structures
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre JSON
+- **RESTful Web APIs** (Richardson & Amundsen) - Uso de JSON en APIs
+
+### Conceptos Relacionados
+- [YAML](./04_yaml.md) - Otro formato de configuración
+- [XML](./02_xml.md) - Formato estructurado alternativo
+- [APIs REST](../09_Integracion_y_APIs/02_apis_rest.md) - Usa JSON en APIs
 
 ---
 

@@ -117,9 +117,24 @@ print(df.info())
 3. Usa `info()` para entender la estructura de los datos
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación oficial de Pandas](https://pandas.pydata.org/docs/)
 - [Tutorial de Pandas](https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html)
 - [Cheat Sheet de Pandas](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+- [10 Minutes to pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
+
+### Bibliografía Recomendada
+- **Python for Data Analysis** (Wes McKinney) - Creador de Pandas, guía completa
+- **Pandas in Action** (Boris Paskhaver) - Guía práctica de Pandas
+- **Effective Pandas** (Matt Harrison) - Mejores prácticas con Pandas
+- **Data Science from Scratch** (Joel Grus) - Fundamentos de ciencia de datos
+- **Python Data Science Handbook** (Jake VanderPlas) - Guía completa de herramientas de datos
+
+### Conceptos Relacionados
+- [Estructuras de Datos](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) - Base para entender DataFrames
+- [CSV](../06_Manejo_de_Archivos_y_Formatos/03_csv.md) - Lee y escribe CSV con Pandas
+- [NumPy](../09_Ciencia_de_Datos_Basica/02_numpy_basico.md) - Base de Pandas
 
 ---
 

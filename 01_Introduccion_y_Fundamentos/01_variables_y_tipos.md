@@ -240,11 +240,30 @@ print(f"{celsius}°C = {fahrenheit}°F")
 ```
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación oficial de Python - Tipos de datos](https://docs.python.org/3/library/stdtypes.html)
 - [Tutorial de Python - Variables](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator)
 - [PEP 8 - Guía de estilo para Python](https://peps.python.org/pep-0008/)
+- [PEP 484 - Type Hints](https://peps.python.org/pep-0484/) - Introducción a anotaciones de tipo
+
+### Bibliografía Recomendada
+- **Python Tricks** (Dan Bader) - Capítulo sobre tipos de datos y variables
+- **Effective Python** (Brett Slatkin) - Item 1: Know Which Version of Python You're Using
+- **Fluent Python** (Luciano Ramalho) - Capítulo 1: The Python Data Model
+- **Automate the Boring Stuff** (Al Sweigart) - Capítulo 1: Python Basics
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre tipos de datos
+
+### Conceptos Relacionados
+- [Condicionales y Lógica](./02_condicionales_y_logica.md) - Usa variables en decisiones
+- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md) - Anotaciones de tipo avanzadas
 
 ---
 
-## Siguiente paso
-Ahora que conoces las variables y tipos de datos, es momento de aprender a tomar decisiones en tu código. Continúa con: **[Condicionales y Lógica](./02_condicionales_y_logica.md)**
+---
+
+<div align="center">
+
+**[← Anterior: El Zen de Python](./00_zen_of_python.md)** | **[📚 Índice](../README.md)** | **[Siguiente: Condicionales y Lógica →](./02_condicionales_y_logica.md)**
+
+</div>

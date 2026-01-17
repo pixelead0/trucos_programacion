@@ -345,6 +345,18 @@ if edad >= 18:
 ```
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación oficial - Control Flow](https://docs.python.org/3/tutorial/controlflow.html)
 - [Tutorial de Python - Condicionales](https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming)
 - [PEP 8 - Guía de estilo](https://peps.python.org/pep-0008/)
+
+### Bibliografía Recomendada
+- **Python Tricks** (Dan Bader) - Capítulo sobre condicionales y lógica booleana
+- **Effective Python** (Brett Slatkin) - Item 4: Prefer Exceptions to Returning None
+- **Automate the Boring Stuff** (Al Sweigart) - Capítulo 2: Flow Control
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre control de flujo
+
+### Conceptos Relacionados
+- [Bucles](./04_bucles.md) - Aprende a repetir código
+- [Funciones](./../03_Funciones_y_Modulos/01_funciones.md) - Organiza tu código con funciones

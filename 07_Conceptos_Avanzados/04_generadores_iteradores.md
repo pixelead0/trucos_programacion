@@ -153,10 +153,24 @@ for lote in procesar_en_lotes(datos, tamano_lote=100):
 
 ## Recursos Adicionales
 
+### Documentación Oficial
 - [Documentación oficial de Generadores](https://docs.python.org/3/tutorial/classes.html#generators)
 - [itertools - Funciones para iteradores](https://docs.python.org/3/library/itertools.html)
+- [PEP 255 - Simple Generators](https://peps.python.org/pep-0255/)
+- [PEP 342 - Coroutines via Enhanced Generators](https://peps.python.org/pep-0342/)
 - [Generadores en Python (Alvaro Hurtado)](https://alvarohurtado.es/2013/08/31/generadores-en-python/)
 - [Introduction to Python Generators (Real Python)](https://realpython.com/introduction-to-python-generators/)
+
+### Bibliografía Recomendada
+- **Fluent Python** (Luciano Ramalho) - Capítulo 14: Iterables, Iterators, and Generators
+- **Effective Python** (Brett Slatkin) - Items sobre generadores e iteración
+- **Python Tricks** (Dan Bader) - Capítulo sobre generadores
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre generadores e iteradores
+
+### Conceptos Relacionados
+- [Bucles](../01_Introduccion_y_Fundamentos/04_bucles.md) - Base para iteración
+- [Decoradores](./01_decorators.md) - Pueden crear generadores
+- [Performance](./03_performance.md) - Generadores mejoran rendimiento
 
 ---
 

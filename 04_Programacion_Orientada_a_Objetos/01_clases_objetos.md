@@ -437,15 +437,26 @@ class Persona:
 
 ## Recursos Adicionales
 
-### Enlaces útiles
+## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación oficial de Python sobre clases](https://docs.python.org/3/tutorial/classes.html)
 - [Tutorial de POO en Python](https://docs.python.org/3/tutorial/classes.html)
 - [PEP 8 - Guía de estilo para código Python](https://www.python.org/dev/peps/pep-0008/)
+- [PEP 3115 - Metaclasses](https://peps.python.org/pep-3115/)
 
-### Conceptos relacionados
-- **Dataclasses** - [Siguiente capítulo](./02_dataclasses.md)
-- **Decoradores** - [Concepto avanzado](../07_Conceptos_Avanzados/01_decorators.md)
-- **Módulos y paquetes** - [Módulos](../03_Funciones_y_Modulos/02_modulos_paquetes.md)
+### Bibliografía Recomendada
+- **Fluent Python** (Luciano Ramalho) - Capítulos 1, 9-12: Data Model y POO
+- **Effective Python** (Brett Slatkin) - Items sobre clases y objetos
+- **Python Tricks** (Dan Bader) - Capítulo sobre POO en Python
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre clases y objetos
+- **Clean Code** (Robert C. Martin) - Capítulos sobre POO y diseño de clases
+- **Design Patterns: Elements of Reusable OOP** (Gang of Four) - Patrones de diseño clásicos
+
+### Conceptos Relacionados
+- [Dataclasses](./02_dataclasses.md) - Forma moderna de crear clases
+- [Decoradores](../07_Conceptos_Avanzados/01_decorators.md) - Extiende clases y métodos
+- [Módulos y Paquetes](../03_Funciones_y_Modulos/02_modulos_paquetes.md) - Organiza clases en módulos
 
 ---
 

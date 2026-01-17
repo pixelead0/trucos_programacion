@@ -334,8 +334,22 @@ def resumen(proyecto):
 
 ## Recursos Adicionales
 
+### Documentación Oficial
 - [Documentación oficial de Módulos](https://docs.python.org/3/tutorial/modules.html)
 - [Guía de importaciones en Python](https://realpython.com/python-modules-packages/)
+- [PEP 420 - Implicit Namespace Packages](https://peps.python.org/pep-0420/)
+- [PEP 328 - Imports: Multi-Line and Absolute/Relative](https://peps.python.org/pep-0328/)
+
+### Bibliografía Recomendada
+- **Effective Python** (Brett Slatkin) - Items sobre módulos y paquetes
+- **Python Tricks** (Dan Bader) - Capítulo sobre organización de código
+- **The Hitchhiker's Guide to Python** (Kenneth Reitz) - Sección sobre estructura de proyectos
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre módulos
+
+### Conceptos Relacionados
+- [Funciones](./01_funciones.md) - Organiza funciones en módulos
+- [Clases y Objetos](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md) - Organiza clases en módulos
+- [Empaquetado](../08_Herramientas_Profesionales/02_packaging.md) - Distribuye tus paquetes
 
 ---
 

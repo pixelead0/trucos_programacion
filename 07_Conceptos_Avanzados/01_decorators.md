@@ -316,7 +316,21 @@ def operacion_riesgosa():
 5. Usa decoradores para aspectos transversales
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación de functools](https://docs.python.org/3/library/functools.html)
-- [PEP 318](https://peps.python.org/pep-0318/)
+- [PEP 318 - Decorators for Functions and Methods](https://peps.python.org/pep-0318/)
 - [Decorator Pattern](https://en.wikipedia.org/wiki/Decorator_pattern)
 - [Python Decorators Tutorial](https://realpython.com/primer-on-python-decorators/)
+
+### Bibliografía Recomendada
+- **Fluent Python** (Luciano Ramalho) - Capítulo 7: Function Decorators and Closures
+- **Effective Python** (Brett Slatkin) - Items sobre decoradores
+- **Python Tricks** (Dan Bader) - Capítulo completo sobre decoradores
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre decoradores
+- **Design Patterns: Elements of Reusable OOP** (Gang of Four) - Patrón Decorator
+
+### Conceptos Relacionados
+- [Funciones](../03_Funciones_y_Modulos/01_funciones.md) - Base para decoradores
+- [Context Managers](./02_context_managers.md) - Similar a decoradores
+- [Clases y Objetos](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md) - Decoradores de clase

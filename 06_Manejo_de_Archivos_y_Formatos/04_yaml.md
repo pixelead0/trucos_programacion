@@ -265,9 +265,22 @@ except Exception as e:
 5. Documenta la estructura de la configuración
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación de PyYAML](https://pyyaml.org/wiki/PyYAMLDocumentation)
 - [YAML Specification](https://yaml.org/spec/1.2/spec.html)
 - [Buenas Prácticas de YAML](https://yaml.org/type/index.html)
+- [ruamel.yaml Documentation](https://yaml.readthedocs.io/) - Alternativa moderna a PyYAML
+
+### Bibliografía Recomendada
+- **Python Tricks** (Dan Bader) - Capítulo sobre configuración YAML
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre YAML
+- **The Twelve-Factor App** (Heroku) - Uso de configuración en aplicaciones
+
+### Conceptos Relacionados
+- [JSON](./03_json.md) - Formato similar para datos
+- [Configuración](../08_Herramientas_Profesionales/02_packaging.md) - Usa YAML para config
+- [Pathlib](./01_pathlib.md) - Maneja rutas de archivos YAML
 
 ---
 

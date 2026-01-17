@@ -588,16 +588,23 @@ numeros = [num for num in numeros if num % 2 != 0]
 
 ## Recursos Adicionales
 
-### Enlaces útiles
+### Documentación Oficial
 - [Documentación oficial de Python sobre estructuras de datos](https://docs.python.org/3/tutorial/datastructures.html)
 - [Tutorial de listas en Python](https://docs.python.org/3/tutorial/introduction.html#lists)
 - [Tutorial de diccionarios en Python](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+- [Collections - Tipos de datos especializados](https://docs.python.org/3/library/collections.html)
 
-### Conceptos relacionados
-- **Comprensiones de listas**
-- **Generadores**
-- **Sets** (conjuntos)
-- **Clases y objetos**
+### Bibliografía Recomendada
+- **Fluent Python** (Luciano Ramalho) - Capítulos 2-3: Data Structures
+- **Effective Python** (Brett Slatkin) - Items sobre listas, diccionarios y tuplas
+- **Python Tricks** (Dan Bader) - Capítulo sobre estructuras de datos
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre listas, diccionarios y tuplas
+- **Automate the Boring Stuff** (Al Sweigart) - Capítulo 4: Lists, Capítulo 5: Dictionaries
+
+### Conceptos Relacionados
+- [Funciones](../03_Funciones_y_Modulos/01_funciones.md) - Organiza código que trabaja con estructuras
+- [Comprensiones Avanzadas](./03_comprensiones_avanzadas.md) - Forma elegante de crear estructuras
+- [Clases y Objetos](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md) - Modela datos complejos
 
 ---
 

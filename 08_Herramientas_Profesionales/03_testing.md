@@ -309,10 +309,25 @@ def test_crear_usuario(db_session):
 5. Mantén los tests independientes
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación de unittest](https://docs.python.org/3/library/unittest.html)
 - [Documentación de pytest](https://docs.pytest.org/)
 - [TDD Tutorial](https://realpython.com/python-testing/)
 - [Coverage.py Documentation](https://coverage.readthedocs.io/)
+- [doctest Documentation](https://docs.python.org/3/library/doctest.html)
+
+### Bibliografía Recomendada
+- **Test-Driven Development with Python** (Harry Percival) - Guía completa de TDD
+- **Python Testing with pytest** (Brian Okken) - Guía completa de pytest
+- **Effective Python** (Brett Slatkin) - Items sobre testing
+- **Clean Code** (Robert C. Martin) - Capítulo sobre tests
+- **The Art of Unit Testing** (Roy Osherove) - Principios de testing
+
+### Conceptos Relacionados
+- [Manejo de Errores](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md) - Prueba el manejo de errores
+- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md) - Facilita el testing
+- [CI/CD](./06_ci_cd_basico.md) - Automatiza tests
 
 ---
 

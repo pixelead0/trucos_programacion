@@ -248,9 +248,24 @@ logger.error("Error en operación")
 4. Considera la rotación de logs en producción
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación oficial de logging](https://docs.python.org/3/library/logging.html)
 - [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html)
 - [Buenas Prácticas de Logging](https://docs.python-guide.org/writing/logging/)
+- [PEP 282 - A Logging System](https://peps.python.org/pep-0282/)
+
+### Bibliografía Recomendada
+- **Python Tricks** (Dan Bader) - Capítulo sobre logging y debugging
+- **Effective Python** (Brett Slatkin) - Item 57: Consider Interactive Debugging with pdb
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre logging
+- **The Pragmatic Programmer** (Thomas & Hunt) - Capítulo sobre logging y monitoreo
+- **Site Reliability Engineering** (Google) - Capítulos sobre logging en producción
+
+### Conceptos Relacionados
+- [Excepciones](./01_excepciones.md) - Maneja errores que luego registras
+- [Type Hints](./03_type_hints.md) - Documenta tipos junto con logging
+- [Testing](../08_Herramientas_Profesionales/03_testing.md) - Usa logging en tests
 
 ---
 

@@ -401,10 +401,24 @@ def setup_logging():
 5. Implementa logging seguro
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [OWASP Python Security](https://owasp.org/www-project-python-security/)
 - [Python Security Best Practices](https://docs.python.org/3/library/security.html)
 - [Cryptography Documentation](https://cryptography.io/)
 - [JWT Documentation](https://pyjwt.readthedocs.io/)
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+
+### Bibliografía Recomendada
+- **Black Hat Python** (Justin Seitz) - Python para seguridad
+- **The Web Application Hacker's Handbook** (Stuttard & Pinto) - Seguridad web
+- **Effective Python** (Brett Slatkin) - Item 85: Use Packages to Organize Modules and Provide Stable APIs
+- **Secure Coding in Python** (Various) - Mejores prácticas de seguridad
+
+### Conceptos Relacionados
+- [Manejo de Errores](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md) - No expongas información sensible
+- [Logging](../05_Manejo_de_Errores_y_Buenas_Practicas/02_logging.md) - Logging seguro
+- [Testing](./03_testing.md) - Prueba la seguridad de tu código
 
 ---
 

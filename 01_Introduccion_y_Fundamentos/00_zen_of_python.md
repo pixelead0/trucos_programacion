@@ -38,5 +38,27 @@ import this
 | 19 | Los espacios de nombres son una gran idea, ¡tengamos más de esos! |
 
 ## Referencias
+
+### Documentación Oficial
 - [Explicación detallada (Inglés)](https://inventwithpython.com/blog/2018/08/17/the-zen-of-python-explained/)
 - [Ejemplos de código (Gist)](https://gist.github.com/evandrix/2030615)
+- [PEP 20 - The Zen of Python](https://peps.python.org/pep-0020/)
+
+### Bibliografía Recomendada
+- **The Zen of Python** (Tim Peters) - Principios fundamentales del lenguaje
+- **Clean Code** (Robert C. Martin) - Aplica los principios del Zen
+- **The Pragmatic Programmer** (Thomas & Hunt) - Filosofía de programación profesional
+- **Python Tricks** (Dan Bader) - Ejemplos prácticos del Zen
+- **Effective Python** (Brett Slatkin) - 59 formas de aplicar el Zen
+
+### Conceptos Relacionados
+- [Variables y Tipos](./01_variables_y_tipos.md) - Aplica el Zen desde el inicio
+- [Calidad de Código](../05_Manejo_de_Errores_y_Buenas_Practicas/04_quality.md) - Herramientas para mantener el Zen
+
+---
+
+<div align="center">
+
+**[← Anterior: Inicio](../README.md)** | **[📚 Índice](../README.md)** | **[Siguiente: Variables y Tipos →](./01_variables_y_tipos.md)**
+
+</div>

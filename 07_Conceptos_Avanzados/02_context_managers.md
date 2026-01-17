@@ -313,9 +313,22 @@ def directorio_temporal():
 5. Asegúrate de liberar recursos en `__exit__`
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación de contextlib](https://docs.python.org/3/library/contextlib.html)
-- [PEP 343](https://peps.python.org/pep-0343/)
+- [PEP 343 - The "with" Statement](https://peps.python.org/pep-0343/)
 - [Context Managers Tutorial](https://realpython.com/python-with-statement/)
+
+### Bibliografía Recomendada
+- **Fluent Python** (Luciano Ramalho) - Capítulo 15: Context Managers and else Blocks
+- **Effective Python** (Brett Slatkin) - Item 66: Consider contextlib and with Statements for Reusable try/finally Behavior
+- **Python Tricks** (Dan Bader) - Capítulo sobre context managers
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre context managers
+
+### Conceptos Relacionados
+- [Decoradores](./01_decorators.md) - Similar patrón de extensión
+- [Manejo de Archivos](../06_Manejo_de_Archivos_y_Formatos/01_pathlib.md) - Usa context managers con archivos
+- [Manejo de Errores](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md) - Context managers manejan errores
 
 ---
 

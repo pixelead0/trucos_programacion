@@ -372,10 +372,24 @@ if edad >= 18 or edad < 65:  # Siempre será True
 ```
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación oficial - Control Flow](https://docs.python.org/3/tutorial/controlflow.html)
 - [Tutorial de Python - Condicionales](https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming)
 - [PEP 8 - Guía de estilo](https://peps.python.org/pep-0008/)
+- [PEP 634 - Structural Pattern Matching](https://peps.python.org/pep-0634/) - Match/case
 - [Python Operators](https://docs.python.org/3/library/operator.html)
+
+### Bibliografía Recomendada
+- **Python Tricks** (Dan Bader) - Capítulo sobre condicionales avanzadas
+- **Effective Python** (Brett Slatkin) - Items sobre control de flujo
+- **Automate the Boring Stuff** (Al Sweigart) - Capítulo 2: Flow Control
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre condicionales
+
+### Conceptos Relacionados
+- [Condicionales Básicas](./02_condicionales_y_logica.md) - Fundamentos de condicionales
+- [Bucles](./04_bucles.md) - Combina con condicionales
+- [Funciones](../03_Funciones_y_Modulos/01_funciones.md) - Usa condicionales en funciones
 
 ---
 

@@ -279,10 +279,24 @@ python_functions = test_*
 5. Documenta la configuración del entorno
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación de venv](https://docs.python.org/3/library/venv.html)
 - [pip Documentation](https://pip.pypa.io/)
 - [poetry Documentation](https://python-poetry.org/)
 - [pip-tools Documentation](https://pip-tools.readthedocs.io/)
+- [PEP 405 - Python Virtual Environments](https://peps.python.org/pep-0405/)
+
+### Bibliografía Recomendada
+- **Effective Python** (Brett Slatkin) - Item 83: Know Where to Find Community-Built Modules
+- **Python Tricks** (Dan Bader) - Capítulo sobre entornos virtuales
+- **The Hitchhiker's Guide to Python** (Kenneth Reitz) - Sección sobre entornos virtuales
+- **Python Packaging User Guide](https://packaging.python.org/) - Guía oficial de empaquetado
+
+### Conceptos Relacionados
+- [Empaquetado](./02_packaging.md) - Distribuye proyectos con dependencias
+- [Testing](./03_testing.md) - Usa entornos virtuales para tests
+- [Gestión de Dependencias](./02_gestion_dependencias.md) - Administra paquetes profesionalmente
 
 ---
 

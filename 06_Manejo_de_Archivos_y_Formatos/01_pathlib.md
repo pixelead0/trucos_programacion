@@ -254,9 +254,23 @@ def validar_path(ruta: Path) -> bool:
 5. Considera la portabilidad entre sistemas operativos
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación de Pathlib](https://docs.python.org/3/library/pathlib.html)
-- [PEP 428](https://peps.python.org/pep-0428/)
+- [PEP 428 - The pathlib module](https://peps.python.org/pep-0428/)
 - [Tutorial de Pathlib](https://realpython.com/python-pathlib/)
+- [os.path vs pathlib](https://docs.python.org/3/library/pathlib.html#correspondence-to-tools-in-the-os-module)
+
+### Bibliografía Recomendada
+- **Python Tricks** (Dan Bader) - Capítulo sobre pathlib
+- **Effective Python** (Brett Slatkin) - Item 37: Use Comprehensions Instead of map and filter
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre manejo de archivos
+- **Automate the Boring Stuff** (Al Sweigart) - Capítulo 8: Reading and Writing Files
+
+### Conceptos Relacionados
+- [Archivos de Texto](./02_archivos_texto.md) - Lee y escribe archivos
+- [Context Managers](../07_Conceptos_Avanzados/02_context_managers.md) - Maneja archivos de forma segura
+- [JSON](./03_json.md) - Trabaja con archivos JSON
 
 ---
 

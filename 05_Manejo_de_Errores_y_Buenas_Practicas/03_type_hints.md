@@ -280,10 +280,25 @@ disallow_untyped_defs = True
 5. Considera la compatibilidad con versiones anteriores
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación de typing](https://docs.python.org/3/library/typing.html)
-- [PEP 484](https://peps.python.org/pep-0484/)
+- [PEP 484 - Type Hints](https://peps.python.org/pep-0484/)
+- [PEP 526 - Syntax for Variable Annotations](https://peps.python.org/pep-0526/)
+- [PEP 544 - Protocols: Structural subtyping](https://peps.python.org/pep-0544/)
 - [mypy Documentation](https://mypy.readthedocs.io/)
 - [Type Hints Cheat Sheet](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
+
+### Bibliografía Recomendada
+- **Fluent Python** (Luciano Ramalho) - Capítulo 15: Type Hints in Function Signatures
+- **Effective Python** (Brett Slatkin) - Items sobre type hints y static typing
+- **Python Tricks** (Dan Bader) - Capítulo sobre type hints
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre typing
+
+### Conceptos Relacionados
+- [Funciones](../03_Funciones_y_Modulos/01_funciones.md) - Aplica type hints a funciones
+- [Clases y Objetos](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md) - Type hints en clases
+- [Calidad de Código](./04_quality.md) - Type hints mejoran la calidad
 
 ---
 

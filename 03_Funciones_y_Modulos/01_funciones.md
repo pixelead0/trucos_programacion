@@ -432,8 +432,23 @@ def agregar_item(item, lista=None):
 
 ## Recursos Adicionales
 
+### Documentación Oficial
 - [Documentación oficial sobre funciones](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
 - [Guía de estilo PEP 8](https://peps.python.org/pep-0008/)
+- [PEP 3102 - Keyword-Only Arguments](https://peps.python.org/pep-3102/)
+- [PEP 484 - Type Hints](https://peps.python.org/pep-0484/)
+
+### Bibliografía Recomendada
+- **Fluent Python** (Luciano Ramalho) - Capítulo 5: First-Class Functions
+- **Effective Python** (Brett Slatkin) - Items sobre funciones y argumentos
+- **Python Tricks** (Dan Bader) - Capítulo sobre funciones y decoradores
+- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre funciones
+- **Clean Code** (Robert C. Martin) - Capítulo 3: Functions
+
+### Conceptos Relacionados
+- [Módulos y Paquetes](./02_modulos_paquetes.md) - Organiza funciones en módulos
+- [Decoradores](../07_Conceptos_Avanzados/01_decorators.md) - Extiende funciones
+- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md) - Documenta tipos de funciones
 
 ---
 
