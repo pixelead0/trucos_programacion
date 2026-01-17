@@ -1,0 +1,20 @@
+{
+  "id": "README",
+  "title": "Curso Completo de Python - Autoaprendizaje",
+  "description": "Bienvenido al curso de Python diseñado para autoaprendizaje. Este curso te guiará paso a paso desde los conceptos más básicos hasta el desarrollo profesional de software.",
+  "source": "@site/docs/README.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/trucos_programacion/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "El Zen de Python",
+    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/zen_of_python"
+  }
+}

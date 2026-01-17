@@ -1,0 +1,25 @@
+{
+  "id": "Introduccion_y_Fundamentos/variables_y_tipos",
+  "title": "Variables y Tipos de Datos en Python",
+  "description": "¿Qué son las variables?",
+  "source": "@site/docs/01_Introduccion_y_Fundamentos/01_variables_y_tipos.md",
+  "sourceDirName": "01_Introduccion_y_Fundamentos",
+  "slug": "/Introduccion_y_Fundamentos/variables_y_tipos",
+  "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/variables_y_tipos",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/01_Introduccion_y_Fundamentos/01_variables_y_tipos.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "El Zen de Python",
+    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/zen_of_python"
+  },
+  "next": {
+    "title": "Condicionales y Lógica en Python",
+    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica"
+  }
+}

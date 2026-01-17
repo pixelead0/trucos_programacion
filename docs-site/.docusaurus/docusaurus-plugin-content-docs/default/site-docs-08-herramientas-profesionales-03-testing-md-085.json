@@ -1,0 +1,25 @@
+{
+  "id": "Herramientas_Profesionales/testing",
+  "title": "Testing en Python",
+  "description": "¿Qué es testing y por qué escribir tests?",
+  "source": "@site/docs/08_Herramientas_Profesionales/03_testing.md",
+  "sourceDirName": "08_Herramientas_Profesionales",
+  "slug": "/Herramientas_Profesionales/testing",
+  "permalink": "/trucos_programacion/Herramientas_Profesionales/testing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/08_Herramientas_Profesionales/03_testing.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Empaquetado y Distribución en Python",
+    "permalink": "/trucos_programacion/Herramientas_Profesionales/packaging"
+  },
+  "next": {
+    "title": "Seguridad en Python",
+    "permalink": "/trucos_programacion/Herramientas_Profesionales/security"
+  }
+}

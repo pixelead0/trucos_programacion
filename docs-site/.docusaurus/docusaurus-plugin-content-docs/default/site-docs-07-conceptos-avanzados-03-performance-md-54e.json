@@ -1,0 +1,25 @@
+{
+  "id": "Conceptos_Avanzados/performance",
+  "title": "Optimización de Rendimiento en Python",
+  "description": "¿Cuándo y cómo optimizar el rendimiento?",
+  "source": "@site/docs/07_Conceptos_Avanzados/03_performance.md",
+  "sourceDirName": "07_Conceptos_Avanzados",
+  "slug": "/Conceptos_Avanzados/performance",
+  "permalink": "/trucos_programacion/Conceptos_Avanzados/performance",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/07_Conceptos_Avanzados/03_performance.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Context Managers en Python",
+    "permalink": "/trucos_programacion/Conceptos_Avanzados/context_managers"
+  },
+  "next": {
+    "title": "Generadores e Iteradores en Python",
+    "permalink": "/trucos_programacion/Conceptos_Avanzados/generadores_iteradores"
+  }
+}

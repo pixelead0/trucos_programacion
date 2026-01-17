@@ -1,0 +1,25 @@
+{
+  "id": "Introduccion_y_Fundamentos/bucles",
+  "title": "Bucles en Python",
+  "description": "¿Qué son los bucles y por qué los necesitas?",
+  "source": "@site/docs/01_Introduccion_y_Fundamentos/04_bucles.md",
+  "sourceDirName": "01_Introduccion_y_Fundamentos",
+  "slug": "/Introduccion_y_Fundamentos/bucles",
+  "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/bucles",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/01_Introduccion_y_Fundamentos/04_bucles.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Condicionales Avanzados y Lógica en Python",
+    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_avanzados"
+  },
+  "next": {
+    "title": "Git y Control de Versiones",
+    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/git_intro"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/trucos_programacion/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/trucos_programacion/",
+          "mainDocId": "README",
+          "docs": [
+            {
+              "id": "Ciencia_de_Datos_Basica/pandas_basico",
+              "path": "/trucos_programacion/Ciencia_de_Datos_Basica/pandas_basico",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Conceptos_Avanzados/context_managers",
+              "path": "/trucos_programacion/Conceptos_Avanzados/context_managers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Conceptos_Avanzados/decoradores_wrappers",
+              "path": "/trucos_programacion/Conceptos_Avanzados/decoradores_wrappers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Conceptos_Avanzados/decorators",
+              "path": "/trucos_programacion/Conceptos_Avanzados/decorators",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Conceptos_Avanzados/generadores_iteradores",
+              "path": "/trucos_programacion/Conceptos_Avanzados/generadores_iteradores",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Conceptos_Avanzados/performance",
+              "path": "/trucos_programacion/Conceptos_Avanzados/performance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Estructuras_de_Datos/listas_tuplas_diccionarios",
+              "path": "/trucos_programacion/Estructuras_de_Datos/listas_tuplas_diccionarios",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Funciones_y_Modulos/funciones",
+              "path": "/trucos_programacion/Funciones_y_Modulos/funciones",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Funciones_y_Modulos/modulos_paquetes",
+              "path": "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Herramientas_Profesionales/packaging",
+              "path": "/trucos_programacion/Herramientas_Profesionales/packaging",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Herramientas_Profesionales/security",
+              "path": "/trucos_programacion/Herramientas_Profesionales/security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Herramientas_Profesionales/testing",
+              "path": "/trucos_programacion/Herramientas_Profesionales/testing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Herramientas_Profesionales/virtual_envs",
+              "path": "/trucos_programacion/Herramientas_Profesionales/virtual_envs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduccion_y_Fundamentos/bucles",
+              "path": "/trucos_programacion/Introduccion_y_Fundamentos/bucles",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduccion_y_Fundamentos/condicionales_avanzados",
+              "path": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_avanzados",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduccion_y_Fundamentos/condicionales_y_logica",
+              "path": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduccion_y_Fundamentos/git_intro",
+              "path": "/trucos_programacion/Introduccion_y_Fundamentos/git_intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduccion_y_Fundamentos/variables_y_tipos",
+              "path": "/trucos_programacion/Introduccion_y_Fundamentos/variables_y_tipos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduccion_y_Fundamentos/zen_of_python",
+              "path": "/trucos_programacion/Introduccion_y_Fundamentos/zen_of_python",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Manejo_de_Archivos_y_Formatos/json",
+              "path": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/json",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Manejo_de_Archivos_y_Formatos/pathlib",
+              "path": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/pathlib",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Manejo_de_Archivos_y_Formatos/serialization_advanced",
+              "path": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/serialization_advanced",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Manejo_de_Archivos_y_Formatos/xml",
+              "path": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/xml",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Manejo_de_Archivos_y_Formatos/yaml",
+              "path": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/yaml",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Manejo_de_Errores_y_Buenas_Practicas/excepciones",
+              "path": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/excepciones",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Manejo_de_Errores_y_Buenas_Practicas/logging",
+              "path": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Manejo_de_Errores_y_Buenas_Practicas/quality",
+              "path": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/quality",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Manejo_de_Errores_y_Buenas_Practicas/type_hints",
+              "path": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Material_Adicional/bibliografia_y_recursos",
+              "path": "/trucos_programacion/Material_Adicional/bibliografia_y_recursos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Programacion_Orientada_a_Objetos/clases_objetos",
+              "path": "/trucos_programacion/Programacion_Orientada_a_Objetos/clases_objetos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Programacion_Orientada_a_Objetos/dataclasses",
+              "path": "/trucos_programacion/Programacion_Orientada_a_Objetos/dataclasses",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "README",
+              "path": "/trucos_programacion/",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/trucos_programacion/",
+                "label": "README"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

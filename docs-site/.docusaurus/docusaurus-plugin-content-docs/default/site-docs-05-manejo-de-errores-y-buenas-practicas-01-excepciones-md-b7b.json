@@ -1,0 +1,25 @@
+{
+  "id": "Manejo_de_Errores_y_Buenas_Practicas/excepciones",
+  "title": "Manejo de Excepciones en Python",
+  "description": "¿Qué son las excepciones y por qué manejarlas?",
+  "source": "@site/docs/05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md",
+  "sourceDirName": "05_Manejo_de_Errores_y_Buenas_Practicas",
+  "slug": "/Manejo_de_Errores_y_Buenas_Practicas/excepciones",
+  "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/excepciones",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dataclasses en Python",
+    "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/dataclasses"
+  },
+  "next": {
+    "title": "Logging en Python",
+    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging"
+  }
+}

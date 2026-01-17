@@ -1,0 +1,25 @@
+{
+  "id": "Herramientas_Profesionales/packaging",
+  "title": "Empaquetado y Distribución en Python",
+  "description": "¿Qué es el empaquetado y cuándo lo necesitas?",
+  "source": "@site/docs/08_Herramientas_Profesionales/02_packaging.md",
+  "sourceDirName": "08_Herramientas_Profesionales",
+  "slug": "/Herramientas_Profesionales/packaging",
+  "permalink": "/trucos_programacion/Herramientas_Profesionales/packaging",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/08_Herramientas_Profesionales/02_packaging.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Entornos Virtuales en Python",
+    "permalink": "/trucos_programacion/Herramientas_Profesionales/virtual_envs"
+  },
+  "next": {
+    "title": "Testing en Python",
+    "permalink": "/trucos_programacion/Herramientas_Profesionales/testing"
+  }
+}

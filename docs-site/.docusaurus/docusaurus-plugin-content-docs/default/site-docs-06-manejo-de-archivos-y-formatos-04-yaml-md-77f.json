@@ -1,0 +1,25 @@
+{
+  "id": "Manejo_de_Archivos_y_Formatos/yaml",
+  "title": "Configuración con YAML en Python",
+  "description": "¿Qué es YAML y por qué usarlo?",
+  "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/04_yaml.md",
+  "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
+  "slug": "/Manejo_de_Archivos_y_Formatos/yaml",
+  "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/yaml",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/06_Manejo_de_Archivos_y_Formatos/04_yaml.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Serialización JSON y Metadatos en Python",
+    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/json"
+  },
+  "next": {
+    "title": "Serialización Avanzada y Multi-Formato",
+    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/serialization_advanced"
+  }
+}
