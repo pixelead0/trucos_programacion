@@ -459,3 +459,213 @@
     padding: 1rem;
   }
 }
+
+/* ============================================
+   New Component Styles
+   ============================================ */
+
+/* LessonMap Component */
+.lessonMap {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--ifm-color-emphasis-100) 0%, var(--ifm-color-emphasis-50) 100%);
+}
+
+[data-theme='dark'] .lessonMap {
+  background: linear-gradient(135deg, var(--ifm-color-emphasis-200) 0%, var(--ifm-color-emphasis-100) 100%);
+}
+
+.lessonMap__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.lessonMap__title {
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--ifm-color-primary);
+  flex: 1;
+  min-width: 200px;
+}
+
+.lessonMap__time,
+.lessonMap__level {
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.lessonMap__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.lessonMap__section {
+  background-color: var(--ifm-background-surface-color);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.lessonMap__sectionTitle {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+.lessonMap__list {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.lessonMap__item {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.lessonMap__item::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--ifm-color-success);
+  font-weight: bold;
+}
+
+/* LevelTabs Component */
+.levelTabs {
+  margin: 2rem 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.levelTabs__header {
+  display: flex;
+  background-color: var(--ifm-color-emphasis-100);
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+  overflow-x: auto;
+}
+
+[data-theme='dark'] .levelTabs__header {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.levelTabs__button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ifm-color-content-secondary);
+  transition: all 0.2s;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+
+.levelTabs__button:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-content);
+}
+
+.levelTabs__button--active {
+  color: var(--ifm-color-primary);
+  border-bottom-color: var(--ifm-color-primary);
+  background-color: var(--ifm-background-surface-color);
+  font-weight: 600;
+}
+
+.levelTabs__content {
+  padding: 1.5rem;
+  background-color: var(--ifm-background-surface-color);
+}
+
+/* ProgressIndicator Component */
+.progressIndicator {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .progressIndicator {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.progressIndicator__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.progressIndicator__module {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  font-size: 0.95rem;
+}
+
+.progressIndicator__lesson {
+  font-size: 0.9rem;
+}
+
+.progressIndicator__bar {
+  width: 100%;
+  height: 8px;
+  background-color: var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progressIndicator__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progressIndicator__percentage {
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--ifm-color-content-secondary);
+  font-weight: 500;
+}
+
+/* Responsive adjustments for new components */
+@media (max-width: 768px) {
+  .lessonMap__content {
+    grid-template-columns: 1fr;
+  }
+
+  .lessonMap__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .levelTabs__button {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .progressIndicator__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

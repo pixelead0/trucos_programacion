@@ -4,3 +4,6 @@ export { default as ExpectedOutput } from './ExpectedOutput';
 export { default as TryIt } from './TryIt';
 export { default as NextStep } from './NextStep';
 export { default as ModuleCard } from './ModuleCard';
+export { default as LessonMap } from './LessonMap';
+export { default as LevelTabs } from './LevelTabs';
+export { default as ProgressIndicator } from './ProgressIndicator';
