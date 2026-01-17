@@ -1,0 +1,25 @@
+{
+  "id": "Funciones_y_Modulos/modulos_paquetes",
+  "title": "Módulos, Paquetes y Organización en Python",
+  "description": "¿Qué son los módulos y por qué organizar tu código?",
+  "source": "@site/docs/03_Funciones_y_Modulos/02_modulos_paquetes.md",
+  "sourceDirName": "03_Funciones_y_Modulos",
+  "slug": "/Funciones_y_Modulos/modulos_paquetes",
+  "permalink": "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/03_Funciones_y_Modulos/02_modulos_paquetes.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Funciones y Organización en Python",
+    "permalink": "/trucos_programacion/Funciones_y_Modulos/funciones"
+  },
+  "next": {
+    "title": "Clases y Objetos en Python",
+    "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/clases_objetos"
+  }
+}

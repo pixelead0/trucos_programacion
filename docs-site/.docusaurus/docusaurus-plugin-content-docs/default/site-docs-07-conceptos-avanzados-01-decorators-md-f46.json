@@ -1,0 +1,25 @@
+{
+  "id": "Conceptos_Avanzados/decorators",
+  "title": "Decoradores en Python",
+  "description": "¿Qué son los decoradores y cuándo los necesitas?",
+  "source": "@site/docs/07_Conceptos_Avanzados/01_decorators.md",
+  "sourceDirName": "07_Conceptos_Avanzados",
+  "slug": "/Conceptos_Avanzados/decorators",
+  "permalink": "/trucos_programacion/Conceptos_Avanzados/decorators",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/07_Conceptos_Avanzados/01_decorators.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Serialización Avanzada y Multi-Formato",
+    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/serialization_advanced"
+  },
+  "next": {
+    "title": "Context Managers en Python",
+    "permalink": "/trucos_programacion/Conceptos_Avanzados/context_managers"
+  }
+}

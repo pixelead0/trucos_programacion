@@ -1,0 +1,25 @@
+{
+  "id": "Funciones_y_Modulos/funciones",
+  "title": "Funciones y Organización en Python",
+  "description": "¿Qué son las funciones y por qué las necesitas?",
+  "source": "@site/docs/03_Funciones_y_Modulos/01_funciones.md",
+  "sourceDirName": "03_Funciones_y_Modulos",
+  "slug": "/Funciones_y_Modulos/funciones",
+  "permalink": "/trucos_programacion/Funciones_y_Modulos/funciones",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/03_Funciones_y_Modulos/01_funciones.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Listas, Tuplas y Diccionarios en Python",
+    "permalink": "/trucos_programacion/Estructuras_de_Datos/listas_tuplas_diccionarios"
+  },
+  "next": {
+    "title": "Módulos, Paquetes y Organización en Python",
+    "permalink": "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes"
+  }
+}

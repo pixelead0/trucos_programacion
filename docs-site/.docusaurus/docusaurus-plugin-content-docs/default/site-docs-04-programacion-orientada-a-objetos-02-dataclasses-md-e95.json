@@ -1,0 +1,25 @@
+{
+  "id": "Programacion_Orientada_a_Objetos/dataclasses",
+  "title": "Dataclasses en Python",
+  "description": "¿Qué son las dataclasses y cuándo usarlas?",
+  "source": "@site/docs/04_Programacion_Orientada_a_Objetos/02_dataclasses.md",
+  "sourceDirName": "04_Programacion_Orientada_a_Objetos",
+  "slug": "/Programacion_Orientada_a_Objetos/dataclasses",
+  "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/dataclasses",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/04_Programacion_Orientada_a_Objetos/02_dataclasses.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Clases y Objetos en Python",
+    "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/clases_objetos"
+  },
+  "next": {
+    "title": "Manejo de Excepciones en Python",
+    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/excepciones"
+  }
+}

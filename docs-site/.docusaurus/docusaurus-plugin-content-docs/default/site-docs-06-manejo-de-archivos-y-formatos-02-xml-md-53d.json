@@ -1,0 +1,25 @@
+{
+  "id": "Manejo_de_Archivos_y_Formatos/xml",
+  "title": "Procesamiento de XML en Python",
+  "description": "¿Qué es XML y cuándo lo necesitas?",
+  "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/02_xml.md",
+  "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
+  "slug": "/Manejo_de_Archivos_y_Formatos/xml",
+  "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/xml",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/06_Manejo_de_Archivos_y_Formatos/02_xml.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Pathlib en Python",
+    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/pathlib"
+  },
+  "next": {
+    "title": "Serialización JSON y Metadatos en Python",
+    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/json"
+  }
+}

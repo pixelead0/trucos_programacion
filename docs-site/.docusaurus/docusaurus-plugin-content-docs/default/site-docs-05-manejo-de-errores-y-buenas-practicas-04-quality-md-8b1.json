@@ -1,0 +1,25 @@
+{
+  "id": "Manejo_de_Errores_y_Buenas_Practicas/quality",
+  "title": "Calidad de Código en Python",
+  "description": "¿Qué es la calidad de código y por qué importa?",
+  "source": "@site/docs/05_Manejo_de_Errores_y_Buenas_Practicas/04_quality.md",
+  "sourceDirName": "05_Manejo_de_Errores_y_Buenas_Practicas",
+  "slug": "/Manejo_de_Errores_y_Buenas_Practicas/quality",
+  "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/quality",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/05_Manejo_de_Errores_y_Buenas_Practicas/04_quality.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Type Hints en Python",
+    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints"
+  },
+  "next": {
+    "title": "Pathlib en Python",
+    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/pathlib"
+  }
+}

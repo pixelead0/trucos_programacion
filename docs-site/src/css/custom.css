@@ -1,0 +1,60 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos personalizados para el curso */
+.markdown h1:first-child {
+  font-size: 2.5rem;
+}
+
+.markdown h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Mejorar legibilidad de código */
+.prism-code {
+  font-size: 0.9rem;
+}
+
+/* Estilos para tablas */
+.markdown table {
+  display: table;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown table th {
+  font-weight: 600;
+  background-color: var(--ifm-table-head-background);
+}
+
+.markdown table td,
+.markdown table th {
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-table-border-color);
+}

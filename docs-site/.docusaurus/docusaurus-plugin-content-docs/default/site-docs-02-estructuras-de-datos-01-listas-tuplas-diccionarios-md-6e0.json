@@ -1,0 +1,25 @@
+{
+  "id": "Estructuras_de_Datos/listas_tuplas_diccionarios",
+  "title": "Listas, Tuplas y Diccionarios en Python",
+  "description": "¿Por qué necesitas estructuras de datos?",
+  "source": "@site/docs/02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md",
+  "sourceDirName": "02_Estructuras_de_Datos",
+  "slug": "/Estructuras_de_Datos/listas_tuplas_diccionarios",
+  "permalink": "/trucos_programacion/Estructuras_de_Datos/listas_tuplas_diccionarios",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Git y Control de Versiones",
+    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/git_intro"
+  },
+  "next": {
+    "title": "Funciones y Organización en Python",
+    "permalink": "/trucos_programacion/Funciones_y_Modulos/funciones"
+  }
+}

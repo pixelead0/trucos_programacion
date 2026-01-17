@@ -1,0 +1,25 @@
+{
+  "id": "Introduccion_y_Fundamentos/condicionales_avanzados",
+  "title": "Condicionales Avanzados y Lógica en Python",
+  "description": "Introducción",
+  "source": "@site/docs/01_Introduccion_y_Fundamentos/03_condicionales_avanzados.md",
+  "sourceDirName": "01_Introduccion_y_Fundamentos",
+  "slug": "/Introduccion_y_Fundamentos/condicionales_avanzados",
+  "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_avanzados",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/01_Introduccion_y_Fundamentos/03_condicionales_avanzados.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Condicionales y Lógica en Python",
+    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica"
+  },
+  "next": {
+    "title": "Bucles en Python",
+    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/bucles"
+  }
+}

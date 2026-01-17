@@ -1,0 +1,25 @@
+{
+  "id": "Herramientas_Profesionales/virtual_envs",
+  "title": "Entornos Virtuales en Python",
+  "description": "¿Qué son los entornos virtuales y por qué son esenciales?",
+  "source": "@site/docs/08_Herramientas_Profesionales/01_virtual_envs.md",
+  "sourceDirName": "08_Herramientas_Profesionales",
+  "slug": "/Herramientas_Profesionales/virtual_envs",
+  "permalink": "/trucos_programacion/Herramientas_Profesionales/virtual_envs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/08_Herramientas_Profesionales/01_virtual_envs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Decoradores y Wrappers en Python",
+    "permalink": "/trucos_programacion/Conceptos_Avanzados/decoradores_wrappers"
+  },
+  "next": {
+    "title": "Empaquetado y Distribución en Python",
+    "permalink": "/trucos_programacion/Herramientas_Profesionales/packaging"
+  }
+}

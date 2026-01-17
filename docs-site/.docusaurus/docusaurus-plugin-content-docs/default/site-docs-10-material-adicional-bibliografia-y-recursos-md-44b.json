@@ -1,0 +1,20 @@
+{
+  "id": "Material_Adicional/bibliografia_y_recursos",
+  "title": "📚 Bibliografía y Recursos Adicionales",
+  "description": "Este documento consolida todos los recursos de aprendizaje mencionados a lo largo del curso. Encuentra libros, documentación oficial, tutoriales y herramientas organizados por categorías.",
+  "source": "@site/docs/10_Material_Adicional/bibliografia_y_recursos.md",
+  "sourceDirName": "10_Material_Adicional",
+  "slug": "/Material_Adicional/bibliografia_y_recursos",
+  "permalink": "/trucos_programacion/Material_Adicional/bibliografia_y_recursos",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/10_Material_Adicional/bibliografia_y_recursos.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Pandas Básico",
+    "permalink": "/trucos_programacion/Ciencia_de_Datos_Basica/pandas_basico"
+  }
+}

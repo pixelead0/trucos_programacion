@@ -1,0 +1,25 @@
+{
+  "id": "Manejo_de_Archivos_y_Formatos/serialization_advanced",
+  "title": "Serialización Avanzada y Multi-Formato",
+  "description": "¿Qué es la serialización multi-formato y cuándo la necesitas?",
+  "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/05_serialization_advanced.md",
+  "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
+  "slug": "/Manejo_de_Archivos_y_Formatos/serialization_advanced",
+  "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/serialization_advanced",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/06_Manejo_de_Archivos_y_Formatos/05_serialization_advanced.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Configuración con YAML en Python",
+    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/yaml"
+  },
+  "next": {
+    "title": "Decoradores en Python",
+    "permalink": "/trucos_programacion/Conceptos_Avanzados/decorators"
+  }
+}

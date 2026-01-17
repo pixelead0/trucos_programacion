@@ -1,0 +1,25 @@
+{
+  "id": "Manejo_de_Archivos_y_Formatos/json",
+  "title": "Serialización JSON y Metadatos en Python",
+  "description": "¿Qué es JSON y por qué es tan popular?",
+  "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/03_json.md",
+  "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
+  "slug": "/Manejo_de_Archivos_y_Formatos/json",
+  "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/json",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/06_Manejo_de_Archivos_y_Formatos/03_json.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Procesamiento de XML en Python",
+    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/xml"
+  },
+  "next": {
+    "title": "Configuración con YAML en Python",
+    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/yaml"
+  }
+}
