@@ -1,143 +1,200 @@
 {
-  "/trucos_programacion/-fe8": {
-    "__comp": "5e95c892",
+  "/trucos_programacion/__docusaurus/debug-726": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "aba21aa0"
+      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+    }
+  },
+  "/trucos_programacion/__docusaurus/debug/config-0f3": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+    }
+  },
+  "/trucos_programacion/__docusaurus/debug/content-df8": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+    },
+    "__props": "__props---trucos-programacion-docusaurus-debug-content-729-1c9"
+  },
+  "/trucos_programacion/__docusaurus/debug/globalData-445": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+    }
+  },
+  "/trucos_programacion/__docusaurus/debug/metadata-fbf": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+    }
+  },
+  "/trucos_programacion/__docusaurus/debug/registry-db9": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+    }
+  },
+  "/trucos_programacion/__docusaurus/debug/routes-9fb": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+    }
+  },
+  "/trucos_programacion/rutas-be9": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---trucos-programacion-rutasa-74-e62"
+    },
+    "content": "content---trucos-programacion-rutas-444-3aa"
+  },
+  "/trucos_programacion/-6ef": {
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+    "__context": {
+      "plugin": "plugin---trucos-programacion-rutasa-74-e62"
+    },
+    "config": "config---trucos-programacion-5-e-9-236"
+  },
+  "/trucos_programacion/-fe8": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---trucos-programacion-aba-980"
     }
   },
   "/trucos_programacion/-c78": {
-    "__comp": "a7bd4aaa",
-    "__props": "019f670d"
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---trucos-programacion-019-605"
   },
   "/trucos_programacion/-49d": {
-    "__comp": "a94703ab"
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/trucos_programacion/Ciencia_de_Datos_Basica/pandas_basico-42f": {
-    "__comp": "17896441",
-    "content": "04d7f938"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-ciencia-de-datos-basica-pandas-basico-04-d-7b7"
   },
   "/trucos_programacion/Conceptos_Avanzados/context_managers-a62": {
-    "__comp": "17896441",
-    "content": "60aa3c16"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-conceptos-avanzados-context-managers-60-a-bf5"
   },
   "/trucos_programacion/Conceptos_Avanzados/decoradores_wrappers-6e9": {
-    "__comp": "17896441",
-    "content": "0f48b9cf"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-conceptos-avanzados-decoradores-wrappers-0-f-4-c96"
   },
   "/trucos_programacion/Conceptos_Avanzados/decorators-378": {
-    "__comp": "17896441",
-    "content": "f46186df"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-conceptos-avanzados-decoratorsf-46-ea9"
   },
   "/trucos_programacion/Conceptos_Avanzados/generadores_iteradores-374": {
-    "__comp": "17896441",
-    "content": "cee06e27"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-conceptos-avanzados-generadores-iteradorescee-bec"
   },
   "/trucos_programacion/Conceptos_Avanzados/performance-14f": {
-    "__comp": "17896441",
-    "content": "54e7bfef"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-conceptos-avanzados-performance-54-e-e17"
   },
   "/trucos_programacion/Estructuras_de_Datos/listas_tuplas_diccionarios-d12": {
-    "__comp": "17896441",
-    "content": "6e003684"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-estructuras-de-datos-listas-tuplas-diccionarios-6-e-0-6f8"
   },
   "/trucos_programacion/Funciones_y_Modulos/funciones-45d": {
-    "__comp": "17896441",
-    "content": "9223b5d9"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-funciones-y-modulos-funciones-922-c31"
   },
   "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes-662": {
-    "__comp": "17896441",
-    "content": "4365d200"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-funciones-y-modulos-modulos-paquetes-436-a60"
   },
   "/trucos_programacion/Herramientas_Profesionales/packaging-4da": {
-    "__comp": "17896441",
-    "content": "dc60973e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-herramientas-profesionales-packagingdc-6-0c2"
   },
   "/trucos_programacion/Herramientas_Profesionales/security-5e4": {
-    "__comp": "17896441",
-    "content": "2cd39562"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-herramientas-profesionales-security-2-cd-4ed"
   },
   "/trucos_programacion/Herramientas_Profesionales/testing-d5a": {
-    "__comp": "17896441",
-    "content": "08540274"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-herramientas-profesionales-testing-085-119"
   },
   "/trucos_programacion/Herramientas_Profesionales/virtual_envs-f20": {
-    "__comp": "17896441",
-    "content": "2d2095e5"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-herramientas-profesionales-virtual-envs-2-d-2-3e5"
   },
   "/trucos_programacion/Introduccion_y_Fundamentos/bucles-d50": {
-    "__comp": "17896441",
-    "content": "225f4aa7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-introduccion-y-fundamentos-bucles-225-d7e"
   },
   "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_avanzados-89a": {
-    "__comp": "17896441",
-    "content": "98656847"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-introduccion-y-fundamentos-condicionales-avanzados-986-45a"
   },
   "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica-165": {
-    "__comp": "17896441",
-    "content": "17c8b6ad"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-introduccion-y-fundamentos-condicionales-y-logica-17-c-863"
   },
   "/trucos_programacion/Introduccion_y_Fundamentos/git_intro-129": {
-    "__comp": "17896441",
-    "content": "4d76b4a4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-introduccion-y-fundamentos-git-intro-4-d-7-959"
   },
   "/trucos_programacion/Introduccion_y_Fundamentos/variables_y_tipos-a0b": {
-    "__comp": "17896441",
-    "content": "693a0f9a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-introduccion-y-fundamentos-variables-y-tipos-693-5fe"
   },
   "/trucos_programacion/Introduccion_y_Fundamentos/zen_of_python-769": {
-    "__comp": "17896441",
-    "content": "7356e3d6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-introduccion-y-fundamentos-zen-of-python-735-39a"
   },
   "/trucos_programacion/Manejo_de_Archivos_y_Formatos/json-659": {
-    "__comp": "17896441",
-    "content": "0ee14ef3"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-manejo-de-archivos-y-formatos-json-0-ee-196"
   },
   "/trucos_programacion/Manejo_de_Archivos_y_Formatos/pathlib-64d": {
-    "__comp": "17896441",
-    "content": "7c3951f7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-manejo-de-archivos-y-formatos-pathlib-7-c-3-31a"
   },
   "/trucos_programacion/Manejo_de_Archivos_y_Formatos/serialization_advanced-8ec": {
-    "__comp": "17896441",
-    "content": "d412c712"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-manejo-de-archivos-y-formatos-serialization-advancedd-41-1f6"
   },
   "/trucos_programacion/Manejo_de_Archivos_y_Formatos/xml-958": {
-    "__comp": "17896441",
-    "content": "53d004ab"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-manejo-de-archivos-y-formatos-xml-53-d-248"
   },
   "/trucos_programacion/Manejo_de_Archivos_y_Formatos/yaml-bda": {
-    "__comp": "17896441",
-    "content": "77ff0794"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-manejo-de-archivos-y-formatos-yaml-77-f-85c"
   },
   "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/excepciones-bca": {
-    "__comp": "17896441",
-    "content": "b7b21084"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-excepcionesb-7-b-ef1"
   },
   "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging-991": {
-    "__comp": "17896441",
-    "content": "acff5602"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-loggingacf-521"
   },
   "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/quality-f6e": {
-    "__comp": "17896441",
-    "content": "8b178d2d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-quality-8-b-1-05b"
   },
   "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints-419": {
-    "__comp": "17896441",
-    "content": "ff6c980e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-type-hintsff-6-be5"
   },
   "/trucos_programacion/Material_Adicional/bibliografia_y_recursos-741": {
-    "__comp": "17896441",
-    "content": "44b9fa8a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-material-adicional-bibliografia-y-recursos-44-b-bd5"
   },
   "/trucos_programacion/Programacion_Orientada_a_Objetos/clases_objetos-3cd": {
-    "__comp": "17896441",
-    "content": "eb20b9e3"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-programacion-orientada-a-objetos-clases-objetoseb-2-c6c"
   },
   "/trucos_programacion/Programacion_Orientada_a_Objetos/dataclasses-4e3": {
-    "__comp": "17896441",
-    "content": "e952ab85"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-programacion-orientada-a-objetos-dataclassese-95-517"
   },
   "/trucos_programacion/-a9c": {
-    "__comp": "17896441",
-    "content": "23374ca6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-233-1c3"
   }
 }

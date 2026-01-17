@@ -1,12 +1,42 @@
-# Condicionales Avanzados y Lógica en Python
+---
+title: Condicionales Avanzados
+description: Técnicas avanzadas de control de flujo y lógica compleja
+---
 
-## Introducción
+import LessonMeta from '@site/src/components/LessonMeta';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
 
-Las condicionales avanzadas permiten crear lógica compleja y tomar decisiones sofisticadas en tus programas. Este capítulo profundiza en técnicas más avanzadas de control de flujo que te permitirán escribir código más elegante y eficiente.
+<LessonMeta
+  level="beginner"
+  time="1 hora"
+  prereqs={['Condicionales y Lógica']}
+/>
 
-> **Prerequisitos**: Antes de continuar, asegúrate de dominar [Condicionales Básicas](./02_condicionales_y_logica.md) y [Variables y Tipos](./01_variables_y_tipos.md).
+# Condicionales Avanzados
 
-## ¿Qué son las condicionales avanzadas?
+## Qué vas a lograr
+
+- Anidar condicionales para lógica compleja
+- Usar comparaciones múltiples y operadores avanzados
+- Aplicar el operador ternario para código compacto
+- Validar entrada del usuario de forma robusta
+
+## Casos reales donde se usa
+
+Las condicionales avanzadas son esenciales para lógica de negocio compleja:
+
+- **Sistemas de facturación**: Calcular impuestos según país, tipo de producto y monto
+- **Plataformas de streaming**: Decidir qué contenido mostrar según edad, suscripción y preferencias
+- **Sistemas de envío**: Calcular costo según peso, distancia, tipo de servicio y urgencia
+- **Aplicaciones bancarias**: Validar transacciones con múltiples condiciones de seguridad
+- **Sistemas de calificaciones**: Asignar letras (A, B, C) según rangos de puntuación
+- **APIs de pago**: Validar tarjeta, verificar fondos, aplicar descuentos y calcular total
+
+**Ejemplo real**: En un sistema de envíos, se evalúa: "¿Es cliente premium? ¿El paquete pesa menos de 5kg? ¿Está en zona de entrega rápida?" Cada condición afecta el precio y tiempo de entrega.
+
+## Concepto base
 
 Ya conoces `if/elif/else` básico. Ahora vamos a ver técnicas más sofisticadas para manejar lógica compleja de manera elegante.
 
@@ -16,50 +46,33 @@ Ya conoces `if/elif/else` básico. Ahora vamos a ver técnicas más sofisticadas
 - Cuando quieres escribir código más compacto y legible
 - Cuando trabajas con lógica de negocio compleja
 
-**En este capítulo verás:**
-- Anidamiento de condicionales (condicionales dentro de condicionales)
-- Operadores lógicos avanzados (combinaciones complejas)
-- Operador ternario (if/else en una línea)
-- Validación de entrada avanzada
+:::info Para principiantes
+Las condicionales avanzadas son como combinar varias decisiones simples en una lógica más compleja. No te preocupes si parece complicado al principio, con práctica se vuelve natural.
+:::
 
-> **Antes de continuar**: Asegúrate de dominar [Condicionales Básicas](./02_condicionales_y_logica.md) y [Variables](./01_variables_y_tipos.md).
+## Paso a paso
 
-## Anidamiento de Condicionales
-
-### Estructura básica
+### 1. Anidamiento de Condicionales
 
 Puedes poner condicionales dentro de condicionales. Esto es útil cuando una condición depende de otra:
 
 ```python
 # Condicionales dentro de condicionales
 if condicion_externa:
-    # Solo entra aquí si la externa es True
     if condicion_interna:
-        # Solo entra aquí si AMBAS son True
         print("Ambas condiciones se cumplen")
     else:
-        # Entra aquí si externa es True pero interna es False
         print("Solo la condición externa se cumple")
 else:
-    # Entra aquí si la condición externa es False (no evalúa la interna)
     print("Ninguna condición se cumple")
 ```
 
-**¿Cuándo usar anidamiento?**
-- Cuando una condición solo tiene sentido si otra es verdadera
-- Ejemplo: "Si es empleado Y tiene nivel alto, dar acceso completo" → primero verificas si es empleado, luego el nivel
+**Ejemplo práctico: Sistema de acceso**
 
-**⚠️ Cuidado:** Demasiado anidamiento hace el código difícil de leer. Si tienes más de 2-3 niveles, considera refactorizar.
-
-### Ejemplo práctico: Sistema de acceso
 ```python
-# Sistema de acceso corporativo
 edad = 25
-tiene_permiso = True
 es_empleado = False
 nivel_seguridad = 3
-
-print("=== Sistema de Acceso ===")
 
 if edad >= 18:
     if es_empleado:
@@ -69,17 +82,20 @@ if edad >= 18:
             print("Acceso limitado permitido")
         else:
             print("Acceso básico permitido")
-    elif tiene_permiso:
-        print("Acceso de visitante permitido")
     else:
         print("Necesitas permiso especial")
 else:
     print("Acceso denegado: muy joven")
 ```
 
-## Operadores de Comparación Avanzados
+:::warning Error típico
+**Demasiado anidamiento**: Si tienes más de 2-3 niveles de anidamiento, considera refactorizar. El código se vuelve difícil de leer.
+:::
 
-### Comparaciones múltiples
+### 2. Comparaciones Múltiples
+
+Python permite comparaciones encadenadas:
+
 ```python
 # Verificar si un número está en un rango
 temperatura = 25
@@ -88,117 +104,40 @@ if 20 <= temperatura <= 30:
     print("Temperatura ideal")
 elif 15 <= temperatura < 20:
     print("Un poco frío")
-elif 30 < temperatura <= 35:
-    print("Un poco caliente")
 else:
     print("Temperatura extrema")
 ```
 
-### Comparaciones con strings
+### 3. Operador Ternario
+
+Forma compacta de escribir if-else:
+
 ```python
-# Sistema de reconocimiento de comandos
-comando = input("¿Qué quieres hacer? ").lower()
+# Forma básica
+edad = 20
+mensaje = "Mayor de edad" if edad >= 18 else "Menor de edad"
 
-if comando in ["ayuda", "help", "socorro"]:
-    print("Mostrando ayuda...")
-elif comando in ["salir", "exit", "quit"]:
-    print("Saliendo del sistema...")
-elif comando.startswith("buscar"):
-    print("Iniciando búsqueda...")
-elif comando.endswith("?"):
-    print("Procesando pregunta...")
-else:
-    print("Comando no reconocido")
-```
-
-## Operadores Lógicos Avanzados
-
-### Combinaciones complejas
-```python
-# Sistema de recomendaciones avanzado
-hambre = 8
-dinero = 15
-tiempo = 30
-es_fin_semana = True
-tienda_abierta = True
-
-print("=== Sistema de Recomendaciones Avanzado ===")
-
-if hambre >= 8 and dinero >= 20 and es_fin_semana:
-    print("🍴 Ve a un buen restaurante")
-elif hambre >= 6 and dinero >= 10 and tienda_abierta:
-    print("🛒 Ve al supermercado")
-elif hambre >= 4 and tiempo >= 20:
-    print("🏠 Cocina en casa")
-elif hambre >= 2 and not es_fin_semana:
-    print("🍎 Come un snack")
-else:
-    print("🤔 Revisa tus opciones")
-```
-
-### Operador NOT con paréntesis
-```python
-# Sistema de validación de entrada
-edad = int(input("Edad: "))
-tiene_licencia = input("¿Tienes licencia? (s/n): ").lower() == 's'
-es_estudiante = input("¿Eres estudiante? (s/n): ").lower() == 's'
-
-if edad >= 18 and tiene_licencia and not es_estudiante:
-    print("Puedes conducir y trabajar a tiempo completo")
-elif edad >= 18 and tiene_licencia and es_estudiante:
-    print("Puedes conducir pero eres estudiante")
-elif edad >= 18 and not tiene_licencia:
-    print("Necesitas licencia para conducir")
-else:
-    print("No puedes conducir")
-```
-
-## Operador Ternario Avanzado
-
-### Ternarios anidados
-```python
-# Sistema de calificaciones compacto
+# Ternarios anidados
 calificacion = 85
-
 mensaje = (
     "Excelente" if calificacion >= 90 else
     "Muy bien" if calificacion >= 80 else
     "Bien" if calificacion >= 70 else
-    "Regular" if calificacion >= 60 else
-    "Necesita mejorar"
+    "Regular"
 )
-
-print(f"Calificación: {calificacion} - {mensaje}")
 ```
 
-### Ternarios con operaciones
+:::tip Tip pro
+El operador ternario es útil para asignaciones simples, pero evítalo para lógica compleja. La legibilidad es más importante que la brevedad.
+:::
+
+### 4. Validación de Entrada Avanzada
+
 ```python
-# Calculadora de descuentos compacta
-monto = float(input("Monto de compra: $"))
-es_cliente_frecuente = input("¿Eres cliente frecuente? (s/n): ").lower() == 's'
-
-descuento = (
-    0.25 if monto >= 1000 and es_cliente_frecuente else
-    0.20 if monto >= 1000 else
-    0.15 if monto >= 500 and es_cliente_frecuente else
-    0.10 if monto >= 500 else
-    0.05 if monto >= 100 else
-    0
-)
-
-total = monto * (1 - descuento)
-print(f"Descuento: {descuento*100:.0f}% - Total: ${total:.2f}")
-```
-
-## Validación de Entrada Avanzada
-
-### Validación múltiple
-```python
-# Sistema de registro de empleados
 def validar_empleado():
     while True:
         try:
-            nombre = input("Nombre del empleado: ").strip()
+            nombre = input("Nombre: ").strip()
             if not nombre or len(nombre) < 2:
                 print("El nombre debe tener al menos 2 caracteres")
                 continue
@@ -208,190 +147,96 @@ def validar_empleado():
                 print("La edad debe estar entre 18 y 65 años")
                 continue
 
-            salario = float(input("Salario: $"))
-            if salario < 0:
-                print("El salario no puede ser negativo")
-                continue
-
-            return nombre, edad, salario
-
+            return nombre, edad
         except ValueError:
-            print("Por favor, ingresa valores numéricos válidos")
-        except KeyboardInterrupt:
-            print("\nOperación cancelada")
-            return None, None, None
-
-# Usar la función
-nombre, edad, salario = validar_empleado()
-if nombre:
-    print(f"Empleado registrado: {nombre}, {edad} años, ${salario}")
+            print("Por favor, ingresa valores válidos")
 ```
+
+## Errores comunes
+
+### 1. Lógica incorrecta en operadores
+
+```python
+# ❌ Lógica incorrecta
+if edad >= 18 or edad < 65:  # Siempre será True
+    print("Siempre se ejecuta")
+
+# ✅ Correcto
+if edad >= 18 and edad < 65:
+    print("Edad laboral")
+```
+
+:::warning Error típico
+**Confundir `and` con `or`**: `and` requiere que ambas condiciones sean verdaderas, `or` requiere que al menos una sea verdadera. Usa paréntesis para clarificar lógica compleja.
+:::
 
 ## Ejercicios Prácticos
 
-### Ejercicio 1: Sistema de Seguridad
+<TryIt>
+### Ejercicio: Sistema de Seguridad
+
+Crea un sistema de seguridad que valide múltiples condiciones:
+
 ```python
-# Sistema de seguridad corporativo
 def verificar_acceso():
     print("=== Sistema de Seguridad ===")
 
-    # Verificar identificación
     id_empleado = input("ID de empleado: ")
     if not id_empleado or len(id_empleado) < 3:
         print("❌ ID inválido")
         return False
 
-    # Verificar nivel de seguridad
     try:
         nivel = int(input("Nivel de seguridad (1-10): "))
-        if nivel < 1 or nivel > 10:
-            print("❌ Nivel de seguridad inválido")
+        hora = int(input("Hora actual (0-23): "))
+
+        if nivel >= 8 and 8 <= hora <= 18:
+            print("✅ Acceso completo permitido")
+            return True
+        elif nivel >= 5 and 7 <= hora <= 19:
+            print("✅ Acceso limitado permitido")
+            return True
+        else:
+            print("❌ Acceso denegado")
             return False
     except ValueError:
-        print("❌ Nivel debe ser un número")
+        print("❌ Valores inválidos")
         return False
 
-    # Verificar horario
-    hora = int(input("Hora actual (0-23): "))
-    if hora < 6 or hora > 22:
-        print("❌ Acceso denegado: fuera del horario laboral")
-        return False
-
-    # Verificar nivel de acceso
-    if nivel >= 8 and hora >= 8 and hora <= 18:
-        print("✅ Acceso completo permitido")
-        return True
-    elif nivel >= 5 and hora >= 7 and hora <= 19:
-        print("✅ Acceso limitado permitido")
-        return True
-    else:
-        print("❌ Acceso denegado: nivel insuficiente")
-        return False
-
-# Ejecutar el sistema
 verificar_acceso()
 ```
+</TryIt>
 
-### Ejercicio 2: Calculadora de Bonificaciones
-```python
-# Sistema de bonificaciones empresariales
-def calcular_bonificacion():
-    print("=== Calculadora de Bonificaciones ===")
+## Checkpoint
 
-    try:
-        salario_base = float(input("Salario base: $"))
-        años_servicio = int(input("Años de servicio: "))
-        rendimiento = int(input("Rendimiento (1-10): "))
-        es_mes_bonus = input("¿Es mes de bonus? (s/n): ").lower() == 's'
-
-        # Calcular bonificación base
-        if rendimiento >= 9:
-            bonificacion_base = salario_base * 0.20
-        elif rendimiento >= 7:
-            bonificacion_base = salario_base * 0.15
-        elif rendimiento >= 5:
-            bonificacion_base = salario_base * 0.10
-        else:
-            bonificacion_base = 0
-
-        # Bonificación por antigüedad
-        if años_servicio >= 10:
-            bonificacion_antiguedad = salario_base * 0.05
-        elif años_servicio >= 5:
-            bonificacion_antiguedad = salario_base * 0.03
-        else:
-            bonificacion_antiguedad = 0
-
-        # Bonificación especial
-        bonificacion_especial = salario_base * 0.02 if es_mes_bonus else 0
-
-        # Total
-        total_bonificacion = bonificacion_base + bonificacion_antiguedad + bonificacion_especial
-
-        print(f"\n=== Resumen de Bonificaciones ===")
-        print(f"Salario base: ${salario_base:,.2f}")
-        print(f"Bonificación por rendimiento: ${bonificacion_base:,.2f}")
-        print(f"Bonificación por antigüedad: ${bonificacion_antiguedad:,.2f}")
-        print(f"Bonificación especial: ${bonificacion_especial:,.2f}")
-        print(f"Total bonificación: ${total_bonificacion:,.2f}")
-        print(f"Salario total: ${salario_base + total_bonificacion:,.2f}")
-
-    except ValueError:
-        print("❌ Error: Ingresa valores numéricos válidos")
-    except Exception as e:
-        print(f"❌ Error inesperado: {e}")
-
-# Ejecutar la calculadora
-calcular_bonificacion()
-```
-
-## Errores Comunes y Cómo Evitarlos
-
-### 1. Confundir = con ==
-```python
-# ❌ Error común
-if edad = 18:  # Error de sintaxis
-    print("Tienes 18 años")
-
-# ✅ Correcto
-if edad == 18:
-    print("Tienes 18 años")
-```
-
-### 2. Olvidar los dos puntos
-```python
-# ❌ Error común
-if edad >= 18
-    print("Mayor de edad")
-
-# ✅ Correcto
-if edad >= 18:
-    print("Mayor de edad")
-```
-
-### 3. Indentación incorrecta
-```python
-# ❌ Error común
-if edad >= 18:
-print("Mayor de edad")  # Error de indentación
-
-# ✅ Correcto
-if edad >= 18:
-    print("Mayor de edad")  # Correctamente indentado
-```
-
-### 4. Lógica incorrecta en operadores
-```python
-# ❌ Lógica incorrecta
-if edad >= 18 and edad < 65:  # Correcto
-    print("Edad laboral")
-
-# ❌ Confuso
-if edad >= 18 or edad < 65:  # Siempre será True
-    print("Siempre se ejecuta")
-```
+<Checkpoint
+  items={[
+    "Puedes anidar condicionales cuando es necesario",
+    "Entiendes comparaciones múltiples como rangos encadenados",
+    "Sabes usar el operador ternario para código compacto",
+    "Puedes validar entrada del usuario de forma robusta",
+    "Entiendes cuándo evitar demasiado anidamiento",
+    "Estás listo para combinar condicionales con bucles"
+  ]}
+/>
 
 ## Recursos Adicionales
 
 ### Documentación Oficial
 - [Documentación oficial - Control Flow](https://docs.python.org/3/tutorial/controlflow.html)
-- [Tutorial de Python - Condicionales](https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming)
-- [PEP 8 - Guía de estilo](https://peps.python.org/pep-0008/)
-- [PEP 634 - Structural Pattern Matching](https://peps.python.org/pep-0634/) - Match/case
-- [Python Operators](https://docs.python.org/3/library/operator.html)
+- [PEP 634 - Structural Pattern Matching](https://peps.python.org/pep-0634/) - Match/case (Python 3.10+)
 
 ### Bibliografía Recomendada
 - **Python Tricks** (Dan Bader) - Capítulo sobre condicionales avanzadas
 - **Effective Python** (Brett Slatkin) - Items sobre control de flujo
-- **Automate the Boring Stuff** (Al Sweigart) - Capítulo 2: Flow Control
-- **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre condicionales
 
 ### Conceptos Relacionados
-- [Condicionales Básicas](./02_condicionales_y_logica.md) - Fundamentos de condicionales
+- [Condicionales Básicas](./02_condicionales_y_logica.md) - Fundamentos
 - [Bucles](./04_bucles.md) - Combina con condicionales
-- [Funciones](../03_Funciones_y_Modulos/01_funciones.md) - Usa condicionales en funciones
-
----
 
 ## Siguiente paso
-Ahora que dominas las condicionales avanzadas, es momento de aprender a repetir código eficientemente. Continúa con: **[Bucles](./04_bucles.md)**
+
+<NextStep
+  to="/Introduccion_y_Fundamentos/bucles"
+  label="Siguiente: Bucles →"
+/>

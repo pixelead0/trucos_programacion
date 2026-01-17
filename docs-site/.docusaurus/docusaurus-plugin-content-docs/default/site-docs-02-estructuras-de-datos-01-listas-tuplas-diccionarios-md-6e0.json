@@ -1,7 +1,7 @@
 {
   "id": "Estructuras_de_Datos/listas_tuplas_diccionarios",
-  "title": "Listas, Tuplas y Diccionarios en Python",
-  "description": "¿Por qué necesitas estructuras de datos?",
+  "title": "Listas, Tuplas y Diccionarios",
+  "description": "Aprende a trabajar con las estructuras de datos fundamentales de Python",
   "source": "@site/docs/02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md",
   "sourceDirName": "02_Estructuras_de_Datos",
   "slug": "/Estructuras_de_Datos/listas_tuplas_diccionarios",
@@ -12,7 +12,10 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Listas, Tuplas y Diccionarios",
+    "description": "Aprende a trabajar con las estructuras de datos fundamentales de Python"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Git y Control de Versiones",

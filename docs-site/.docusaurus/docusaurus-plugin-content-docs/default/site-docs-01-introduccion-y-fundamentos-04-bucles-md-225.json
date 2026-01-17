@@ -1,7 +1,7 @@
 {
   "id": "Introduccion_y_Fundamentos/bucles",
   "title": "Bucles en Python",
-  "description": "¿Qué son los bucles y por qué los necesitas?",
+  "description": "Aprende a repetir código eficientemente con for y while",
   "source": "@site/docs/01_Introduccion_y_Fundamentos/04_bucles.md",
   "sourceDirName": "01_Introduccion_y_Fundamentos",
   "slug": "/Introduccion_y_Fundamentos/bucles",
@@ -12,10 +12,13 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 4,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Bucles en Python",
+    "description": "Aprende a repetir código eficientemente con for y while"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Condicionales Avanzados y Lógica en Python",
+    "title": "Condicionales Avanzados",
     "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_avanzados"
   },
   "next": {

@@ -1,18 +1,54 @@
+---
+title: Condicionales y Lógica en Python
+description: Aprende a tomar decisiones en tu código con condicionales
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+
+<LessonMeta
+  level="beginner"
+  time="1 hora"
+  prereqs={['Variables y Tipos']}
+/>
+
 # Condicionales y Lógica en Python
 
-## ¿Qué son las condicionales y por qué las necesitas?
+## Qué vas a lograr
+
+- Usar `if`, `elif` y `else` para tomar decisiones
+- Combinar condiciones con operadores lógicos (and, or, not)
+- Validar entrada del usuario
+- Escribir código que se adapte a diferentes situaciones
+
+## Casos reales donde se usa
+
+Las condicionales están en prácticamente todos los programas. Las verás en:
+
+- **E-commerce**: "Si el usuario es premium, aplicar descuento del 20%"
+- **Sistemas de acceso**: "Si tiene permisos Y es horario laboral, permitir entrada"
+- **Validación de formularios**: "Si el email es válido Y la contraseña tiene 8+ caracteres, crear cuenta"
+- **Juegos**: "Si la vida del jugador `<= 0`, mostrar pantalla de game over"
+- **APIs**: "Si el token es válido, devolver datos; si no, error 401"
+- **Sistemas de recomendación**: "Si el usuario compró X, recomendar Y"
+
+**Ejemplo real**: Cuando inicias sesión en cualquier app, el sistema verifica: "¿El usuario existe? ¿La contraseña es correcta? ¿La cuenta está activa?" Solo si todas son verdaderas, te deja entrar.
+
+## Concepto base
 
 Hasta ahora tu código ejecuta línea por línea, siempre en el mismo orden. Pero en la vida real necesitas que tu programa **tome decisiones**: "Si el usuario es mayor de edad, mostrar contenido para adultos", "Si hay stock, permitir compra", "Si es fin de semana, aplicar descuento".
 
 **Las condicionales resuelven esto:** le das a tu programa la capacidad de elegir qué hacer según las circunstancias. Es como enseñarle a tu computadora a pensar con lógica: si pasa esto, haz aquello.
 
-**¿Cuándo las usas?**
-- Validar datos de entrada
-- Controlar el flujo del programa
-- Aplicar reglas de negocio
-- Manejar diferentes casos
+:::info Para principiantes
+Piensa en las condicionales como semáforos para tu código: "Si está en verde, avanza; si está en rojo, detente". Tu programa evalúa una condición y decide qué hacer.
+:::
 
-## Estructura Básica: if
+## Paso a paso
+
+### 1. Estructura Básica: if
 
 La estructura más simple es `if` (si). Python evalúa la condición y solo ejecuta el código si es verdadera:
 
@@ -29,9 +65,7 @@ if condicion:
 - `:` = dos puntos obligatorios (Python necesita esto)
 - El código indentado = solo se ejecuta si la condición es `True`
 
-### Ejemplo Simple
-
-Veamos un caso real: verificar si alguien es mayor de edad:
+**Ejemplo Simple:**
 
 ```python
 edad = 18
@@ -43,12 +77,9 @@ if edad >= 18:
 #         Puedes votar
 ```
 
-**¿Qué pasa si `edad = 15`?**
-El código dentro del `if` no se ejecuta. El programa simplemente continúa después del bloque `if`.
+**¿Qué pasa si `edad = 15`?** El código dentro del `if` no se ejecuta. El programa simplemente continúa después del bloque `if`.
 
-**Prueba esto:** Cambia `edad = 18` a `edad = 15` y ejecuta. ¿Qué pasa?
-
-## Estructura Completa: if-elif-else
+### 2. Estructura Completa: if-elif-else
 
 Cuando necesitas evaluar múltiples condiciones, usas `elif` (else if) y `else`:
 
@@ -73,9 +104,7 @@ else:
 
 **Importante:** Solo se ejecuta **un** bloque, el primero que sea verdadero.
 
-### Ejemplo: Evaluar Calificaciones
-
-Un sistema de calificaciones es un caso perfecto para `if-elif-else`:
+**Ejemplo: Evaluar Calificaciones**
 
 ```python
 calificacion = 85
@@ -92,14 +121,11 @@ else:
 # Salida: Bien
 ```
 
-**¿Por qué funciona así?**
-- Si `calificacion = 95`, se ejecuta "Excelente" y termina
-- Si `calificacion = 85`, se ejecuta "Bien" (85 >= 80 pero 85 < 90)
-- Si `calificacion = 65`, se ejecuta "Necesitas mejorar"
+:::tip Tip pro
+El orden importa: Las condiciones se evalúan de arriba hacia abajo. Si pones `>= 70` antes de `>= 80`, un 85 ejecutaría "Satisfactorio" en lugar de "Bien".
+:::
 
-**Orden importa:** Las condiciones se evalúan de arriba hacia abajo. Si pones `>= 70` antes de `>= 80`, un 85 ejecutaría "Satisfactorio" en lugar de "Bien".
-
-## Operadores de Comparación
+### 3. Operadores de Comparación
 
 | Operador | Significado | Ejemplo |
 |----------|-------------|---------|
@@ -110,32 +136,11 @@ else:
 | `>=` | Mayor o igual | `edad >= 18` |
 | `<=` | Menor o igual | `edad <= 18` |
 
-### Ejemplos Prácticos
+### 4. Operadores Lógicos
+
+**AND (y):** Ambas condiciones deben ser verdaderas
+
 ```python
-# Comparaciones numéricas
-temperatura = 25
-if temperatura > 30:
-    print("Hace calor")
-elif temperatura < 10:
-    print("Hace frío")
-else:
-    print("Temperatura agradable")
-
-# Comparaciones de texto
-usuario = "admin"
-if usuario == "admin":
-    print("¡Acceso total!")
-elif usuario == "invitado":
-    print("¡Acceso restringido!")
-else:
-    print("¡Usuario desconocido!")
-```
-
-## Operadores Lógicos
-
-### AND (y)
-```python
-# Ambas condiciones deben ser verdaderas
 edad = 20
 tiene_licencia = True
 
@@ -145,9 +150,9 @@ else:
     print("No puedes conducir")
 ```
 
-### OR (o)
+**OR (o):** Al menos una condición debe ser verdadera
+
 ```python
-# Al menos una condición debe ser verdadera
 dia = "sábado"
 es_festivo = False
 
@@ -157,9 +162,9 @@ else:
     print("Es día laboral")
 ```
 
-### NOT (no)
+**NOT (no):** Invierte el resultado
+
 ```python
-# Invierte el resultado
 es_estudiante = False
 
 if not es_estudiante:
@@ -168,21 +173,7 @@ else:
     print("Eres estudiante")
 ```
 
-## Combinando Operadores
-
-```python
-# Ejemplo complejo: Sistema de acceso
-edad = 25
-tiene_permiso = True
-es_empleado = False
-
-if (edad >= 18 and tiene_permiso) or es_empleado:
-    print("Acceso permitido")
-else:
-    print("Acceso denegado")
-```
-
-## Anidamiento de Condicionales
+### 5. Anidamiento de Condicionales
 
 ```python
 # Condicionales dentro de condicionales
@@ -198,34 +189,11 @@ else:
     print("Eres muy joven para conducir")
 ```
 
-## Ejemplo Práctico: Sistema de Recomendaciones
+:::warning Error típico
+**Demasiado anidamiento**: Si tienes más de 2-3 niveles de anidamiento, considera refactorizar. El código se vuelve difícil de leer.
+:::
 
-```python
-# Sistema de recomendaciones de actividades
-energia = 8  # Escala del 1 al 10
-dinero = 15
-tiempo = 30  # minutos disponibles
-
-print("=== Sistema de Recomendaciones ===")
-
-if energia >= 8 and dinero >= 20:
-    print("🏃 Ir al gimnasio o salir a correr")
-    print("   - Actividad física intensa")
-elif energia >= 6 and dinero >= 10:
-    print("☕ Ir a una cafetería")
-    print("   - Leer un libro con café")
-elif energia >= 4 and tiempo >= 20:
-    print("🏠 Leer en casa")
-    print("   - Relajación tranquila")
-elif energia >= 2:
-    print("😴 Tomar una siesta")
-    print("   - Descanso necesario")
-else:
-    print("🤔 Revisa tus opciones")
-    print("   - Tal vez necesitas comer algo")
-```
-
-## Operador Ternario
+### 6. Operador Ternario
 
 ```python
 # Forma compacta de escribir if-else
@@ -240,29 +208,60 @@ else:
     mensaje = "Menor de edad"
 ```
 
-## Validación de Entrada
+## Errores comunes
+
+### 1. Usar = en lugar de ==
 
 ```python
-# Validar entrada del usuario
-try:
-    edad = int(input("¿Cuántos años tienes? "))
+# ❌ Error común
+if edad = 18:  # Error de sintaxis
+    print("Tienes 18 años")
 
-    if edad < 0:
-        print("La edad no puede ser negativa")
-    elif edad > 150:
-        print("Esa edad parece incorrecta")
-    else:
-        print(f"Tienes {edad} años")
-
-except ValueError:
-    print("Por favor, ingresa un número válido")
+# ✅ Correcto
+if edad == 18:
+    print("Tienes 18 años")
 ```
+
+:::warning Error típico
+**Confundir `=` (asignación) con `==` (comparación)**: `=` asigna un valor, `==` compara dos valores. Este es uno de los errores más comunes.
+:::
+
+### 2. Olvidar los dos puntos
+
+```python
+# ❌ Error común
+if edad >= 18
+    print("Mayor de edad")
+
+# ✅ Correcto
+if edad >= 18:
+    print("Mayor de edad")
+```
+
+### 3. Indentación incorrecta
+
+```python
+# ❌ Error común
+if edad >= 18:
+print("Mayor de edad")  # Error de indentación
+
+# ✅ Correcto
+if edad >= 18:
+    print("Mayor de edad")  # Correctamente indentado
+```
+
+:::warning Error típico
+**Indentación incorrecta**: En Python, la indentación es parte de la sintaxis. El código dentro del `if` debe estar indentado (normalmente 4 espacios).
+:::
 
 ## Ejercicios Prácticos
 
+<TryIt>
 ### Ejercicio 1: Calculadora de Descuentos
+
+Calcula descuento basado en el monto de compra:
+
 ```python
-# Calcula descuento basado en el monto de compra
 monto = float(input("Monto de la compra: $"))
 
 if monto >= 1000:
@@ -281,10 +280,14 @@ else:
 total = monto * (1 - descuento)
 print(f"Total a pagar: ${total:.2f}")
 ```
+</TryIt>
 
+<TryIt>
 ### Ejercicio 2: Sistema de Calificaciones
+
+Sistema de calificaciones académico:
+
 ```python
-# Sistema de calificaciones académico
 nombre = input("Nombre del estudiante: ")
 calificacion = float(input("Calificación (0-100): "))
 
@@ -308,41 +311,20 @@ print(f"\nEstudiante: {nombre}")
 print(f"Calificación: {calificacion} ({letra})")
 print(f"Comentario: {comentario}")
 ```
+</TryIt>
 
-## Errores Comunes
+## Checkpoint
 
-### 1. Usar = en lugar de ==
-```python
-# ❌ Error común
-if edad = 18:  # Error de sintaxis
-    print("Tienes 18 años")
-
-# ✅ Correcto
-if edad == 18:
-    print("Tienes 18 años")
-```
-
-### 2. Olvidar los dos puntos
-```python
-# ❌ Error común
-if edad >= 18
-    print("Mayor de edad")
-
-# ✅ Correcto
-if edad >= 18:
-    print("Mayor de edad")
-```
-
-### 3. Indentación incorrecta
-```python
-# ❌ Error común
-if edad >= 18:
-print("Mayor de edad")  # Error de indentación
-
-# ✅ Correcto
-if edad >= 18:
-    print("Mayor de edad")  # Correctamente indentado
-```
+<Checkpoint
+  items={[
+    "Puedes usar if, elif y else para tomar decisiones",
+    "Entiendes los operadores de comparación (==, !=, >, etc.)",
+    "Sabes combinar condiciones con and, or, not",
+    "Puedes anidar condicionales cuando es necesario",
+    "Conoces el operador ternario para código compacto",
+    "Estás listo para usar condicionales en bucles"
+  ]}
+/>
 
 ## Recursos Adicionales
 
@@ -358,5 +340,13 @@ if edad >= 18:
 - **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre control de flujo
 
 ### Conceptos Relacionados
+- [Condicionales Avanzados](./03_condicionales_avanzados.md) - Técnicas avanzadas de condicionales
 - [Bucles](./04_bucles.md) - Aprende a repetir código
-- [Funciones](./../03_Funciones_y_Modulos/01_funciones.md) - Organiza tu código con funciones
+- [Funciones](../03_Funciones_y_Modulos/01_funciones.md) - Organiza tu código con funciones
+
+## Siguiente paso
+
+<NextStep
+  to="/Introduccion_y_Fundamentos/condicionales_avanzados"
+  label="Siguiente: Condicionales Avanzados →"
+/>

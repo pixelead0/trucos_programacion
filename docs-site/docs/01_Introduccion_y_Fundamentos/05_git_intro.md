@@ -1,18 +1,47 @@
+---
+title: Git y Control de Versiones
+description: Aprende a versionar tus proyectos con Git
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+
+<LessonMeta
+  level="beginner"
+  time="1 hora"
+  prereqs={['Bucles']}
+/>
+
 # Git y Control de Versiones
 
-## Introducción
+## Qué vas a lograr
 
-Git es un sistema de control de versiones que permite rastrear cambios en tu código a lo largo del tiempo. Es como tener un registro detallado de todos los cambios en tu proyecto, permitiéndote "viajar en el tiempo" para ver versiones anteriores o deshacer errores. Aunque Git no es específico de Python, es una herramienta esencial para cualquier programador profesional.
+- Crear y gestionar repositorios Git
+- Hacer commits y trabajar con ramas
+- Sincronizar código con repositorios remotos (GitHub/GitLab)
+- Resolver conflictos y deshacer cambios
 
-> **Nota**: Este capítulo cubre Git de manera general. Es útil aprenderlo temprano para poder versionar tus proyectos desde el inicio.
+## Concepto base
 
-## ¿Qué es Git?
 Git es un sistema de control de versiones que permite rastrear cambios en tu código a lo largo del tiempo. Es como tener un registro detallado de todos los cambios en tu proyecto, permitiéndote "viajar en el tiempo" para ver versiones anteriores o deshacer errores.
 
-## Conceptos Fundamentales
+Aunque Git no es específico de Python, es una herramienta esencial para cualquier programador profesional. Te permite:
+- Guardar versiones de tu código
+- Trabajar en equipo sin conflictos
+- Experimentar sin miedo a romper tu código
+- Revertir cambios si algo sale mal
 
-### Repositorio
-Un repositorio es donde se almacena todo el historial de tu proyecto.
+:::info Para principiantes
+Piensa en Git como un "sistema de respaldo inteligente" para tu código. Cada vez que haces un commit, guardas una "foto" de tu proyecto en ese momento. Puedes volver a cualquier foto cuando quieras.
+:::
+
+## Paso a paso
+
+### 1. Conceptos Fundamentales
+
+**Repositorio:** Es donde se almacena todo el historial de tu proyecto.
 
 ```bash
 # Crear un nuevo repositorio
@@ -23,8 +52,7 @@ cd mi-proyecto
 git clone https://github.com/usuario/proyecto.git
 ```
 
-### Commit
-Un commit es como guardar un punto de control en tu proyecto. Registra un cambio específico.
+**Commit:** Es como guardar un punto de control en tu proyecto. Registra un cambio específico.
 
 ```bash
 # Ver el estado de los archivos
@@ -37,11 +65,12 @@ git add archivo.py
 git commit -m "Agregar función de cálculo"
 ```
 
-## Flujo de Trabajo Básico
+### 2. Flujo de Trabajo Básico
 
-### 1. Configuración inicial
+**1. Configuración inicial:**
+
 ```bash
-# Configurar tu identidad
+# Configurar tu identidad (solo una vez)
 git config --global user.name "Tu Nombre"
 git config --global user.email "tu@email.com"
 
@@ -49,7 +78,8 @@ git config --global user.email "tu@email.com"
 git config --list
 ```
 
-### 2. Trabajar en tu código
+**2. Trabajar en tu código:**
+
 ```bash
 # Crear archivo Python
 echo "print('Hola mundo')" > hola.py
@@ -58,7 +88,8 @@ echo "print('Hola mundo')" > hola.py
 echo "requests==2.28.0" > requirements.txt
 ```
 
-### 3. Revisar cambios
+**3. Revisar cambios:**
+
 ```bash
 # Ver qué archivos han cambiado
 git status
@@ -70,7 +101,8 @@ git diff
 git diff hola.py
 ```
 
-### 4. Hacer commit
+**4. Hacer commit:**
+
 ```bash
 # Agregar archivos al staging
 git add hola.py requirements.txt
@@ -79,74 +111,46 @@ git add hola.py requirements.txt
 git commit -m "Inicializar proyecto con saludo y dependencias"
 ```
 
-## Ramas: Trabajar en Paralelo
+### 3. Ramas: Trabajar en Paralelo
 
 Las ramas (branches) te permiten trabajar en nuevas características sin afectar el código principal.
 
-### Crear y cambiar ramas
 ```bash
-# Crear una nueva rama
-git branch nueva-funcionalidad
-
-# Cambiar a la nueva rama
-git checkout nueva-funcionalidad
-
-# Crear y cambiar de rama en un comando (atajo)
-git checkout -b experimento-datos
+# Crear y cambiar a una nueva rama
+git checkout -b nueva-funcionalidad
 
 # Ver todas las ramas
 git branch
 
-# Ver ramas remotas
-git branch -r
+# Trabajar en la rama
+echo "def nueva_funcion():" >> app.py
+git add app.py
+git commit -m "Implementar nueva funcionalidad"
 ```
 
-### Trabajar en ramas
-```bash
-# Estar en la rama experimento-datos
-git checkout experimento-datos
+### 4. Merge: Unir Cambios
 
-# Hacer cambios
-echo "def procesar_datos(data):" >> procesador.py
-echo "    return data * 2" >> procesador.py
+Cuando tu nueva funcionalidad está lista, únela con la versión principal:
 
-# Hacer commit en la rama
-git add procesador.py
-git commit -m "Implementar procesador de datos básico"
-```
-
-## Merge: Unir Cambios
-
-Cuando tu nueva funcionalidad está lista, es hora de unirla con la versión principal (main).
-
-### Merge básico
 ```bash
 # Cambiar a la rama principal
 git checkout main
 
 # Unir la rama experimental
-git merge experimento-datos
+git merge nueva-funcionalidad
 
 # Eliminar la rama ya no necesaria
-git branch -d experimento-datos
+git branch -d nueva-funcionalidad
 ```
 
-### Merge con conflictos
-```bash
-# Si hay conflictos, Git te avisará
-git merge experimento-datos
+:::tip Tip pro
+Trabaja en ramas separadas para cada nueva característica. Esto te permite experimentar sin romper tu código principal.
+:::
 
-# Resolver conflictos manualmente editando los archivos
-# Luego agregar archivos resueltos
-git add archivo_resuelto.py
+### 5. Trabajar con Repositorios Remotos
 
-# Completar el merge
-git commit -m "Resolver conflictos en merge"
-```
+**GitHub/GitLab:** El hogar de tu código en la nube.
 
-## Trabajar con Repositorios Remotos
-
-### GitHub/GitLab: El hogar de tu código en la nube
 ```bash
 # Agregar repositorio remoto
 git remote add origin https://github.com/tu-usuario/proyecto.git
@@ -161,26 +165,10 @@ git push origin main
 git pull origin main
 ```
 
-### Clonar y contribuir
-```bash
-# Clonar un repositorio
-git clone https://github.com/organizacion/proyecto-opensource.git
-cd proyecto-opensource
+### 6. Comandos Avanzados
 
-# Crear rama para tu contribución
-git checkout -b mi-contribucion
+**Historial y logs:**
 
-# Hacer cambios y commits
-git add .
-git commit -m "Mejorar documentación"
-
-# Subir tu rama
-git push origin mi-contribucion
-```
-
-## Comandos Avanzados
-
-### Historial y logs
 ```bash
 # Ver historial de commits
 git log
@@ -190,18 +178,13 @@ git log --graph --oneline
 
 # Ver cambios en un commit específico
 git show commit_hash
-
-# Ver diferencias entre commits
-git diff commit1 commit2
 ```
 
-### Deshacer cambios
+**Deshacer cambios:**
+
 ```bash
 # Deshacer último commit (mantener cambios en archivos)
 git reset --soft HEAD~1
-
-# Deshacer último commit (eliminar cambios permanentemente)
-git reset --hard HEAD~1
 
 # Deshacer cambios en archivo específico (restaurar a último commit)
 git checkout -- archivo.py
@@ -210,9 +193,10 @@ git checkout -- archivo.py
 git reset HEAD archivo.py
 ```
 
-### Stash: Guardar cambios temporalmente
+**Stash: Guardar cambios temporalmente**
+
 ```bash
-# Guardar cambios temporalmente (limpiar directorio de trabajo)
+# Guardar cambios temporalmente
 git stash
 
 # Ver stashes guardados
@@ -220,14 +204,99 @@ git stash list
 
 # Recuperar último stash
 git stash pop
+```
 
-# Recuperar stash específico
-git stash apply stash@{0}
+## Errores comunes
+
+### 1. Hacer commit de archivos sensibles
+
+```bash
+# ❌ Error común
+git add keys.py  # Contiene claves API
+git commit -m "Subir claves"
+
+# ✅ Correcto
+echo "keys.py" >> .gitignore
+# Usar variables de entorno en lugar de archivos hardcodeados
+```
+
+:::warning Error típico
+**Nunca subas secretos a Git**: Claves API, contraseñas, tokens. Una vez que están en Git, es muy difícil eliminarlos completamente. Usa `.gitignore` y variables de entorno.
+:::
+
+### 2. Commit de archivos temporales
+
+```bash
+# ❌ Error común
+git add .  # Agrega TODO, incluyendo temporales
+git commit -m "Todo"
+
+# ✅ Correcto
+# Configurar .gitignore primero
+echo "*.pyc" > .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.log" >> .gitignore
+# O usar git add archivo_especifico.py
+```
+
+### 3. Merge sin revisión
+
+```bash
+# ❌ Error común
+git merge rama-grande  # Sin saber qué trae
+
+# ✅ Correcto
+git diff main rama-grande  # Revisar cambios antes
+git merge rama-grande
+```
+
+## Buenas Prácticas
+
+### Mensajes de commit
+
+```bash
+# ✅ Buenos mensajes
+git commit -m "Implementar validación de usuarios"
+git commit -m "Corregir bug en cálculo de totales"
+git commit -m "Actualizar documentación del API"
+
+# ❌ Malos mensajes
+git commit -m "cambios"
+git commit -m "fix"
+git commit -m "listo"
+```
+
+### Estructura de commits
+
+```bash
+# Hacer commits atómicos (una sola tarea lógica por commit)
+git add login_form.py
+git commit -m "Crear formulario de login"
+
+git add db_connector.py
+git commit -m "Configurar conexión a base de datos"
+```
+
+### Ignorar archivos
+
+```bash
+# Crear archivo .gitignore para no subir basura
+echo "*.pyc" > .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.log" >> .gitignore
+echo ".env" >> .gitignore  # ¡Nunca subir secretos!
+
+git add .gitignore
+git commit -m "Agregar .gitignore"
 ```
 
 ## Ejercicios Prácticos
 
-### Ejercicio 1: Flujo Local
+<TryIt>
+### Ejercicio 1: Flujo Local Completo
+
+Practica el flujo completo de Git localmente:
+
 ```bash
 # 1. Crear repositorio
 mkdir proyecto-demo
@@ -257,129 +326,81 @@ git branch -d mejora-rendimiento
 # 6. Ver historial
 git log --oneline
 ```
+</TryIt>
 
-### Ejercicio 2: Simulación de Colaboración
+<TryIt>
+### Ejercicio 2: Configurar .gitignore
+
+Crea un `.gitignore` apropiado para un proyecto Python:
+
 ```bash
-# 1. Simular clonado
-# git clone <url>
+# Crear .gitignore
+cat > .gitignore << EOF
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# 2. Crear rama para nueva feature
-git checkout -b feature-autenticacion
-echo "def login(): print('Iniciando sesión')" >> auth.py
-git add auth.py
-git commit -m "Implementar módulo de autenticación"
+# Virtual environments
+venv/
+env/
+ENV/
 
-# 3. Subir rama (simulado)
-# git push origin feature-autenticacion
+# IDE
+.vscode/
+.idea/
+*.swp
 
-# 4. Crear Pull Request (en plataforma web)
-```
+# Logs
+*.log
 
-### Ejercicio 3: Resolver conflictos
-```bash
-# 1. Crear archivo base
-echo "config = 'PROD'" > config.py
-git add config.py
-git commit -m "Configuración base"
+# Environment variables
+.env
+.env.local
 
-# 2. Crear rama y modificar
-git checkout -b rama-dev
-echo "config = 'DEV'" > config.py
-git add config.py
-git commit -m "Cambiar config a DEV"
-
-# 3. Volver a main y modificar diferente
-git checkout main
-echo "config = 'TEST'" > config.py
-git add config.py
-git commit -m "Cambiar config a TEST"
-
-# 4. Intentar merge (conflicto)
-git merge rama-dev
-
-# 5. Resolver conflicto manualmente
-# Editar config.py, decidir qué línea queda
-git add config.py
-git commit -m "Resolver conflicto de configuración"
-```
-
-## Buenas Prácticas
-
-### Mensajes de commit
-```bash
-# ✅ Buenos mensajes
-git commit -m "Implementar validación de usuarios"
-git commit -m "Corregir bug en cálculo de totales"
-git commit -m "Actualizar documentación del API"
-
-# ❌ Malos mensajes
-git commit -m "cambios"
-git commit -m "fix"
-git commit -m "listo"
-```
-
-### Estructura de commits
-```bash
-# Hacer commits atómicos (una sola tarea lógica por commit)
-git add login_form.py
-git commit -m "Crear formulario de login"
-
-git add db_connector.py
-git commit -m "Configurar conexión a base de datos"
-```
-
-### Ignorar archivos
-```bash
-# Crear archivo .gitignore para no subir basura
-echo "*.pyc" > .gitignore
-echo "__pycache__/" >> .gitignore
-echo "*.log" >> .gitignore
-echo ".env" >> .gitignore  # ¡Nunca subir secretos!
+# OS
+.DS_Store
+Thumbs.db
+EOF
 
 git add .gitignore
-git commit -m "Agregar .gitignore"
+git commit -m "Agregar .gitignore para proyecto Python"
 ```
+</TryIt>
 
-## Errores Comunes y Cómo Evitarlos
+## Checkpoint
 
-### 1. Hacer commit de archivos sensibles
-```bash
-# ❌ Error común
-git add keys.py  # Contiene claves API
-git commit -m "Subir claves"
-
-# ✅ Correcto
-echo "keys.py" >> .gitignore
-# Usar variables de entorno en lugar de archivos hardcodeados
-```
-
-### 2. Commit de archivos temporales
-```bash
-# ❌ Error común
-git add .  # Agrega TODO, incluyendo temporales
-git commit -m "Todo"
-
-# ✅ Correcto
-# Configurar .gitignore primero
-# O usar git add archivo_especifico.py
-```
-
-### 3. Merge sin revisión
-```bash
-# ❌ Error común
-git merge rama-grande  # Sin saber qué trae
-
-# ✅ Correcto
-git diff main rama-grande  # Revisar cambios antes
-git merge rama-grande
-```
+<Checkpoint
+  items={[
+    "Puedes crear y gestionar repositorios Git",
+    "Sabes hacer commits con mensajes descriptivos",
+    "Entiendes cómo trabajar con ramas",
+    "Puedes hacer merge de ramas",
+    "Sabes configurar .gitignore para proteger secretos",
+    "Entiendes el flujo básico de trabajo con Git",
+    "Estás listo para versionar tus proyectos Python"
+  ]}
+/>
 
 ## Recursos Adicionales
+
+### Documentación Oficial
 - [Documentación oficial de Git](https://git-scm.com/doc)
 - [Git Flight Rules (Guía de soluciones)](https://github.com/k88hudson/git-flight-rules)
 - [Pro Git Book (Gratuito)](https://git-scm.com/book)
 
----
+### Herramientas Recomendadas
+- **GitHub Desktop**: Interfaz gráfica para Git
+- **GitKraken**: Cliente Git visual
+- **VS Code Git Integration**: Integración de Git en el editor
+
+### Conceptos Relacionados
+- [Estructuras de Datos](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) - Continúa aprendiendo Python
+- [Testing](../08_Herramientas_Profesionales/03_testing.md) - Integra Git con pruebas
 
 ## Siguiente paso
-Ahora que conoces Git, puedes versionar tus proyectos. Continúa aprendiendo Python con: **[Estructuras de Datos](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md)**
+
+<NextStep
+  to="/Estructuras_de_Datos/listas_tuplas_diccionarios"
+  label="Siguiente: Estructuras de Datos →"
+/>

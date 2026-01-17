@@ -1,7 +1,7 @@
 {
   "id": "Introduccion_y_Fundamentos/zen_of_python",
   "title": "El Zen de Python",
-  "description": "El Zen de Python es una colección de 20 principios de software que influyen en el diseño del Lenguaje de Programación Python.",
+  "description": "Filosofía y principios fundamentales del lenguaje Python",
   "source": "@site/docs/01_Introduccion_y_Fundamentos/00_zen_of_python.md",
   "sourceDirName": "01_Introduccion_y_Fundamentos",
   "slug": "/Introduccion_y_Fundamentos/zen_of_python",
@@ -12,7 +12,10 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 0,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "El Zen de Python",
+    "description": "Filosofía y principios fundamentales del lenguaje Python"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Curso Completo de Python - Autoaprendizaje",

@@ -1,7 +1,7 @@
 {
   "id": "Introduccion_y_Fundamentos/condicionales_y_logica",
   "title": "Condicionales y Lógica en Python",
-  "description": "¿Qué son las condicionales y por qué las necesitas?",
+  "description": "Aprende a tomar decisiones en tu código con condicionales",
   "source": "@site/docs/01_Introduccion_y_Fundamentos/02_condicionales_y_logica.md",
   "sourceDirName": "01_Introduccion_y_Fundamentos",
   "slug": "/Introduccion_y_Fundamentos/condicionales_y_logica",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Condicionales y Lógica en Python",
+    "description": "Aprende a tomar decisiones en tu código con condicionales"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Variables y Tipos de Datos en Python",
     "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/variables_y_tipos"
   },
   "next": {
-    "title": "Condicionales Avanzados y Lógica en Python",
+    "title": "Condicionales Avanzados",
     "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_avanzados"
   }
 }

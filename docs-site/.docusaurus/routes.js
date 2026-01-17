@@ -3,6 +3,51 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/trucos_programacion/__docusaurus/debug',
+    component: ComponentCreator('/trucos_programacion/__docusaurus/debug', '726'),
+    exact: true
+  },
+  {
+    path: '/trucos_programacion/__docusaurus/debug/config',
+    component: ComponentCreator('/trucos_programacion/__docusaurus/debug/config', '0f3'),
+    exact: true
+  },
+  {
+    path: '/trucos_programacion/__docusaurus/debug/content',
+    component: ComponentCreator('/trucos_programacion/__docusaurus/debug/content', 'df8'),
+    exact: true
+  },
+  {
+    path: '/trucos_programacion/__docusaurus/debug/globalData',
+    component: ComponentCreator('/trucos_programacion/__docusaurus/debug/globalData', '445'),
+    exact: true
+  },
+  {
+    path: '/trucos_programacion/__docusaurus/debug/metadata',
+    component: ComponentCreator('/trucos_programacion/__docusaurus/debug/metadata', 'fbf'),
+    exact: true
+  },
+  {
+    path: '/trucos_programacion/__docusaurus/debug/registry',
+    component: ComponentCreator('/trucos_programacion/__docusaurus/debug/registry', 'db9'),
+    exact: true
+  },
+  {
+    path: '/trucos_programacion/__docusaurus/debug/routes',
+    component: ComponentCreator('/trucos_programacion/__docusaurus/debug/routes', '9fb'),
+    exact: true
+  },
+  {
+    path: '/trucos_programacion/rutas',
+    component: ComponentCreator('/trucos_programacion/rutas', 'be9'),
+    exact: true
+  },
+  {
+    path: '/trucos_programacion/',
+    component: ComponentCreator('/trucos_programacion/', '6ef'),
+    exact: true
+  },
+  {
     path: '/trucos_programacion/',
     component: ComponentCreator('/trucos_programacion/', 'fe8'),
     routes: [

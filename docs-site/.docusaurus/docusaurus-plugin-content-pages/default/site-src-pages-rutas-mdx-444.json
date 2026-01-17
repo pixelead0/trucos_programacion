@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/trucos_programacion/rutas",
+  "source": "@site/src/pages/rutas.mdx",
+  "title": "Rutas por Nivel",
+  "description": "Guías de aprendizaje personalizadas según tu nivel de experiencia",
+  "frontMatter": {
+    "title": "Rutas por Nivel",
+    "description": "Guías de aprendizaje personalizadas según tu nivel de experiencia"
+  },
+  "unlisted": false
+}

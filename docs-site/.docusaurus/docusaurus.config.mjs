@@ -88,7 +88,7 @@ export default {
             },
             {
               "label": "Fundamentos",
-              "to": "/01_Introduccion_y_Fundamentos/00_zen_of_python"
+              "to": "/Introduccion_y_Fundamentos/zen_of_python"
             }
           ]
         },
@@ -97,7 +97,7 @@ export default {
           "items": [
             {
               "label": "Bibliografía",
-              "to": "/10_Material_Adicional/bibliografia_y_recursos"
+              "to": "/Material_Adicional/bibliografia_y_recursos"
             }
           ]
         },

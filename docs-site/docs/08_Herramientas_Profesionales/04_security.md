@@ -423,4 +423,4 @@ def setup_logging():
 ---
 
 ## Siguiente paso
-¡Felicitaciones! Has completado las herramientas profesionales. Continúa explorando otros temas del curso o revisa los [Proyectos Prácticos](../Proyectos_y_Ejercicios) para aplicar lo aprendido.
+¡Felicitaciones! Has completado las herramientas profesionales. Continúa explorando otros temas del curso o revisa los proyectos prácticos en la carpeta `Proyectos_y_Ejercicios` del repositorio para aplicar lo aprendido.

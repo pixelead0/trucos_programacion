@@ -1,6 +1,42 @@
+---
+title: Variables y Tipos de Datos en Python
+description: Fundamentos básicos de variables y tipos de datos en Python
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
+
+<LessonMeta
+  level="beginner"
+  time="45 minutos"
+  prereqs={['El Zen de Python']}
+/>
+
 # Variables y Tipos de Datos en Python
 
-## ¿Qué son las variables?
+## Qué vas a lograr
+
+- Crear y usar variables en Python
+- Entender los tipos de datos básicos (str, int, float, bool)
+- Convertir entre tipos y usar f-strings para formateo
+
+## Casos reales donde se usa
+
+Las variables y tipos de datos son la base de todo programa Python. Los verás en:
+
+- **Formularios web**: Capturar nombre, email, edad del usuario
+- **Cálculos financieros**: Precios, descuentos, totales, impuestos
+- **Sistemas de autenticación**: Validar credenciales (usuario, contraseña)
+- **Análisis de datos**: Procesar números, promedios, estadísticas
+- **APIs y servicios**: Enviar y recibir datos estructurados
+- **Aplicaciones móviles**: Guardar preferencias del usuario, configuraciones
+
+**Ejemplo real**: Cuando compras algo online, el sistema guarda tu nombre (string), el precio del producto (float), la cantidad (int), y si el pago fue exitoso (bool).
+
+## Concepto base
 
 Las variables son como etiquetas que pones a valores para poder usarlos después. Piensa en una variable como una caja con un nombre donde guardas algo.
 
@@ -19,7 +55,11 @@ es_activo = True
 
 **¿Por qué importa esto?** En otros lenguajes tienes que declarar `string nombre = "Ana"` o `int edad = 25`. En Python, simplemente asignas y ya. Más simple, menos errores de sintaxis.
 
-## Tipos de Datos Básicos
+:::info Para principiantes
+Si esto te suena raro, es normal. Quédate con la idea: "una variable es una caja con un nombre donde guardas algo". El tipo de dato (texto, número, etc.) Python lo descubre solo.
+:::
+
+## Paso a paso
 
 ### 1. Strings (str) - Texto
 
@@ -95,6 +135,7 @@ resto = edad % 7  # 4 (25 dividido entre 7 = 3, resto 4)
 - `%`: Módulo (útil para saber si un número es par/impar: `numero % 2 == 0`)
 
 ### 3. Números Flotantes (float)
+
 ```python
 # Números con decimales
 promedio = 8.5
@@ -106,6 +147,7 @@ resultado = promedio * 2
 ```
 
 ### 4. Booleanos (bool)
+
 ```python
 # Valores de verdad
 es_estudiante = True
@@ -116,7 +158,7 @@ es_mayor = edad >= 18
 resultado = es_estudiante and tiene_trabajo
 ```
 
-## Conversión de Tipos
+### 5. Conversión de Tipos
 
 ```python
 # Convertir entre tipos
@@ -130,7 +172,7 @@ verdadero_texto = "True"
 booleano = bool(verdadero_texto)  # True
 ```
 
-## F-strings (Formateo de Strings)
+### 6. F-strings (Formateo de Strings)
 
 ```python
 # Formateo moderno con f-strings
@@ -147,6 +189,10 @@ calificacion = f"Mi promedio es {promedio:.2f}"
 # Formato con operaciones
 resultado = f"En 5 años tendré {edad + 5} años"
 ```
+
+:::tip Tip pro
+F-strings (introducidos en Python 3.6) son la forma más moderna y eficiente de formatear strings. Son más legibles y más rápidas que `.format()` o `%`.
+:::
 
 ## Ejemplo Práctico: Perfil de Usuario
 
@@ -172,9 +218,57 @@ contribuciones_semana = commits_hoy * 5
 print(f"Contribuciones estimadas esta semana: {contribuciones_semana}")
 ```
 
+<ExpectedOutput>
+```
+=== Perfil de Maria Lopez ===
+Edad: 28 años
+Ocupación: Desarrolladora
+Promedio: 9.2
+¿Está empleada? True
+Commits de hoy: 5
+Contribuciones estimadas esta semana: 25
+```
+</ExpectedOutput>
+
+## Errores comunes
+
+### 1. Confundir = con ==
+
+```python
+# ❌ Error común
+if edad = 18:  # Error de sintaxis
+    print("Eres mayor de edad")
+
+# ✅ Correcto
+if edad == 18:
+    print("Eres mayor de edad")
+```
+
+:::warning Error típico
+**Confundir `=` (asignación) con `==` (comparación)**: `=` asigna un valor, `==` compara dos valores. Este es uno de los errores más comunes en principiantes.
+:::
+
+### 2. Concatenar strings y números
+
+```python
+# ❌ Error común
+edad = 20
+mensaje = "Tengo " + edad + " años"  # Error
+
+# ✅ Correcto
+mensaje = f"Tengo {edad} años"
+# o
+mensaje = "Tengo " + str(edad) + " años"
+```
+
+:::warning Error típico
+**Intentar concatenar strings y números directamente**: Python no puede sumar texto y números. Usa f-strings o convierte el número a string con `str()`.
+:::
+
 ## Buenas Prácticas
 
 ### Nombres de Variables
+
 ```python
 # ✅ Buenos nombres
 nombre_usuario = "Juan"
@@ -188,6 +282,7 @@ x = True
 ```
 
 ### Constantes
+
 ```python
 # Constantes en mayúsculas
 PI = 3.14159
@@ -195,49 +290,45 @@ MAX_INTENTOS = 3
 MENSAJE_BIENVENIDA = "¡Bienvenido al sistema!"
 ```
 
-## Errores Comunes
-
-### 1. Confundir = con ==
-```python
-# ❌ Error común
-if edad = 18:  # Error de sintaxis
-    print("Eres mayor de edad")
-
-# ✅ Correcto
-if edad == 18:
-    print("Eres mayor de edad")
-```
-
-### 2. Concatenar strings y números
-```python
-# ❌ Error común
-edad = 20
-mensaje = "Tengo " + edad + " años"  # Error
-
-# ✅ Correcto
-mensaje = f"Tengo {edad} años"
-# o
-mensaje = "Tengo " + str(edad) + " años"
-```
-
 ## Ejercicios Prácticos
 
+<TryIt>
 ### Ejercicio 1: Calculadora de Edad
+
+Pide al usuario su año de nacimiento y calcula su edad:
+
 ```python
-# Pide al usuario su año de nacimiento y calcula su edad
 año_nacimiento = int(input("¿En qué año naciste? "))
 año_actual = 2024
 edad = año_actual - año_nacimiento
 print(f"Tienes {edad} años")
 ```
+</TryIt>
 
+<TryIt>
 ### Ejercicio 2: Conversor de Temperatura
+
+Convierte de Celsius a Fahrenheit:
+
 ```python
-# Convierte de Celsius a Fahrenheit
 celsius = float(input("Temperatura en Celsius: "))
 fahrenheit = (celsius * 9/5) + 32
 print(f"{celsius}°C = {fahrenheit}°F")
 ```
+</TryIt>
+
+## Checkpoint
+
+<Checkpoint
+  items={[
+    "Puedes crear variables y asignarles valores",
+    "Conoces los tipos básicos: str, int, float, bool",
+    "Sabes convertir entre tipos usando int(), float(), str()",
+    "Puedes usar f-strings para formatear texto",
+    "Entiendes las operaciones matemáticas básicas",
+    "Estás listo para usar variables en condicionales"
+  ]}
+/>
 
 ## Recursos Adicionales
 
@@ -258,12 +349,9 @@ print(f"{celsius}°C = {fahrenheit}°F")
 - [Condicionales y Lógica](./02_condicionales_y_logica.md) - Usa variables en decisiones
 - [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md) - Anotaciones de tipo avanzadas
 
----
+## Siguiente paso
 
----
-
-<div align="center">
-
-**[← Anterior: El Zen de Python](./00_zen_of_python.md)** | **[📚 Índice](../README.md)** | **[Siguiente: Condicionales y Lógica →](./02_condicionales_y_logica.md)**
-
-</div>
+<NextStep
+  to="/Introduccion_y_Fundamentos/condicionales_y_logica"
+  label="Siguiente: Condicionales y Lógica →"
+/>

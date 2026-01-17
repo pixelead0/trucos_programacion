@@ -6,7 +6,7 @@ Este documento consolida todos los recursos de aprendizaje mencionados a lo larg
 
 ## 📖 Contenido
 
-- [🎓 Cursos y Plataformas de Aprendizaje](#-cursos-y-plataformas-de-aprendizaje)
+- [🎓 Cursos y Plataformas de Aprendizaje](#cursos-y-plataformas-de-aprendizaje)
   - [Cursos Académicos](#cursos-académicos)
   - [Plataformas con Certificados](#plataformas-con-certificados-gratuitos)
   - [Canales de YouTube en Español](#canales-de-youtube-en-español)

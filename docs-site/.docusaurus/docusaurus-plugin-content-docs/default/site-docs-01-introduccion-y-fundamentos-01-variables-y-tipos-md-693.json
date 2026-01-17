@@ -1,7 +1,7 @@
 {
   "id": "Introduccion_y_Fundamentos/variables_y_tipos",
   "title": "Variables y Tipos de Datos en Python",
-  "description": "¿Qué son las variables?",
+  "description": "Fundamentos básicos de variables y tipos de datos en Python",
   "source": "@site/docs/01_Introduccion_y_Fundamentos/01_variables_y_tipos.md",
   "sourceDirName": "01_Introduccion_y_Fundamentos",
   "slug": "/Introduccion_y_Fundamentos/variables_y_tipos",
@@ -12,7 +12,10 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Variables y Tipos de Datos en Python",
+    "description": "Fundamentos básicos de variables y tipos de datos en Python"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "El Zen de Python",

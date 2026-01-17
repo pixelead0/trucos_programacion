@@ -43,7 +43,7 @@ Cada lección incluye:
 5. [Bucles](./01_Introduccion_y_Fundamentos/04_bucles.md) - Repetición de código
 6. [Git Básico](./01_Introduccion_y_Fundamentos/05_git_intro.md) - Control de versiones
 
-**Proyecto del Módulo**: [Generador de Contraseñas](./Proyectos_y_Ejercicios/generador_password)
+**Proyecto del Módulo**: Generador de Contraseñas (ver carpeta `Proyectos_y_Ejercicios/generador_password` en el repositorio)
 
 ---
 
@@ -52,7 +52,7 @@ Cada lección incluye:
 
 1. [Listas, Tuplas y Diccionarios](./02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md)
 
-**Proyecto del Módulo**: Mejora el [Generador de Contraseñas](./Proyectos_y_Ejercicios/generador_password) usando listas y diccionarios
+**Proyecto del Módulo**: Mejora el Generador de Contraseñas usando listas y diccionarios (ver carpeta `Proyectos_y_Ejercicios/generador_password` en el repositorio)
 
 ---
 
@@ -62,7 +62,7 @@ Cada lección incluye:
 1. [Funciones](./03_Funciones_y_Modulos/01_funciones.md)
 2. [Módulos y Paquetes](./03_Funciones_y_Modulos/02_modulos_paquetes.md)
 
-**Proyecto del Módulo**: Refactoriza el [Generador de Contraseñas](./Proyectos_y_Ejercicios/generador_password) usando funciones y módulos
+**Proyecto del Módulo**: Refactoriza el Generador de Contraseñas usando funciones y módulos (ver carpeta `Proyectos_y_Ejercicios/generador_password` en el repositorio)
 
 ---
 
@@ -72,7 +72,7 @@ Cada lección incluye:
 1. [Clases y Objetos](./04_Programacion_Orientada_a_Objetos/01_clases_objetos.md)
 2. [Dataclasses](./04_Programacion_Orientada_a_Objetos/02_dataclasses.md)
 
-**Proyecto del Módulo**: [Validador de Datos - Versión 4+](./Proyectos_y_Ejercicios/validador_datos)
+**Proyecto del Módulo**: Validador de Datos - Versión 4+ (ver carpeta `Proyectos_y_Ejercicios/validador_datos` en el repositorio)
 
 ---
 
@@ -84,7 +84,7 @@ Cada lección incluye:
 3. [Type Hints](./05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md)
 4. [Calidad de Código](./05_Manejo_de_Errores_y_Buenas_Practicas/04_quality.md)
 
-**Proyecto del Módulo**: [Validador de Datos - Versiones 5-7](./Proyectos_y_Ejercicios/validador_datos)
+**Proyecto del Módulo**: Validador de Datos - Versiones 5-7 (ver carpeta `Proyectos_y_Ejercicios/validador_datos` en el repositorio)
 
 ---
 
@@ -97,7 +97,7 @@ Cada lección incluye:
 4. [YAML](./06_Manejo_de_Archivos_y_Formatos/04_yaml.md)
 5. [Serialización Avanzada](./06_Manejo_de_Archivos_y_Formatos/05_serialization_advanced.md)
 
-**Proyecto del Módulo**: [Validador de Datos - Versiones 7-9](./Proyectos_y_Ejercicios/validador_datos), [Fechas Relativas](./Proyectos_y_Ejercicios/fechas_relativas)
+**Proyecto del Módulo**: Validador de Datos - Versiones 7-9, Fechas Relativas (ver carpetas `Proyectos_y_Ejercicios/validador_datos` y `Proyectos_y_Ejercicios/fechas_relativas` en el repositorio)
 
 ---
 
@@ -110,7 +110,7 @@ Cada lección incluye:
 4. [Generadores e Iteradores](./07_Conceptos_Avanzados/04_generadores_iteradores.md)
 5. [Decoradores y Wrappers](./07_Conceptos_Avanzados/05_decoradores_wrappers.md)
 
-**Proyecto del Módulo**: [Validador de Datos - Versión 6+](./Proyectos_y_Ejercicios/validador_datos)
+**Proyecto del Módulo**: Validador de Datos - Versión 6+ (ver carpeta `Proyectos_y_Ejercicios/validador_datos` en el repositorio)
 
 ---
 
@@ -131,7 +131,7 @@ Cada lección incluye:
 
 1. [Pandas Básico](./09_Ciencia_de_Datos_Basica/01_pandas_basico.md)
 
-**Proyecto del Módulo**: [Validador de Datos](./Proyectos_y_Ejercicios/validador_datos) (usa pandas)
+**Proyecto del Módulo**: Validador de Datos (usa pandas) (ver carpeta `Proyectos_y_Ejercicios/validador_datos` en el repositorio)
 
 ---
 
@@ -150,8 +150,8 @@ Aprende haciendo. Estos proyectos te permiten aplicar todos los conceptos aprend
 
 ## 📚 Recursos Adicionales
 
-- **[Presentaciones del Curso](./10_Material_Adicional/Presentaciones_Curso)** - Material de apoyo
-- **[Bibliografía y Recursos](./10_Material_Adicional/bibliografia_y_recursos.md)** - Libros y recursos recomendados
+- **Presentaciones del Curso** - Material de apoyo (ver carpeta `10_Material_Adicional/Presentaciones_Curso` en el repositorio)
+- **[Bibliografía y Recursos](./Material_Adicional/bibliografia_y_recursos)** - Libros y recursos recomendados
 
 ---
 
@@ -192,7 +192,7 @@ Marca tu progreso mientras avanzas:
 5. [Estructuras de Datos](./02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md)
 6. [Funciones](./03_Funciones_y_Modulos/01_funciones.md)
 
-**Proyecto**: [Generador de Contraseñas](./Proyectos_y_Ejercicios/generador_password)
+**Proyecto**: Generador de Contraseñas (ver carpeta `Proyectos_y_Ejercicios/generador_password` en el repositorio)
 
 ### 🟡 Nivel Intermedio
 **Si ya conoces programación básica:**
@@ -203,7 +203,7 @@ Marca tu progreso mientras avanzas:
 - [Type Hints](./05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md)
 - [Calidad de Código](./05_Manejo_de_Errores_y_Buenas_Practicas/04_quality.md)
 
-**Proyecto**: [Validador de Datos - Versión 3+](./Proyectos_y_Ejercicios/validador_datos)
+**Proyecto**: Validador de Datos - Versión 3+ (ver carpeta `Proyectos_y_Ejercicios/validador_datos` en el repositorio)
 
 ### 🔴 Nivel Avanzado
 **Si ya dominas Python básico:**
@@ -215,7 +215,7 @@ Marca tu progreso mientras avanzas:
 - [Testing](./08_Herramientas_Profesionales/03_testing.md)
 - [Empaquetado](./08_Herramientas_Profesionales/02_packaging.md)
 
-**Proyecto**: [Validador de Datos - Versión 6+](./Proyectos_y_Ejercicios/validador_datos)
+**Proyecto**: Validador de Datos - Versión 6+ (ver carpeta `Proyectos_y_Ejercicios/validador_datos` en el repositorio)
 
 ---
 

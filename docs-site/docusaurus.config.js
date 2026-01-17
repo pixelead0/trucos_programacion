@@ -77,6 +77,11 @@ const config = {
             label: 'Curso',
           },
           {
+            to: '/rutas',
+            position: 'left',
+            label: 'Rutas',
+          },
+          {
             href: 'https://github.com/pixelead0/trucos_programacion',
             label: 'GitHub',
             position: 'right',
@@ -95,7 +100,7 @@ const config = {
               },
               {
                 label: 'Fundamentos',
-                to: '/01_Introduccion_y_Fundamentos/00_zen_of_python',
+                to: '/Introduccion_y_Fundamentos/zen_of_python',
               },
             ],
           },
@@ -104,7 +109,7 @@ const config = {
             items: [
               {
                 label: 'Bibliografía',
-                to: '/10_Material_Adicional/bibliografia_y_recursos',
+                to: '/Material_Adicional/bibliografia_y_recursos',
               },
             ],
           },
