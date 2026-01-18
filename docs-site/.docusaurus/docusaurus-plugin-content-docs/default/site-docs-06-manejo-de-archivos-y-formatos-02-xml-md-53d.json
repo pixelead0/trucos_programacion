@@ -1,7 +1,7 @@
 {
   "id": "Manejo_de_Archivos_y_Formatos/xml",
   "title": "Procesamiento de XML en Python",
-  "description": "¿Qué es XML y cuándo lo necesitas?",
+  "description": "Trabaja con datos XML usando ElementTree",
   "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/02_xml.md",
   "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
   "slug": "/Manejo_de_Archivos_y_Formatos/xml",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Procesamiento de XML en Python",
+    "description": "Trabaja con datos XML usando ElementTree"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Pathlib en Python",
+    "title": "Pathlib",
     "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/pathlib"
   },
   "next": {
-    "title": "Serialización JSON y Metadatos en Python",
+    "title": "JSON",
     "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/json"
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "Herramientas_Profesionales/security",
   "title": "Seguridad en Python",
-  "description": "¿Por qué importa la seguridad en Python?",
+  "description": "Mejores prácticas de seguridad para código Python",
   "source": "@site/docs/08_Herramientas_Profesionales/04_security.md",
   "sourceDirName": "08_Herramientas_Profesionales",
   "slug": "/Herramientas_Profesionales/security",
@@ -12,10 +12,13 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 4,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Seguridad en Python",
+    "description": "Mejores prácticas de seguridad para código Python"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Testing en Python",
+    "title": "Testing",
     "permalink": "/trucos_programacion/Herramientas_Profesionales/testing"
   },
   "next": {

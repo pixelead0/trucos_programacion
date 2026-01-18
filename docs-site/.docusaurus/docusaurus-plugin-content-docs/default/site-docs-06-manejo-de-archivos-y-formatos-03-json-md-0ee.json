@@ -1,7 +1,7 @@
 {
   "id": "Manejo_de_Archivos_y_Formatos/json",
-  "title": "Serialización JSON y Metadatos en Python",
-  "description": "¿Qué es JSON y por qué es tan popular?",
+  "title": "Serialización JSON en Python",
+  "description": "Trabaja con JSON, el formato más usado en APIs y servicios web",
   "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/03_json.md",
   "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
   "slug": "/Manejo_de_Archivos_y_Formatos/json",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 3,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Serialización JSON en Python",
+    "description": "Trabaja con JSON, el formato más usado en APIs y servicios web"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Procesamiento de XML en Python",
+    "title": "XML",
     "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/xml"
   },
   "next": {
-    "title": "Configuración con YAML en Python",
+    "title": "YAML",
     "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/yaml"
   }
 }

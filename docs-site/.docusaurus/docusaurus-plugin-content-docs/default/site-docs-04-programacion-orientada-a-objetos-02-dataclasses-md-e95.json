@@ -1,7 +1,7 @@
 {
   "id": "Programacion_Orientada_a_Objetos/dataclasses",
   "title": "Dataclasses en Python",
-  "description": "¿Qué son las dataclasses y cuándo usarlas?",
+  "description": "Simplifica clases de datos con el decorador @dataclass",
   "source": "@site/docs/04_Programacion_Orientada_a_Objetos/02_dataclasses.md",
   "sourceDirName": "04_Programacion_Orientada_a_Objetos",
   "slug": "/Programacion_Orientada_a_Objetos/dataclasses",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Dataclasses en Python",
+    "description": "Simplifica clases de datos con el decorador @dataclass"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Clases y Objetos en Python",
+    "title": "Clases y Objetos",
     "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/clases_objetos"
   },
   "next": {
-    "title": "Manejo de Excepciones en Python",
+    "title": "Manejo de Errores",
     "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/excepciones"
   }
 }

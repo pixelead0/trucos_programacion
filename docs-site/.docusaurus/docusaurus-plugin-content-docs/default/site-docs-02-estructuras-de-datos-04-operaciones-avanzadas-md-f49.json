@@ -1,0 +1,28 @@
+{
+  "id": "Estructuras_de_Datos/operaciones_avanzadas",
+  "title": "Operaciones Avanzadas con Estructuras de Datos",
+  "description": "List comprehensions, dict comprehensions, slicing avanzado y técnicas profesionales",
+  "source": "@site/docs/02_Estructuras_de_Datos/04_operaciones_avanzadas.md",
+  "sourceDirName": "02_Estructuras_de_Datos",
+  "slug": "/Estructuras_de_Datos/operaciones_avanzadas",
+  "permalink": "/trucos_programacion/Estructuras_de_Datos/operaciones_avanzadas",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/02_Estructuras_de_Datos/04_operaciones_avanzadas.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Operaciones Avanzadas con Estructuras de Datos",
+    "description": "List comprehensions, dict comprehensions, slicing avanzado y técnicas profesionales"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Diccionarios y Sets",
+    "permalink": "/trucos_programacion/Estructuras_de_Datos/diccionarios_sets"
+  },
+  "next": {
+    "title": "Funciones",
+    "permalink": "/trucos_programacion/Funciones_y_Modulos/funciones"
+  }
+}

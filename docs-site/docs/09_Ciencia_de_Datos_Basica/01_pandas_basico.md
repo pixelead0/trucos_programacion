@@ -1,6 +1,48 @@
+---
+title: Pandas Básico
+description: Introducción a análisis de datos con Pandas
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="2 horas"
+  prereqs={['Diccionarios y Sets', 'Funciones', 'Pathlib']}
+/>
+
+<ProgressIndicator
+  module="Módulo 09: Ciencia de Datos Básica"
+  lesson={1}
+  total={1}
+/>
+
 # Pandas Básico
 
-## ¿Qué es Pandas y por qué es tan popular?
+<LessonMap
+  objectives={[
+    "Crear y manipular DataFrames",
+    "Leer y escribir archivos CSV, Excel",
+    "Filtrar y seleccionar datos",
+    "Agrupar y agregar datos",
+    "Realizar operaciones básicas de análisis"
+  ]}
+  useCases={[
+    "Analizar ventas y métricas de negocio",
+    "Procesar logs y datos de servidores",
+    "Limpiar y transformar datos antes de análisis",
+    "Generar reportes automáticos",
+    "Preparar datos para machine learning",
+    "Análisis exploratorio de datos (EDA)"
+  ]}
+  time="2 horas"
+  level="intermediate"
+/>
 
 Trabajas con datos en Excel o CSV. Necesitas filtrar, agrupar, calcular promedios, unir tablas. Podrías hacerlo manualmente, pero eso es lento y propenso a errores.
 
@@ -21,7 +63,7 @@ Trabajas con datos en Excel o CSV. Necesitas filtrar, agrupar, calcular promedio
 
 **Concepto clave:** Pandas trabaja con **DataFrames** (tablas) y **Series** (columnas). Es como trabajar con Excel pero con código.
 
-> **Antes de continuar**: Asegúrate de entender [Diccionarios](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md), [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Pathlib](../06_Manejo_de_Archivos_y_Formatos/01_pathlib.md).
+> **Antes de continuar**: Asegúrate de entender [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md), [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Pathlib](../06_Manejo_de_Archivos_y_Formatos/01_pathlib.md).
 
 ## Conceptos Básicos
 
@@ -132,7 +174,7 @@ print(df.info())
 - **Python Data Science Handbook** (Jake VanderPlas) - Guía completa de herramientas de datos
 
 ### Conceptos Relacionados
-- [Estructuras de Datos](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) - Base para entender DataFrames
+- [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md) - Base para entender DataFrames
 - [JSON](../06_Manejo_de_Archivos_y_Formatos/03_json.md) - Trabaja con datos estructurados
 - [YAML](../06_Manejo_de_Archivos_y_Formatos/04_yaml.md) - Otro formato de datos
 

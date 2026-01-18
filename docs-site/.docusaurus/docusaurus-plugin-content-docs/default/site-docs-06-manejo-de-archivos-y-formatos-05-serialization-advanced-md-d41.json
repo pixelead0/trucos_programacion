@@ -1,7 +1,7 @@
 {
   "id": "Manejo_de_Archivos_y_Formatos/serialization_advanced",
   "title": "Serialización Avanzada y Multi-Formato",
-  "description": "¿Qué es la serialización multi-formato y cuándo la necesitas?",
+  "description": "Exporta datos a múltiples formatos desde una sola fuente",
   "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/05_serialization_advanced.md",
   "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
   "slug": "/Manejo_de_Archivos_y_Formatos/serialization_advanced",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 5,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Serialización Avanzada y Multi-Formato",
+    "description": "Exporta datos a múltiples formatos desde una sola fuente"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Configuración con YAML en Python",
+    "title": "YAML",
     "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/yaml"
   },
   "next": {
-    "title": "Decoradores en Python",
-    "permalink": "/trucos_programacion/Conceptos_Avanzados/decorators"
+    "title": "Generadores e Iteradores",
+    "permalink": "/trucos_programacion/Conceptos_Avanzados/generadores_iteradores"
   }
 }

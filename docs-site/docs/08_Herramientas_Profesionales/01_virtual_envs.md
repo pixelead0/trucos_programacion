@@ -1,6 +1,50 @@
+---
+title: Entornos Virtuales en Python
+description: Aísla dependencias de proyectos con entornos virtuales
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="30 minutos"
+  prereqs={['Funciones', 'Módulos y Paquetes']}
+/>
+
+<ProgressIndicator
+  module="Módulo 08: Herramientas Profesionales"
+  lesson={2}
+  total={5}
+/>
+
 # Entornos Virtuales en Python
 
-## ¿Qué son los entornos virtuales y por qué son esenciales?
+<LessonMap
+  objectives={[
+    "Crear y activar entornos virtuales",
+    "Instalar paquetes en entornos aislados",
+    "Usar requirements.txt para dependencias",
+    "Gestionar múltiples proyectos sin conflictos",
+    "Aplicar buenas prácticas de entornos virtuales"
+  ]}
+  useCases={[
+    "Aislar dependencias entre proyectos",
+    "Evitar conflictos de versiones",
+    "Reproducibilidad: compartir versiones exactas",
+    "Desarrollo limpio: no contaminar Python del sistema",
+    "CI/CD: crear entornos limpios para builds",
+    "Colaboración: todos usan las mismas versiones"
+  ]}
+  time="30 minutos"
+  level="intermediate"
+/>
+
+## 💡 ¿Qué son los entornos virtuales y por qué son esenciales?
 
 Imagina este escenario: Tienes dos proyectos:
 - Proyecto A necesita `pandas==1.2.0`

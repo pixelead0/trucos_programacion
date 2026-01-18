@@ -1,4 +1,48 @@
+---
+title: Context Managers en Python
+description: Aprende a gestionar recursos de forma segura con context managers
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="advanced"
+  time="1 hora"
+  prereqs={['Funciones', 'Manejo de Errores']}
+/>
+
+<ProgressIndicator
+  module="Módulo 07: Conceptos Avanzados"
+  lesson={3}
+  total={4}
+/>
+
 # Context Managers en Python
+
+<LessonMap
+  objectives={[
+    "Entender qué son context managers y por qué usarlos",
+    "Usar with statement para gestión segura de recursos",
+    "Crear context managers personalizados",
+    "Manejar recursos que necesitan limpieza",
+    "Aplicar context managers en casos reales"
+  ]}
+  useCases={[
+    "Abrir y cerrar archivos automáticamente",
+    "Gestionar conexiones a bases de datos",
+    "Bloquear recursos compartidos (threading locks)",
+    "Configurar y restaurar estados temporales",
+    "Medir tiempo de ejecución de bloques de código",
+    "Gestionar transacciones de base de datos"
+  ]}
+  time="1 hora"
+  level="advanced"
+/>
 
 ## ¿Qué son los context managers y por qué usarlos?
 
@@ -326,11 +370,16 @@ def directorio_temporal():
 - **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre context managers
 
 ### Conceptos Relacionados
-- [Decoradores](./01_decorators.md) - Similar patrón de extensión
+- [Decoradores](./02_decorators.md) - Similar patrón de extensión
 - [Manejo de Archivos](../06_Manejo_de_Archivos_y_Formatos/01_pathlib.md) - Usa context managers con archivos
 - [Manejo de Errores](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md) - Context managers manejan errores
 
 ---
 
 ## Siguiente paso
-Ahora que conoces los context managers, aprende a optimizar el rendimiento de tu código. Continúa con: **[Performance](./03_performance.md)**
+## Siguiente paso
+
+<NextStep
+  to="/Conceptos_Avanzados/performance"
+  label="Siguiente: Performance →"
+/>

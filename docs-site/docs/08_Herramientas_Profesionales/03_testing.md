@@ -1,6 +1,48 @@
+---
+title: Testing en Python
+description: Escribe tests profesionales con unittest y pytest
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="advanced"
+  time="2 horas"
+  prereqs={['Funciones', 'Módulos y Paquetes', 'Manejo de Errores']}
+/>
+
+<ProgressIndicator
+  module="Módulo 08: Herramientas Profesionales"
+  lesson={4}
+  total={5}
+/>
+
 # Testing en Python
 
-## ¿Qué es testing y por qué escribir tests?
+<LessonMap
+  objectives={[
+    "Escribir tests con unittest y pytest",
+    "Usar fixtures y mocks",
+    "Testear funciones, clases y módulos",
+    "Aplicar TDD (Test-Driven Development)",
+    "Configurar CI/CD con tests automáticos"
+  ]}
+  useCases={[
+    "Verificar que código funciona después de cambios",
+    "Documentar comportamiento esperado del código",
+    "Encontrar bugs antes de producción",
+    "Refactoring seguro: tests garantizan que nada se rompe",
+    "CI/CD: ejecutar tests automáticamente en cada commit",
+    "Colaboración: tests como contrato entre desarrolladores"
+  ]}
+  time="2 horas"
+  level="advanced"
+/>
 
 Imagina que cambias una función que usan 10 partes de tu código. ¿Cómo sabes que no rompiste nada? Podrías probar manualmente cada parte, pero eso es lento y propenso a errores.
 
@@ -326,7 +368,7 @@ def test_crear_usuario(db_session):
 
 ### Conceptos Relacionados
 - [Manejo de Errores](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md) - Prueba el manejo de errores
-- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md) - Facilita el testing
+- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md) - Facilita el testing
 - [Empaquetado](./02_packaging.md) - Distribuye código probado
 
 ---

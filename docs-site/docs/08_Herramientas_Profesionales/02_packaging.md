@@ -1,6 +1,48 @@
+---
+title: Empaquetado y Distribución en Python
+description: Crea y distribuye paquetes Python profesionales
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="advanced"
+  time="1.5 horas"
+  prereqs={['Módulos y Paquetes', 'Entornos Virtuales']}
+/>
+
+<ProgressIndicator
+  module="Módulo 08: Herramientas Profesionales"
+  lesson={3}
+  total={5}
+/>
+
 # Empaquetado y Distribución en Python
 
-## ¿Qué es el empaquetado y cuándo lo necesitas?
+<LessonMap
+  objectives={[
+    "Crear estructura de paquetes Python",
+    "Configurar setup.py o pyproject.toml",
+    "Gestionar dependencias y metadatos",
+    "Instalar paquetes en modo desarrollo",
+    "Publicar paquetes en PyPI (opcional)"
+  ]}
+  useCases={[
+    "Crear bibliotecas reutilizables",
+    "Compartir código entre proyectos del equipo",
+    "Publicar en PyPI para uso público",
+    "Distribuir herramientas internas de empresa",
+    "Crear paquetes instalables con pip",
+    "Gestionar versiones y actualizaciones"
+  ]}
+  time="1.5 horas"
+  level="advanced"
+/>
 
 Tienes un módulo útil que quieres compartir. Podrías decirle a la gente "copia este archivo a tu proyecto", pero eso no escala. ¿Qué pasa si actualizas el módulo? ¿Cómo manejan las dependencias?
 
@@ -303,7 +345,7 @@ python_functions = test_*
 ### Conceptos Relacionados
 - [Entornos Virtuales](./01_virtual_envs.md) - Prepara el entorno antes de empaquetar
 - [Testing](./03_testing.md) - Prueba tu paquete antes de publicarlo
-- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md) - Documenta tipos en tu código
+- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md) - Documenta tipos en tu código
 
 ---
 

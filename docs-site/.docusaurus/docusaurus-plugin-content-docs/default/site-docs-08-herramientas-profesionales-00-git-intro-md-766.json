@@ -1,0 +1,28 @@
+{
+  "id": "Herramientas_Profesionales/git_intro",
+  "title": "Git y Control de Versiones",
+  "description": "Aprende a versionar tus proyectos con Git",
+  "source": "@site/docs/08_Herramientas_Profesionales/00_git_intro.md",
+  "sourceDirName": "08_Herramientas_Profesionales",
+  "slug": "/Herramientas_Profesionales/git_intro",
+  "permalink": "/trucos_programacion/Herramientas_Profesionales/git_intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/08_Herramientas_Profesionales/00_git_intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "title": "Git y Control de Versiones",
+    "description": "Aprende a versionar tus proyectos con Git"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Performance",
+    "permalink": "/trucos_programacion/Conceptos_Avanzados/performance"
+  },
+  "next": {
+    "title": "Entornos Virtuales",
+    "permalink": "/trucos_programacion/Herramientas_Profesionales/virtual_envs"
+  }
+}

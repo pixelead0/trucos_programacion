@@ -2,6 +2,20 @@
 
 Este es el sitio web del curso de Python generado con Docusaurus.
 
+## 📊 Estado del Proyecto
+
+**Transformación en curso**: El curso está siendo transformado de documentación a experiencia educativa guiada.
+
+**Progreso actual**: 54% completado
+- ✅ Fase 1: Reordenamiento (100%)
+- ✅ Fase 2: División de Lecciones (100%)
+- 🟡 Fase 3: Transformación de Estructura (15%)
+- ⚪ Fase 4: Verificación Final (0%)
+
+Para más detalles, consulta:
+- [PROGRESO_IMPLEMENTACION.md](./PROGRESO_IMPLEMENTACION.md) - Progreso detallado
+- [ESTADO_ACTUAL.md](./ESTADO_ACTUAL.md) - Resumen ejecutivo
+
 ## 🚀 Inicio Rápido
 
 ### Instalación

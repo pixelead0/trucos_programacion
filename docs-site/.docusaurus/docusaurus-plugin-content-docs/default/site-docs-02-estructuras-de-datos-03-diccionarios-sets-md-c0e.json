@@ -1,0 +1,28 @@
+{
+  "id": "Estructuras_de_Datos/diccionarios_sets",
+  "title": "Diccionarios y Sets en Python",
+  "description": "Aprende a trabajar con diccionarios (clave-valor) y sets (colecciones únicas)",
+  "source": "@site/docs/02_Estructuras_de_Datos/03_diccionarios_sets.md",
+  "sourceDirName": "02_Estructuras_de_Datos",
+  "slug": "/Estructuras_de_Datos/diccionarios_sets",
+  "permalink": "/trucos_programacion/Estructuras_de_Datos/diccionarios_sets",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/02_Estructuras_de_Datos/03_diccionarios_sets.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Diccionarios y Sets en Python",
+    "description": "Aprende a trabajar con diccionarios (clave-valor) y sets (colecciones únicas)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tuplas",
+    "permalink": "/trucos_programacion/Estructuras_de_Datos/tuplas"
+  },
+  "next": {
+    "title": "Operaciones Avanzadas",
+    "permalink": "/trucos_programacion/Estructuras_de_Datos/operaciones_avanzadas"
+  }
+}

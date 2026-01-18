@@ -1,7 +1,7 @@
 {
   "id": "Manejo_de_Errores_y_Buenas_Practicas/quality",
   "title": "Calidad de Código en Python",
-  "description": "¿Qué es la calidad de código y por qué importa?",
+  "description": "Herramientas profesionales para mantener código de calidad",
   "source": "@site/docs/05_Manejo_de_Errores_y_Buenas_Practicas/04_quality.md",
   "sourceDirName": "05_Manejo_de_Errores_y_Buenas_Practicas",
   "slug": "/Manejo_de_Errores_y_Buenas_Practicas/quality",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 4,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Calidad de Código en Python",
+    "description": "Herramientas profesionales para mantener código de calidad"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Type Hints en Python",
-    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints"
+    "title": "Logging",
+    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging"
   },
   "next": {
-    "title": "Pathlib en Python",
+    "title": "Pathlib",
     "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/pathlib"
   }
 }

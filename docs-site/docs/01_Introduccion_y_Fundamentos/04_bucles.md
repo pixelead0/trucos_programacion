@@ -4,9 +4,11 @@ description: Aprende a repetir código eficientemente con for y while
 ---
 
 import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
   level="beginner"
@@ -14,16 +16,48 @@ import TryIt from '@site/src/components/TryIt';
   prereqs={['Variables y Tipos', 'Condicionales y Lógica']}
 />
 
+<ProgressIndicator
+  module="Módulo 01: Fundamentos"
+  lesson={5}
+  total={5}
+/>
+
 # Bucles en Python
 
-## Qué vas a lograr
+<LessonMap
+  objectives={[
+    "Usar bucles for para iterar sobre listas, strings y rangos",
+    "Usar bucles while para repetir hasta que se cumpla una condición",
+    "Controlar bucles con break, continue y pass",
+    "Anidar bucles para trabajar con estructuras complejas",
+    "Usar enumerate() para obtener índices al iterar"
+  ]}
+  useCases={[
+    "Procesar listas de productos, usuarios o datos",
+    "Validar entrada del usuario hasta que sea correcta",
+    "Iterar sobre archivos o datos de APIs",
+    "Generar tablas y reportes repetitivos",
+    "Procesar imágenes o datos en lotes",
+    "Simular procesos que se repiten hasta cumplir condiciones"
+  ]}
+  time="1.5 horas"
+  level="beginner"
+/>
 
-- Usar bucles `for` para iterar sobre listas, strings y rangos
-- Usar bucles `while` para repetir hasta que se cumpla una condición
-- Controlar bucles con `break`, `continue` y `pass`
-- Anidar bucles para trabajar con estructuras complejas
+## 🌍 Casos reales donde se usa
 
-## Concepto base
+Los bucles están en prácticamente todos los programas. Los verás en:
+
+- **Procesamiento de datos**: Iterar sobre listas de productos, usuarios, transacciones
+- **Validación de entrada**: Pedir datos al usuario hasta que sean válidos
+- **APIs y servicios**: Procesar respuestas con múltiples elementos
+- **Generación de reportes**: Crear tablas y listados repetitivos
+- **Análisis de datos**: Procesar grandes volúmenes de información
+- **Juegos**: Actualizar estado del juego en cada iteración
+
+**Ejemplo real**: Cuando procesas un carrito de compras, usas un bucle `for` para calcular el total de cada producto y sumar todo. Cuando validas una contraseña, usas un bucle `while` para permitir reintentos hasta que sea correcta.
+
+## 💡 Concepto base
 
 Imagina que tienes una lista de 100 productos y quieres mostrar cada uno. ¿Escribirías 100 líneas de `print()`? Eso sería terrible.
 
@@ -419,14 +453,14 @@ calcular_estadisticas()
 - **Fluent Python** (Luciano Ramalho) - Capítulo 14: Iterables, Iterators, and Generators
 
 ### Conceptos Relacionados
-- [Estructuras de Datos](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) - Aprende a trabajar con colecciones
-- [Generadores e Iteradores](../07_Conceptos_Avanzados/04_generadores_iteradores.md) - Iteración avanzada
+- [Listas](../02_Estructuras_de_Datos/01_listas.md) - Aprende a trabajar con colecciones
+- [Generadores e Iteradores](../07_Conceptos_Avanzados/01_generadores_iteradores.md) - Iteración avanzada
 
 > **Nota**: En los ejercicios de este capítulo usamos `try/except` para manejar errores. Si quieres aprender más sobre esto, consulta el capítulo de [Manejo de Excepciones](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md).
 
 ## Siguiente paso
 
 <NextStep
-  to="/Introduccion_y_Fundamentos/git_intro"
-  label="Siguiente: Git y Control de Versiones →"
+  to="/Estructuras_de_Datos/listas"
+  label="Siguiente: Estructuras de Datos →"
 />

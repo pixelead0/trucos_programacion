@@ -1,25 +1,28 @@
 {
   "id": "Conceptos_Avanzados/context_managers",
   "title": "Context Managers en Python",
-  "description": "¿Qué son los context managers y por qué usarlos?",
-  "source": "@site/docs/07_Conceptos_Avanzados/02_context_managers.md",
+  "description": "Aprende a gestionar recursos de forma segura con context managers",
+  "source": "@site/docs/07_Conceptos_Avanzados/03_context_managers.md",
   "sourceDirName": "07_Conceptos_Avanzados",
   "slug": "/Conceptos_Avanzados/context_managers",
   "permalink": "/trucos_programacion/Conceptos_Avanzados/context_managers",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/07_Conceptos_Avanzados/02_context_managers.md",
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/07_Conceptos_Avanzados/03_context_managers.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 2,
-  "frontMatter": {},
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Context Managers en Python",
+    "description": "Aprende a gestionar recursos de forma segura con context managers"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Decoradores en Python",
+    "title": "Decoradores",
     "permalink": "/trucos_programacion/Conceptos_Avanzados/decorators"
   },
   "next": {
-    "title": "Optimización de Rendimiento en Python",
+    "title": "Performance",
     "permalink": "/trucos_programacion/Conceptos_Avanzados/performance"
   }
 }

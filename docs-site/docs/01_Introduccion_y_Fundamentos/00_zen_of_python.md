@@ -4,8 +4,10 @@ description: Filosofía y principios fundamentales del lenguaje Python
 ---
 
 import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
   level="beginner"
@@ -13,15 +15,32 @@ import NextStep from '@site/src/components/NextStep';
   prereqs={[]}
 />
 
+<ProgressIndicator
+  module="Módulo 01: Fundamentos"
+  lesson={1}
+  total={5}
+/>
+
 # El Zen de Python
 
-## Qué vas a lograr
+<LessonMap
+  objectives={[
+    "Entender la filosofía que guía el diseño de Python",
+    "Conocer los 19 principios fundamentales del Zen de Python",
+    "Aplicar estos principios en tu código desde el inicio",
+    "Acceder al Zen desde el intérprete con `import this`"
+  ]}
+  useCases={[
+    "Guía para escribir código más legible y mantenible",
+    "Principios para tomar decisiones de diseño",
+    "Filosofía que influye en todas las características de Python",
+    "Base para entender por qué Python se comporta de cierta manera"
+  ]}
+  time="15 minutos"
+  level="beginner"
+/>
 
-- Entender la filosofía que guía el diseño de Python
-- Conocer los 19 principios fundamentales del Zen de Python
-- Aplicar estos principios en tu código desde el inicio
-
-## Concepto base
+## 💡 Concepto base
 
 El **Zen de Python** es una colección de 20 principios de software que influyen en el diseño del Lenguaje de Programación Python. Estos principios no son reglas estrictas, sino guías que te ayudarán a escribir código más legible, mantenible y "pythónico".
 

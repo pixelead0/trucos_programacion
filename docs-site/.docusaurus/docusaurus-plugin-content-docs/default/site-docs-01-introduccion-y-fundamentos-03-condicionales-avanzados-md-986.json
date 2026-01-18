@@ -18,11 +18,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Condicionales y Lógica en Python",
+    "title": "Condicionales y Lógica",
     "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica"
   },
   "next": {
-    "title": "Bucles en Python",
+    "title": "Bucles",
     "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/bucles"
   }
 }

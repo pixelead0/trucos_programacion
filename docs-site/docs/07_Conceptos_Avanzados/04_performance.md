@@ -1,4 +1,48 @@
+---
+title: Optimización de Rendimiento en Python
+description: Técnicas y herramientas para optimizar el rendimiento de código Python
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="advanced"
+  time="1.5 horas"
+  prereqs={['Generadores e Iteradores', 'Funciones']}
+/>
+
+<ProgressIndicator
+  module="Módulo 07: Conceptos Avanzados"
+  lesson={4}
+  total={4}
+/>
+
 # Optimización de Rendimiento en Python
+
+<LessonMap
+  objectives={[
+    "Medir rendimiento con profiling (cProfile, line_profiler)",
+    "Entender complejidad temporal y espacial",
+    "Elegir estructuras de datos eficientes",
+    "Aplicar técnicas de optimización",
+    "Usar paralelización cuando es apropiado"
+  ]}
+  useCases={[
+    "Código que es demasiado lento para el uso real",
+    "Procesar grandes volúmenes de datos",
+    "Aplicaciones que requieren alta performance",
+    "Optimizar cuellos de botella identificados",
+    "Mejorar tiempo de respuesta de APIs",
+    "Procesamiento científico o numérico intensivo"
+  ]}
+  time="1.5 horas"
+  level="advanced"
+/>
 
 ## ¿Cuándo y cómo optimizar el rendimiento?
 
@@ -20,7 +64,7 @@
 2. **Optimiza** - mejora solo lo que es lento
 3. **Mide de nuevo** - verifica que mejoró
 
-> **Antes de continuar**: Asegúrate de entender [Generadores](./04_generadores_iteradores.md) y tener experiencia con [Funciones](../03_Funciones_y_Modulos/01_funciones.md).
+> **Antes de continuar**: Asegúrate de entender [Generadores](./01_generadores_iteradores.md) y tener experiencia con [Funciones](../03_Funciones_y_Modulos/01_funciones.md).
 
 ## Profiling: Encontrar Dónde Está el Problema
 
@@ -285,9 +329,9 @@ def filtrar_datos_optimizado(lista):
 - **Fluent Python** (Luciano Ramalho) - Capítulos sobre eficiencia
 
 ### Conceptos Relacionados
-- [Generadores e Iteradores](./04_generadores_iteradores.md) - Eficiencia en memoria
+- [Generadores e Iteradores](./01_generadores_iteradores.md) - Eficiencia en memoria
 - [Testing](../08_Herramientas_Profesionales/03_testing.md) - Mide performance con tests
-- [Context Managers](./02_context_managers.md) - Gestión eficiente de recursos
+- [Context Managers](./03_context_managers.md) - Gestión eficiente de recursos
 
 ---
 

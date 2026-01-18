@@ -1,6 +1,50 @@
+---
+title: Dataclasses en Python
+description: Simplifica clases de datos con el decorador @dataclass
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="45 minutos"
+  prereqs={['Clases y Objetos', 'Type Hints']}
+/>
+
+<ProgressIndicator
+  module="Módulo 04: Programación Orientada a Objetos"
+  lesson={2}
+  total={2}
+/>
+
 # Dataclasses en Python
 
-## ¿Qué son las dataclasses y cuándo usarlas?
+<LessonMap
+  objectives={[
+    "Entender qué son las dataclasses y cuándo usarlas",
+    "Crear dataclasses con @dataclass",
+    "Usar campos con valores por defecto",
+    "Aplicar frozen para inmutabilidad",
+    "Comparar objetos automáticamente"
+  ]}
+  useCases={[
+    "Clases que principalmente almacenan datos (estructuras de datos)",
+    "Configuraciones: settings, opciones de aplicación",
+    "Resultados de funciones: devolver múltiples valores estructurados",
+    "DTOs (Data Transfer Objects): transferir datos entre capas",
+    "Modelos simples: cuando no necesitas lógica compleja",
+    "Comparación automática: cuando necesitas __eq__ automático"
+  ]}
+  time="45 minutos"
+  level="intermediate"
+/>
+
+## 💡 ¿Qué son las dataclasses y cuándo usarlas?
 
 Imagina que necesitas una clase solo para guardar datos (como un usuario, una configuración, o un producto). Con clases normales escribirías:
 
@@ -32,7 +76,7 @@ Mucho código repetitivo, ¿verdad?
 - Clases con mucha lógica de negocio (usa clases normales)
 - Cuando necesitas control total sobre `__init__` o métodos especiales
 
-> **Antes de continuar**: Asegúrate de entender [Clases](./01_clases_objetos.md) y [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md).
+> **Antes de continuar**: Asegúrate de entender [Clases](./01_clases_objetos.md) y [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md).
 
 ## Conceptos Básicos
 
@@ -262,8 +306,8 @@ class Orden:
 
 ### Conceptos Relacionados
 - [Clases y Objetos](./01_clases_objetos.md) - Base para entender dataclasses
-- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md) - Usa type hints con dataclasses
-- [Estructuras de Datos](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) - Dataclasses organizan datos
+- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md) - Usa type hints con dataclasses
+- [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md) - Dataclasses organizan datos
 
 ---
 

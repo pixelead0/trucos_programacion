@@ -1,4 +1,48 @@
+---
+title: Decoradores en Python
+description: Aprende a usar decoradores para extender funcionalidad sin modificar código
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="advanced"
+  time="1.5 horas"
+  prereqs={['Funciones', 'Clases y Objetos']}
+/>
+
+<ProgressIndicator
+  module="Módulo 07: Conceptos Avanzados"
+  lesson={2}
+  total={4}
+/>
+
 # Decoradores en Python
+
+<LessonMap
+  objectives={[
+    "Entender qué son los decoradores y cómo funcionan",
+    "Crear decoradores simples y con parámetros",
+    "Usar @wraps para preservar metadatos",
+    "Aplicar decoradores a funciones y clases",
+    "Implementar decoradores útiles (timing, cache, retry)"
+  ]}
+  useCases={[
+    "Medir tiempo de ejecución de funciones",
+    "Agregar logging automático",
+    "Validar argumentos de funciones",
+    "Cachear resultados de funciones costosas",
+    "Controlar acceso (autenticación/autorización)",
+    "Reintentar operaciones que pueden fallar"
+  ]}
+  time="1.5 horas"
+  level="advanced"
+/>
 
 ## ¿Qué son los decoradores y cuándo los necesitas?
 
@@ -330,7 +374,95 @@ def operacion_riesgosa():
 - **Python Cookbook, 3rd Ed** (Beazley & Jones) - Recetas sobre decoradores
 - **Design Patterns: Elements of Reusable OOP** (Gang of Four) - Patrón Decorator
 
+## Wrappers Avanzados
+
+### Wrapper con Preservación de Metadatos
+
+```python
+from functools import wraps
+
+def medir_tiempo(funcion):
+    @wraps(funcion)  # Preserva metadatos de la función original
+    def wrapper(*args, **kwargs):
+        import time
+        inicio = time.time()
+        resultado = funcion(*args, **kwargs)
+        fin = time.time()
+        print(f"{funcion.__name__} tomó {fin - inicio:.2f} segundos")
+        return resultado
+    return wrapper
+
+@medir_tiempo
+def operacion_lenta():
+    import time
+    time.sleep(1)
+    return "Completado"
+
+operacion_lenta()
+```
+
+### Wrapper con Validación
+
+```python
+from functools import wraps
+
+def validar_entero_positivo(funcion):
+    @wraps(funcion)
+    def wrapper(numero):
+        if not isinstance(numero, int):
+            raise TypeError("El argumento debe ser un entero")
+        if numero <= 0:
+            raise ValueError("El número debe ser positivo")
+        return funcion(numero)
+    return wrapper
+
+@validar_entero_positivo
+def calcular_factorial(n):
+    """Calcula el factorial de n"""
+    if n == 1:
+        return 1
+    return n * calcular_factorial(n - 1)
+
+print(calcular_factorial(5))  # 120
+```
+
+### Wrappers para Clases
+
+```python
+def agregar_metodo_logging(cls):
+    """Agrega logging a todos los métodos de una clase"""
+    for nombre, metodo in vars(cls).items():
+        if callable(metodo) and not nombre.startswith('_'):
+            setattr(cls, nombre, log_llamadas(metodo))
+    return cls
+
+def log_llamadas(funcion):
+    def wrapper(*args, **kwargs):
+        print(f"Llamando a {funcion.__name__}")
+        return funcion(*args, **kwargs)
+    return wrapper
+
+@agregar_metodo_logging
+class Calculadora:
+    def sumar(self, a, b):
+        return a + b
+
+    def restar(self, a, b):
+        return a - b
+
+calc = Calculadora()
+calc.sumar(5, 3)  # Imprime: Llamando a sumar
+```
+
 ### Conceptos Relacionados
 - [Funciones](../03_Funciones_y_Modulos/01_funciones.md) - Base para decoradores
-- [Context Managers](./02_context_managers.md) - Similar a decoradores
+- [Context Managers](./03_context_managers.md) - Similar a decoradores
 - [Clases y Objetos](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md) - Decoradores de clase
+- [Generadores e Iteradores](./01_generadores_iteradores.md) - Para decoradores avanzados
+
+## Siguiente paso
+
+<NextStep
+  to="/Conceptos_Avanzados/context_managers"
+  label="Siguiente: Context Managers →"
+/>

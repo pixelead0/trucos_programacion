@@ -1,7 +1,7 @@
 {
   "id": "Manejo_de_Archivos_y_Formatos/yaml",
   "title": "Configuración con YAML en Python",
-  "description": "¿Qué es YAML y por qué usarlo?",
+  "description": "Formato legible para configuraciones y datos estructurados",
   "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/04_yaml.md",
   "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
   "slug": "/Manejo_de_Archivos_y_Formatos/yaml",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 4,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Configuración con YAML en Python",
+    "description": "Formato legible para configuraciones y datos estructurados"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Serialización JSON y Metadatos en Python",
+    "title": "JSON",
     "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/json"
   },
   "next": {
-    "title": "Serialización Avanzada y Multi-Formato",
+    "title": "Serialización Avanzada",
     "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/serialization_advanced"
   }
 }

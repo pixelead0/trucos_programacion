@@ -1,6 +1,50 @@
+---
+title: Funciones en Python
+description: Aprende a organizar y reutilizar código con funciones
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="1.5 horas"
+  prereqs={['Variables y Tipos', 'Listas', 'Bucles']}
+/>
+
+<ProgressIndicator
+  module="Módulo 03: Funciones y Módulos"
+  lesson={1}
+  total={2}
+/>
+
 # Funciones y Organización en Python
 
-## ¿Qué son las funciones y por qué las necesitas?
+<LessonMap
+  objectives={[
+    "Definir y llamar funciones en Python",
+    "Usar parámetros y argumentos (posicionales, nombrados, por defecto)",
+    "Entender el scope y return",
+    "Usar funciones lambda para código compacto",
+    "Organizar código reutilizable"
+  ]}
+  useCases={[
+    "Evitar repetir código: escribir lógica una vez, usar muchas veces",
+    "Organizar código: agrupar funcionalidad relacionada",
+    "APIs y servicios: cada endpoint es una función",
+    "Procesamiento de datos: transformar datos con funciones reutilizables",
+    "Validación: crear funciones de validación reutilizables",
+    "Cálculos: encapsular fórmulas y operaciones complejas"
+  ]}
+  time="1.5 horas"
+  level="intermediate"
+/>
+
+## 💡 ¿Qué son las funciones y por qué las necesitas?
 
 Imagina que tienes que calcular el área de un rectángulo 10 veces en tu código. Podrías escribir `base * altura` 10 veces, pero ¿qué pasa si te equivocas en una? Tienes que corregir 10 lugares.
 
@@ -12,7 +56,7 @@ Imagina que tienes que calcular el área de un rectángulo 10 veces en tu códig
 - **Código más legible**: `calcular_total()` es más claro que 15 líneas de código
 - **Organización**: Agrupas código relacionado
 
-> **Antes de continuar**: Asegúrate de entender [Variables](../01_Introduccion_y_Fundamentos/01_variables_y_tipos.md), [Listas](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) y [Bucles](../01_Introduccion_y_Fundamentos/04_bucles.md).
+> **Antes de continuar**: Asegúrate de entender [Variables](../01_Introduccion_y_Fundamentos/01_variables_y_tipos.md), [Listas](../02_Estructuras_de_Datos/01_listas.md) y [Bucles](../01_Introduccion_y_Fundamentos/04_bucles.md).
 
 ## Conceptos Básicos
 
@@ -447,8 +491,8 @@ def agregar_item(item, lista=None):
 
 ### Conceptos Relacionados
 - [Módulos y Paquetes](./02_modulos_paquetes.md) - Organiza funciones en módulos
-- [Decoradores](../07_Conceptos_Avanzados/01_decorators.md) - Extiende funciones
-- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md) - Documenta tipos de funciones
+- [Decoradores](../07_Conceptos_Avanzados/02_decorators.md) - Extiende funciones
+- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md) - Documenta tipos de funciones
 
 ---
 

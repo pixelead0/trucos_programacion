@@ -1,7 +1,7 @@
 {
   "id": "Programacion_Orientada_a_Objetos/clases_objetos",
   "title": "Clases y Objetos en Python",
-  "description": "¿Qué es POO y cuándo la necesitas?",
+  "description": "Aprende programación orientada a objetos en Python",
   "source": "@site/docs/04_Programacion_Orientada_a_Objetos/01_clases_objetos.md",
   "sourceDirName": "04_Programacion_Orientada_a_Objetos",
   "slug": "/Programacion_Orientada_a_Objetos/clases_objetos",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Clases y Objetos en Python",
+    "description": "Aprende programación orientada a objetos en Python"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Módulos, Paquetes y Organización en Python",
+    "title": "Módulos y Paquetes",
     "permalink": "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes"
   },
   "next": {
-    "title": "Dataclasses en Python",
+    "title": "Dataclasses",
     "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/dataclasses"
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "Herramientas_Profesionales/packaging",
   "title": "Empaquetado y Distribución en Python",
-  "description": "¿Qué es el empaquetado y cuándo lo necesitas?",
+  "description": "Crea y distribuye paquetes Python profesionales",
   "source": "@site/docs/08_Herramientas_Profesionales/02_packaging.md",
   "sourceDirName": "08_Herramientas_Profesionales",
   "slug": "/Herramientas_Profesionales/packaging",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Empaquetado y Distribución en Python",
+    "description": "Crea y distribuye paquetes Python profesionales"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Entornos Virtuales en Python",
+    "title": "Entornos Virtuales",
     "permalink": "/trucos_programacion/Herramientas_Profesionales/virtual_envs"
   },
   "next": {
-    "title": "Testing en Python",
+    "title": "Testing",
     "permalink": "/trucos_programacion/Herramientas_Profesionales/testing"
   }
 }

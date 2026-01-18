@@ -60,11 +60,6 @@ const sidebars = {
           id: 'Introduccion_y_Fundamentos/bucles',
           label: 'Bucles',
         },
-        {
-          type: 'doc',
-          id: 'Introduccion_y_Fundamentos/git_intro',
-          label: 'Git Básico',
-        },
       ],
     },
     {
@@ -74,8 +69,23 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'Estructuras_de_Datos/listas_tuplas_diccionarios',
-          label: 'Listas, Tuplas y Diccionarios',
+          id: 'Estructuras_de_Datos/listas',
+          label: 'Listas',
+        },
+        {
+          type: 'doc',
+          id: 'Estructuras_de_Datos/tuplas',
+          label: 'Tuplas',
+        },
+        {
+          type: 'doc',
+          id: 'Estructuras_de_Datos/diccionarios_sets',
+          label: 'Diccionarios y Sets',
+        },
+        {
+          type: 'doc',
+          id: 'Estructuras_de_Datos/operaciones_avanzadas',
+          label: 'Operaciones Avanzadas',
         },
       ],
     },
@@ -125,13 +135,13 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'Manejo_de_Errores_y_Buenas_Practicas/logging',
-          label: 'Logging',
+          id: 'Manejo_de_Errores_y_Buenas_Practicas/type_hints',
+          label: 'Type Hints',
         },
         {
           type: 'doc',
-          id: 'Manejo_de_Errores_y_Buenas_Practicas/type_hints',
-          label: 'Type Hints',
+          id: 'Manejo_de_Errores_y_Buenas_Practicas/logging',
+          label: 'Logging',
         },
         {
           type: 'doc',
@@ -179,6 +189,11 @@ const sidebars = {
       items: [
         {
           type: 'doc',
+          id: 'Conceptos_Avanzados/generadores_iteradores',
+          label: 'Generadores e Iteradores',
+        },
+        {
+          type: 'doc',
           id: 'Conceptos_Avanzados/decorators',
           label: 'Decoradores',
         },
@@ -192,16 +207,6 @@ const sidebars = {
           id: 'Conceptos_Avanzados/performance',
           label: 'Performance',
         },
-        {
-          type: 'doc',
-          id: 'Conceptos_Avanzados/generadores_iteradores',
-          label: 'Generadores e Iteradores',
-        },
-        {
-          type: 'doc',
-          id: 'Conceptos_Avanzados/decoradores_wrappers',
-          label: 'Decoradores y Wrappers',
-        },
       ],
     },
     {
@@ -209,6 +214,11 @@ const sidebars = {
       label: '🟣 Módulo 08: Herramientas Profesionales',
       collapsed: false,
       items: [
+        {
+          type: 'doc',
+          id: 'Herramientas_Profesionales/git_intro',
+          label: 'Git y Control de Versiones',
+        },
         {
           type: 'doc',
           id: 'Herramientas_Profesionales/virtual_envs',

@@ -4,9 +4,11 @@ description: Aprende a tomar decisiones en tu código con condicionales
 ---
 
 import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
   level="beginner"
@@ -14,16 +16,35 @@ import TryIt from '@site/src/components/TryIt';
   prereqs={['Variables y Tipos']}
 />
 
+<ProgressIndicator
+  module="Módulo 01: Fundamentos"
+  lesson={3}
+  total={5}
+/>
+
 # Condicionales y Lógica en Python
 
-## Qué vas a lograr
+<LessonMap
+  objectives={[
+    "Usar if, elif y else para tomar decisiones",
+    "Combinar condiciones con operadores lógicos (and, or, not)",
+    "Validar entrada del usuario",
+    "Escribir código que se adapte a diferentes situaciones",
+    "Usar operadores de comparación correctamente"
+  ]}
+  useCases={[
+    "E-commerce: aplicar descuentos según tipo de usuario",
+    "Sistemas de acceso: validar permisos y horarios",
+    "Validación de formularios: verificar email, contraseña, edad",
+    "Juegos: verificar condiciones de victoria/derrota",
+    "APIs: validar tokens y permisos antes de devolver datos",
+    "Sistemas de recomendación: decidir qué mostrar según preferencias"
+  ]}
+  time="1 hora"
+  level="beginner"
+/>
 
-- Usar `if`, `elif` y `else` para tomar decisiones
-- Combinar condiciones con operadores lógicos (and, or, not)
-- Validar entrada del usuario
-- Escribir código que se adapte a diferentes situaciones
-
-## Casos reales donde se usa
+## 🌍 Casos reales donde se usa
 
 Las condicionales están en prácticamente todos los programas. Las verás en:
 

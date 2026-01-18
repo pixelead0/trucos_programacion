@@ -6,7 +6,7 @@ Bienvenido al curso de Python diseñado para autoaprendizaje. Este curso te guia
 
 **¿Es tu primera vez programando?** → [Empieza aquí: El Zen de Python](./01_Introduccion_y_Fundamentos/00_zen_of_python.md)
 
-**¿Ya sabes programar en otro lenguaje?** → [Salta a: Estructuras de Datos](./02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md)
+**¿Ya sabes programar en otro lenguaje?** → [Salta a: Listas](./02_Estructuras_de_Datos/01_listas.md)
 
 **¿Quieres ver rutas por nivel?** → Ver sección [Rutas por Nivel](#-rutas-por-nivel) más abajo
 
@@ -41,7 +41,6 @@ Cada lección incluye:
 3. [Condicionales y Lógica](./01_Introduccion_y_Fundamentos/02_condicionales_y_logica.md) - Toma de decisiones
 4. [Condicionales Avanzados](./01_Introduccion_y_Fundamentos/03_condicionales_avanzados.md) - Patrones avanzados
 5. [Bucles](./01_Introduccion_y_Fundamentos/04_bucles.md) - Repetición de código
-6. [Git Básico](./01_Introduccion_y_Fundamentos/05_git_intro.md) - Control de versiones
 
 **Proyecto del Módulo**: Generador de Contraseñas (ver carpeta `Proyectos_y_Ejercicios/generador_password` en el repositorio)
 
@@ -50,7 +49,10 @@ Cada lección incluye:
 ### 🟢 Módulo 02: Estructuras de Datos
 **Objetivo**: Dominar las estructuras de datos nativas de Python
 
-1. [Listas, Tuplas y Diccionarios](./02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md)
+1. [Listas](./02_Estructuras_de_Datos/01_listas.md)
+2. [Tuplas](./02_Estructuras_de_Datos/02_tuplas.md)
+3. [Diccionarios y Sets](./02_Estructuras_de_Datos/03_diccionarios_sets.md)
+4. [Operaciones Avanzadas](./02_Estructuras_de_Datos/04_operaciones_avanzadas.md)
 
 **Proyecto del Módulo**: Mejora el Generador de Contraseñas usando listas y diccionarios (ver carpeta `Proyectos_y_Ejercicios/generador_password` en el repositorio)
 
@@ -80,8 +82,8 @@ Cada lección incluye:
 **Objetivo**: Escribir código robusto y mantenible
 
 1. [Manejo de Errores](./05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md)
-2. [Logging](./05_Manejo_de_Errores_y_Buenas_Practicas/02_logging.md)
-3. [Type Hints](./05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md)
+2. [Type Hints](./05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md)
+3. [Logging](./05_Manejo_de_Errores_y_Buenas_Practicas/03_logging.md)
 4. [Calidad de Código](./05_Manejo_de_Errores_y_Buenas_Practicas/04_quality.md)
 
 **Proyecto del Módulo**: Validador de Datos - Versiones 5-7 (ver carpeta `Proyectos_y_Ejercicios/validador_datos` en el repositorio)
@@ -104,11 +106,10 @@ Cada lección incluye:
 ### 🔴 Módulo 07: Conceptos Avanzados
 **Objetivo**: Dominar características avanzadas de Python
 
-1. [Decoradores](./07_Conceptos_Avanzados/01_decorators.md)
-2. [Context Managers](./07_Conceptos_Avanzados/02_context_managers.md)
-3. [Performance](./07_Conceptos_Avanzados/03_performance.md)
-4. [Generadores e Iteradores](./07_Conceptos_Avanzados/04_generadores_iteradores.md)
-5. [Decoradores y Wrappers](./07_Conceptos_Avanzados/05_decoradores_wrappers.md)
+1. [Generadores e Iteradores](./07_Conceptos_Avanzados/01_generadores_iteradores.md)
+2. [Decoradores](./07_Conceptos_Avanzados/02_decorators.md)
+3. [Context Managers](./07_Conceptos_Avanzados/03_context_managers.md)
+4. [Performance](./07_Conceptos_Avanzados/04_performance.md)
 
 **Proyecto del Módulo**: Validador de Datos - Versión 6+ (ver carpeta `Proyectos_y_Ejercicios/validador_datos` en el repositorio)
 
@@ -117,10 +118,11 @@ Cada lección incluye:
 ### 🟣 Módulo 08: Herramientas Profesionales
 **Objetivo**: Ecosistema profesional de desarrollo
 
-1. [Entornos Virtuales](./08_Herramientas_Profesionales/01_virtual_envs.md)
-2. [Empaquetado](./08_Herramientas_Profesionales/02_packaging.md)
-3. [Testing](./08_Herramientas_Profesionales/03_testing.md)
-4. [Seguridad](./08_Herramientas_Profesionales/04_security.md)
+1. [Git y Control de Versiones](./08_Herramientas_Profesionales/00_git_intro.md)
+2. [Entornos Virtuales](./08_Herramientas_Profesionales/01_virtual_envs.md)
+3. [Empaquetado](./08_Herramientas_Profesionales/02_packaging.md)
+4. [Testing](./08_Herramientas_Profesionales/03_testing.md)
+5. [Seguridad](./08_Herramientas_Profesionales/04_security.md)
 
 **Proyecto del Módulo**: Mejora todos tus proyectos anteriores con estas herramientas
 
@@ -164,18 +166,20 @@ Marca tu progreso mientras avanzas:
 - [ ] Completé [Variables y Tipos](./01_Introduccion_y_Fundamentos/01_variables_y_tipos.md)
 - [ ] Completé [Condicionales](./01_Introduccion_y_Fundamentos/02_condicionales_y_logica.md)
 - [ ] Completé [Bucles](./01_Introduccion_y_Fundamentos/04_bucles.md)
-- [ ] Completé [Estructuras de Datos](./02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md)
+- [ ] Completé [Listas](./02_Estructuras_de_Datos/01_listas.md)
+- [ ] Completé [Tuplas](./02_Estructuras_de_Datos/02_tuplas.md)
+- [ ] Completé [Diccionarios y Sets](./02_Estructuras_de_Datos/03_diccionarios_sets.md)
 - [ ] Completé [Funciones](./03_Funciones_y_Modulos/01_funciones.md)
 
 ### Intermedio
 - [ ] Completé [POO](./04_Programacion_Orientada_a_Objetos/01_clases_objetos.md)
 - [ ] Completé [Manejo de Errores](./05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md)
-- [ ] Completé [Type Hints](./05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md)
+- [ ] Completé [Type Hints](./05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md)
 - [ ] Completé [Archivos y Formatos](./06_Manejo_de_Archivos_y_Formatos)
 
 ### Avanzado
-- [ ] Completé [Decoradores](./07_Conceptos_Avanzados/01_decorators.md)
-- [ ] Completé [Context Managers](./07_Conceptos_Avanzados/02_context_managers.md)
+- [ ] Completé [Decoradores](./07_Conceptos_Avanzados/02_decorators.md)
+- [ ] Completé [Context Managers](./07_Conceptos_Avanzados/03_context_managers.md)
 - [ ] Completé [Testing](./08_Herramientas_Profesionales/03_testing.md)
 - [ ] Completé [Empaquetado](./08_Herramientas_Profesionales/02_packaging.md)
 
@@ -189,28 +193,32 @@ Marca tu progreso mientras avanzas:
 2. [Variables y Tipos](./01_Introduccion_y_Fundamentos/01_variables_y_tipos.md)
 3. [Condicionales](./01_Introduccion_y_Fundamentos/02_condicionales_y_logica.md)
 4. [Bucles](./01_Introduccion_y_Fundamentos/04_bucles.md)
-5. [Estructuras de Datos](./02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md)
+5. [Listas](./02_Estructuras_de_Datos/01_listas.md)
+6. [Tuplas](./02_Estructuras_de_Datos/02_tuplas.md)
+7. [Diccionarios y Sets](./02_Estructuras_de_Datos/03_diccionarios_sets.md)
 6. [Funciones](./03_Funciones_y_Modulos/01_funciones.md)
 
 **Proyecto**: Generador de Contraseñas (ver carpeta `Proyectos_y_Ejercicios/generador_password` en el repositorio)
 
 ### 🟡 Nivel Intermedio
 **Si ya conoces programación básica:**
-- [Estructuras de Datos](./02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) - Particularidades de Python
+- [Listas](./02_Estructuras_de_Datos/01_listas.md) - Particularidades de Python
+- [Diccionarios y Sets](./02_Estructuras_de_Datos/03_diccionarios_sets.md) - Estructuras clave-valor
 - [Funciones](./03_Funciones_y_Modulos/01_funciones.md) - Características avanzadas
 - [Módulos y Paquetes](./03_Funciones_y_Modulos/02_modulos_paquetes.md)
 - [Clases y Objetos](./04_Programacion_Orientada_a_Objetos/01_clases_objetos.md)
-- [Type Hints](./05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md)
+- [Type Hints](./05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md)
 - [Calidad de Código](./05_Manejo_de_Errores_y_Buenas_Practicas/04_quality.md)
 
 **Proyecto**: Validador de Datos - Versión 3+ (ver carpeta `Proyectos_y_Ejercicios/validador_datos` en el repositorio)
 
 ### 🔴 Nivel Avanzado
 **Si ya dominas Python básico:**
-- [Decoradores](./07_Conceptos_Avanzados/01_decorators.md)
-- [Context Managers](./07_Conceptos_Avanzados/02_context_managers.md)
-- [Generadores e Iteradores](./07_Conceptos_Avanzados/04_generadores_iteradores.md)
-- [Performance](./07_Conceptos_Avanzados/03_performance.md)
+- [Generadores e Iteradores](./07_Conceptos_Avanzados/01_generadores_iteradores.md)
+- [Decoradores](./07_Conceptos_Avanzados/02_decorators.md)
+- [Context Managers](./07_Conceptos_Avanzados/03_context_managers.md)
+- [Performance](./07_Conceptos_Avanzados/04_performance.md)
+- [Git y Control de Versiones](./08_Herramientas_Profesionales/00_git_intro.md)
 - [Entornos Virtuales](./08_Herramientas_Profesionales/01_virtual_envs.md)
 - [Testing](./08_Herramientas_Profesionales/03_testing.md)
 - [Empaquetado](./08_Herramientas_Profesionales/02_packaging.md)

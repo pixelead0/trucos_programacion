@@ -1,6 +1,48 @@
+---
+title: Seguridad en Python
+description: Mejores prácticas de seguridad para código Python
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="advanced"
+  time="1.5 horas"
+  prereqs={['Manejo de Errores', 'Funciones']}
+/>
+
+<ProgressIndicator
+  module="Módulo 08: Herramientas Profesionales"
+  lesson={5}
+  total={5}
+/>
+
 # Seguridad en Python
 
-## ¿Por qué importa la seguridad en Python?
+<LessonMap
+  objectives={[
+    "Manejar contraseñas de forma segura (hashing)",
+    "Proteger secretos y credenciales",
+    "Validar y sanitizar entrada del usuario",
+    "Prevenir inyección de código",
+    "Aplicar principios de seguridad desde el diseño"
+  ]}
+  useCases={[
+    "Aplicaciones web: autenticación y autorización",
+    "APIs: proteger endpoints y datos sensibles",
+    "Sistemas que manejan datos personales",
+    "Aplicaciones financieras o de salud",
+    "Cualquier código que maneje información sensible",
+    "Prevenir vulnerabilidades comunes (OWASP Top 10)"
+  ]}
+  time="1.5 horas"
+  level="advanced"
+/>
 
 Un pequeño error de seguridad puede exponer datos sensibles, permitir acceso no autorizado, o causar que tu aplicación sea comprometida. La seguridad no es opcional en código que maneja datos reales.
 
@@ -417,7 +459,7 @@ def setup_logging():
 
 ### Conceptos Relacionados
 - [Manejo de Errores](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md) - No expongas información sensible
-- [Logging](../05_Manejo_de_Errores_y_Buenas_Practicas/02_logging.md) - Logging seguro
+- [Logging](../05_Manejo_de_Errores_y_Buenas_Practicas/03_logging.md) - Logging seguro
 - [Testing](./03_testing.md) - Prueba la seguridad de tu código
 
 ---

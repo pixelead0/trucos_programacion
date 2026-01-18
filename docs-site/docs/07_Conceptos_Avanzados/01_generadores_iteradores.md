@@ -1,10 +1,52 @@
+---
+title: Generadores e Iteradores en Python
+description: Trabaja con secuencias de datos eficientemente en memoria
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="advanced"
+  time="1.5 horas"
+  prereqs={['Bucles', 'Funciones', 'Listas']}
+/>
+
+<ProgressIndicator
+  module="Módulo 07: Conceptos Avanzados"
+  lesson={1}
+  total={4}
+/>
+
 # Generadores e Iteradores en Python
 
-## Introducción
+<LessonMap
+  objectives={[
+    "Crear generadores con yield",
+    "Entender la diferencia entre return y yield",
+    "Usar generadores para eficiencia en memoria",
+    "Crear iteradores personalizados",
+    "Aplicar generadores en procesamiento de datos grandes"
+  ]}
+  useCases={[
+    "Procesar archivos grandes sin cargar todo en memoria",
+    "Generar secuencias infinitas (números, datos)",
+    "Pipelines de procesamiento de datos",
+    "Lazy evaluation: calcular valores solo cuando se necesitan",
+    "APIs: generar respuestas bajo demanda",
+    "Análisis de datos: procesar datasets grandes eficientemente"
+  ]}
+  time="1.5 horas"
+  level="advanced"
+/>
+
+## 💡 Introducción
 
 Los generadores e iteradores son características poderosas de Python que permiten trabajar con secuencias de datos de manera eficiente en memoria. Los generadores son especialmente útiles cuando trabajas con grandes volúmenes de datos o secuencias infinitas.
-
-> **Prerequisitos**: Antes de continuar, asegúrate de entender [Bucles](../01_Introduccion_y_Fundamentos/04_bucles.md), [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Listas](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md).
 
 ## ¿Qué son los Generadores?
 
@@ -169,10 +211,12 @@ for lote in procesar_en_lotes(datos, tamano_lote=100):
 
 ### Conceptos Relacionados
 - [Bucles](../01_Introduccion_y_Fundamentos/04_bucles.md) - Base para iteración
-- [Decoradores](./01_decorators.md) - Pueden crear generadores
-- [Performance](./03_performance.md) - Generadores mejoran rendimiento
-
----
+- [Decoradores](./02_decorators.md) - Pueden crear generadores
+- [Performance](./04_performance.md) - Generadores mejoran rendimiento
 
 ## Siguiente paso
-Ahora que conoces generadores, aprende sobre decoradores, otra característica avanzada de Python. Continúa con: **[Decoradores](./01_decorators.md)**
+
+<NextStep
+  to="/Conceptos_Avanzados/decorators"
+  label="Siguiente: Decoradores →"
+/>

@@ -18,7 +18,7 @@ export default function Home(): JSX.Element {
       description: 'Ya sabes programar, quieres aprender Python',
       time: '2-3 semanas',
       prereqs: ['Conocimientos básicos de programación'],
-      to: '/Estructuras_de_Datos/listas_tuplas_diccionarios',
+      to: '/Estructuras_de_Datos/listas',
       color: 'warning',
     },
     {
@@ -56,7 +56,7 @@ export default function Home(): JSX.Element {
       ],
       time: '1 semana',
       prereqs: ['Fundamentos'],
-      to: '/Estructuras_de_Datos/listas_tuplas_diccionarios',
+      to: '/Estructuras_de_Datos/listas',
     },
     {
       moduleNumber: '03',
@@ -177,42 +177,42 @@ export default function Home(): JSX.Element {
           <div className="row margin-vert--lg">
             <div className="col col--12">
               <h2 className="homePage__sectionTitle">Elige tu ruta de aprendizaje</h2>
-              <div className="routeCards">
-                {routes.map((route, index) => (
-                  <div key={index} className="col col--4 routeCard">
-                    <div className={`routeCard__content routeCard--${route.color}`}>
-                      <h3 className="routeCard__title">{route.title}</h3>
-                      <p className="routeCard__description">{route.description}</p>
-                      <div className="routeCard__meta">
-                        <span className="muted">⏱ {route.time}</span>
-                        <div className="muted">
-                          <strong>Prerequisitos:</strong> {route.prereqs.join(', ')}
-                        </div>
-                      </div>
-                      <Link
-                        className="button button--primary button--block routeCard__button"
-                        to={route.to}>
-                        Continuar →
-                      </Link>
+            </div>
+          </div>
+          <div className="row margin-vert--lg">
+            {routes.map((route, index) => (
+              <div key={index} className="col col--12 col--4-lg">
+                <div className={`routeCard__content routeCard--${route.color}`}>
+                  <h3 className="routeCard__title">{route.title}</h3>
+                  <p className="routeCard__description">{route.description}</p>
+                  <div className="routeCard__meta">
+                    <span className="muted">⏱ {route.time}</span>
+                    <div className="muted">
+                      <strong>Prerequisitos:</strong> {route.prereqs.join(', ')}
                     </div>
                   </div>
-                ))}
+                  <Link
+                    className="button button--primary button--block routeCard__button"
+                    to={route.to}>
+                    Continuar →
+                  </Link>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
 
           {/* Module Cards */}
           <div className="row margin-vert--lg">
             <div className="col col--12">
               <h2 className="homePage__sectionTitle">Módulos del curso</h2>
-              <div className="moduleCards">
-                {modules.map((module) => (
-                  <div key={module.moduleNumber} className="col col--6 col--4-lg">
-                    <ModuleCard {...module} />
-                  </div>
-                ))}
-              </div>
             </div>
+          </div>
+          <div className="row margin-vert--lg">
+            {modules.map((module) => (
+              <div key={module.moduleNumber} className="col col--12 col--6-lg">
+                <ModuleCard {...module} />
+              </div>
+            ))}
           </div>
 
           {/* Quick Links */}

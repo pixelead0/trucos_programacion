@@ -1,6 +1,50 @@
+---
+title: Configuración con YAML en Python
+description: Formato legible para configuraciones y datos estructurados
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="45 minutos"
+  prereqs={['JSON', 'Diccionarios y Sets']}
+/>
+
+<ProgressIndicator
+  module="Módulo 06: Datos y Formatos"
+  lesson={4}
+  total={5}
+/>
+
 # Configuración con YAML en Python
 
-## ¿Qué es YAML y por qué usarlo?
+<LessonMap
+  objectives={[
+    "Leer y escribir archivos YAML",
+    "Entender la sintaxis YAML (indentación, listas, diccionarios)",
+    "Trabajar con YAML anidado",
+    "Usar YAML para configuraciones",
+    "Convertir entre YAML y estructuras de Python"
+  ]}
+  useCases={[
+    "Archivos de configuración (Docker, CI/CD, aplicaciones)",
+    "Configuraciones editables manualmente",
+    "Archivos de configuración legibles sin herramientas",
+    "DevOps: docker-compose.yml, GitHub Actions",
+    "Aplicaciones: configuraciones de servidores",
+    "Documentación: ejemplos de configuración"
+  ]}
+  time="45 minutos"
+  level="intermediate"
+/>
+
+## 💡 ¿Qué es YAML y por qué usarlo?
 
 YAML (YAML Ain't Markup Language) es un formato de datos que se lee casi como texto normal. Si ya trabajaste con JSON, YAML es similar pero más legible para humanos.
 
@@ -14,7 +58,7 @@ YAML (YAML Ain't Markup Language) es un formato de datos que se lee casi como te
 - Cuando necesitas máximo rendimiento (JSON es más rápido)
 - Datos muy simples (un archivo `.env` puede ser suficiente)
 
-> **Nota**: Si ya conoces [JSON](./03_json.md) y [Diccionarios](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md), YAML te resultará familiar.
+> **Nota**: Si ya conoces [JSON](./03_json.md) y [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md), YAML te resultará familiar.
 
 ## Conceptos Básicos
 
@@ -285,4 +329,4 @@ except Exception as e:
 ---
 
 ## Siguiente paso
-Ahora que conoces los formatos básicos, aprende sobre serialización avanzada. Continúa con: **[Serialización Avanzada](./05_serialization_advanced.md)** o explora [Conceptos Avanzados](../07_Conceptos_Avanzados/01_decorators.md)
+Ahora que conoces los formatos básicos, aprende sobre serialización avanzada. Continúa con: **[Serialización Avanzada](./05_serialization_advanced.md)** o explora [Conceptos Avanzados](../07_Conceptos_Avanzados/02_decorators.md)

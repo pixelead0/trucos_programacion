@@ -4,9 +4,11 @@ description: Técnicas avanzadas de control de flujo y lógica compleja
 ---
 
 import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
   level="beginner"
@@ -14,16 +16,35 @@ import TryIt from '@site/src/components/TryIt';
   prereqs={['Condicionales y Lógica']}
 />
 
+<ProgressIndicator
+  module="Módulo 01: Fundamentos"
+  lesson={4}
+  total={5}
+/>
+
 # Condicionales Avanzados
 
-## Qué vas a lograr
+<LessonMap
+  objectives={[
+    "Anidar condicionales para lógica compleja",
+    "Usar comparaciones múltiples y operadores avanzados",
+    "Aplicar el operador ternario para código compacto",
+    "Validar entrada del usuario de forma robusta",
+    "Escribir código legible con lógica compleja"
+  ]}
+  useCases={[
+    "Sistemas de facturación: calcular impuestos según país, tipo y monto",
+    "Plataformas de streaming: decidir contenido según edad, suscripción y preferencias",
+    "Sistemas de envío: calcular costo según peso, distancia, tipo y urgencia",
+    "Aplicaciones bancarias: validar transacciones con múltiples condiciones",
+    "Sistemas de calificaciones: asignar letras según rangos de puntuación",
+    "APIs de pago: validar tarjeta, verificar fondos, aplicar descuentos"
+  ]}
+  time="1 hora"
+  level="beginner"
+/>
 
-- Anidar condicionales para lógica compleja
-- Usar comparaciones múltiples y operadores avanzados
-- Aplicar el operador ternario para código compacto
-- Validar entrada del usuario de forma robusta
-
-## Casos reales donde se usa
+## 🌍 Casos reales donde se usa
 
 Las condicionales avanzadas son esenciales para lógica de negocio compleja:
 

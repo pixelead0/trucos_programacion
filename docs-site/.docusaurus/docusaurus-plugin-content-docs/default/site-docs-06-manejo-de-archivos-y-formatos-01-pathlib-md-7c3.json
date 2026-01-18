@@ -1,7 +1,7 @@
 {
   "id": "Manejo_de_Archivos_y_Formatos/pathlib",
   "title": "Pathlib en Python",
-  "description": "¿Qué es Pathlib y por qué usarlo en lugar de strings?",
+  "description": "Manejo moderno de rutas y archivos en Python",
   "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/01_pathlib.md",
   "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
   "slug": "/Manejo_de_Archivos_y_Formatos/pathlib",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Pathlib en Python",
+    "description": "Manejo moderno de rutas y archivos en Python"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Calidad de Código en Python",
+    "title": "Calidad de Código",
     "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/quality"
   },
   "next": {
-    "title": "Procesamiento de XML en Python",
+    "title": "XML",
     "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/xml"
   }
 }

@@ -1,0 +1,101 @@
+---
+title: Título de la Lección
+description: Breve descripción de lo que se aprende
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
+
+<LessonMeta
+  level="beginner" // o "intermediate" o "advanced"
+  time="45 minutos"
+  prereqs={['Lección anterior']}
+/>
+
+# Título de la Lección
+
+## Qué vas a lograr
+
+- Objetivo 1: Descripción clara
+- Objetivo 2: Descripción clara
+- Objetivo 3: Descripción clara
+
+## Concepto base
+
+Explicación simple y directa del concepto principal. Usa lenguaje claro y ejemplos concretos.
+
+:::info Para principiantes
+Si esto te suena raro, es normal. Quédate con la idea básica: [explicación simple].
+:::
+
+## Paso a paso
+
+### 1. Subtítulo del paso
+
+Instrucciones claras y específicas.
+
+```python
+# Código de ejemplo
+ejemplo = "código"
+```
+
+<ExpectedOutput>
+Resultado que deberías ver al ejecutar el código.
+</ExpectedOutput>
+
+:::tip Tip pro
+Consejo para quienes ya tienen experiencia: [consejo avanzado].
+:::
+
+### 2. Siguiente paso
+
+Más instrucciones...
+
+<TryIt>
+Ejercicio práctico para que el estudiante pruebe por sí mismo.
+</TryIt>
+
+## Errores comunes
+
+:::warning Error típico
+Descripción del error común y cómo evitarlo.
+:::
+
+:::danger Atención
+Si te falla, revisa que [condición específica].
+:::
+
+## Capas opcionales
+
+### Si eres principiante...
+
+Información adicional para principiantes que necesitan más contexto o explicación.
+
+### Si ya programas...
+
+Información para quienes vienen de otros lenguajes o ya tienen experiencia.
+
+### Notas pro / Edge cases
+
+Información avanzada sobre casos especiales o detalles técnicos.
+
+## Checkpoint
+
+<Checkpoint
+  items={[
+    "Si llegaste aquí, ya puedes hacer X",
+    "Entiendes el concepto Y",
+    "Puedes aplicar Z en tu código"
+  ]}
+/>
+
+## Siguiente paso
+
+<NextStep
+  to="/ruta/a/siguiente/leccion"
+  label="Siguiente: Nombre de la Lección →"
+  project="/ruta/al/proyecto/relacionado"
+/>

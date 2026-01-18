@@ -1,6 +1,50 @@
+---
+title: Serialización Avanzada y Multi-Formato
+description: Exporta datos a múltiples formatos desde una sola fuente
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="advanced"
+  time="1.5 horas"
+  prereqs={['JSON', 'XML', 'Funciones']}
+/>
+
+<ProgressIndicator
+  module="Módulo 06: Datos y Formatos"
+  lesson={5}
+  total={5}
+/>
+
 # Serialización Avanzada y Multi-Formato
 
-## ¿Qué es la serialización multi-formato y cuándo la necesitas?
+<LessonMap
+  objectives={[
+    "Crear sistemas de serialización multi-formato",
+    "Implementar patrón Strategy para formatos",
+    "Manejar serialización de objetos complejos",
+    "Exportar datos a JSON, XML, CSV desde una fuente",
+    "Aplicar principios SOLID en serialización"
+  ]}
+  useCases={[
+    "Sistemas que se integran con múltiples plataformas",
+    "Exportación de reportes en diferentes formatos",
+    "Migración de datos entre sistemas",
+    "APIs que soportan múltiples formatos de respuesta",
+    "Herramientas de conversión de datos",
+    "Sistemas ETL (Extract, Transform, Load)"
+  ]}
+  time="1.5 horas"
+  level="advanced"
+/>
+
+## 💡 ¿Qué es la serialización multi-formato y cuándo la necesitas?
 
 Imagina que tienes datos que necesitas exportar, pero diferentes sistemas requieren diferentes formatos:
 - Un sistema legacy necesita XML
@@ -456,4 +500,4 @@ class TransformadorFormato:
 - [JSON](./03_json.md) - Serialización JSON
 - [XML](./02_xml.md) - Serialización XML
 - [YAML](./04_yaml.md) - Serialización YAML
-- [Decoradores](../07_Conceptos_Avanzados/01_decorators.md) - Patrón Strategy con decoradores
+- [Decoradores](../07_Conceptos_Avanzados/02_decorators.md) - Patrón Strategy con decoradores

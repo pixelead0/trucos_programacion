@@ -4,10 +4,12 @@ description: Fundamentos básicos de variables y tipos de datos en Python
 ---
 
 import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
 import ExpectedOutput from '@site/src/components/ExpectedOutput';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
   level="beginner"
@@ -15,15 +17,35 @@ import ExpectedOutput from '@site/src/components/ExpectedOutput';
   prereqs={['El Zen de Python']}
 />
 
+<ProgressIndicator
+  module="Módulo 01: Fundamentos"
+  lesson={2}
+  total={5}
+/>
+
 # Variables y Tipos de Datos en Python
 
-## Qué vas a lograr
+<LessonMap
+  objectives={[
+    "Crear y usar variables en Python",
+    "Entender los tipos de datos básicos (str, int, float, bool)",
+    "Convertir entre tipos usando int(), float(), str(), bool()",
+    "Usar f-strings para formateo de texto",
+    "Realizar operaciones matemáticas básicas"
+  ]}
+  useCases={[
+    "Formularios web: capturar nombre, email, edad del usuario",
+    "Cálculos financieros: precios, descuentos, totales, impuestos",
+    "Sistemas de autenticación: validar credenciales (usuario, contraseña)",
+    "Análisis de datos: procesar números, promedios, estadísticas",
+    "APIs y servicios: enviar y recibir datos estructurados",
+    "Aplicaciones móviles: guardar preferencias del usuario, configuraciones"
+  ]}
+  time="45 minutos"
+  level="beginner"
+/>
 
-- Crear y usar variables en Python
-- Entender los tipos de datos básicos (str, int, float, bool)
-- Convertir entre tipos y usar f-strings para formateo
-
-## Casos reales donde se usa
+## 🌍 Casos reales donde se usa
 
 Las variables y tipos de datos son la base de todo programa Python. Los verás en:
 
@@ -347,7 +369,7 @@ print(f"{celsius}°C = {fahrenheit}°F")
 
 ### Conceptos Relacionados
 - [Condicionales y Lógica](./02_condicionales_y_logica.md) - Usa variables en decisiones
-- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/03_type_hints.md) - Anotaciones de tipo avanzadas
+- [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md) - Anotaciones de tipo avanzadas
 
 ## Siguiente paso
 

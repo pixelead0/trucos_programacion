@@ -69,6 +69,11 @@ export default {
           "label": "Curso"
         },
         {
+          "to": "/rutas",
+          "position": "left",
+          "label": "Rutas"
+        },
+        {
           "href": "https://github.com/pixelead0/trucos_programacion",
           "label": "GitHub",
           "position": "right"

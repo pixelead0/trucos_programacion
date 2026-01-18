@@ -1,6 +1,50 @@
+---
+title: Clases y Objetos en Python
+description: Aprende programación orientada a objetos en Python
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="2 horas"
+  prereqs={['Funciones', 'Diccionarios y Sets']}
+/>
+
+<ProgressIndicator
+  module="Módulo 04: Programación Orientada a Objetos"
+  lesson={1}
+  total={2}
+/>
+
 # Clases y Objetos en Python
 
-## ¿Qué es POO y cuándo la necesitas?
+<LessonMap
+  objectives={[
+    "Entender conceptos de POO: clases, objetos, métodos, atributos",
+    "Crear clases y objetos en Python",
+    "Usar __init__ para inicializar objetos",
+    "Entender herencia y polimorfismo",
+    "Aplicar encapsulación con métodos privados"
+  ]}
+  useCases={[
+    "Modelar entidades del mundo real: Usuario, Producto, Carrito",
+    "APIs y frameworks: Django, Flask usan clases extensivamente",
+    "Sistemas complejos: organizar código con relaciones entre objetos",
+    "Reutilización: crear plantillas (clases) para múltiples instancias",
+    "Abstracción: ocultar complejidad detrás de interfaces simples",
+    "Mantenimiento: cambios en una clase afectan todas sus instancias"
+  ]}
+  time="2 horas"
+  level="intermediate"
+/>
+
+## 💡 ¿Qué es POO y cuándo la necesitas?
 
 Hasta ahora has usado funciones y estructuras de datos por separado. Pero imagina que trabajas con usuarios: cada usuario tiene nombre, email, edad, y puede hacer cosas como "iniciar sesión" o "actualizar perfil".
 
@@ -36,7 +80,7 @@ class Usuario:
 - Procesamiento de datos simple
 - Cuando las funciones son suficientes
 
-> **Antes de continuar**: Asegúrate de entender [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Diccionarios](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md).
+> **Antes de continuar**: Asegúrate de entender [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md).
 
 ## Conceptos Fundamentales
 
@@ -455,7 +499,7 @@ class Persona:
 
 ### Conceptos Relacionados
 - [Dataclasses](./02_dataclasses.md) - Forma moderna de crear clases
-- [Decoradores](../07_Conceptos_Avanzados/01_decorators.md) - Extiende clases y métodos
+- [Decoradores](../07_Conceptos_Avanzados/02_decorators.md) - Extiende clases y métodos
 - [Módulos y Paquetes](../03_Funciones_y_Modulos/02_modulos_paquetes.md) - Organiza clases en módulos
 
 ---

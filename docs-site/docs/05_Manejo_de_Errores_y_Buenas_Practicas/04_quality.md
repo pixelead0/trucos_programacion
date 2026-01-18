@@ -1,6 +1,50 @@
+---
+title: Calidad de Código en Python
+description: Herramientas profesionales para mantener código de calidad
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="1 hora"
+  prereqs={['Type Hints', 'Funciones']}
+/>
+
+<ProgressIndicator
+  module="Módulo 05: Calidad y Robustez"
+  lesson={4}
+  total={4}
+/>
+
 # Calidad de Código en Python
 
-## ¿Qué es la calidad de código y por qué importa?
+<LessonMap
+  objectives={[
+    "Usar formateadores (black) para código consistente",
+    "Usar linters (flake8) para encontrar problemas",
+    "Usar type checkers (mypy) para verificar tipos",
+    "Configurar pre-commit hooks",
+    "Aplicar estándares de calidad en proyectos"
+  ]}
+  useCases={[
+    "Colaboración: mantener código consistente en equipos",
+    "Mantenimiento: encontrar errores antes de ejecutar",
+    "Profesionalismo: código que sigue estándares",
+    "CI/CD: verificar calidad automáticamente",
+    "Refactoring: herramientas ayudan a hacer cambios seguros",
+    "Onboarding: nuevos desarrolladores entienden el código más rápido"
+  ]}
+  time="1 hora"
+  level="intermediate"
+/>
+
+## 💡 ¿Qué es la calidad de código y por qué importa?
 
 Escribir código que funciona es solo la mitad del trabajo. El código también debe ser:
 - **Legible**: Otros (o tú en 6 meses) pueden entenderlo
@@ -20,7 +64,7 @@ Escribir código que funciona es solo la mitad del trabajo. El código también 
 - **Type checkers** (mypy): Verifican tipos antes de ejecutar
 - **Pre-commit hooks**: Verificaciones automáticas antes de hacer commit
 
-> **Antes de continuar**: Asegúrate de entender [Type Hints](./03_type_hints.md) y [Funciones](../03_Funciones_y_Modulos/01_funciones.md).
+> **Antes de continuar**: Asegúrate de entender [Type Hints](./02_type_hints.md) y [Funciones](../03_Funciones_y_Modulos/01_funciones.md).
 
 ## Herramientas de Análisis
 
@@ -304,9 +348,9 @@ def procesar_datos(
 - **Code Complete** (Steve McConnell) - Construcción de software profesional
 
 ### Conceptos Relacionados
-- [Type Hints](./03_type_hints.md) - Mejora la calidad con tipos
+- [Type Hints](./02_type_hints.md) - Mejora la calidad con tipos
 - [Testing](../08_Herramientas_Profesionales/03_testing.md) - Pruebas de calidad
-- [Logging](./02_logging.md) - Registra eventos de tu aplicación
+- [Logging](./03_logging.md) - Registra eventos de tu aplicación
 
 ---
 

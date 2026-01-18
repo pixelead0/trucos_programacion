@@ -49,15 +49,15 @@ export default [
   },
   {
     path: '/trucos_programacion/',
-    component: ComponentCreator('/trucos_programacion/', 'fe8'),
+    component: ComponentCreator('/trucos_programacion/', '1f9'),
     routes: [
       {
         path: '/trucos_programacion/',
-        component: ComponentCreator('/trucos_programacion/', 'c78'),
+        component: ComponentCreator('/trucos_programacion/', '42c'),
         routes: [
           {
             path: '/trucos_programacion/',
-            component: ComponentCreator('/trucos_programacion/', '49d'),
+            component: ComponentCreator('/trucos_programacion/', '04a'),
             routes: [
               {
                 path: '/trucos_programacion/Ciencia_de_Datos_Basica/pandas_basico',
@@ -67,37 +67,49 @@ export default [
               },
               {
                 path: '/trucos_programacion/Conceptos_Avanzados/context_managers',
-                component: ComponentCreator('/trucos_programacion/Conceptos_Avanzados/context_managers', 'a62'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/trucos_programacion/Conceptos_Avanzados/decoradores_wrappers',
-                component: ComponentCreator('/trucos_programacion/Conceptos_Avanzados/decoradores_wrappers', '6e9'),
+                component: ComponentCreator('/trucos_programacion/Conceptos_Avanzados/context_managers', '211'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/trucos_programacion/Conceptos_Avanzados/decorators',
-                component: ComponentCreator('/trucos_programacion/Conceptos_Avanzados/decorators', '378'),
+                component: ComponentCreator('/trucos_programacion/Conceptos_Avanzados/decorators', '92f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/trucos_programacion/Conceptos_Avanzados/generadores_iteradores',
-                component: ComponentCreator('/trucos_programacion/Conceptos_Avanzados/generadores_iteradores', '374'),
+                component: ComponentCreator('/trucos_programacion/Conceptos_Avanzados/generadores_iteradores', '9b8'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/trucos_programacion/Conceptos_Avanzados/performance',
-                component: ComponentCreator('/trucos_programacion/Conceptos_Avanzados/performance', '14f'),
+                component: ComponentCreator('/trucos_programacion/Conceptos_Avanzados/performance', 'e97'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/trucos_programacion/Estructuras_de_Datos/listas_tuplas_diccionarios',
-                component: ComponentCreator('/trucos_programacion/Estructuras_de_Datos/listas_tuplas_diccionarios', 'd12'),
+                path: '/trucos_programacion/Estructuras_de_Datos/diccionarios_sets',
+                component: ComponentCreator('/trucos_programacion/Estructuras_de_Datos/diccionarios_sets', '5a2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/trucos_programacion/Estructuras_de_Datos/listas',
+                component: ComponentCreator('/trucos_programacion/Estructuras_de_Datos/listas', '67e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/trucos_programacion/Estructuras_de_Datos/operaciones_avanzadas',
+                component: ComponentCreator('/trucos_programacion/Estructuras_de_Datos/operaciones_avanzadas', '608'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/trucos_programacion/Estructuras_de_Datos/tuplas',
+                component: ComponentCreator('/trucos_programacion/Estructuras_de_Datos/tuplas', 'cc5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -110,6 +122,12 @@ export default [
               {
                 path: '/trucos_programacion/Funciones_y_Modulos/modulos_paquetes',
                 component: ComponentCreator('/trucos_programacion/Funciones_y_Modulos/modulos_paquetes', '662'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/trucos_programacion/Herramientas_Profesionales/git_intro',
+                component: ComponentCreator('/trucos_programacion/Herramientas_Profesionales/git_intro', '40e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -152,12 +170,6 @@ export default [
               {
                 path: '/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica',
                 component: ComponentCreator('/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica', '165'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/trucos_programacion/Introduccion_y_Fundamentos/git_intro',
-                component: ComponentCreator('/trucos_programacion/Introduccion_y_Fundamentos/git_intro', '129'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -211,7 +223,7 @@ export default [
               },
               {
                 path: '/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging',
-                component: ComponentCreator('/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging', '991'),
+                component: ComponentCreator('/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging', '38c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -223,7 +235,7 @@ export default [
               },
               {
                 path: '/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints',
-                component: ComponentCreator('/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints', '419'),
+                component: ComponentCreator('/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints', 'f86'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

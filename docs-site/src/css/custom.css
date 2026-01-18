@@ -320,6 +320,10 @@
 }
 
 .routeCard__content {
+  margin-bottom: 1.5rem;
+}
+
+.routeCard__content {
   padding: 2rem;
   border-radius: 12px;
   border: 2px solid var(--ifm-color-emphasis-300);
@@ -376,6 +380,8 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
 }
+
+/* Remove duplicate grid - using Bootstrap columns instead */
 
 .homePage__quickLinks {
   display: flex;

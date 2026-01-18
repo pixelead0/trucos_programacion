@@ -1,7 +1,7 @@
 {
   "id": "Ciencia_de_Datos_Basica/pandas_basico",
   "title": "Pandas Básico",
-  "description": "¿Qué es Pandas y por qué es tan popular?",
+  "description": "Introducción a análisis de datos con Pandas",
   "source": "@site/docs/09_Ciencia_de_Datos_Basica/01_pandas_basico.md",
   "sourceDirName": "09_Ciencia_de_Datos_Basica",
   "slug": "/Ciencia_de_Datos_Basica/pandas_basico",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Pandas Básico",
+    "description": "Introducción a análisis de datos con Pandas"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Seguridad en Python",
+    "title": "Seguridad",
     "permalink": "/trucos_programacion/Herramientas_Profesionales/security"
   },
   "next": {
-    "title": "📚 Bibliografía y Recursos Adicionales",
+    "title": "Bibliografía y Recursos",
     "permalink": "/trucos_programacion/Material_Adicional/bibliografia_y_recursos"
   }
 }

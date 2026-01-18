@@ -1,4 +1,48 @@
+---
+title: Logging en Python
+description: Sistema profesional para registrar eventos y depurar código
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="1 hora"
+  prereqs={['Type Hints', 'Excepciones']}
+/>
+
+<ProgressIndicator
+  module="Módulo 05: Calidad y Robustez"
+  lesson={3}
+  total={4}
+/>
+
 # Logging en Python
+
+<LessonMap
+  objectives={[
+    "Usar el módulo logging en lugar de print()",
+    "Entender niveles de logging (DEBUG, INFO, WARNING, ERROR, CRITICAL)",
+    "Configurar logging para consola y archivos",
+    "Crear loggers personalizados",
+    "Aplicar logging en producción y desarrollo"
+  ]}
+  useCases={[
+    "Depuración: registrar eventos para entender qué pasa",
+    "Monitoreo: rastrear comportamiento de aplicaciones en producción",
+    "Auditoría: registrar acciones importantes del usuario",
+    "Diagnóstico: encontrar problemas en sistemas complejos",
+    "Análisis: analizar patrones de uso y errores",
+    "Debugging: diferentes niveles para desarrollo vs producción"
+  ]}
+  time="1 hora"
+  level="intermediate"
+/>
 
 ## ¿Qué es logging y por qué no usar print()?
 
@@ -264,10 +308,15 @@ logger.error("Error en operación")
 
 ### Conceptos Relacionados
 - [Excepciones](./01_excepciones.md) - Maneja errores que luego registras
-- [Type Hints](./03_type_hints.md) - Documenta tipos junto con logging
+- [Type Hints](./02_type_hints.md) - Documenta tipos junto con logging
 - [Testing](../08_Herramientas_Profesionales/03_testing.md) - Usa logging en tests
 
 ---
 
 ## Siguiente paso
-Ahora que sabes registrar eventos, aprende a documentar tipos en tu código. Continúa con: **[Type Hints](./03_type_hints.md)**
+## Siguiente paso
+
+<NextStep
+  to="/Manejo_de_Errores_y_Buenas_Practicas/quality"
+  label="Siguiente: Calidad de Código →"
+/>

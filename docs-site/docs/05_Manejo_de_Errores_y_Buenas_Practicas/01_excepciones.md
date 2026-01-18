@@ -1,4 +1,50 @@
+---
+title: Manejo de Excepciones en Python
+description: Aprende a manejar errores de forma profesional con try/except
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="1.5 horas"
+  prereqs={['Funciones', 'Condicionales']}
+/>
+
+<ProgressIndicator
+  module="Módulo 05: Calidad y Robustez"
+  lesson={1}
+  total={4}
+/>
+
 # Manejo de Excepciones en Python
+
+<LessonMap
+  objectives={[
+    "Usar try/except para manejar errores",
+    "Entender diferentes tipos de excepciones",
+    "Usar finally para limpieza de recursos",
+    "Crear excepciones personalizadas",
+    "Aplicar buenas prácticas de manejo de errores"
+  ]}
+  useCases={[
+    "Leer archivos que pueden no existir",
+    "Convertir datos de usuario que pueden estar mal formateados",
+    "Conectar a servicios que pueden estar caídos",
+    "Validar entrada del usuario de forma segura",
+    "Operaciones matemáticas que pueden fallar (división por cero)",
+    "APIs: manejar respuestas de error de forma elegante"
+  ]}
+  time="1.5 horas"
+  level="intermediate"
+/>
+
+## 💡 ¿Qué son las excepciones y por qué manejarlas?
 
 ## ¿Qué son las excepciones y por qué manejarlas?
 
@@ -423,11 +469,16 @@ resultado = validar_y_procesar_archivo("datos.txt")
 - **The Pragmatic Programmer** (Thomas & Hunt) - Capítulo sobre defensa en profundidad
 
 ### Conceptos Relacionados
-- [Logging](./02_logging.md) - Registra errores y eventos
-- [Type Hints](./03_type_hints.md) - Previene errores de tipo
+- [Type Hints](./02_type_hints.md) - Previene errores de tipo
+- [Logging](./03_logging.md) - Registra errores y eventos
 - [Testing](../08_Herramientas_Profesionales/03_testing.md) - Prueba tu código para encontrar errores
 
 ---
 
 ## Siguiente paso
-Ahora que sabes manejar errores, aprende a documentarlos y monitorearlos. Continúa con: **[Logging](./02_logging.md)**
+## Siguiente paso
+
+<NextStep
+  to="/Manejo_de_Errores_y_Buenas_Practicas/type_hints"
+  label="Siguiente: Type Hints →"
+/>

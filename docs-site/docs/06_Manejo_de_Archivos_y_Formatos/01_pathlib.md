@@ -1,6 +1,50 @@
+---
+title: Pathlib en Python
+description: Manejo moderno de rutas y archivos en Python
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="45 minutos"
+  prereqs={['Funciones', 'Manejo de Errores']}
+/>
+
+<ProgressIndicator
+  module="Módulo 06: Datos y Formatos"
+  lesson={1}
+  total={5}
+/>
+
 # Pathlib en Python
 
-## ¿Qué es Pathlib y por qué usarlo en lugar de strings?
+<LessonMap
+  objectives={[
+    "Usar Pathlib en lugar de strings para rutas",
+    "Combinar rutas de forma segura entre sistemas",
+    "Extraer partes de rutas (nombre, extensión, directorio)",
+    "Verificar existencia de archivos y directorios",
+    "Crear y eliminar archivos y directorios"
+  ]}
+  useCases={[
+    "Trabajar con archivos y directorios de forma segura",
+    "Código multiplataforma (Windows, Linux, Mac)",
+    "Procesar archivos en directorios",
+    "Organizar proyectos con rutas relativas",
+    "Scripts que manipulan archivos del sistema",
+    "APIs que manejan uploads y downloads"
+  ]}
+  time="45 minutos"
+  level="intermediate"
+/>
+
+## 💡 ¿Qué es Pathlib y por qué usarlo en lugar de strings?
 
 Tradicionalmente en Python trabajabas con rutas como strings: `ruta = "/home/usuario/documentos/archivo.txt"`. Esto funciona, pero tiene problemas:
 
@@ -269,7 +313,7 @@ def validar_path(ruta: Path) -> bool:
 
 ### Conceptos Relacionados
 - [XML](./02_xml.md) - Trabaja con archivos XML
-- [Context Managers](../07_Conceptos_Avanzados/02_context_managers.md) - Maneja archivos de forma segura
+- [Context Managers](../07_Conceptos_Avanzados/03_context_managers.md) - Maneja archivos de forma segura
 - [JSON](./03_json.md) - Trabaja con archivos JSON
 
 ---

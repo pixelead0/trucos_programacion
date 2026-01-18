@@ -1,4 +1,48 @@
+---
+title: Type Hints en Python
+description: Anotaciones de tipo para código más claro y mantenible
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="1 hora"
+  prereqs={['Funciones', 'Excepciones']}
+/>
+
+<ProgressIndicator
+  module="Módulo 05: Calidad y Robustez"
+  lesson={2}
+  total={4}
+/>
+
 # Type Hints en Python
+
+<LessonMap
+  objectives={[
+    "Entender qué son type hints y por qué usarlos",
+    "Anotar tipos básicos (str, int, float, bool)",
+    "Anotar tipos complejos (list, dict, Optional, Union)",
+    "Usar type hints en funciones y clases",
+    "Mejorar legibilidad y mantenibilidad del código"
+  ]}
+  useCases={[
+    "Documentar código: los tipos son documentación viva",
+    "IDEs: autocompletado y detección de errores mejorados",
+    "Type checkers: encontrar errores antes de ejecutar",
+    "APIs: documentar tipos de parámetros y retorno",
+    "Colaboración: otros desarrolladores entienden mejor tu código",
+    "Refactoring: cambios de tipos se detectan automáticamente"
+  ]}
+  time="1 hora"
+  level="intermediate"
+/>
 
 ## ¿Qué son type hints y por qué usarlos?
 
@@ -303,4 +347,8 @@ disallow_untyped_defs = True
 ---
 
 ## Siguiente paso
-Ahora que sabes usar type hints, aprende sobre herramientas para mantener la calidad de código. Continúa con: **[Calidad de Código](./04_quality.md)**
+
+<NextStep
+  to="/Manejo_de_Errores_y_Buenas_Practicas/logging"
+  label="Siguiente: Logging →"
+/>

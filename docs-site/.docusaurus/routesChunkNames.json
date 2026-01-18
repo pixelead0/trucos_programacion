@@ -56,46 +56,54 @@
     },
     "config": "config---trucos-programacion-5-e-9-236"
   },
-  "/trucos_programacion/-fe8": {
+  "/trucos_programacion/-1f9": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---trucos-programacion-aba-980"
     }
   },
-  "/trucos_programacion/-c78": {
+  "/trucos_programacion/-42c": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---trucos-programacion-019-605"
   },
-  "/trucos_programacion/-49d": {
+  "/trucos_programacion/-04a": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/trucos_programacion/Ciencia_de_Datos_Basica/pandas_basico-42f": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---trucos-programacion-ciencia-de-datos-basica-pandas-basico-04-d-7b7"
   },
-  "/trucos_programacion/Conceptos_Avanzados/context_managers-a62": {
+  "/trucos_programacion/Conceptos_Avanzados/context_managers-211": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-conceptos-avanzados-context-managers-60-a-bf5"
+    "content": "content---trucos-programacion-conceptos-avanzados-context-managers-7-eb-b76"
   },
-  "/trucos_programacion/Conceptos_Avanzados/decoradores_wrappers-6e9": {
+  "/trucos_programacion/Conceptos_Avanzados/decorators-92f": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-conceptos-avanzados-decoradores-wrappers-0-f-4-c96"
+    "content": "content---trucos-programacion-conceptos-avanzados-decorators-65-d-c86"
   },
-  "/trucos_programacion/Conceptos_Avanzados/decorators-378": {
+  "/trucos_programacion/Conceptos_Avanzados/generadores_iteradores-9b8": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-conceptos-avanzados-decoratorsf-46-ea9"
+    "content": "content---trucos-programacion-conceptos-avanzados-generadores-iteradores-29-d-882"
   },
-  "/trucos_programacion/Conceptos_Avanzados/generadores_iteradores-374": {
+  "/trucos_programacion/Conceptos_Avanzados/performance-e97": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-conceptos-avanzados-generadores-iteradorescee-bec"
+    "content": "content---trucos-programacion-conceptos-avanzados-performancebac-b31"
   },
-  "/trucos_programacion/Conceptos_Avanzados/performance-14f": {
+  "/trucos_programacion/Estructuras_de_Datos/diccionarios_sets-5a2": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-conceptos-avanzados-performance-54-e-e17"
+    "content": "content---trucos-programacion-estructuras-de-datos-diccionarios-setsc-0-e-067"
   },
-  "/trucos_programacion/Estructuras_de_Datos/listas_tuplas_diccionarios-d12": {
+  "/trucos_programacion/Estructuras_de_Datos/listas-67e": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-estructuras-de-datos-listas-tuplas-diccionarios-6-e-0-6f8"
+    "content": "content---trucos-programacion-estructuras-de-datos-listas-4-db-2e1"
+  },
+  "/trucos_programacion/Estructuras_de_Datos/operaciones_avanzadas-608": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-estructuras-de-datos-operaciones-avanzadasf-49-c34"
+  },
+  "/trucos_programacion/Estructuras_de_Datos/tuplas-cc5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-estructuras-de-datos-tuplas-9-ee-e35"
   },
   "/trucos_programacion/Funciones_y_Modulos/funciones-45d": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -104,6 +112,10 @@
   "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes-662": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---trucos-programacion-funciones-y-modulos-modulos-paquetes-436-a60"
+  },
+  "/trucos_programacion/Herramientas_Profesionales/git_intro-40e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---trucos-programacion-herramientas-profesionales-git-intro-766-f74"
   },
   "/trucos_programacion/Herramientas_Profesionales/packaging-4da": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -132,10 +144,6 @@
   "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica-165": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---trucos-programacion-introduccion-y-fundamentos-condicionales-y-logica-17-c-863"
-  },
-  "/trucos_programacion/Introduccion_y_Fundamentos/git_intro-129": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-introduccion-y-fundamentos-git-intro-4-d-7-959"
   },
   "/trucos_programacion/Introduccion_y_Fundamentos/variables_y_tipos-a0b": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -169,17 +177,17 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-excepcionesb-7-b-ef1"
   },
-  "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging-991": {
+  "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging-38c": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-loggingacf-521"
+    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-logginga-21-45d"
   },
   "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/quality-f6e": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-quality-8-b-1-05b"
   },
-  "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints-419": {
+  "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints-f86": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-type-hintsff-6-be5"
+    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-type-hints-147-4ab"
   },
   "/trucos_programacion/Material_Adicional/bibliografia_y_recursos-741": {
     "__comp": "__comp---theme-doc-item-178-a40",

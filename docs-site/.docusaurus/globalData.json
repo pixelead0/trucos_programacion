@@ -21,11 +21,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Conceptos_Avanzados/decoradores_wrappers",
-              "path": "/trucos_programacion/Conceptos_Avanzados/decoradores_wrappers",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "Conceptos_Avanzados/decorators",
               "path": "/trucos_programacion/Conceptos_Avanzados/decorators",
               "sidebar": "tutorialSidebar"
@@ -41,8 +36,23 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Estructuras_de_Datos/listas_tuplas_diccionarios",
-              "path": "/trucos_programacion/Estructuras_de_Datos/listas_tuplas_diccionarios",
+              "id": "Estructuras_de_Datos/diccionarios_sets",
+              "path": "/trucos_programacion/Estructuras_de_Datos/diccionarios_sets",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Estructuras_de_Datos/listas",
+              "path": "/trucos_programacion/Estructuras_de_Datos/listas",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Estructuras_de_Datos/operaciones_avanzadas",
+              "path": "/trucos_programacion/Estructuras_de_Datos/operaciones_avanzadas",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Estructuras_de_Datos/tuplas",
+              "path": "/trucos_programacion/Estructuras_de_Datos/tuplas",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -53,6 +63,11 @@
             {
               "id": "Funciones_y_Modulos/modulos_paquetes",
               "path": "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Herramientas_Profesionales/git_intro",
+              "path": "/trucos_programacion/Herramientas_Profesionales/git_intro",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -88,11 +103,6 @@
             {
               "id": "Introduccion_y_Fundamentos/condicionales_y_logica",
               "path": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "Introduccion_y_Fundamentos/git_intro",
-              "path": "/trucos_programacion/Introduccion_y_Fundamentos/git_intro",
               "sidebar": "tutorialSidebar"
             },
             {

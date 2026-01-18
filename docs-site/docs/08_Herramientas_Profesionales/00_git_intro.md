@@ -4,26 +4,47 @@ description: Aprende a versionar tus proyectos con Git
 ---
 
 import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
   level="beginner"
   time="1 hora"
-  prereqs={['Bucles']}
+  prereqs={['Funciones', 'Módulos y Paquetes']}
+/>
+
+<ProgressIndicator
+  module="Módulo 08: Herramientas Profesionales"
+  lesson={1}
+  total={5}
 />
 
 # Git y Control de Versiones
 
-## Qué vas a lograr
+<LessonMap
+  objectives={[
+    "Crear y gestionar repositorios Git",
+    "Hacer commits y trabajar con ramas",
+    "Sincronizar código con repositorios remotos (GitHub/GitLab)",
+    "Resolver conflictos y deshacer cambios",
+    "Aplicar buenas prácticas de versionado"
+  ]}
+  useCases={[
+    "Guardar versiones de tu código",
+    "Trabajar en equipo sin conflictos",
+    "Experimentar sin miedo a romper código",
+    "Revertir cambios si algo sale mal",
+    "Colaborar en proyectos open source",
+    "Mantener historial de cambios de proyectos"
+  ]}
+  time="1 hora"
+  level="beginner"
+/>
 
-- Crear y gestionar repositorios Git
-- Hacer commits y trabajar con ramas
-- Sincronizar código con repositorios remotos (GitHub/GitLab)
-- Resolver conflictos y deshacer cambios
-
-## Concepto base
+## 💡 Concepto base
 
 Git es un sistema de control de versiones que permite rastrear cambios en tu código a lo largo del tiempo. Es como tener un registro detallado de todos los cambios en tu proyecto, permitiéndote "viajar en el tiempo" para ver versiones anteriores o deshacer errores.
 
@@ -395,12 +416,13 @@ git commit -m "Agregar .gitignore para proyecto Python"
 - **VS Code Git Integration**: Integración de Git en el editor
 
 ### Conceptos Relacionados
-- [Estructuras de Datos](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) - Continúa aprendiendo Python
-- [Testing](../08_Herramientas_Profesionales/03_testing.md) - Integra Git con pruebas
+- [Entornos Virtuales](./01_virtual_envs.md) - Siguiente herramienta profesional
+- [Testing](./03_testing.md) - Integra Git con pruebas
+- [Empaquetado](./02_packaging.md) - Publica tus proyectos
 
 ## Siguiente paso
 
 <NextStep
-  to="/Estructuras_de_Datos/listas_tuplas_diccionarios"
-  label="Siguiente: Estructuras de Datos →"
+  to="/Herramientas_Profesionales/virtual_envs"
+  label="Siguiente: Entornos Virtuales →"
 />

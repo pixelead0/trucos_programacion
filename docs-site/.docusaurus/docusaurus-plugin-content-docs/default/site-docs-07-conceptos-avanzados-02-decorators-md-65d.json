@@ -1,0 +1,28 @@
+{
+  "id": "Conceptos_Avanzados/decorators",
+  "title": "Decoradores en Python",
+  "description": "Aprende a usar decoradores para extender funcionalidad sin modificar código",
+  "source": "@site/docs/07_Conceptos_Avanzados/02_decorators.md",
+  "sourceDirName": "07_Conceptos_Avanzados",
+  "slug": "/Conceptos_Avanzados/decorators",
+  "permalink": "/trucos_programacion/Conceptos_Avanzados/decorators",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/07_Conceptos_Avanzados/02_decorators.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Decoradores en Python",
+    "description": "Aprende a usar decoradores para extender funcionalidad sin modificar código"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Generadores e Iteradores",
+    "permalink": "/trucos_programacion/Conceptos_Avanzados/generadores_iteradores"
+  },
+  "next": {
+    "title": "Context Managers",
+    "permalink": "/trucos_programacion/Conceptos_Avanzados/context_managers"
+  }
+}

@@ -1,6 +1,50 @@
+---
+title: Procesamiento de XML en Python
+description: Trabaja con datos XML usando ElementTree
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="1 hora"
+  prereqs={['Pathlib', 'Diccionarios y Sets']}
+/>
+
+<ProgressIndicator
+  module="Módulo 06: Datos y Formatos"
+  lesson={2}
+  total={5}
+/>
+
 # Procesamiento de XML en Python
 
-## ¿Qué es XML y cuándo lo necesitas?
+<LessonMap
+  objectives={[
+    "Leer y parsear archivos XML",
+    "Navegar por la estructura XML",
+    "Extraer datos de elementos y atributos",
+    "Crear y modificar documentos XML",
+    "Trabajar con namespaces en XML"
+  ]}
+  useCases={[
+    "Sistemas legacy o enterprise que usan XML",
+    "Configuraciones de aplicaciones (Android, frameworks)",
+    "Documentos estructurados (Office, SVG)",
+    "APIs SOAP",
+    "Intercambio de datos entre sistemas enterprise",
+    "Procesar feeds RSS/Atom"
+  ]}
+  time="1 hora"
+  level="intermediate"
+/>
+
+## 💡 ¿Qué es XML y cuándo lo necesitas?
 
 XML (eXtensible Markup Language) es un formato de datos estructurado que usa etiquetas, similar a HTML pero para datos. Aunque JSON es más popular hoy en día, XML todavía se usa en muchos lugares.
 
@@ -18,7 +62,7 @@ XML (eXtensible Markup Language) es un formato de datos estructurado que usa eti
 
 **En Python:** La biblioteca estándar `xml.etree.ElementTree` es la más común y fácil de usar. No necesitas instalar nada.
 
-> **Antes de continuar**: Asegúrate de entender [Pathlib](./01_pathlib.md) y [Diccionarios](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md).
+> **Antes de continuar**: Asegúrate de entender [Pathlib](./01_pathlib.md) y [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md).
 
 ## Estructura Básica de XML
 

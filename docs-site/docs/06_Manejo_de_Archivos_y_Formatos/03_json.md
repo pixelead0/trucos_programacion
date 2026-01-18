@@ -1,6 +1,50 @@
+---
+title: Serialización JSON en Python
+description: Trabaja con JSON, el formato más usado en APIs y servicios web
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="1 hora"
+  prereqs={['Pathlib', 'Diccionarios y Sets', 'Funciones']}
+/>
+
+<ProgressIndicator
+  module="Módulo 06: Datos y Formatos"
+  lesson={3}
+  total={5}
+/>
+
 # Serialización JSON y Metadatos en Python
 
-## ¿Qué es JSON y por qué es tan popular?
+<LessonMap
+  objectives={[
+    "Leer y escribir archivos JSON",
+    "Convertir entre JSON y estructuras de Python",
+    "Trabajar con JSON anidado complejo",
+    "Manejar errores de parsing JSON",
+    "Formatear JSON para legibilidad"
+  ]}
+  useCases={[
+    "APIs REST: recibir y enviar datos JSON",
+    "Archivos de configuración (package.json, config.json)",
+    "Comunicación entre servicios",
+    "Almacenamiento de datos estructurados",
+    "Integración con servicios web modernos",
+    "Exportar/importar datos de aplicaciones"
+  ]}
+  time="1 hora"
+  level="intermediate"
+/>
+
+## 💡 ¿Qué es JSON y por qué es tan popular?
 
 JSON (JavaScript Object Notation) es el formato de datos más usado en la web. Si trabajas con APIs, servicios web, o configuraciones modernas, te encontrarás con JSON constantemente.
 
@@ -18,7 +62,7 @@ JSON (JavaScript Object Notation) es el formato de datos más usado en la web. S
 
 **Ventaja para Python:** JSON se mapea naturalmente a diccionarios y listas de Python. Es casi como trabajar con estructuras nativas.
 
-> **Antes de continuar**: Asegúrate de entender [Pathlib](./01_pathlib.md), [Diccionarios](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md) y [Funciones](../03_Funciones_y_Modulos/01_funciones.md).
+> **Antes de continuar**: Asegúrate de entender [Pathlib](./01_pathlib.md), [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md) y [Funciones](../03_Funciones_y_Modulos/01_funciones.md).
 
 ## ¿Qué es JSON?
 

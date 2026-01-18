@@ -1,7 +1,7 @@
 {
   "id": "Herramientas_Profesionales/testing",
   "title": "Testing en Python",
-  "description": "¿Qué es testing y por qué escribir tests?",
+  "description": "Escribe tests profesionales con unittest y pytest",
   "source": "@site/docs/08_Herramientas_Profesionales/03_testing.md",
   "sourceDirName": "08_Herramientas_Profesionales",
   "slug": "/Herramientas_Profesionales/testing",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 3,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Testing en Python",
+    "description": "Escribe tests profesionales con unittest y pytest"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Empaquetado y Distribución en Python",
+    "title": "Empaquetado",
     "permalink": "/trucos_programacion/Herramientas_Profesionales/packaging"
   },
   "next": {
-    "title": "Seguridad en Python",
+    "title": "Seguridad",
     "permalink": "/trucos_programacion/Herramientas_Profesionales/security"
   }
 }

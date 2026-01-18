@@ -1,6 +1,50 @@
+---
+title: Módulos y Paquetes en Python
+description: Aprende a organizar código en módulos y paquetes reutilizables
+---
+
+import LessonMeta from '@site/src/components/LessonMeta';
+import LessonMap from '@site/src/components/LessonMap';
+import Checkpoint from '@site/src/components/Checkpoint';
+import NextStep from '@site/src/components/NextStep';
+import TryIt from '@site/src/components/TryIt';
+import ProgressIndicator from '@site/src/components/ProgressIndicator';
+
+<LessonMeta
+  level="intermediate"
+  time="1 hora"
+  prereqs={['Funciones', 'Diccionarios y Sets']}
+/>
+
+<ProgressIndicator
+  module="Módulo 03: Funciones y Módulos"
+  lesson={2}
+  total={2}
+/>
+
 # Módulos, Paquetes y Organización en Python
 
-## ¿Qué son los módulos y por qué organizar tu código?
+<LessonMap
+  objectives={[
+    "Crear y usar módulos en Python",
+    "Organizar código en paquetes",
+    "Importar módulos y funciones correctamente",
+    "Entender __init__.py y estructura de paquetes",
+    "Usar módulos estándar de Python"
+  ]}
+  useCases={[
+    "Organizar proyectos grandes: dividir código en archivos lógicos",
+    "Reutilizar código: usar el mismo módulo en múltiples proyectos",
+    "Colaboración: varios desarrolladores trabajan en módulos diferentes",
+    "Librerías: crear código reutilizable para otros",
+    "Mantenimiento: cambios en un módulo no afectan otros",
+    "APIs: organizar endpoints en módulos separados"
+  ]}
+  time="1 hora"
+  level="intermediate"
+/>
+
+## 💡 ¿Qué son los módulos y por qué organizar tu código?
 
 Imagina que tienes un proyecto con 50 funciones. ¿Las pones todas en un solo archivo de 2000 líneas? Eso sería un desastre: difícil de encontrar cosas, difícil de mantener, difícil de trabajar en equipo.
 
@@ -14,7 +58,7 @@ Imagina que tienes un proyecto con 50 funciones. ¿Las pones todas en un solo ar
 
 **En la práctica:** Un módulo es simplemente un archivo `.py` con funciones, clases o variables que quieres reutilizar.
 
-> **Antes de continuar**: Asegúrate de entender [Funciones](./01_funciones.md) y [Diccionarios](../02_Estructuras_de_Datos/01_listas_tuplas_diccionarios.md).
+> **Antes de continuar**: Asegúrate de entender [Funciones](./01_funciones.md) y [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md).
 
 ## Crear y usar módulos
 

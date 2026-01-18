@@ -1,7 +1,7 @@
 {
   "id": "Manejo_de_Errores_y_Buenas_Practicas/excepciones",
   "title": "Manejo de Excepciones en Python",
-  "description": "¿Qué son las excepciones y por qué manejarlas?",
+  "description": "Aprende a manejar errores de forma profesional con try/except",
   "source": "@site/docs/05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md",
   "sourceDirName": "05_Manejo_de_Errores_y_Buenas_Practicas",
   "slug": "/Manejo_de_Errores_y_Buenas_Practicas/excepciones",
@@ -12,14 +12,17 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Manejo de Excepciones en Python",
+    "description": "Aprende a manejar errores de forma profesional con try/except"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Dataclasses en Python",
+    "title": "Dataclasses",
     "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/dataclasses"
   },
   "next": {
-    "title": "Logging en Python",
-    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging"
+    "title": "Type Hints",
+    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints"
   }
 }
