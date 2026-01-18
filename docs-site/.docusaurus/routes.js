@@ -43,6 +43,11 @@ export default [
     exact: true
   },
   {
+    path: '/trucos_programacion/sobre-el-autor',
+    component: ComponentCreator('/trucos_programacion/sobre-el-autor', '69f'),
+    exact: true
+  },
+  {
     path: '/trucos_programacion/',
     component: ComponentCreator('/trucos_programacion/', '6ef'),
     exact: true

@@ -225,6 +225,9 @@ export default function Home(): JSX.Element {
                 <Link className="button button--outline button--secondary button--lg" to="/Material_Adicional/bibliografia_y_recursos">
                   📚 Recursos adicionales
                 </Link>
+                <Link className="button button--outline button--primary button--lg" to="/sobre-el-autor">
+                  👨‍💻 Sobre el Autor
+                </Link>
               </div>
             </div>
           </div>

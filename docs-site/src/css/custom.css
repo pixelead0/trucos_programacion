@@ -675,3 +675,29 @@
     align-items: flex-start;
   }
 }
+
+/* Buy Me A Coffee Button Styling */
+.navbar__item--coffee {
+  background: linear-gradient(135deg, #FFDD00 0%, #FF6B6B 100%);
+  color: white !important;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-left: 0.5rem;
+}
+
+.navbar__item--coffee:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+  color: white !important;
+}
+
+[data-theme='dark'] .navbar__item--coffee {
+  background: linear-gradient(135deg, #FFDD00 0%, #FF6B6B 100%);
+  color: white !important;
+}
+
+[data-theme='dark'] .navbar__item--coffee:hover {
+  color: white !important;
+}

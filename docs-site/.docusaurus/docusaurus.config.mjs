@@ -74,6 +74,17 @@ export default {
           "label": "Rutas"
         },
         {
+          "to": "/sobre-el-autor",
+          "position": "left",
+          "label": "Sobre el Autor"
+        },
+        {
+          "href": "https://www.buymeacoffee.com/pixelead0",
+          "label": "☕ Buy Me A Coffee",
+          "position": "right",
+          "className": "navbar__item--coffee"
+        },
+        {
           "href": "https://github.com/pixelead0/trucos_programacion",
           "label": "GitHub",
           "position": "right"
@@ -109,6 +120,14 @@ export default {
         {
           "title": "Más",
           "items": [
+            {
+              "label": "Sobre el Autor",
+              "to": "/sobre-el-autor"
+            },
+            {
+              "label": "☕ Buy Me A Coffee",
+              "href": "https://www.buymeacoffee.com/pixelead0"
+            },
             {
               "label": "GitHub",
               "href": "https://github.com/pixelead0/trucos_programacion"

@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/trucos_programacion/sobre-el-autor",
+  "source": "@site/src/pages/sobre-el-autor.mdx",
+  "title": "Sobre el Autor",
+  "description": "Conoce al creador del curso y apoya el proyecto",
+  "frontMatter": {
+    "title": "Sobre el Autor",
+    "description": "Conoce al creador del curso y apoya el proyecto"
+  },
+  "unlisted": false
+}
