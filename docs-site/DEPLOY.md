@@ -1,95 +1,99 @@
-# 🚀 Guía de Despliegue de Docusaurus
+# 🚀 Guía de Deployment a GitHub Pages
 
-## Opciones de Despliegue
+Esta guía explica cómo desplegar el sitio Docusaurus a GitHub Pages usando GitHub Actions.
 
-### 1. GitHub Pages (Recomendado)
+## 📋 Prerequisitos
 
-#### Configuración Inicial
+1. Repositorio en GitHub: `pixelead0/trucos_programacion`
+2. GitHub Pages habilitado en el repositorio
+3. Permisos de workflow configurados correctamente
 
-1. **Instala gh-pages:**
-```bash
-npm install --save-dev gh-pages
-```
+## ⚙️ Configuración Inicial
 
-2. **Configuración en `docusaurus.config.js` (ya configurado):**
-   - `url`: `'https://pixelead0.github.io'`
-   - `baseUrl`: `'/trucos_programacion/'`
-   - `organizationName`: `'pixelead0'`
-   - `projectName`: `'trucos_programacion'`
+### 1. Habilitar GitHub Pages
 
-3. **Despliega:**
-```bash
-npm run deploy
-```
+1. Ve a tu repositorio en GitHub
+2. Settings → Pages
+3. En "Source", selecciona **"GitHub Actions"**
+4. Guarda los cambios
 
-Esto creará una rama `gh-pages` y desplegará el sitio.
+### 2. Configurar Permisos del Workflow
 
-#### Configuración en GitHub
+1. Ve a Settings → Actions → General
+2. En "Workflow permissions":
+   - Selecciona **"Read and write permissions"**
+   - Marca **"Allow GitHub Actions to create and approve pull requests"**
+3. Guarda los cambios
 
-1. Ve a Settings > Pages en tu repositorio
-2. Selecciona la rama `gh-pages` como fuente
-3. El sitio estará disponible en `https://pixelead0.github.io/trucos_programacion/`
+## 🔄 Proceso de Deployment Automático
 
----
+El workflow se ejecuta automáticamente cuando:
 
-### 2. Netlify (Alternativa Fácil)
+- ✅ Se hace `push` a la rama `main` o `master`
+- ✅ Se ejecuta manualmente desde la pestaña "Actions"
 
-1. Conecta tu repositorio de GitHub a Netlify
-2. Configuración de build:
-   - **Build command:** `cd docs-site && npm install && npm run build`
-   - **Publish directory:** `docs-site/build`
-3. Netlify desplegará automáticamente en cada push
+### Pasos del Workflow
 
----
+1. **Checkout**: Descarga el código del repositorio
+2. **Setup Node.js**: Configura Node.js 20 con cache de npm
+3. **Install dependencies**: Instala dependencias con `npm ci`
+4. **Build**: Construye el sitio Docusaurus
+5. **Deploy**: Despliega el sitio a GitHub Pages
 
-### 3. Vercel (Alternativa Moderna)
+## 📍 URL del Sitio
 
-1. Instala Vercel CLI: `npm i -g vercel`
-2. Desde la carpeta `docs-site`:
-```bash
-vercel
-```
-3. Sigue las instrucciones interactivas
+Una vez desplegado, el sitio estará disponible en:
 
----
+**https://pixelead0.github.io/trucos_programacion/**
 
-## Desarrollo Local
+## 🔍 Verificar el Deployment
 
-```bash
-cd docs-site
-npm install
-npm start
-```
+1. Ve a la pestaña **"Actions"** en GitHub
+2. Selecciona el workflow **"Deploy to GitHub Pages"**
+3. Revisa los logs para verificar que todo se ejecutó correctamente
+4. Espera unos minutos y visita la URL del sitio
 
-Abre `http://localhost:3000` en tu navegador.
+## 🐛 Troubleshooting
 
----
+### El workflow no se ejecuta
 
-## Construcción para Producción
+- Verifica que el archivo `.github/workflows/deploy.yml` esté en la rama `main` o `master`
+- Verifica que GitHub Actions esté habilitado en Settings → Actions → General
 
-```bash
-cd docs-site
-npm run build
-```
+### El deployment falla
 
-El sitio se generará en `docs-site/build/`
+1. **Error de permisos**:
+   - Ve a Settings → Actions → General
+   - Asegúrate de que "Workflow permissions" esté en "Read and write"
 
----
+2. **Error de build**:
+   - Revisa los logs en la pestaña "Actions"
+   - Verifica que `package.json` tenga todas las dependencias necesarias
+   - Ejecuta `npm run build` localmente para verificar errores
 
-## Solución de Problemas
+3. **GitHub Pages no muestra el sitio**:
+   - Verifica que en Settings → Pages, la fuente sea "GitHub Actions"
+   - Espera 5-10 minutos después del deployment (puede tardar en propagarse)
 
-### Error: Cannot find module
-```bash
-cd docs-site
-rm -rf node_modules package-lock.json
-npm install
-```
+### Deployment Manual
 
-### Error: Port 3000 already in use
-```bash
-npm start -- --port 3001
-```
+Si necesitas desplegar manualmente:
 
-### Los enlaces no funcionan
-- Verifica que `baseUrl` en `docusaurus.config.js` sea correcto
-- Asegúrate de que las rutas en `sidebars.js` coincidan con los archivos
+1. Ve a la pestaña **"Actions"** en GitHub
+2. Selecciona **"Deploy to GitHub Pages"**
+3. Haz clic en **"Run workflow"**
+4. Selecciona la rama (normalmente `main`)
+5. Haz clic en **"Run workflow"**
+
+## 📝 Notas Importantes
+
+- El workflow usa Node.js 20 (especificado en `package.json`)
+- El build se ejecuta en el directorio `docs-site/`
+- El sitio se despliega desde `docs-site/build/`
+- El `baseUrl` está configurado como `/trucos_programacion/` en `docusaurus.config.js`
+
+## 🔗 Referencias
+
+- [Documentación de GitHub Actions](https://docs.github.com/en/actions)
+- [Documentación de GitHub Pages](https://docs.github.com/en/pages)
+- [Documentación de Docusaurus Deployment](https://docusaurus.io/docs/deployment)
