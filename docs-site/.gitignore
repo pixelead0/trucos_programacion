@@ -7,6 +7,9 @@ yarn.lock
 build/
 dist/
 
+# Docusaurus
+.docusaurus/
+
 # Misc
 .DS_Store
 .env
