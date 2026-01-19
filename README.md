@@ -1,5 +1,21 @@
 # Curso Completo de Python - Autoaprendizaje
 
+<div align="center">
+
+![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/pixelead0/construye_python/deploy.yml?branch=main)
+![GitHub stars](https://img.shields.io/github/stars/pixelead0/construye_python?style=social)
+![GitHub forks](https://img.shields.io/github/forks/pixelead0/construye_python?style=social)
+![GitHub issues](https://img.shields.io/github/issues/pixelead0/construye_python)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/pixelead0/construye_python)
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![Node](https://img.shields.io/badge/node-%3E%3D18.0-brightgreen.svg)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/pixelead0)
+
+</div>
+
 Bienvenido al curso de Python diseñado para autoaprendizaje. Este curso te guiará paso a paso desde los conceptos más básicos hasta el desarrollo profesional de software.
 
 ## 🚀 Inicio Rápido
@@ -239,6 +255,44 @@ Una vez que completes este curso, considera:
 - **Machine Learning**: Scikit-learn, TensorFlow
 - **Desarrollo de APIs**: REST, GraphQL
 - **DevOps**: Docker, CI/CD con Python
+
+---
+
+## 🤝 Contribuir
+
+¡Las contribuciones son bienvenidas! Este proyecto está abierto a mejoras, correcciones y nuevas lecciones.
+
+- 📖 Lee nuestra [Guía de Contribución](CONTRIBUTING.md) para más detalles
+- 📋 Revisa nuestro [Código de Conducta](CODE_OF_CONDUCT.md)
+- 🐛 Reporta bugs abriendo un [issue](https://github.com/pixelead0/construye_python/issues)
+- 💡 Sugiere nuevas características o mejoras
+- 🔒 Para reportar vulnerabilidades de seguridad, consulta [SECURITY.md](SECURITY.md)
+
+---
+
+## ☕ Apoya el Proyecto
+
+Si este proyecto te ha sido útil y quieres apoyar su desarrollo, considera hacer una donación:
+
+<div align="center">
+
+[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/pixelead0)
+
+</div>
+
+Tu apoyo ayuda a:
+- 🚀 Mantener y mejorar el contenido del curso
+- 🐛 Corregir bugs y errores
+- ✨ Agregar nuevas lecciones y ejemplos
+- 📚 Mejorar la documentación
+
+¡Gracias por tu apoyo! 🙏
+
+---
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la [GNU General Public License v3.0](LICENSE).
 
 ---
 

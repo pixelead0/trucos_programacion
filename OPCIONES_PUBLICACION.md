@@ -56,7 +56,7 @@ Este documento describe las mejores opciones para convertir tu curso de Python e
 **Ejemplo de `mkdocs.yml`:**
 ```yaml
 site_name: Curso de Python
-site_url: https://tu-usuario.github.io/trucos_programacion
+site_url: https://tu-usuario.github.io/construye_python
 
 nav:
   - Inicio: README.md
@@ -96,7 +96,7 @@ theme:
 1. Activas GitHub Pages en la configuración del repositorio
 2. Seleccionas la rama `main` como fuente
 3. GitHub renderiza automáticamente los `.md` como HTML
-4. Disponible en `tu-usuario.github.io/trucos_programacion`
+4. Disponible en `tu-usuario.github.io/construye_python`
 
 **Limitaciones:**
 - Navegación básica (enlaces manuales)

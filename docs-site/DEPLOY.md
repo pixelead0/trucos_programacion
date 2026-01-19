@@ -4,7 +4,7 @@ Esta guía explica cómo desplegar el sitio Docusaurus a GitHub Pages usando Git
 
 ## 📋 Prerequisitos
 
-1. Repositorio en GitHub: `pixelead0/trucos_programacion`
+1. Repositorio en GitHub: `pixelead0/construye_python`
 2. GitHub Pages habilitado en el repositorio
 3. Permisos de workflow configurados correctamente
 
@@ -44,7 +44,7 @@ El workflow se ejecuta automáticamente cuando:
 
 Una vez desplegado, el sitio estará disponible en:
 
-**https://pixelead0.github.io/trucos_programacion/**
+**https://pixelead0.github.io/construye_python/**
 
 ## 🔍 Verificar el Deployment
 
@@ -90,7 +90,7 @@ Si necesitas desplegar manualmente:
 - El workflow usa Node.js 20 (especificado en `package.json`)
 - El build se ejecuta en el directorio `docs-site/`
 - El sitio se despliega desde `docs-site/build/`
-- El `baseUrl` está configurado como `/trucos_programacion/` en `docusaurus.config.js`
+- El `baseUrl` está configurado como `/construye_python/` en `docusaurus.config.js`
 
 ## 🔗 Referencias
 

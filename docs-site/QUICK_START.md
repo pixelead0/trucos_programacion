@@ -21,9 +21,9 @@ El sitio estará disponible en: **http://localhost:3000**
 
 ```javascript
 url: 'https://pixelead0.github.io',
-baseUrl: '/trucos_programacion/',
+baseUrl: '/construye_python/',
 organizationName: 'pixelead0',
-projectName: 'trucos_programacion',
+projectName: 'construye_python',
 ```
 
 ✅ **Ya está configurado** con la información del repositorio.

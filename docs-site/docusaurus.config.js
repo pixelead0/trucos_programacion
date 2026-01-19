@@ -14,11 +14,11 @@ const config = {
   url: 'https://pixelead0.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployments, it is often '/<projectName>/'
-  baseUrl: '/trucos_programacion/',
+  baseUrl: '/construye_python/',
 
   // GitHub pages deployment config.
   organizationName: 'pixelead0', // Usually your GitHub org/user name.
-  projectName: 'trucos_programacion', // Usually your repo name.
+  projectName: 'construye_python', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -45,7 +45,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/pixelead0/trucos_programacion/tree/main/',
+          editUrl: 'https://github.com/pixelead0/construye_python/tree/main/',
           routeBasePath: '/', // Serve the docs at the site's root
           // Generar sidebar automáticamente desde la estructura de archivos
           // sidebarCollapsible: true,
@@ -93,7 +93,7 @@ const config = {
             className: 'navbar__item--coffee',
           },
           {
-            href: 'https://github.com/pixelead0/trucos_programacion',
+            href: 'https://github.com/pixelead0/construye_python',
             label: 'GitHub',
             position: 'right',
           },
@@ -137,7 +137,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/pixelead0/trucos_programacion',
+                href: 'https://github.com/pixelead0/construye_python',
               },
             ],
           },
