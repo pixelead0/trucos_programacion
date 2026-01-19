@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,23 +45,68 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="advanced"
 />
 
+## 🎯 ¿Por qué aprender empaquetado?
+
 Tienes un módulo útil que quieres compartir. Podrías decirle a la gente "copia este archivo a tu proyecto", pero eso no escala. ¿Qué pasa si actualizas el módulo? ¿Cómo manejan las dependencias?
 
-**El empaquetado resuelve esto:** Organizas tu código como un paquete que otros pueden instalar con `pip install tu-paquete`. Es la forma profesional de compartir código Python.
+El empaquetado es esencial porque:
+- Compartir código profesionalmente: otros pueden instalar con `pip install`
+- Gestión de versiones: usuarios pueden elegir qué versión usar
+- Dependencias automáticas: `pip` instala todo lo necesario
+- Distribución fácil: un comando para instalar en cualquier máquina
+- Estándar de la industria: forma profesional de compartir código Python
 
-**Casos reales:**
-- Crear una biblioteca reutilizable
-- Compartir código entre proyectos de tu equipo
-- Publicar en PyPI para que cualquiera lo use
-- Distribuir herramientas internas de tu empresa
+## 🌍 Casos reales donde se usa
 
-**Beneficios:**
+El empaquetado está en todos los proyectos que se comparten:
+
+- **Crear bibliotecas reutilizables**: Código que otros pueden usar
+- **Compartir código en equipo**: Módulos compartidos entre proyectos
+- **Publicar en PyPI**: Hacer tu código disponible públicamente
+- **Distribuir herramientas internas**: Paquetes privados para tu empresa
+- **Gestionar versiones**: Controlar qué versión usa cada proyecto
 - **Instalación simple**: `pip install` en lugar de copiar archivos
-- **Gestión de versiones**: Puedes actualizar y los usuarios pueden elegir versiones
-- **Dependencias automáticas**: `pip` instala lo que necesitas
-- **Distribución fácil**: Un comando para instalar en cualquier máquina
 
-> **Antes de continuar**: Asegúrate de entender [Módulos](../03_Funciones_y_Modulos/02_modulos_paquetes.md) y [Entornos Virtuales](./01_virtual_envs.md).
+**Ejemplo real**: Librerías como `requests`, `pandas`, `django` están empaquetadas. Puedes instalarlas con `pip install requests` en lugar de descargar y copiar archivos manualmente.
+
+## 💡 Concepto base
+
+El empaquetado organiza tu código como un paquete que otros pueden instalar con `pip install tu-paquete`. Es la forma profesional de compartir código Python.
+
+**Lo genial de Python:** Puedes crear paquetes con `setuptools` o `poetry`, y distribuirlos fácilmente a través de PyPI o repositorios privados.
+
+```python
+# Estructura básica de un paquete
+mi_paquete/
+    __init__.py
+    modulo.py
+    setup.py  # o pyproject.toml
+```
+
+```bash
+# Instalar en modo desarrollo
+pip install -e .
+
+# O publicar en PyPI
+python setup.py sdist bdist_wheel
+twine upload dist/*
+```
+
+<ExpectedOutput>
+```
+# Después de pip install -e .
+# Puedes importar tu paquete desde cualquier lugar
+import mi_paquete
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+El empaquetado es como crear un kit de ingredientes pre-empacado para preparar chilaquiles al pastor. En lugar de que cada cocinero tenga que buscar y comprar todos los ingredientes por separado, tú creas un paquete completo con todo lo necesario (tortillas, salsa, queso, pastor, especias) y otros pueden simplemente "instalar" tu paquete y empezar a cocinar. Es como crear una marca de comida que otros pueden usar fácilmente. Un comando (`pip install`) y todo está listo.
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Módulos](../03_Funciones_y_Modulos/02_modulos_paquetes.md) y [Entornos Virtuales](./01_virtual_envs.md). El empaquetado es avanzado pero esencial si quieres compartir código profesionalmente.
+:::
 
 ## Estructura Básica de un Paquete
 

@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,27 +45,69 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## 💡 ¿Qué es la calidad de código y por qué importa?
+## 🎯 ¿Por qué aprender herramientas de calidad de código?
 
-Escribir código que funciona es solo la mitad del trabajo. El código también debe ser:
-- **Legible**: Otros (o tú en 6 meses) pueden entenderlo
-- **Mantenible**: Fácil de modificar y extender
-- **Consistente**: Sigue las mismas convenciones en todo el proyecto
-- **Sin errores obvios**: Herramientas encuentran problemas antes de ejecutar
+Escribir código que funciona es solo la mitad del trabajo. El código también debe ser legible, mantenible, consistente y sin errores obvios.
 
-**¿Por qué importa?**
-- **Colaboración**: Otros desarrolladores pueden trabajar contigo
-- **Mantenimiento**: Es más fácil arreglar bugs y agregar features
-- **Profesionalismo**: Código de calidad es señal de experiencia
-- **Ahorro de tiempo**: Encuentras errores antes, no después de deploy
+Las herramientas de calidad son esenciales porque:
+- Colaboración: otros desarrolladores pueden trabajar contigo fácilmente
+- Mantenimiento: es más fácil arreglar bugs y agregar features
+- Profesionalismo: código de calidad es señal de experiencia
+- Ahorro de tiempo: encuentras errores antes, no después de deploy
+- Consistencia: todo el equipo sigue las mismas convenciones
 
-**Este capítulo cubre herramientas profesionales:**
+## 🌍 Casos reales donde se usa
+
+Las herramientas de calidad están en todos los proyectos profesionales:
+
+- **Colaboración**: Mantener código consistente en equipos
+- **CI/CD**: Verificar calidad automáticamente en pipelines
+- **Mantenimiento**: Encontrar errores antes de ejecutar
+- **Refactoring**: Herramientas ayudan a hacer cambios seguros
+- **Onboarding**: Nuevos desarrolladores entienden el código más rápido
+- **Profesionalismo**: Código que sigue estándares de la industria
+
+**Ejemplo real**: En proyectos open source como Django o Flask, todas las contribuciones pasan por verificaciones automáticas de calidad antes de ser aceptadas.
+
+## 💡 Concepto base
+
+Las herramientas de calidad de código verifican automáticamente que tu código siga estándares, esté bien formateado, y no tenga errores obvios.
+
+**Lo genial de Python:** Hay herramientas excelentes y gratuitas que puedes integrar fácilmente en tu flujo de trabajo.
+
+```python
+# Código sin formatear (funciona, pero inconsistente)
+def calcular_total(precio,cantidad):
+    return precio*cantidad
+
+# Después de black (formateado automáticamente)
+def calcular_total(precio, cantidad):
+    return precio * cantidad
+```
+
+**Este capítulo cubre:**
 - **Formateadores** (black): Formato automático consistente
 - **Linters** (flake8): Encuentran problemas de estilo y errores comunes
 - **Type checkers** (mypy): Verifican tipos antes de ejecutar
 - **Pre-commit hooks**: Verificaciones automáticas antes de hacer commit
 
-> **Antes de continuar**: Asegúrate de entender [Type Hints](./02_type_hints.md) y [Funciones](../03_Funciones_y_Modulos/01_funciones.md).
+<ExpectedOutput>
+```
+# Black formatea automáticamente:
+# - Espacios alrededor de operadores
+# - Líneas de máximo 88 caracteres
+# - Indentación consistente
+# - Y más...
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Las herramientas de calidad de código son como los estándares de higiene y presentación en una cocina profesional. Un formateador (black) es como tener un estándar de cómo cortar las tortillas: todas del mismo tamaño y forma. Un linter (flake8) es como un inspector que revisa que uses ingredientes frescos y sigas las medidas correctas. Un type checker (mypy) es como verificar que estés usando los ingredientes correctos antes de cocinar. Los pre-commit hooks son como una revisión final antes de servir el plato, asegurando que todo esté perfecto. Cada herramienta tiene su rol en mantener la calidad.
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Type Hints](./02_type_hints.md) y [Funciones](../03_Funciones_y_Modulos/01_funciones.md). Estas herramientas no cambian cómo funciona tu código, solo verifican que siga buenas prácticas y estándares.
+:::
 
 ## Herramientas de Análisis
 

@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,28 +45,60 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## 💡 ¿Qué es Pathlib y por qué usarlo en lugar de strings?
+## 🎯 ¿Por qué aprender Pathlib?
 
-Tradicionalmente en Python trabajabas con rutas como strings: `ruta = "/home/usuario/documentos/archivo.txt"`. Esto funciona, pero tiene problemas:
+Tradicionalmente en Python trabajabas con rutas como strings: `ruta = "/home/usuario/documentos/archivo.txt"`. Esto funciona, pero tiene problemas: difícil de combinar rutas, difícil de extraer partes, y no es seguro entre Windows, Linux y Mac.
 
-- Difícil de combinar rutas (¿usas `/` o `\\` según el sistema?)
-- Difícil de extraer partes (nombre, extensión, directorio padre)
-- No es seguro entre Windows, Linux y Mac
+Pathlib es esencial porque:
+- Código multiplataforma: funciona igual en Windows, Linux y Mac
+- Más legible: sintaxis clara y expresiva
+- Menos errores: maneja automáticamente diferencias entre sistemas
+- Estándar moderno: es la forma recomendada en Python 3.6+
 
-**Pathlib resuelve esto:** Te da un objeto `Path` que maneja todo esto de forma elegante y funciona en cualquier sistema operativo.
+## 🌍 Casos reales donde se usa
 
-**Ventajas reales:**
-- Combina rutas con `/` (funciona en todos los sistemas)
-- Métodos claros: `.name`, `.suffix`, `.parent`, `.exists()`
-- Más legible: `ruta.parent / "nuevo_archivo.txt"` vs `os.path.join(os.path.dirname(ruta), "nuevo_archivo.txt")`
-- Es el estándar moderno (Python 3.6+)
+Pathlib está en todos los proyectos que trabajan con archivos:
 
-**¿Cuándo usar Pathlib?**
-- Siempre que trabajes con archivos y directorios
-- Cuando necesites código que funcione en Windows, Linux y Mac
-- Cuando quieras código más legible y mantenible
+- **Trabajar con archivos**: Leer, escribir, verificar existencia
+- **Código multiplataforma**: Scripts que funcionan en cualquier sistema
+- **Procesar archivos**: Iterar sobre directorios y archivos
+- **Organizar proyectos**: Manejar rutas relativas y absolutas
+- **APIs**: Manejar uploads y downloads de archivos
+- **Scripts del sistema**: Manipular archivos y directorios
 
-> **Antes de continuar**: Asegúrate de entender [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Manejo de Errores](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md).
+**Ejemplo real**: Un script que procesa imágenes en una carpeta usa Pathlib para encontrar todos los archivos `.jpg`, sin importar si se ejecuta en Windows o Linux.
+
+## 💡 Concepto base
+
+Pathlib te da un objeto `Path` que maneja rutas de forma elegante y funciona en cualquier sistema operativo. Es la forma moderna y recomendada de trabajar con archivos.
+
+**Lo genial de Python:** Puedes combinar rutas con `/` (como en matemáticas) y usar métodos claros como `.name`, `.suffix`, `.parent`.
+
+```python
+from pathlib import Path
+
+# Crear un Path
+ruta = Path("documentos") / "recetas" / "chilaquiles.txt"
+print(f"Nombre: {ruta.name}")
+print(f"Extensión: {ruta.suffix}")
+print(f"Directorio padre: {ruta.parent}")
+```
+
+<ExpectedOutput>
+```
+Nombre: chilaquiles.txt
+Extensión: .txt
+Directorio padre: documentos/recetas
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Pathlib es como tener un sistema de organización de ingredientes que funciona igual en cualquier cocina (Windows, Linux, Mac). En lugar de recordar dónde guardas cada cosa en cada tipo de cocina, Pathlib te da una forma universal de encontrar y organizar tus archivos. Es como tener etiquetas estandarizadas que funcionan igual si estás en una cocina mexicana, italiana o francesa. No importa dónde estés, siempre sabes cómo encontrar lo que necesitas.
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Manejo de Errores](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md). Pathlib es la forma moderna de trabajar con archivos. Si aprendiste `os.path`, Pathlib es mejor y más fácil de usar.
+:::
 
 ## Conceptos Básicos
 

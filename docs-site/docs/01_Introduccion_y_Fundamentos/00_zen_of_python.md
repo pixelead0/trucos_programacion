@@ -7,6 +7,7 @@ import LessonMeta from '@site/src/components/LessonMeta';
 import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -40,14 +41,71 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="beginner"
 />
 
+## 🎯 ¿Por qué aprender el Zen de Python?
+
+Antes de escribir tu primera línea de código Python, es importante entender la **filosofía** que guía todo el lenguaje. El Zen de Python no es solo poesía bonita: son principios que influyen en cómo Python funciona, cómo se escribe código profesional, y cómo los desarrolladores toman decisiones de diseño.
+
+Aprender el Zen ahora te ayudará a:
+- Entender por qué Python se comporta de cierta manera
+- Escribir código más legible y mantenible desde el inicio
+- Tomar mejores decisiones cuando hay múltiples formas de hacer algo
+- Comunicarte mejor con otros desarrolladores Python
+
+## 🌍 Casos reales donde se usa
+
+Aunque no escribas "import zen" en tu código, estos principios están presentes en:
+
+- **Diseño de APIs**: Python favorece interfaces simples y explícitas
+- **Convenciones de código**: PEP 8 (guía de estilo) se basa en el principio #13
+- **Librerías estándar**: Todas siguen estos principios de diseño
+- **Comunidad Python**: Los desarrolladores usan el Zen para evaluar código
+- **Entrevistas técnicas**: Se pregunta sobre el Zen para evaluar conocimiento del lenguaje
+
+**Ejemplo real**: Cuando eliges entre `lista.append()` y `lista.insert()`, el Zen te guía: "Simple es mejor que complejo" - usa `append()` si solo necesitas agregar al final.
+
 ## 💡 Concepto base
 
-El **Zen de Python** es una colección de 20 principios de software que influyen en el diseño del Lenguaje de Programación Python. Estos principios no son reglas estrictas, sino guías que te ayudarán a escribir código más legible, mantenible y "pythónico".
+El **Zen de Python** es una colección de 19 principios de software que influyen en el diseño del Lenguaje de Programación Python. Estos principios no son reglas estrictas, sino guías que te ayudarán a escribir código más legible, mantenible y "pythónico".
 
-> 🌮 **Analogía culinaria**: Así como los chilaquiles al pastor tienen ingredientes básicos (tortillas, salsa, queso) que se combinan de forma simple pero efectiva, el Zen de Python promueve la simplicidad y claridad en el código. No necesitas complicar las cosas cuando una solución simple funciona perfectamente.
+**Lo genial de Python:** Puedes acceder al Zen directamente desde el intérprete, mostrando que estos principios están integrados en el lenguaje mismo.
+
+```python
+# Ver el Zen de Python
+import this
+```
+
+<ExpectedOutput>
+```
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Así como los chilaquiles al pastor tienen ingredientes básicos (tortillas, salsa, queso) que se combinan de forma simple pero efectiva, el Zen de Python promueve la simplicidad y claridad en el código. No necesitas complicar las cosas cuando una solución simple funciona perfectamente. Cada ingrediente tiene su lugar y propósito, igual que cada línea de código debe ser clara y tener un propósito.
+:::
 
 :::info Para principiantes
-Si esto te suena abstracto, es normal. Piensa en el Zen como "el espíritu de Python": cómo los creadores del lenguaje piensan que debería escribirse código. A medida que avances en el curso, verás estos principios aplicados en cada lección.
+Si esto te suena abstracto, es normal. Piensa en el Zen como "el espíritu de Python": cómo los creadores del lenguaje piensan que debería escribirse código. A medida que avances en el curso, verás estos principios aplicados en cada lección. No necesitas memorizarlos ahora, solo entender la filosofía general.
 :::
 
 ## Origen

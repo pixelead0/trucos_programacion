@@ -45,9 +45,19 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="beginner"
 />
 
+## 🎯 ¿Por qué aprender variables y tipos?
+
+Las variables y tipos de datos son **la base de todo programa Python**. Sin ellas, no podrías guardar información, hacer cálculos, o crear programas útiles. Es como intentar cocinar sin ingredientes: necesitas recipientes (variables) para organizar tus ingredientes (valores).
+
+Aprender esto primero te permitirá:
+- Guardar y reutilizar información en tus programas
+- Entender cómo Python maneja diferentes tipos de datos
+- Evitar errores comunes relacionados con tipos
+- Escribir código más claro y expresivo
+
 ## 🌍 Casos reales donde se usa
 
-Las variables y tipos de datos son la base de todo programa Python. Los verás en:
+Las variables y tipos de datos están en absolutamente todo. Los verás en:
 
 - **Formularios web**: Capturar nombre, email, edad del usuario
 - **Cálculos financieros**: Precios, descuentos, totales, impuestos
@@ -58,11 +68,9 @@ Las variables y tipos de datos son la base de todo programa Python. Los verás e
 
 **Ejemplo real**: Cuando compras algo online, el sistema guarda tu nombre (string), el precio del producto (float), la cantidad (int), y si el pago fue exitoso (bool).
 
-## Concepto base
+## 💡 Concepto base
 
 Las variables son como etiquetas que pones a valores para poder usarlos después. Piensa en una variable como una caja con un nombre donde guardas algo.
-
-> 🌮 **Analogía culinaria**: Imagina que estás preparando chilaquiles al pastor. Las variables son como los recipientes donde guardas cada ingrediente: `tortillas = "fritas"`, `salsa = "roja"`, `queso = "fresco"`, `pastor = "marinado"`. Cada variable tiene un nombre claro que describe qué contiene, igual que etiquetas en una cocina profesional.
 
 **Lo genial de Python:** No necesitas decirle qué tipo de dato vas a guardar. Python lo descubre automáticamente cuando le asignas un valor.
 
@@ -75,9 +83,23 @@ edad = 25
 
 # Python ve True y dice: "Ah, es un booleano (bool)"
 es_activo = True
+
+print(f"{nombre} tiene {edad} años. Activo: {es_activo}")
 ```
 
-**¿Por qué importa esto?** En otros lenguajes tienes que declarar `string nombre = "Ana"` o `int edad = 25`. En Python, simplemente asignas y ya. Más simple, menos errores de sintaxis.
+<ExpectedOutput>
+```
+Ana tiene 25 años. Activo: True
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Imagina que estás preparando chilaquiles al pastor. Las variables son como los recipientes donde guardas cada ingrediente: `tortillas = "fritas"`, `salsa = "roja"`, `queso = "fresco"`, `pastor = "marinado"`. Cada variable tiene un nombre claro que describe qué contiene, igual que etiquetas en una cocina profesional. Cuando necesitas un ingrediente, simplemente usas su nombre (variable) en lugar de buscar en toda la cocina.
+:::
+
+:::info Para principiantes
+**¿Por qué importa esto?** En otros lenguajes tienes que declarar `string nombre = "Ana"` o `int edad = 25`. En Python, simplemente asignas y ya. Más simple, menos errores de sintaxis. Python es "dinámicamente tipado": el tipo se determina automáticamente cuando asignas el valor.
+:::
 
 :::info Para principiantes
 Si esto te suena raro, es normal. Quédate con la idea: "una variable es una caja con un nombre donde guardas algo". El tipo de dato (texto, número, etc.) Python lo descubre solo.

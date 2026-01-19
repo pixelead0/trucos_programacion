@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,23 +45,69 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## 💡 ¿Qué son las excepciones y por qué manejarlas?
-
-## ¿Qué son las excepciones y por qué manejarlas?
+## 🎯 ¿Por qué aprender manejo de excepciones?
 
 Imagina que tu programa pide al usuario un número y divide 100 entre ese número. ¿Qué pasa si el usuario escribe "cero" o "abc"? Tu programa se rompe con un error feo y se cierra.
 
-**Las excepciones son errores que ocurren durante la ejecución.** Sin manejo de excepciones, un solo error puede cerrar todo tu programa.
+El manejo de excepciones es esencial porque:
+- Hace tu programa robusto: no se cierra por un solo error
+- Mejora la experiencia del usuario: mensajes de error claros
+- Permite recuperación: tu programa puede continuar después de un error
+- Es profesional: los programas reales manejan errores elegantemente
+- Previene crashes: evita que errores inesperados cierren tu aplicación
 
-**Con manejo de excepciones:** Puedes "atrapar" errores, manejarlos elegantemente, y continuar ejecutando. Tu programa se vuelve robusto y profesional.
+Sin manejo de excepciones, un solo error puede cerrar todo tu programa.
 
-**Casos reales donde las necesitas:**
-- Leer archivos que pueden no existir
-- Convertir datos de usuario que pueden estar mal formateados
-- Conectar a servicios que pueden estar caídos
-- Dividir por cero, acceder a índices que no existen, etc.
+## 🌍 Casos reales donde se usa
 
-> **Antes de continuar**: Asegúrate de entender [Variables](../01_Introduccion_y_Fundamentos/01_variables_y_tipos.md), [Condicionales](../01_Introduccion_y_Fundamentos/02_condicionales_y_logica.md) y [Bucles](../01_Introduccion_y_Fundamentos/04_bucles.md).
+El manejo de excepciones está en todos los programas profesionales:
+
+- **Leer archivos**: Archivos que pueden no existir o estar corruptos
+- **Validación de entrada**: Datos de usuario que pueden estar mal formateados
+- **Conexiones de red**: Servicios que pueden estar caídos o lentos
+- **Operaciones matemáticas**: División por cero, raíz cuadrada de negativos
+- **APIs**: Manejar respuestas de error de forma elegante
+- **Bases de datos**: Conexiones que pueden fallar
+
+**Ejemplo real**: Cuando intentas abrir un archivo que no existe, Python lanza una `FileNotFoundError`. Con manejo de excepciones, puedes mostrar un mensaje amigable en lugar de que el programa se cierre.
+
+## 💡 Concepto base
+
+Las excepciones son errores que ocurren durante la ejecución. Con manejo de excepciones, puedes "atrapar" errores, manejarlos elegantemente, y continuar ejecutando.
+
+**Lo genial de Python:** La sintaxis `try/except` es muy clara y permite manejar diferentes tipos de errores de forma específica.
+
+```python
+# Manejo básico de excepciones
+try:
+    numero = int(input("Ingresa un número: "))
+    resultado = 100 / numero
+    print(f"Resultado: {resultado}")
+except ValueError:
+    print("Error: Debes ingresar un número válido")
+except ZeroDivisionError:
+    print("Error: No puedes dividir por cero")
+```
+
+<ExpectedOutput>
+```
+# Si el usuario ingresa "abc":
+Error: Debes ingresar un número válido
+
+# Si el usuario ingresa 0:
+Error: No puedes dividir por cero
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+El manejo de excepciones es como tener un plan B en la cocina. Si te falta un ingrediente para los chilaquiles al pastor (como el queso), en lugar de cancelar todo el pedido, puedes usar un sustituto o preparar una versión sin queso. El `try/except` es como decir "intenta preparar los chilaquiles con queso, pero si no hay queso, prepáralos sin queso y avisa al cliente". Tu cocina (programa) sigue funcionando aunque algo falle, y siempre tienes una alternativa lista.
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Variables](../01_Introduccion_y_Fundamentos/01_variables_y_tipos.md), [Condicionales](../01_Introduccion_y_Fundamentos/02_condicionales_y_logica.md) y [Bucles](../01_Introduccion_y_Fundamentos/04_bucles.md).
+
+Las excepciones son errores que ocurren durante la ejecución. Sin manejo, un error cierra tu programa. Con manejo, puedes continuar y mostrar mensajes útiles al usuario.
+:::
 
 ## Estructura Básica: try/except
 

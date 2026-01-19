@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,17 +45,63 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## 💡 ¿Qué es XML y cuándo lo necesitas?
+## 🎯 ¿Por qué aprender XML?
 
-XML (eXtensible Markup Language) es un formato de datos estructurado que usa etiquetas, similar a HTML pero para datos. Aunque JSON es más popular hoy en día, XML todavía se usa en muchos lugares.
+Aunque JSON es más popular hoy en día, XML todavía se usa en muchos sistemas legacy y enterprise. Aprender XML te permite trabajar con sistemas antiguos, configuraciones de aplicaciones, y documentos estructurados.
 
-**¿Cuándo trabajas con XML?**
-- Sistemas legacy o enterprise (muchos sistemas antiguos usan XML)
-- Configuraciones de aplicaciones (Android, algunos frameworks)
-- Documentos estructurados (Office, SVG)
-- APIs SOAP (aunque REST con JSON es más común ahora)
-- Intercambio de datos entre sistemas enterprise
+XML es útil porque:
+- Sistemas legacy: muchos sistemas enterprise aún usan XML
+- Configuraciones: Android, algunos frameworks usan XML
+- Documentos estructurados: Office, SVG usan XML
+- Interoperabilidad: algunos sistemas requieren XML para comunicación
 
+## 🌍 Casos reales donde se usa
+
+XML todavía se encuentra en muchos lugares:
+
+- **Sistemas legacy o enterprise**: Muchos sistemas antiguos usan XML
+- **Configuraciones de aplicaciones**: Android, algunos frameworks
+- **Documentos estructurados**: Office, SVG
+- **APIs SOAP**: Aunque REST con JSON es más común ahora
+- **Intercambio de datos**: Entre sistemas enterprise
+- **Feeds RSS/Atom**: Siguen usando XML
+
+**Ejemplo real**: Los archivos de configuración de Android (`AndroidManifest.xml`) usan XML. Si desarrollas apps Android, necesitarás trabajar con XML.
+
+## 💡 Concepto base
+
+XML (eXtensible Markup Language) es un formato de datos estructurado que usa etiquetas, similar a HTML pero para datos. Es más verboso que JSON, pero muy claro y estructurado.
+
+**Lo genial de Python:** El módulo `xml.etree.ElementTree` hace que trabajar con XML sea relativamente simple.
+
+```python
+import xml.etree.ElementTree as ET
+
+# XML de ejemplo
+xml_string = '''
+<receta>
+    <ingrediente nombre="tortilla" cantidad="10"/>
+    <ingrediente nombre="salsa" cantidad="1"/>
+</receta>
+'''
+
+root = ET.fromstring(xml_string)
+for ingrediente in root.findall('ingrediente'):
+    print(f"{ingrediente.get('nombre')}: {ingrediente.get('cantidad')}")
+```
+
+<ExpectedOutput>
+```
+tortilla: 10
+salsa: 1
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+XML es como una receta muy detallada y estructurada con etiquetas claras: `<ingrediente nombre="tortilla" cantidad="10">`, `<paso numero="1">Cortar las tortillas</paso>`. Es más verboso que JSON (como una receta muy detallada vs una lista simple), pero es muy claro y estructurado. Aunque JSON es más popular hoy (como las recetas modernas más simples), XML todavía se usa en sistemas legacy (recetas tradicionales que se mantienen por su estructura clara).
+:::
+
+:::info Para principiantes
 **¿Cuándo NO usar XML?**
 - APIs modernas (usa JSON)
 - Configuraciones simples (usa YAML o JSON)

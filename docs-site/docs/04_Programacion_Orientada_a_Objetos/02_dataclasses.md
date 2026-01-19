@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,37 +45,72 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## 💡 ¿Qué son las dataclasses y cuándo usarlas?
+## 🎯 ¿Por qué aprender dataclasses?
 
-Imagina que necesitas una clase solo para guardar datos (como un usuario, una configuración, o un producto). Con clases normales escribirías:
+Imagina que necesitas una clase solo para guardar datos (como un usuario, una configuración, o un producto). Con clases normales escribirías mucho código repetitivo para `__init__`, `__repr__`, `__eq__`, etc.
+
+Las dataclasses te permiten:
+- Escribir menos código: Python genera métodos automáticamente
+- Código más legible: sintaxis más clara y concisa
+- Comparación automática: `__eq__` generado automáticamente
+- Representación automática: `__repr__` útil por defecto
+- Menos errores: menos código manual = menos bugs
+
+## 🌍 Casos reales donde se usa
+
+Las dataclasses son perfectas para clases que principalmente almacenan datos:
+
+- **Configuraciones**: Settings, opciones de aplicación
+- **Resultados de funciones**: Devolver múltiples valores estructurados
+- **DTOs (Data Transfer Objects)**: Transferir datos entre capas
+- **Modelos simples**: Cuando no necesitas lógica compleja
+- **Estructuras de datos**: Clases que principalmente almacenan información
+
+**Ejemplo real**: Un sistema de configuración usa dataclasses para representar opciones: `@dataclass class Config: host: str, port: int, debug: bool`. Python genera automáticamente todos los métodos necesarios.
+
+## 💡 Concepto base
+
+Las dataclasses son una forma simplificada de crear clases que principalmente almacenan datos. Con un simple decorador `@dataclass`, Python genera automáticamente `__init__`, `__repr__`, `__eq__` y más.
+
+**Lo genial de Python:** Puedes crear clases de datos con mucho menos código que las clases tradicionales.
 
 ```python
+from dataclasses import dataclass
+
+# Con dataclass (simple y claro)
+@dataclass
 class Persona:
-    def __init__(self, nombre, edad, email):
-        self.nombre = nombre
-        self.edad = edad
-        self.email = email
+    nombre: str
+    edad: int
+    email: str
 
-    def __repr__(self):
-        return f"Persona(nombre={self.nombre}, edad={self.edad}, email={self.email})"
-
-    def __eq__(self, other):
-        return (self.nombre, self.edad, self.email) == (other.nombre, other.edad, other.email)
+# Crear instancia
+persona = Persona("Ana", 25, "ana@email.com")
+print(persona)  # Representación automática
 ```
 
-Mucho código repetitivo, ¿verdad?
+<ExpectedOutput>
+```
+Persona(nombre='Ana', edad=25, email='ana@email.com')
+```
+</ExpectedOutput>
 
-**Las dataclasses resuelven esto:** Con un simple decorador, Python genera automáticamente `__init__`, `__repr__`, `__eq__` y más. Escribes menos código y es más legible.
+:::tip 🌮 Analogía culinaria
+Las dataclasses son como una plantilla predefinida para crear chilaquiles al pastor. En lugar de escribir cada vez todos los pasos (cortar tortillas, freír, agregar salsa, queso, pastor), defines una vez la estructura básica y Python automáticamente te da todos los métodos necesarios. Es como tener un molde que ya sabe cómo crear el plato completo, solo necesitas especificar los ingredientes y el molde hace el resto del trabajo. Mucho más rápido y menos propenso a errores.
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Clases y Objetos](./01_clases_objetos.md) y [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md).
 
 **¿Cuándo usar dataclasses?**
-- Clases que principalmente almacenan datos (estructuras de datos)
-- Configuraciones
-- Resultados de funciones que devuelven múltiples valores
+- Clases que principalmente almacenan datos
 - Cuando necesitas comparación automática entre objetos
+- Configuraciones y estructuras simples
 
 **¿Cuándo NO usar dataclasses?**
 - Clases con mucha lógica de negocio (usa clases normales)
 - Cuando necesitas control total sobre `__init__` o métodos especiales
+:::
 
 > **Antes de continuar**: Asegúrate de entender [Clases](./01_clases_objetos.md) y [Type Hints](../05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md).
 

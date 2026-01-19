@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,7 +45,7 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## 💡 ¿Qué son los entornos virtuales y por qué son esenciales?
+## 🎯 ¿Por qué aprender entornos virtuales?
 
 Imagina este escenario: Tienes dos proyectos:
 - Proyecto A necesita `pandas==1.2.0`
@@ -52,17 +53,65 @@ Imagina este escenario: Tienes dos proyectos:
 
 Si instalas pandas globalmente, solo puedes tener una versión. ¿Qué haces?
 
-**Los entornos virtuales resuelven esto:** Cada proyecto tiene su propio "mundo" de paquetes aislado. Puedes tener diferentes versiones en diferentes proyectos sin conflictos.
+Los entornos virtuales son esenciales porque:
+- Aíslan dependencias: cada proyecto tiene sus propios paquetes
+- Evitan conflictos: diferentes versiones en diferentes proyectos
+- Reproducibilidad: compartes versiones exactas con tu equipo
+- Limpieza: no contaminas Python del sistema
+- Profesionalismo: estándar en todos los proyectos Python
 
-**Problemas que resuelven:**
-- **Conflictos de versiones**: Proyecto A usa Django 3, Proyecto B usa Django 4
-- **Contaminación global**: No llenas tu Python del sistema con paquetes de todos los proyectos
-- **Reproducibilidad**: Puedes compartir exactamente qué versiones usa tu proyecto
-- **Limpieza**: Eliminas un proyecto y sus dependencias sin afectar otros
+Sin entornos virtuales, los conflictos de versiones y la contaminación del sistema Python causarían problemas constantes.
 
-**En la práctica:** Cada proyecto tiene su propio entorno virtual. Es la primera cosa que haces al empezar un proyecto nuevo.
+## 🌍 Casos reales donde se usa
 
-> **Importante**: Aprende esto temprano. Es fundamental y te ahorrará muchos dolores de cabeza.
+Los entornos virtuales están en todos los proyectos Python profesionales:
+
+- **Aislar dependencias**: Cada proyecto con sus propios paquetes
+- **Evitar conflictos**: Diferentes versiones en diferentes proyectos
+- **Reproducibilidad**: Compartir versiones exactas con el equipo
+- **Desarrollo limpio**: No contaminar Python del sistema
+- **CI/CD**: Crear entornos limpios para builds
+- **Colaboración**: Todos usan las mismas versiones
+
+**Ejemplo real**: Un proyecto web usa Django 3.2 y otro usa Django 4.0. Con entornos virtuales, ambos pueden coexistir sin conflictos.
+
+## 💡 Concepto base
+
+Los entornos virtuales crean un "mundo" aislado de Python para cada proyecto. Cada entorno tiene sus propios paquetes instalados, independientes del sistema y de otros proyectos.
+
+**Lo genial de Python:** El módulo `venv` está incluido en Python 3.3+ y es muy fácil de usar.
+
+```bash
+# Crear entorno virtual
+python -m venv mi_entorno
+
+# Activar (Linux/Mac)
+source mi_entorno/bin/activate
+
+# Activar (Windows)
+mi_entorno\Scripts\activate
+
+# Instalar paquetes (solo en este entorno)
+pip install pandas
+
+# Desactivar
+deactivate
+```
+
+<ExpectedOutput>
+```
+# Después de activar, verás el nombre del entorno en tu prompt
+(mi_entorno) usuario@maquina:~/proyecto$
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Los entornos virtuales son como tener diferentes cocinas para diferentes tipos de comida. En la cocina mexicana tienes especias y herramientas para chilaquiles al pastor, en la cocina italiana tienes ingredientes para pasta. Cada cocina (entorno virtual) tiene sus propios ingredientes (paquetes) sin mezclarse. No usas salsa de tomate italiana en los chilaquiles, ni chiles en la pasta. Cada proyecto tiene su propio "menú de ingredientes" aislado.
+:::
+
+:::info Para principiantes
+**Importante**: Aprende esto temprano. Es fundamental y te ahorrará muchos dolores de cabeza. Cada proyecto debe tener su propio entorno virtual. Es la primera cosa que haces al empezar un proyecto nuevo.
+:::
 
 ## Conceptos Básicos
 

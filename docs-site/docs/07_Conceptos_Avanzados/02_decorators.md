@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,23 +45,71 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="advanced"
 />
 
-## ¿Qué son los decoradores y cuándo los necesitas?
+## 🎯 ¿Por qué aprender decoradores?
 
 Imagina que tienes 10 funciones y quieres medir cuánto tiempo tarda cada una en ejecutarse. Podrías agregar código de medición en cada función, pero eso es repetitivo y hace el código más difícil de leer.
 
-**Los decoradores resuelven esto:** Te permiten "envolver" funciones para agregar funcionalidad sin modificar su código original. Es como poner una función dentro de otra que le agrega superpoderes.
+Los decoradores te permiten:
+- Agregar funcionalidad sin modificar código original
+- Reutilizar código: escribes una vez, aplicas a muchas funciones
+- Separar preocupaciones: la función hace su trabajo, el decorador agrega extras
+- Código más limpio: funcionalidad adicional en un solo lugar
+- Patrón común: usado extensivamente en frameworks como Flask, Django
 
-**Casos reales donde los usas:**
-- Medir tiempo de ejecución
-- Agregar logging automático
-- Validar argumentos
-- Cachear resultados
-- Controlar acceso (autenticación)
-- Reintentar operaciones que pueden fallar
+## 🌍 Casos reales donde se usa
 
-**Ventaja clave:** Escribes la funcionalidad una vez, la aplicas a muchas funciones con solo agregar `@decorador` arriba.
+Los decoradores están en todos los frameworks y proyectos profesionales:
 
-> **Antes de continuar**: Asegúrate de entender bien [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Clases](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md). Los decoradores son conceptos avanzados.
+- **Medir tiempo de ejecución**: Profiling y optimización
+- **Agregar logging automático**: Registrar llamadas a funciones
+- **Validar argumentos**: Verificar tipos y valores antes de ejecutar
+- **Cachear resultados**: Almacenar resultados de funciones costosas
+- **Controlar acceso**: Autenticación y autorización en APIs
+- **Reintentar operaciones**: Manejar fallos temporales automáticamente
+
+**Ejemplo real**: En Flask, `@app.route('/ruta')` es un decorador que registra una función como endpoint. En Django, `@login_required` es un decorador que verifica autenticación.
+
+## 💡 Concepto base
+
+Los decoradores te permiten "envolver" funciones para agregar funcionalidad sin modificar su código original. Es como poner una función dentro de otra que le agrega superpoderes.
+
+**Lo genial de Python:** La sintaxis `@decorador` hace que los decoradores sean muy legibles y fáciles de usar.
+
+```python
+# Decorador simple
+def medir_tiempo(func):
+    def wrapper(*args, **kwargs):
+        import time
+        inicio = time.time()
+        resultado = func(*args, **kwargs)
+        fin = time.time()
+        print(f"{func.__name__} tardó {fin - inicio:.2f} segundos")
+        return resultado
+    return wrapper
+
+# Usar el decorador
+@medir_tiempo
+def preparar_chilaquiles():
+    time.sleep(1)  # Simular trabajo
+    return "Chilaquiles listos"
+
+preparar_chilaquiles()
+```
+
+<ExpectedOutput>
+```
+preparar_chilaquiles tardó 1.00 segundos
+Chilaquiles listos
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Los decoradores son como los aderezos y toppings que agregas a los chilaquiles al pastor sin cambiar la receta base. Puedes agregar crema, cebolla, cilantro o aguacate usando decoradores: `@agregar_crema`, `@agregar_cebolla`. La receta de los chilaquiles sigue siendo la misma, pero cada decorador le agrega algo extra. De la misma forma, puedes decorar una función con `@medir_tiempo` o `@cachear` sin modificar la función original. La función hace su trabajo, el decorador agrega el "topping".
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender bien [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Clases](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md). Los decoradores son conceptos avanzados pero muy poderosos. La ventaja clave: escribes la funcionalidad una vez, la aplicas a muchas funciones con solo agregar `@decorador` arriba.
+:::
 
 ## Conceptos Básicos
 

@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,18 +45,78 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="advanced"
 />
 
+## 🎯 ¿Por qué aprender seguridad?
+
 Un pequeño error de seguridad puede exponer datos sensibles, permitir acceso no autorizado, o causar que tu aplicación sea comprometida. La seguridad no es opcional en código que maneja datos reales.
 
-**Vulnerabilidades comunes:**
-- **Contraseñas en texto plano**: Si alguien accede a tu base de datos, ve todas las contraseñas
-- **Inyección de código**: Ejecutar código arbitrario desde entrada del usuario
-- **Exposición de secretos**: API keys, tokens, credenciales en el código
-- **Validación insuficiente**: Aceptar datos maliciosos sin verificar
+La seguridad es esencial porque:
+- Protege datos sensibles: contraseñas, información personal, datos financieros
+- Previene ataques: inyección de código, acceso no autorizado
+- Cumple regulaciones: GDPR, HIPAA requieren seguridad adecuada
+- Confianza del usuario: usuarios confían en aplicaciones seguras
+- Profesionalismo: código inseguro puede causar daños graves
 
-**Este capítulo cubre:**
-- Cómo manejar contraseñas de forma segura
-- Proteger secretos y credenciales
-- Validar y sanitizar entrada del usuario
+## 🌍 Casos reales donde se usa
+
+La seguridad es crítica en todos los sistemas que manejan datos:
+
+- **Aplicaciones web**: Autenticación y autorización
+- **APIs**: Proteger endpoints y datos sensibles
+- **Sistemas con datos personales**: Información de usuarios
+- **Aplicaciones financieras o de salud**: Datos altamente sensibles
+- **Cualquier código con información sensible**: Secretos, credenciales, tokens
+- **Prevenir vulnerabilidades**: OWASP Top 10, ataques comunes
+
+**Ejemplo real**: Una aplicación web que almacena contraseñas en texto plano puede ser comprometida fácilmente. Con seguridad adecuada, las contraseñas se hashean y son imposibles de recuperar incluso si alguien accede a la base de datos.
+
+## 💡 Concepto base
+
+La seguridad en código implica proteger datos sensibles, validar entrada del usuario, y prevenir vulnerabilidades comunes. La seguridad no es algo que agregas al final, es parte de cómo trabajas desde el principio.
+
+**Lo genial de Python:** Hay librerías excelentes como `bcrypt` para hashing de contraseñas y `secrets` para generar tokens seguros.
+
+```python
+import hashlib
+import secrets
+
+# Hash de contraseña (simplificado, usa bcrypt en producción)
+def hash_password(password):
+    salt = secrets.token_hex(16)
+    hash_obj = hashlib.sha256((password + salt).encode())
+    return f"{salt}:{hash_obj.hexdigest()}"
+
+# Verificar contraseña
+def verify_password(password, stored_hash):
+    salt, hash_value = stored_hash.split(':')
+    hash_obj = hashlib.sha256((password + salt).encode())
+    return hash_obj.hexdigest() == hash_value
+
+# Ejemplo
+hashed = hash_password("mi_contraseña_secreta")
+print(f"Hash almacenado: {hashed[:50]}...")
+print(f"Verificación: {verify_password('mi_contraseña_secreta', hashed)}")
+```
+
+<ExpectedOutput>
+```
+Hash almacenado: a1b2c3d4e5f6...:9f8e7d6c5b4a...
+Verificación: True
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+La seguridad en código es como las medidas de higiene y seguridad en una cocina profesional. No guardas ingredientes crudos junto con los cocidos (separación de datos), verificas que los ingredientes sean frescos antes de usarlos (validación de entrada), y nunca dejas las llaves de la cocina al alcance de cualquiera (protección de secretos). Un pequeño descuido puede contaminar toda la comida (comprometer toda la aplicación). La seguridad no es algo que agregas al final, es parte de cómo trabajas desde el principio.
+:::
+
+:::info Para principiantes
+**Vulnerabilidades comunes a evitar:**
+- Contraseñas en texto plano: siempre usa hashing
+- Inyección de código: valida y sanitiza toda la entrada
+- Exposición de secretos: nunca hardcodees API keys o tokens
+- Validación insuficiente: verifica todos los datos de entrada
+
+**Este capítulo cubre:** Cómo manejar contraseñas de forma segura, proteger secretos, y validar entrada del usuario.
+:::
 - Mejores prácticas para código seguro
 
 **Importante:** La seguridad es un proceso continuo, no algo que agregas al final. Piensa en seguridad desde el diseño.

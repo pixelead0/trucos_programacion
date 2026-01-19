@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,28 +45,65 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="advanced"
 />
 
-## ¿Qué son los context managers y por qué usarlos?
+## 🎯 ¿Por qué aprender context managers?
 
-Probablemente ya usas context managers sin saberlo. Cuando escribes:
+Probablemente ya usas context managers sin saberlo. Cuando escribes `with open('archivo.txt') as f:`, ese `with` es un context manager.
+
+Los context managers son esenciales porque:
+- Gestión segura de recursos: garantizan limpieza automática
+- Menos errores: recursos siempre se liberan correctamente
+- Código más limpio: no necesitas recordar cerrar recursos manualmente
+- Manejo de errores: funcionan incluso si hay excepciones
+- Patrón común: usado extensivamente en Python
+
+Sin context managers, podrías olvidar cerrar archivos, conexiones o liberar recursos, causando memory leaks o bloqueos.
+
+## 🌍 Casos reales donde se usa
+
+Los context managers están en muchos lugares de Python:
+
+- **Abrir y cerrar archivos**: Garantiza que los archivos se cierren
+- **Gestionar conexiones**: Bases de datos, APIs, sockets
+- **Bloquear recursos**: Threading locks, semáforos
+- **Configurar estados temporales**: Cambiar configuración y restaurarla
+- **Medir tiempo**: Context managers para profiling
+- **Gestionar transacciones**: Bases de datos, operaciones atómicas
+
+**Ejemplo real**: Cuando abres un archivo con `with open()`, Python garantiza que se cierre incluso si hay un error. Esto previene memory leaks y problemas de archivos bloqueados.
+
+## 💡 Concepto base
+
+Los context managers garantizan que los recursos se manejen correctamente: se abren/obtienen al entrar y se cierran/liberan al salir, incluso si hay errores.
+
+**Lo genial de Python:** La sintaxis `with` hace que los context managers sean muy legibles y seguros.
 
 ```python
-with open('archivo.txt', 'r') as f:
-    contenido = f.read()
-# El archivo se cierra automáticamente aquí
-```
-
-Ese `with` es un context manager. **¿Por qué es útil?** Porque garantiza que el archivo se cierre, incluso si hay un error.
-
-**Sin context manager (problemático):**
-```python
+# Sin context manager (problemático)
 f = open('archivo.txt', 'r')
 contenido = f.read()
 # ¿Qué pasa si hay un error aquí? El archivo nunca se cierra
 f.close()  # Esta línea puede no ejecutarse
+
+# Con context manager (seguro)
+with open('archivo.txt', 'r') as f:
+    contenido = f.read()
+# El archivo se cierra automáticamente aquí, incluso si hay un error
+print(f"Contenido: {contenido[:50]}...")
 ```
 
-**Con context manager (seguro):**
-```python
+<ExpectedOutput>
+```
+Contenido: [primeros 50 caracteres del archivo]...
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Los context managers son como tener un asistente en la cocina que automáticamente limpia después de ti. Cuando usas el horno (`with abrir_horno()`), el asistente se asegura de que se apague y limpie, incluso si te distraes o algo sale mal. No importa si se quema algo o te olvidas, el horno siempre se cierra correctamente. Es como tener un sistema que garantiza que los recursos (hornos, estufas, refrigeradores) siempre se manejen correctamente, sin importar qué pase.
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Manejo de Errores](../05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md). Los context managers son la forma recomendada de manejar recursos en Python. Siempre usa `with` cuando trabajes con archivos, conexiones o cualquier recurso que necesite limpieza.
+:::
 with open('archivo.txt', 'r') as f:
     contenido = f.read()
 # El archivo SIEMPRE se cierra, incluso si hay un error

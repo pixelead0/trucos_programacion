@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,18 +45,73 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## 💡 ¿Qué es YAML y por qué usarlo?
+## 🎯 ¿Por qué aprender YAML?
 
-YAML (YAML Ain't Markup Language) es un formato de datos que se lee casi como texto normal. Si ya trabajaste con JSON, YAML es similar pero más legible para humanos.
+YAML es un formato de datos que se lee casi como texto normal. Es perfecto para configuraciones que los humanos necesitan editar manualmente.
 
-**¿Cuándo usar YAML?**
-- Archivos de configuración (Docker, CI/CD, aplicaciones)
-- Cuando necesitas que alguien edite la configuración manualmente
-- Cuando quieres que el archivo sea fácil de leer sin herramientas especiales
+YAML es útil porque:
+- Muy legible: se lee casi como texto natural
+- Perfecto para configuraciones: Docker, CI/CD, aplicaciones
+- Fácil de editar: no necesitas entender sintaxis compleja
+- Ampliamente usado: Docker Compose, GitHub Actions, Ansible
 
+## 🌍 Casos reales donde se usa
+
+YAML está en muchos sistemas de configuración modernos:
+
+- **Archivos de configuración**: Docker Compose, CI/CD, aplicaciones
+- **DevOps**: docker-compose.yml, GitHub Actions, Ansible
+- **Configuraciones editables**: Archivos que los humanos editan manualmente
+- **Aplicaciones**: Configuraciones de servidores y servicios
+- **Documentación**: Ejemplos de configuración legibles
+
+**Ejemplo real**: El archivo `docker-compose.yml` usa YAML. Si trabajas con Docker o DevOps, necesitarás entender YAML.
+
+## 💡 Concepto base
+
+YAML (YAML Ain't Markup Language) es un formato de datos que se lee casi como texto normal. Es más legible que JSON y más simple que XML.
+
+**Lo genial de Python:** Puedes usar la librería `pyyaml` para trabajar con YAML fácilmente.
+
+```python
+import yaml
+
+# YAML de ejemplo
+yaml_string = """
+receta:
+  nombre: Chilaquiles al Pastor
+  ingredientes:
+    - tortillas: 10
+    - salsa: roja
+    - queso: fresco
+    - pastor: true
+"""
+
+# Cargar YAML
+datos = yaml.safe_load(yaml_string)
+print(f"Receta: {datos['receta']['nombre']}")
+print(f"Ingredientes: {len(datos['receta']['ingredientes'])}")
+```
+
+<ExpectedOutput>
+```
+Receta: Chilaquiles al Pastor
+Ingredientes: 4
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+YAML es como escribir una receta en lenguaje natural, casi como si estuvieras explicándola a un amigo. Es más legible que JSON (que es más técnico) y más simple que XML (que es muy verboso). Es perfecto para configuraciones que los humanos necesitan editar, como el menú del día o las instrucciones especiales para cada plato. Es como tener una receta que cualquiera puede leer y modificar sin necesidad de entender sintaxis compleja.
+:::
+
+:::info Para principiantes
 **¿Cuándo NO usar YAML?**
 - APIs o comunicación entre sistemas (usa JSON)
 - Cuando necesitas máximo rendimiento (JSON es más rápido)
+- Cuando necesitas que máquinas procesen datos (JSON es más eficiente)
+
+YAML es ideal para configuraciones humanas, JSON para comunicación entre sistemas.
+:::
 - Datos muy simples (un archivo `.env` puede ser suficiente)
 
 > **Nota**: Si ya conoces [JSON](./03_json.md) y [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md), YAML te resultará familiar.

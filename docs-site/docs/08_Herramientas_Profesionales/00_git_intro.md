@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,18 +45,62 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="beginner"
 />
 
+## 🎯 ¿Por qué aprender Git?
+
+Git es un sistema de control de versiones que permite rastrear cambios en tu código a lo largo del tiempo. Aunque Git no es específico de Python, es una herramienta esencial para cualquier programador profesional.
+
+Git es fundamental porque:
+- Guarda versiones de tu código: puedes volver a cualquier versión anterior
+- Trabajo en equipo: múltiples personas pueden trabajar sin conflictos
+- Experimentación segura: prueba cambios sin miedo a romper código
+- Revertir errores: deshacer cambios si algo sale mal
+- Colaboración: trabajar en proyectos open source y profesionales
+
+Sin Git, trabajar en equipo o mantener historial de cambios sería muy difícil.
+
+## 🌍 Casos reales donde se usa
+
+Git está en prácticamente todos los proyectos profesionales:
+
+- **Guardar versiones**: Historial completo de cambios en tu código
+- **Trabajo en equipo**: Colaborar sin conflictos
+- **Experimentar**: Probar cambios sin riesgo
+- **Revertir cambios**: Deshacer errores fácilmente
+- **Colaborar**: Proyectos open source y profesionales
+- **Mantener historial**: Ver quién cambió qué y cuándo
+
+**Ejemplo real**: Cuando trabajas en un proyecto con otros desarrolladores, Git permite que cada uno trabaje en su propia rama y luego combine los cambios sin conflictos.
+
 ## 💡 Concepto base
 
 Git es un sistema de control de versiones que permite rastrear cambios en tu código a lo largo del tiempo. Es como tener un registro detallado de todos los cambios en tu proyecto, permitiéndote "viajar en el tiempo" para ver versiones anteriores o deshacer errores.
 
-Aunque Git no es específico de Python, es una herramienta esencial para cualquier programador profesional. Te permite:
-- Guardar versiones de tu código
-- Trabajar en equipo sin conflictos
-- Experimentar sin miedo a romper tu código
-- Revertir cambios si algo sale mal
+**Lo genial de Git:** Es el estándar de la industria. Casi todos los proyectos profesionales usan Git, y plataformas como GitHub y GitLab lo hacen fácil de usar.
+
+```bash
+# Comandos básicos de Git
+git init                    # Inicializar repositorio
+git add archivo.py          # Agregar archivo al staging
+git commit -m "Mensaje"     # Guardar cambios
+git status                  # Ver estado del repositorio
+```
+
+<ExpectedOutput>
+```
+# Ejemplo de salida de git status
+On branch main
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+        new file:   archivo.py
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Git es como tener un libro de recetas con versiones. Cada vez que mejoras la receta de chilaquiles al pastor, guardas una nueva versión. Si la nueva versión no queda bien, puedes volver a la versión anterior. Si trabajas con otros chefs, cada uno puede tener su propia copia del libro y luego combinar sus mejoras. Git hace lo mismo con tu código: guarda versiones, te permite volver atrás, y facilita trabajar en equipo sin conflictos.
+:::
 
 :::info Para principiantes
-Piensa en Git como un "sistema de respaldo inteligente" para tu código. Cada vez que haces un commit, guardas una "foto" de tu proyecto en ese momento. Puedes volver a cualquier foto cuando quieras.
+Piensa en Git como un "sistema de respaldo inteligente" para tu código. Cada vez que haces un commit, guardas una "foto" de tu proyecto en ese momento. Puedes volver a cualquier foto cuando quieras. Es esencial aprender Git temprano en tu carrera como programador.
 :::
 
 ## Paso a paso

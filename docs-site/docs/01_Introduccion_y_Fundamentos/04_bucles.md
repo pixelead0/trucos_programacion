@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,6 +45,18 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="beginner"
 />
 
+## 🎯 ¿Por qué aprender bucles?
+
+Imagina que tienes una lista de 100 productos y quieres mostrar cada uno. ¿Escribirías 100 líneas de `print()`? Eso sería terrible e impráctico.
+
+Los bucles son fundamentales porque:
+- Te permiten procesar múltiples elementos automáticamente
+- Evitan repetir código innecesariamente
+- Hacen tu código más mantenible y legible
+- Son esenciales para trabajar con colecciones de datos
+
+Sin bucles, no podrías procesar listas, validar entrada del usuario repetidamente, o trabajar con datos en cantidad.
+
 ## 🌍 Casos reales donde se usa
 
 Los bucles están en prácticamente todos los programas. Los verás en:
@@ -59,16 +72,42 @@ Los bucles están en prácticamente todos los programas. Los verás en:
 
 ## 💡 Concepto base
 
-Imagina que tienes una lista de 100 productos y quieres mostrar cada uno. ¿Escribirías 100 líneas de `print()`? Eso sería terrible.
+Los bucles te permiten repetir código automáticamente. En lugar de escribir la misma acción 100 veces, escribes la acción una vez y le dices "repítela para cada elemento".
 
-**Los bucles resuelven esto:** te permiten repetir código automáticamente. En lugar de escribir la misma acción 100 veces, escribes la acción una vez y le dices "repítela para cada elemento".
+**Lo genial de Python:** Tienes dos tipos de bucles, cada uno para diferentes situaciones:
+- `for`: Cuando sabes qué elementos procesar (listas, rangos, strings)
+- `while`: Cuando quieres repetir hasta que se cumpla una condición
 
-**En Python tienes dos tipos:**
-- `for`: Cuando sabes cuántas veces repetir (o quieres iterar sobre una lista)
-- `while`: Cuando no sabes cuántas veces, pero sabes la condición para parar
+```python
+# Bucle for: procesar cada elemento de una lista
+productos = ["Chilaquiles", "Tacos", "Quesadillas"]
+for producto in productos:
+    print(f"Preparando {producto}")
+
+# Bucle while: repetir hasta que se cumpla condición
+intentos = 0
+while intentos < 3:
+    print(f"Intento {intentos + 1}")
+    intentos += 1
+```
+
+<ExpectedOutput>
+```
+Preparando Chilaquiles
+Preparando Tacos
+Preparando Quesadillas
+Intento 1
+Intento 2
+Intento 3
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Así como cuando preparas chilaquiles para 20 personas no cortas cada tortilla individualmente, sino que repites el proceso de cortar, freír y sazonar para cada una, los bucles te permiten repetir acciones automáticamente. Un bucle `for` es como seguir la receta para cada porción: "para cada tortilla, córtala y fríela". Un bucle `while` es como seguir cocinando "mientras haya más tortillas que preparar".
+:::
 
 :::info Para principiantes
-Piensa en los bucles como "haz esto para cada elemento" (for) o "haz esto mientras sea verdadero" (while). Son como una máquina que repite una tarea automáticamente.
+Piensa en los bucles como "haz esto para cada elemento" (for) o "haz esto mientras sea verdadero" (while). Son como una máquina que repite una tarea automáticamente. Una vez que entiendes los bucles, puedes procesar cualquier cantidad de datos.
 :::
 
 ## Paso a paso

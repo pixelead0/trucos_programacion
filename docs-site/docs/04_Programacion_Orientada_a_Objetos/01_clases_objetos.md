@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,54 +45,72 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## 💡 ¿Qué es POO y cuándo la necesitas?
+## 🎯 ¿Por qué aprender POO?
 
 Hasta ahora has usado funciones y estructuras de datos por separado. Pero imagina que trabajas con usuarios: cada usuario tiene nombre, email, edad, y puede hacer cosas como "iniciar sesión" o "actualizar perfil".
 
-**Sin POO:** Tendrías variables sueltas y funciones que reciben esos datos:
-```python
-nombre = "Ana"
-email = "ana@email.com"
-edad = 25
+La POO te permite:
+- Agrupar datos y comportamientos relacionados
+- Crear múltiples instancias similares fácilmente
+- Organizar código de forma más clara y escalable
+- Modelar entidades del mundo real de forma natural
+- Reutilizar código mediante herencia
 
-def iniciar_sesion(nombre, email):
-    # código...
-```
+Sin POO, tendrías variables sueltas y funciones que reciben esos datos, lo cual se vuelve difícil de mantener cuando el código crece.
 
-**Con POO:** Agrupas datos y comportamientos relacionados:
+## 🌍 Casos reales donde se usa
+
+La POO está en prácticamente todos los frameworks y proyectos grandes:
+
+- **APIs y frameworks**: Django, Flask usan clases extensivamente
+- **Modelar entidades**: Usuario, Producto, Carrito, Orden
+- **Sistemas complejos**: Organizar código con relaciones entre objetos
+- **Reutilización**: Crear plantillas (clases) para múltiples instancias
+- **Abstracción**: Ocultar complejidad detrás de interfaces simples
+- **Mantenimiento**: Cambios en una clase afectan todas sus instancias
+
+**Ejemplo real**: En Django, cada modelo es una clase que representa una tabla de base de datos. `class Usuario(models.Model)` define la estructura y comportamiento de los usuarios.
+
+## 💡 Concepto base
+
+La Programación Orientada a Objetos (POO) agrupa datos (atributos) y comportamientos (métodos) relacionados en "clases". Una clase es como un molde que define cómo crear objetos.
+
+**Lo genial de Python:** La sintaxis de POO es clara y permite herencia, polimorfismo y encapsulación de forma elegante.
+
 ```python
+# Definir una clase
 class Usuario:
-    def __init__(self, nombre, email, edad):
+    def __init__(self, nombre, email):
         self.nombre = nombre
         self.email = email
-        self.edad = edad
 
     def iniciar_sesion(self):
-        # código...
+        return f"{self.nombre} ha iniciado sesión"
+
+# Crear objetos (instancias)
+usuario1 = Usuario("Ana", "ana@email.com")
+print(usuario1.iniciar_sesion())
 ```
 
-**¿Cuándo usar POO?**
-- Cuando tienes entidades con datos Y comportamientos (Usuario, Producto, Carrito)
-- Cuando necesitas crear múltiples "instancias" similares
-- Cuando tu código crece y necesitas organización
+<ExpectedOutput>
+```
+Ana ha iniciado sesión
+```
+</ExpectedOutput>
 
-**¿Cuándo NO usar POO?**
-- Scripts simples de una sola función
-- Procesamiento de datos simple
-- Cuando las funciones son suficientes
+:::tip 🌮 Analogía culinaria
+Una clase es como la receta estándar de chilaquiles al pastor. Define qué ingredientes necesita (atributos) y qué pasos seguir (métodos). Un objeto es como un plato real de chilaquiles que preparas siguiendo esa receta. Puedes crear muchos objetos (muchos platos) usando la misma clase (la misma receta), pero cada uno puede tener sus propias variaciones (diferentes niveles de picante, más o menos queso, etc.). La receta (clase) es la plantilla, cada plato (objeto) es una instancia única.
+:::
 
-> **Antes de continuar**: Asegúrate de entender [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md).
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md).
 
-## Conceptos Fundamentales
-
-### Conceptos clave (en términos simples)
-
-**Clase = Plano o molde**
-- Es la definición, el "cómo debe ser" algo
-- Ejemplo: La clase `Usuario` define que un usuario tiene nombre, email y puede iniciar sesión
-- No es un usuario real, solo la plantilla
-
-> 🌮 **Analogía culinaria**: Una clase es como la receta estándar de chilaquiles al pastor. Define qué ingredientes necesita (atributos) y qué pasos seguir (métodos). Un objeto es como un plato real de chilaquiles que preparas siguiendo esa receta. Puedes crear muchos objetos (muchos platos) usando la misma clase (la misma receta), pero cada uno puede tener sus propias variaciones (diferentes niveles de picante, más o menos queso, etc.).
+**Conceptos clave:**
+- **Clase** = Plano o molde (la receta)
+- **Objeto** = Instancia real (el plato preparado)
+- **Atributos** = Datos del objeto (ingredientes)
+- **Métodos** = Comportamientos del objeto (pasos de la receta)
+:::
 
 **Objeto = Instancia real**
 - Es la "cosa" creada a partir de la clase

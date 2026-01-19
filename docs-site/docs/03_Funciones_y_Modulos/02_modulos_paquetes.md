@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,21 +45,62 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## 💡 ¿Qué son los módulos y por qué organizar tu código?
+## 🎯 ¿Por qué aprender módulos y paquetes?
 
 Imagina que tienes un proyecto con 50 funciones. ¿Las pones todas en un solo archivo de 2000 líneas? Eso sería un desastre: difícil de encontrar cosas, difícil de mantener, difícil de trabajar en equipo.
 
-**Los módulos resuelven esto:** Te permiten dividir tu código en archivos lógicos. Cada archivo es un "módulo" que agrupa código relacionado.
+Los módulos y paquetes son esenciales porque:
+- Organización: encuentras código más rápido
+- Reutilización: usas el mismo módulo en múltiples proyectos
+- Colaboración: varios desarrolladores pueden trabajar en módulos diferentes
+- Mantenimiento: cambios en un módulo no afectan otros
+- Escalabilidad: proyectos grandes requieren organización
 
-**Beneficios reales:**
-- **Organización**: Encuentras código más rápido
-- **Reutilización**: Usas el mismo módulo en múltiples proyectos
-- **Colaboración**: Varios desarrolladores pueden trabajar en módulos diferentes
-- **Mantenimiento**: Cambios en un módulo no afectan otros
+Sin módulos, tu código sería un archivo gigante e inmanejable.
 
-**En la práctica:** Un módulo es simplemente un archivo `.py` con funciones, clases o variables que quieres reutilizar.
+## 🌍 Casos reales donde se usa
 
-> **Antes de continuar**: Asegúrate de entender [Funciones](./01_funciones.md) y [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md).
+Los módulos y paquetes están en todos los proyectos Python profesionales:
+
+- **Proyectos grandes**: Dividir código en archivos lógicos
+- **Librerías**: Crear código reutilizable para otros
+- **APIs**: Organizar endpoints en módulos separados
+- **Aplicaciones web**: Separar modelos, vistas, controladores
+- **Scripts**: Organizar utilidades y helpers
+- **Colaboración**: Múltiples desarrolladores trabajan en módulos diferentes
+
+**Ejemplo real**: Un proyecto web tiene módulos separados: `models.py` para datos, `views.py` para lógica de presentación, `utils.py` para funciones auxiliares. Cada módulo tiene un propósito claro.
+
+## 💡 Concepto base
+
+Los módulos te permiten dividir tu código en archivos lógicos. Cada archivo es un "módulo" que agrupa código relacionado. Los paquetes son carpetas que contienen múltiples módulos relacionados.
+
+**Lo genial de Python:** Puedes importar módulos fácilmente y reutilizar código de otros proyectos o de la librería estándar.
+
+```python
+# Crear un módulo: utilidades.py
+def saludar(nombre):
+    return f"¡Hola, {nombre}!"
+
+# Usar el módulo en otro archivo
+import utilidades
+mensaje = utilidades.saludar("Ana")
+print(mensaje)
+```
+
+<ExpectedOutput>
+```
+¡Hola, Ana!
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Así como en una cocina profesional organizas los ingredientes en diferentes secciones (especias en un lugar, lácteos en otro, carnes en la nevera), los módulos te permiten organizar tu código en archivos lógicos. Un módulo de "salsas" contiene todas las funciones para preparar salsas, un módulo de "tortillas" tiene las funciones para trabajar con tortillas. Los paquetes son como las diferentes áreas de la cocina: "cocina_fria", "cocina_caliente", "postres", cada una con sus propios módulos especializados. Cuando necesitas algo, sabes exactamente dónde buscarlo.
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Funciones](./01_funciones.md) y [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md). Un módulo es simplemente un archivo `.py` con funciones, clases o variables que quieres reutilizar. Es como tener un cajón organizado donde guardas herramientas relacionadas.
+:::
 
 ## Crear y usar módulos
 

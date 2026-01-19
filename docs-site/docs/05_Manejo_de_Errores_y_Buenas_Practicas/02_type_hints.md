@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,27 +45,62 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## ¿Qué son type hints y por qué usarlos?
+## 🎯 ¿Por qué aprender type hints?
 
-Python es de tipado dinámico: no necesitas declarar tipos. Esto es flexible, pero puede causar problemas:
+Python es de tipado dinámico: no necesitas declarar tipos. Esto es flexible, pero puede causar problemas cuando otros desarrolladores (o tú en el futuro) no saben qué tipos espera una función.
+
+Los type hints te permiten:
+- Documentar código: los tipos son documentación viva
+- Detección temprana: herramientas como `mypy` encuentran errores antes de ejecutar
+- Mejor autocompletado: los IDEs saben qué tipos esperar
+- Refactoring más seguro: cambios de tipos se detectan automáticamente
+- Colaboración: otros desarrolladores entienden mejor tu código
+
+## 🌍 Casos reales donde se usa
+
+Los type hints están en todos los proyectos Python profesionales:
+
+- **APIs**: Documentar tipos de parámetros y retorno
+- **Librerías**: Hacer que tu código sea más fácil de usar
+- **Proyectos grandes**: Mantener consistencia en equipos
+- **IDEs**: Mejor autocompletado y detección de errores
+- **Type checkers**: Encontrar errores antes de ejecutar
+- **Refactoring**: Cambios de tipos se detectan automáticamente
+
+**Ejemplo real**: En proyectos como Django o FastAPI, los type hints ayudan a los desarrolladores a entender qué tipos de datos esperan las funciones sin leer documentación externa.
+
+## 💡 Concepto base
+
+Los type hints son anotaciones que documentan qué tipos de datos espera una función o variable. Python los ignora en tiempo de ejecución, pero las herramientas y IDEs los usan para ayudarte.
+
+**Lo genial de Python:** Puedes usar type hints gradualmente. No necesitas anotar todo de una vez, puedes empezar con las funciones más importantes.
 
 ```python
+# Sin type hints (puede ser confuso)
 def calcular_total(precio, cantidad):
     return precio * cantidad
 
-# ¿Qué pasa si alguien llama esto?
-calcular_total("10", 5)  # Error en tiempo de ejecución, no en desarrollo
+# Con type hints (claro y documentado)
+def calcular_total(precio: float, cantidad: int) -> float:
+    return precio * cantidad
+
+resultado = calcular_total(10.5, 3)
+print(f"Total: ${resultado}")
 ```
 
-**Los type hints resuelven esto:** Te permiten documentar qué tipos esperas, sin cambiar cómo Python funciona. Son como comentarios que las herramientas pueden verificar.
+<ExpectedOutput>
+```
+Total: $31.5
+```
+</ExpectedOutput>
 
-**Beneficios reales:**
-- **Documentación viva**: El código se explica a sí mismo
-- **Detección temprana**: Herramientas como `mypy` encuentran errores antes de ejecutar
-- **Mejor autocompletado**: Los IDEs saben qué tipos esperar
-- **Refactoring más seguro**: Cambias código con más confianza
+:::tip 🌮 Analogía culinaria
+Los type hints son como las etiquetas en los recipientes de la cocina que indican qué contiene cada uno. Cuando preparas chilaquiles al pastor, sabes que el recipiente marcado "salsa" contiene salsa, no queso. Los type hints hacen lo mismo: le dicen a otros cocineros (desarrolladores) y a las herramientas qué tipo de dato espera cada función, evitando confusiones como intentar usar queso donde se necesita salsa. Es como tener etiquetas claras que previenen errores antes de que ocurran.
+:::
 
-**Importante:** Python ignora los type hints en tiempo de ejecución. Son solo para desarrolladores y herramientas, no afectan el rendimiento.
+:::info Para principiantes
+**Importante:** Python ignora los type hints en tiempo de ejecución. Son solo para desarrolladores y herramientas, no afectan el rendimiento. Puedes empezar a usarlos gradualmente, agregándolos a las funciones más importantes primero.
+:::
 
 > **Antes de continuar**: Asegúrate de entender [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Clases](../04_Programacion_Orientada_a_Objetos/01_clases_objetos.md).
 

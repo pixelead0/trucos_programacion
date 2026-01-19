@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,18 +45,70 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## 💡 ¿Qué es JSON y por qué es tan popular?
+## 🎯 ¿Por qué aprender JSON?
 
-JSON (JavaScript Object Notation) es el formato de datos más usado en la web. Si trabajas con APIs, servicios web, o configuraciones modernas, te encontrarás con JSON constantemente.
+JSON es el formato de datos más usado en la web moderna. Si trabajas con APIs, servicios web, o configuraciones, te encontrarás con JSON constantemente.
 
-**¿Por qué JSON es tan popular?**
-- **Legible por humanos**: A diferencia de XML, es fácil de leer y escribir
-- **Ligero**: Menos verboso que XML
-- **Universal**: Casi todos los lenguajes lo soportan
-- **Estándar de APIs**: REST APIs, GraphQL, servicios web usan JSON
+JSON es esencial porque:
+- Estándar de APIs: REST APIs, GraphQL usan JSON
+- Universal: casi todos los lenguajes lo soportan
+- Legible: fácil de leer y escribir por humanos
+- Ligero: menos verboso que XML
+- Moderno: es el formato preferido en desarrollo web actual
 
-**Casos reales:**
-- APIs REST devuelven datos en JSON
+## 🌍 Casos reales donde se usa
+
+JSON está en prácticamente todos los sistemas modernos:
+
+- **APIs REST**: Recibir y enviar datos JSON
+- **Archivos de configuración**: package.json, config.json
+- **Comunicación entre servicios**: Microservicios intercambian JSON
+- **Almacenamiento de datos**: Bases de datos NoSQL como MongoDB
+- **Integración con servicios web**: Todos los servicios modernos usan JSON
+- **Exportar/importar datos**: De aplicaciones y sistemas
+
+**Ejemplo real**: Cuando usas una API como Twitter o GitHub, todas las respuestas vienen en formato JSON. Es el lenguaje universal de la web moderna.
+
+## 💡 Concepto base
+
+JSON (JavaScript Object Notation) es un formato de datos ligero y legible que se parece mucho a los diccionarios de Python. Es el formato preferido para comunicarse entre sistemas.
+
+**Lo genial de Python:** El módulo `json` está incluido en la librería estándar y es muy fácil de usar.
+
+```python
+import json
+
+# Diccionario de Python
+receta = {
+    "tortillas": 10,
+    "salsa": "roja",
+    "queso": "fresco",
+    "pastor": True
+}
+
+# Convertir a JSON
+json_string = json.dumps(receta)
+print(json_string)
+
+# Convertir de JSON a Python
+receta_recuperada = json.loads(json_string)
+print(receta_recuperada["salsa"])
+```
+
+<ExpectedOutput>
+```
+{"tortillas": 10, "salsa": "roja", "queso": "fresco", "pastor": true}
+roja
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+JSON es como una receta moderna, simple y directa: `{"tortillas": 10, "salsa": "roja", "queso": "fresco", "pastor": true}`. Es fácil de leer, escribir y entender, como una lista de ingredientes clara. Es el formato preferido para comunicarse entre sistemas (como compartir recetas entre restaurantes), porque es ligero, legible y universal. Todos los sistemas modernos "hablan" JSON, igual que todos los chefs modernos entienden recetas en formato JSON.
+:::
+
+:::info Para principiantes
+JSON se parece mucho a los diccionarios de Python. La diferencia principal es que JSON usa comillas dobles y algunos tipos de datos son ligeramente diferentes. Python puede convertir fácilmente entre JSON y diccionarios.
+:::
 - Archivos de configuración (package.json, tsconfig.json, etc.)
 - Comunicación entre servicios
 - Almacenamiento de datos estructurados

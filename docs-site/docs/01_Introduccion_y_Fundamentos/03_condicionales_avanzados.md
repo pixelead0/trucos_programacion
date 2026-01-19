@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,6 +45,16 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="beginner"
 />
 
+## 🎯 ¿Por qué aprender condicionales avanzadas?
+
+Ya dominas `if/elif/else` básico. Pero en aplicaciones reales, necesitas manejar lógica más compleja: múltiples condiciones, validaciones anidadas, y decisiones que dependen de varias variables.
+
+Las condicionales avanzadas te permiten:
+- Manejar casos de negocio complejos de forma elegante
+- Escribir código más compacto y legible
+- Validar múltiples condiciones eficientemente
+- Crear lógica personalizada para diferentes escenarios
+
 ## 🌍 Casos reales donde se usa
 
 Las condicionales avanzadas son esenciales para lógica de negocio compleja:
@@ -57,18 +68,39 @@ Las condicionales avanzadas son esenciales para lógica de negocio compleja:
 
 **Ejemplo real**: En un sistema de envíos, se evalúa: "¿Es cliente premium? ¿El paquete pesa menos de 5kg? ¿Está en zona de entrega rápida?" Cada condición afecta el precio y tiempo de entrega.
 
-## Concepto base
+## 💡 Concepto base
 
-Ya conoces `if/elif/else` básico. Ahora vamos a ver técnicas más sofisticadas para manejar lógica compleja de manera elegante.
+Las condicionales avanzadas combinan múltiples condiciones y técnicas para manejar lógica compleja de manera elegante.
 
-**¿Cuándo necesitas condicionales avanzadas?**
-- Cuando tienes múltiples condiciones relacionadas
-- Cuando necesitas validar múltiples cosas a la vez
-- Cuando quieres escribir código más compacto y legible
-- Cuando trabajas con lógica de negocio compleja
+**Lo genial de Python:** Puedes anidar condicionales, usar operadores ternarios, y combinar condiciones de forma muy legible.
+
+```python
+# Ejemplo: Validación compleja
+edad = 25
+es_premium = True
+tiene_descuento = False
+
+if edad >= 18 and es_premium:
+    precio = 50.00
+    if tiene_descuento:
+        precio *= 0.8  # 20% de descuento
+    print(f"Precio final: ${precio:.2f}")
+else:
+    print("No aplica para esta oferta")
+```
+
+<ExpectedOutput>
+```
+Precio final: $40.00
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Las condicionales avanzadas son como tener un menú complejo donde cada plato tiene múltiples opciones. "Si el cliente quiere chilaquiles al pastor Y es vegetariano, usa sustituto de pastor; si quiere extra picante Y es cliente frecuente, aplica descuento; si es fin de semana Y hay promoción, agrega guacamole gratis". Combinas múltiples condiciones para crear experiencias personalizadas, igual que combinas múltiples `if/elif/else` para manejar casos complejos.
+:::
 
 :::info Para principiantes
-Las condicionales avanzadas son como combinar varias decisiones simples en una lógica más compleja. No te preocupes si parece complicado al principio, con práctica se vuelve natural.
+Las condicionales avanzadas son como combinar varias decisiones simples en una lógica más compleja. No te preocupes si parece complicado al principio, con práctica se vuelve natural. Empieza con ejemplos simples y avanza gradualmente.
 :::
 
 ## Paso a paso

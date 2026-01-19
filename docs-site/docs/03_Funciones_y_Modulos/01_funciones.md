@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,21 +45,62 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## 💡 ¿Qué son las funciones y por qué las necesitas?
+## 🎯 ¿Por qué aprender funciones?
 
 Imagina que tienes que calcular el área de un rectángulo 10 veces en tu código. Podrías escribir `base * altura` 10 veces, pero ¿qué pasa si te equivocas en una? Tienes que corregir 10 lugares.
 
-**Las funciones resuelven esto:** escribes la lógica una vez, la nombras, y la reutilizas cuando la necesites.
+Las funciones son fundamentales porque:
+- Evitas repetir código: escribes una vez, usas muchas veces
+- Más fácil de corregir: si hay un error, lo arreglas en un solo lugar
+- Código más legible: `calcular_total()` es más claro que 15 líneas de código
+- Organización: agrupas código relacionado
+- Reutilización: puedes usar funciones en múltiples proyectos
 
-> 🌮 **Analogía culinaria**: Una función es como la receta para preparar chilaquiles al pastor. Una vez que defines la función `preparar_chilaquiles()`, puedes usarla cada vez que quieras hacer chilaquiles sin tener que recordar todos los pasos. Puedes incluso pasarle diferentes ingredientes como parámetros: `preparar_chilaquiles(salsa="verde", nivel_picante="medio")`. La función encapsula el proceso completo y lo hace reutilizable.
+Sin funciones, tu código sería repetitivo, difícil de mantener y poco profesional.
 
-**Beneficios reales:**
-- **Evitas repetir código**: Escribes una vez, usas muchas veces
-- **Más fácil de corregir**: Si hay un error, lo arreglas en un solo lugar
-- **Código más legible**: `calcular_total()` es más claro que 15 líneas de código
-- **Organización**: Agrupas código relacionado
+## 🌍 Casos reales donde se usa
 
-> **Antes de continuar**: Asegúrate de entender [Variables](../01_Introduccion_y_Fundamentos/01_variables_y_tipos.md), [Listas](../02_Estructuras_de_Datos/01_listas.md) y [Bucles](../01_Introduccion_y_Fundamentos/04_bucles.md).
+Las funciones están en absolutamente todos los programas Python:
+
+- **APIs y servicios**: Cada endpoint es una función
+- **Procesamiento de datos**: Transformar datos con funciones reutilizables
+- **Validación**: Crear funciones de validación reutilizables
+- **Cálculos**: Encapsular fórmulas y operaciones complejas
+- **Organización**: Agrupar funcionalidad relacionada
+- **Testing**: Cada test es una función
+
+**Ejemplo real**: Cuando haces login en una app, hay una función `validar_usuario()` que verifica credenciales. Esa misma función se usa en múltiples lugares del código.
+
+## 💡 Concepto base
+
+Las funciones te permiten escribir código una vez y reutilizarlo múltiples veces. Una función es un bloque de código con un nombre que puedes "llamar" cuando lo necesites.
+
+**Lo genial de Python:** La sintaxis de funciones es muy clara y permite parámetros flexibles, valores por defecto, y múltiples formas de llamarlas.
+
+```python
+# Definir una función
+def calcular_area(base, altura):
+    """Calcula el área de un rectángulo"""
+    return base * altura
+
+# Usar la función
+area = calcular_area(5, 3)
+print(f"El área es: {area}")
+```
+
+<ExpectedOutput>
+```
+El área es: 15
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Una función es como la receta para preparar chilaquiles al pastor. Una vez que defines la función `preparar_chilaquiles()`, puedes usarla cada vez que quieras hacer chilaquiles sin tener que recordar todos los pasos. Puedes incluso pasarle diferentes ingredientes como parámetros: `preparar_chilaquiles(salsa="verde", nivel_picante="medio")`. La función encapsula el proceso completo y lo hace reutilizable. Cada vez que necesitas chilaquiles, simplemente "llamas" a la función en lugar de seguir todos los pasos manualmente.
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Variables](../01_Introduccion_y_Fundamentos/01_variables_y_tipos.md), [Listas](../02_Estructuras_de_Datos/01_listas.md) y [Bucles](../01_Introduccion_y_Fundamentos/04_bucles.md). Las funciones agrupan código relacionado y lo hacen reutilizable. Es como crear tus propias herramientas personalizadas.
+:::
 
 ## Conceptos Básicos
 

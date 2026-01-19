@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,24 +45,64 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
-## ¿Qué es logging y por qué no usar print()?
+## 🎯 ¿Por qué aprender logging?
 
-Cuando depuras código, probablemente usas `print()` para ver qué está pasando. Funciona, pero tiene problemas:
+Cuando depuras código, probablemente usas `print()` para ver qué está pasando. Funciona, pero tiene problemas: no puedes controlar qué se muestra, no puedes guardar en archivo fácilmente, y no sabes la importancia de cada mensaje.
 
-- **No puedes controlar qué se muestra**: En producción quieres menos detalle, en desarrollo más
-- **No puedes guardar en archivo fácilmente**: Los `print()` se pierden cuando cierras la terminal
-- **No sabes la importancia**: ¿Es un error crítico o solo información?
-- **Difícil de filtrar**: No puedes decir "solo muéstrame errores"
+El logging es esencial porque:
+- Control de niveles: diferentes niveles para desarrollo vs producción
+- Persistencia: guardar logs en archivos para análisis posterior
+- Organización: filtrar y buscar logs por nivel, módulo o componente
+- Profesionalismo: sistemas reales usan logging, no print()
+- Depuración: entender qué pasa en producción cuando no puedes depurar
 
-**Logging resuelve esto:** Te da un sistema profesional para registrar eventos con niveles de importancia, formatos personalizados, y múltiples destinos (consola, archivo, etc.).
+## 🌍 Casos reales donde se usa
 
-**Casos reales:**
-- En desarrollo: Ver todos los detalles (DEBUG)
-- En producción: Solo errores y advertencias (ERROR, WARNING)
-- Guardar logs en archivo para análisis posterior
-- Filtrar logs por módulo o componente
+El logging está en todos los sistemas profesionales:
 
-> **Antes de continuar**: Asegúrate de entender [Manejo de Excepciones](./01_excepciones.md). Logging y excepciones van de la mano.
+- **Depuración**: Registrar eventos para entender qué pasa
+- **Monitoreo**: Rastrear comportamiento de aplicaciones en producción
+- **Auditoría**: Registrar acciones importantes del usuario
+- **Diagnóstico**: Encontrar problemas en sistemas complejos
+- **Análisis**: Analizar patrones de uso y errores
+- **Debugging**: Diferentes niveles para desarrollo vs producción
+
+**Ejemplo real**: Cuando una aplicación web falla en producción, los logs te permiten ver exactamente qué pasó, cuándo, y por qué, sin necesidad de reproducir el error.
+
+## 💡 Concepto base
+
+El logging te da un sistema profesional para registrar eventos con niveles de importancia (DEBUG, INFO, WARNING, ERROR, CRITICAL), formatos personalizados, y múltiples destinos (consola, archivo, etc.).
+
+**Lo genial de Python:** El módulo `logging` está incluido en la librería estándar y es muy potente.
+
+```python
+import logging
+
+# Configurar logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Usar logging en lugar de print()
+logger.info("Preparando chilaquiles al pastor")
+logger.warning("Se está acabando el queso")
+logger.error("Se quemaron las tortillas")
+```
+
+<ExpectedOutput>
+```
+INFO:__main__:Preparando chilaquiles al pastor
+WARNING:__main__:Se está acabando el queso
+ERROR:__main__:Se quemaron las tortillas
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+El logging es como el libro de recetas de un restaurante donde anotas todo lo que pasa en la cocina: qué platos se prepararon, qué ingredientes se usaron, si hubo algún problema, y cuánto tiempo tomó cada orden. En lugar de solo recordar mentalmente (como `print()`), tienes un registro organizado que puedes revisar después. Los niveles de logging son como diferentes tipos de notas: INFO es "preparé chilaquiles al pastor", WARNING es "se está acabando el queso", ERROR es "se quemaron las tortillas". Cada nivel tiene su importancia y propósito.
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Manejo de Excepciones](./01_excepciones.md). Logging y excepciones van de la mano: cuando manejas una excepción, deberías registrarla con logging para poder diagnosticar problemas después.
+:::
 
 ## Conceptos Básicos
 

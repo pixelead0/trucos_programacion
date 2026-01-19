@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,6 +45,16 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="beginner"
 />
 
+## 🎯 ¿Por qué aprender condicionales?
+
+Hasta ahora tu código ejecuta línea por línea, siempre en el mismo orden. Pero en la vida real necesitas que tu programa **tome decisiones**: "Si el usuario es mayor de edad, mostrar contenido para adultos", "Si hay stock, permitir compra", "Si es fin de semana, aplicar descuento".
+
+Las condicionales son fundamentales porque:
+- Permiten que tu código se adapte a diferentes situaciones
+- Validan datos antes de procesarlos
+- Crean experiencias personalizadas para los usuarios
+- Son la base de la lógica de negocio en cualquier aplicación
+
 ## 🌍 Casos reales donde se usa
 
 Las condicionales están en prácticamente todos los programas. Las verás en:
@@ -57,14 +68,34 @@ Las condicionales están en prácticamente todos los programas. Las verás en:
 
 **Ejemplo real**: Cuando inicias sesión en cualquier app, el sistema verifica: "¿El usuario existe? ¿La contraseña es correcta? ¿La cuenta está activa?" Solo si todas son verdaderas, te deja entrar.
 
-## Concepto base
+## 💡 Concepto base
 
-Hasta ahora tu código ejecuta línea por línea, siempre en el mismo orden. Pero en la vida real necesitas que tu programa **tome decisiones**: "Si el usuario es mayor de edad, mostrar contenido para adultos", "Si hay stock, permitir compra", "Si es fin de semana, aplicar descuento".
+Las condicionales le dan a tu programa la capacidad de elegir qué hacer según las circunstancias. Es como enseñarle a tu computadora a pensar con lógica: si pasa esto, haz aquello.
 
-**Las condicionales resuelven esto:** le das a tu programa la capacidad de elegir qué hacer según las circunstancias. Es como enseñarle a tu computadora a pensar con lógica: si pasa esto, haz aquello.
+**Lo genial de Python:** La sintaxis de las condicionales es muy legible y natural, casi como escribir en español.
+
+```python
+# Ejemplo básico de condicional
+edad = 18
+
+if edad >= 18:
+    print("Puedes entrar")
+else:
+    print("Acceso denegado")
+```
+
+<ExpectedOutput>
+```
+Puedes entrar
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Así como cuando preparas chilaquiles al pastor decides "si el cliente quiere picante, agrego más chile; si no, uso salsa suave", las condicionales permiten que tu código tome decisiones. Es como tener un menú donde eliges diferentes opciones según las preferencias: si piden extra queso, lo agregas; si no, sigues con la receta estándar. Cada decisión cambia cómo se prepara el plato, igual que cada condición cambia cómo se ejecuta tu código.
+:::
 
 :::info Para principiantes
-Piensa en las condicionales como semáforos para tu código: "Si está en verde, avanza; si está en rojo, detente". Tu programa evalúa una condición y decide qué hacer.
+Piensa en las condicionales como semáforos para tu código: "Si está en verde, avanza; si está en rojo, detente". Tu programa evalúa una condición y decide qué hacer. Es la forma en que le das "inteligencia" a tu programa.
 :::
 
 ## Paso a paso

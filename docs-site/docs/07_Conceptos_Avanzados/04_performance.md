@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,18 +45,79 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="advanced"
 />
 
-## ¿Cuándo y cómo optimizar el rendimiento?
+## 🎯 ¿Por qué aprender optimización de rendimiento?
+
+No todos los programas necesitan optimización, pero cuando lo necesitan, saber cómo optimizar es crucial. La optimización puede hacer la diferencia entre una aplicación que funciona y una que es realmente útil.
+
+La optimización es importante porque:
+- Mejora experiencia del usuario: aplicaciones más rápidas
+- Reduce costos: menos recursos de servidor necesarios
+- Escalabilidad: código que puede manejar más carga
+- Profesionalismo: diferencia entre código amateur y profesional
+- Eficiencia: mejor uso de recursos computacionales
+
+## 🌍 Casos reales donde se usa
+
+La optimización es crucial en muchos contextos:
+
+- **Código lento**: Cuando el código es demasiado lento para el uso real
+- **Grandes volúmenes de datos**: Procesar datasets grandes eficientemente
+- **Aplicaciones de alto rendimiento**: APIs, servicios web, procesamiento en tiempo real
+- **Cuellos de botella**: Optimizar partes críticas del código
+- **Procesamiento científico**: Cálculos numéricos intensivos
+- **Servicios escalables**: Aplicaciones que necesitan manejar mucha carga
+
+**Ejemplo real**: Una API que tarda 5 segundos en responder puede optimizarse a 0.1 segundos, mejorando dramáticamente la experiencia del usuario.
+
+## 💡 Concepto base
 
 **Regla de oro:** No optimices prematuramente. Primero haz que funcione, luego mide, y solo entonces optimiza lo que realmente es lento.
 
-**¿Cuándo optimizar?**
-- Cuando el código es demasiado lento para el uso real
-- Cuando procesas grandes volúmenes de datos
-- Cuando los usuarios se quejan de lentitud
-- Cuando el costo computacional es alto (servidores, recursos)
+La optimización efectiva sigue estos pasos:
+1. **Mide primero**: Usa profiling para encontrar cuellos de botella reales
+2. **Optimiza lo importante**: Solo optimiza las partes que realmente son lentas
+3. **Verifica mejoras**: Mide de nuevo para confirmar que mejoró
 
+**Lo genial de Python:** Hay herramientas excelentes como `cProfile` y `line_profiler` que te muestran exactamente dónde está el problema.
+
+```python
+import cProfile
+
+def funcion_lenta():
+    total = 0
+    for i in range(1000000):
+        total += i * 2
+    return total
+
+# Medir rendimiento
+profiler = cProfile.Profile()
+profiler.enable()
+resultado = funcion_lenta()
+profiler.disable()
+profiler.print_stats()
+```
+
+<ExpectedOutput>
+```
+         3 function calls in 0.150 seconds
+   Ordered by: standard name
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.150    0.150    0.150    0.150 <stdin>:1(funcion_lenta)
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Optimizar el rendimiento es como mejorar la eficiencia de una cocina. Primero asegúrate de que la receta funcione (el código funciona), luego mide cuánto tiempo toma preparar cada plato (profiling), y finalmente optimiza solo los pasos que realmente son lentos. No tiene sentido optimizar cómo cortas las tortillas si el cuello de botella real es el tiempo de cocción del pastor. Mide primero, optimiza después. No optimices lo que no es un problema.
+:::
+
+:::info Para principiantes
 **¿Cuándo NO optimizar?**
 - Si el código funciona bien y es rápido suficiente
+- Si no has medido primero (no optimices a ciegas)
+- Si la optimización hace el código mucho más difícil de leer
+
+**Antes de continuar**: Asegúrate de entender [Generadores e Iteradores](./01_generadores_iteradores.md) y [Funciones](../03_Funciones_y_Modulos/01_funciones.md). La optimización es un tema avanzado que requiere entender bien cómo funciona tu código.
+:::
 - Si la optimización hace el código ilegible
 - Si no has medido primero (puedes optimizar lo incorrecto)
 

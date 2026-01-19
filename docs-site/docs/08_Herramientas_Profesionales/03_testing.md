@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,23 +45,72 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="advanced"
 />
 
+## 🎯 ¿Por qué aprender testing?
+
 Imagina que cambias una función que usan 10 partes de tu código. ¿Cómo sabes que no rompiste nada? Podrías probar manualmente cada parte, pero eso es lento y propenso a errores.
 
-**Los tests resuelven esto:** Escribes código que verifica automáticamente que tu código funciona. Ejecutas los tests después de cada cambio y sabes inmediatamente si algo se rompió.
+El testing es esencial porque:
+- Confianza al cambiar código: sabes que no rompiste nada existente
+- Documentación viva: los tests muestran cómo se usa el código
+- Detección temprana: encuentras errores antes de que lleguen a producción
+- Refactoring seguro: puedes mejorar código sabiendo que los tests te avisan si algo falla
+- Profesionalismo: todos los proyectos profesionales tienen tests
 
-**Beneficios reales:**
-- **Confianza al cambiar código**: Sabes que no rompiste nada existente
-- **Documentación viva**: Los tests muestran cómo se usa el código
-- **Detección temprana de bugs**: Encuentras errores antes de que lleguen a producción
-- **Refactoring seguro**: Puedes mejorar código sabiendo que los tests te avisan si algo falla
+## 🌍 Casos reales donde se usa
 
-**Casos reales:**
-- Después de agregar una nueva funcionalidad
-- Antes de hacer deploy a producción
-- Cuando encuentras un bug (escribes un test que reproduce el bug, luego lo arreglas)
-- Al refactorizar código existente
+El testing está en todos los proyectos profesionales:
 
-**En Python:** Tienes `unittest` (incluido) y `pytest` (más popular, más fácil de usar). Ambos funcionan bien.
+- **Verificar funcionalidad**: Después de agregar nuevas características
+- **Prevenir regresiones**: Antes de hacer deploy a producción
+- **Reproducir bugs**: Escribes un test que reproduce el bug, luego lo arreglas
+- **Refactoring seguro**: Mejorar código sabiendo que los tests verifican que funciona
+- **CI/CD**: Ejecutar tests automáticamente en cada commit
+- **Colaboración**: Tests como contrato entre desarrolladores
+
+**Ejemplo real**: En proyectos como Django o Flask, cada cambio tiene tests asociados. Si un test falla, sabes inmediatamente qué se rompió.
+
+## 💡 Concepto base
+
+Los tests son código que verifica automáticamente que tu código funciona. Ejecutas los tests después de cada cambio y sabes inmediatamente si algo se rompió.
+
+**Lo genial de Python:** Tienes `unittest` (incluido) y `pytest` (más popular, más fácil de usar). Ambos funcionan bien.
+
+```python
+# Test simple con unittest
+import unittest
+
+def sumar(a, b):
+    return a + b
+
+class TestSumar(unittest.TestCase):
+    def test_sumar_positivos(self):
+        self.assertEqual(sumar(2, 3), 5)
+
+    def test_sumar_negativos(self):
+        self.assertEqual(sumar(-1, -2), -3)
+
+# Ejecutar tests
+if __name__ == '__main__':
+    unittest.main()
+```
+
+<ExpectedOutput>
+```
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Los tests son como tener un inspector de calidad que prueba cada plato antes de servirlo. Cada vez que cambias la receta de chilaquiles al pastor, el inspector verifica que el sabor, la textura y la presentación sean correctos. Si algo falla, sabes inmediatamente qué está mal y puedes corregirlo antes de servir al cliente. Los tests te dan confianza para mejorar tus recetas (refactorizar código) sabiendo que el inspector te avisará si algo sale mal.
+:::
+
+:::info Para principiantes
+**En Python:** Tienes `unittest` (incluido en Python) y `pytest` (más popular, más fácil de usar). Ambos funcionan bien. Empieza con `unittest` que ya está incluido, luego explora `pytest` cuando te sientas cómodo.
+:::
 
 ## Conceptos Básicos
 

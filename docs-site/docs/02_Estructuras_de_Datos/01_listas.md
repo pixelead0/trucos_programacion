@@ -43,6 +43,18 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="beginner"
 />
 
+## 🎯 ¿Por qué aprender listas?
+
+Las listas son **la estructura de datos más común y versátil** en Python. Casi todos los programas las usan para almacenar y procesar colecciones de información.
+
+Aprender listas te permitirá:
+- Agrupar información relacionada de forma organizada
+- Procesar múltiples elementos eficientemente
+- Trabajar con datos que cambian dinámicamente
+- Construir la base para estructuras de datos más complejas
+
+Sin listas, tendrías que crear una variable separada para cada elemento, lo cual es impráctico e imposible de escalar.
+
 ## 🌍 Casos reales donde se usa
 
 Las listas son la estructura de datos más común en Python. Las verás en:
@@ -60,17 +72,28 @@ Las listas son la estructura de datos más común en Python. Las verás en:
 
 Las listas son colecciones ordenadas y mutables de elementos. Piensa en una lista como una caja donde puedes agregar, quitar y reorganizar elementos en cualquier momento.
 
-> 🌮 **Analogía culinaria**: Así como no guardas cada tortilla en un plato separado, sino que las organizas en una canasta (lista), las listas te permiten agrupar información relacionada. Una lista es como una canasta de tortillas donde puedes agregar más, quitar algunas, o reorganizarlas según necesites.
-
 **Lo genial de Python:** Las listas son extremadamente flexibles. Pueden contener cualquier tipo de dato, pueden crecer o reducirse, y tienen métodos útiles integrados.
 
 ```python
 # Una lista puede contener cualquier cosa
-mi_lista = ["texto", 42, 3.14, True, ["otra", "lista"]]
+productos = ["Chilaquiles", "Tacos", "Quesadillas", 42, 3.14, True]
+print(f"Productos: {productos}")
+print(f"Primer producto: {productos[0]}")
 ```
 
+<ExpectedOutput>
+```
+Productos: ['Chilaquiles', 'Tacos', 'Quesadillas', 42, 3.14, True]
+Primer producto: Chilaquiles
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Así como no guardas cada tortilla en un plato separado, sino que las organizas en una canasta (lista), las listas te permiten agrupar información relacionada. Una lista es como una canasta de tortillas donde puedes agregar más, quitar algunas, o reorganizarlas según necesites. Cuando necesitas una tortilla, simplemente la tomas de la canasta por su posición.
+:::
+
 :::info Para principiantes
-Piensa en una lista como una fila de cajas numeradas (0, 1, 2, 3...). Puedes poner cosas en cada caja, cambiar lo que hay dentro, agregar más cajas al final, o quitar cajas. La lista siempre mantiene el orden.
+Piensa en una lista como una fila de cajas numeradas (0, 1, 2, 3...). Puedes poner cosas en cada caja, cambiar lo que hay dentro, agregar más cajas al final, o quitar cajas. La lista siempre mantiene el orden. Es la estructura más básica y poderosa para trabajar con colecciones de datos.
 :::
 
 ## 📚 Paso a paso

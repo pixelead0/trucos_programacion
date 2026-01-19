@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,13 +45,65 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="advanced"
 />
 
-## 💡 Introducción
+## 🎯 ¿Por qué aprender generadores e iteradores?
 
-Los generadores e iteradores son características poderosas de Python que permiten trabajar con secuencias de datos de manera eficiente en memoria. Los generadores son especialmente útiles cuando trabajas con grandes volúmenes de datos o secuencias infinitas.
+Los generadores e iteradores son características poderosas que permiten trabajar con secuencias de datos de manera eficiente en memoria. Son esenciales cuando trabajas con grandes volúmenes de datos o secuencias infinitas.
 
-## ¿Qué son los Generadores?
+Los generadores te permiten:
+- Procesar archivos grandes sin cargar todo en memoria
+- Generar secuencias infinitas eficientemente
+- Crear pipelines de procesamiento de datos
+- Implementar lazy evaluation: calcular valores solo cuando se necesitan
+- Mejorar rendimiento: menos uso de memoria y más rápido
 
-Los generadores son funciones especiales que utilizan `yield` en lugar de `return`. A diferencia de las funciones normales, los generadores pueden pausar su ejecución y retomar desde donde se quedaron, lo que los hace extremadamente eficientes en memoria.
+## 🌍 Casos reales donde se usa
+
+Los generadores están en muchos sistemas profesionales:
+
+- **Procesar archivos grandes**: Sin cargar todo en memoria
+- **Generar secuencias infinitas**: Números, datos, streams
+- **Pipelines de procesamiento**: Transformar datos en etapas
+- **APIs**: Generar respuestas bajo demanda
+- **Análisis de datos**: Procesar datasets grandes eficientemente
+- **Lazy evaluation**: Calcular valores solo cuando se necesitan
+
+**Ejemplo real**: Cuando procesas un archivo de 10GB línea por línea, un generador lee una línea a la vez en lugar de cargar todo el archivo en memoria.
+
+## 💡 Concepto base
+
+Los generadores son funciones especiales que utilizan `yield` en lugar de `return`. Pueden pausar su ejecución y retomar desde donde se quedaron, lo que los hace extremadamente eficientes en memoria.
+
+**Lo genial de Python:** Los generadores son iterables y se pueden usar en bucles `for` como listas normales, pero solo generan valores cuando los necesitas.
+
+```python
+# Generador simple
+def numeros_pares(limite):
+    for i in range(limite):
+        if i % 2 == 0:
+            yield i  # Pausa y retorna el valor
+
+# Usar el generador
+for numero in numeros_pares(10):
+    print(numero)
+```
+
+<ExpectedOutput>
+```
+0
+2
+4
+6
+8
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Los generadores son como una cocina que prepara chilaquiles al pastor bajo demanda, uno por uno, en lugar de preparar 100 platos de una vez y ocupar toda la cocina. Cuando un cliente pide un plato, lo preparas y lo sirves. Si no hay más clientes, no preparas más. Esto es mucho más eficiente que tener 100 platos listos ocupando espacio. Los generadores hacen lo mismo: generan valores solo cuando los necesitas, sin ocupar toda la memoria de una vez.
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Bucles](../01_Introduccion_y_Fundamentos/04_bucles.md), [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Listas](../02_Estructuras_de_Datos/01_listas.md). Los generadores son conceptos avanzados pero muy útiles cuando trabajas con datos grandes.
+:::
 
 ### Diferencia entre `return` y `yield`
 

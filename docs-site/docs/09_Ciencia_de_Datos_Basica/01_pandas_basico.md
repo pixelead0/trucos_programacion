@@ -8,6 +8,7 @@ import LessonMap from '@site/src/components/LessonMap';
 import Checkpoint from '@site/src/components/Checkpoint';
 import NextStep from '@site/src/components/NextStep';
 import TryIt from '@site/src/components/TryIt';
+import ExpectedOutput from '@site/src/components/ExpectedOutput';
 import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 <LessonMeta
@@ -44,26 +45,73 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
+## 🎯 ¿Por qué aprender Pandas?
+
 Trabajas con datos en Excel o CSV. Necesitas filtrar, agrupar, calcular promedios, unir tablas. Podrías hacerlo manualmente, pero eso es lento y propenso a errores.
 
-**Pandas resuelve esto:** Es como Excel pero programático. Puedes manipular, analizar y transformar datos tabulares con código Python.
+Pandas es esencial porque:
+- Potente: maneja millones de filas fácilmente
+- Flexible: filtra, agrupa, transforma datos con pocas líneas
+- Integración: funciona con CSV, Excel, bases de datos, APIs
+- Eficiente: optimizado para velocidad con datos grandes
+- Estándar de la industria: usado en ciencia de datos, análisis, machine learning
 
-**¿Por qué Pandas es tan popular?**
-- **Potente**: Maneja millones de filas fácilmente
-- **Flexible**: Filtra, agrupa, transforma datos con pocas líneas
-- **Integración**: Funciona con archivos CSV, Excel, bases de datos, APIs
-- **Eficiente**: Optimizado para velocidad con datos grandes
+Sin Pandas, analizar datos grandes sería muy lento y difícil.
 
-**Casos reales:**
-- Analizar ventas de una empresa
-- Procesar logs de servidores
-- Limpiar y transformar datos antes de análisis
-- Generar reportes automáticos
-- Preparar datos para machine learning
+## 🌍 Casos reales donde se usa
 
-**Concepto clave:** Pandas trabaja con **DataFrames** (tablas) y **Series** (columnas). Es como trabajar con Excel pero con código.
+Pandas está en prácticamente todos los proyectos de análisis de datos:
 
-> **Antes de continuar**: Asegúrate de entender [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md), [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Pathlib](../06_Manejo_de_Archivos_y_Formatos/01_pathlib.md).
+- **Analizar ventas**: Métricas de negocio y reportes
+- **Procesar logs**: Datos de servidores y aplicaciones
+- **Limpiar datos**: Transformar datos antes de análisis
+- **Generar reportes**: Automatizar reportes y visualizaciones
+- **Preparar datos**: Para machine learning y análisis avanzado
+- **Análisis exploratorio**: EDA (Exploratory Data Analysis)
+
+**Ejemplo real**: Un analista de datos usa Pandas para procesar 100,000 registros de ventas, calcular promedios por región, identificar tendencias, y generar reportes automáticos en segundos.
+
+## 💡 Concepto base
+
+Pandas es como Excel pero programático. Puedes manipular, analizar y transformar datos tabulares con código Python.
+
+**Lo genial de Python:** Pandas trabaja con **DataFrames** (tablas) y **Series** (columnas), haciendo que trabajar con datos sea muy intuitivo.
+
+```python
+import pandas as pd
+
+# Crear un DataFrame
+datos = {
+    'producto': ['Chilaquiles', 'Tacos', 'Quesadillas'],
+    'precio': [85.50, 45.00, 60.00],
+    'ventas': [120, 200, 80]
+}
+
+df = pd.DataFrame(datos)
+print(df)
+print(f"\nPromedio de precios: ${df['precio'].mean():.2f}")
+```
+
+<ExpectedOutput>
+```
+     producto  precio  ventas
+0  Chilaquiles    85.5     120
+1       Tacos    45.0     200
+2  Quesadillas    60.0      80
+
+Promedio de precios: $63.50
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Pandas es como tener un asistente de cocina súper organizado que puede manejar miles de recetas (filas de datos) a la vez. En lugar de revisar manualmente cada receta en tu libro de cocina para encontrar cuántas veces usaste chiles, Pandas puede buscar, filtrar, agrupar y analizar todas las recetas instantáneamente. Es como tener un sistema de inventario inteligente que puede decirte "cuántos platos usan queso", "cuál es el promedio de tiempo de preparación", o "qué ingredientes son más comunes", todo en segundos.
+:::
+
+:::info Para principiantes
+**Antes de continuar**: Asegúrate de entender [Diccionarios y Sets](../02_Estructuras_de_Datos/03_diccionarios_sets.md), [Funciones](../03_Funciones_y_Modulos/01_funciones.md) y [Pathlib](../06_Manejo_de_Archivos_y_Formatos/01_pathlib.md).
+
+**Concepto clave:** Pandas trabaja con **DataFrames** (tablas) y **Series** (columnas). Es como trabajar con Excel pero con código. Si sabes usar Excel, Pandas será familiar.
+:::
 
 ## Conceptos Básicos
 

@@ -44,6 +44,16 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="beginner"
 />
 
+## 🎯 ¿Por qué aprender diccionarios y sets?
+
+Después de listas y tuplas, los diccionarios y sets son las siguientes estructuras fundamentales. Los diccionarios te permiten almacenar información estructurada (como perfiles de usuario), y los sets son perfectos para trabajar con valores únicos.
+
+Aprender estos te permitirá:
+- Organizar datos de forma clave-valor (diccionarios)
+- Eliminar duplicados eficientemente (sets)
+- Buscar información rápidamente por clave
+- Trabajar con datos estructurados de APIs y bases de datos
+
 ## 🌍 Casos reales donde se usa
 
 Los diccionarios y sets son fundamentales en Python. Los verás en:
@@ -67,14 +77,31 @@ Los diccionarios y sets son fundamentales en Python. Los verás en:
 
 ```python
 # Diccionario: información estructurada
-usuario = {"nombre": "Ana", "edad": 28, "email": "ana@example.com"}
+menu = {
+    "Chilaquiles al Pastor": 85.50,
+    "Tacos": 45.00,
+    "Quesadillas": 60.00
+}
+print(f"Precio de Chilaquiles: ${menu['Chilaquiles al Pastor']}")
 
 # Set: valores únicos
-usuarios_unicos = {"ana", "carlos", "juan", "ana"}  # {"ana", "carlos", "juan"}
+ingredientes = {"tortilla", "queso", "salsa", "tortilla", "queso"}
+print(f"Ingredientes únicos: {ingredientes}")
 ```
 
+<ExpectedOutput>
+```
+Precio de Chilaquiles: $85.5
+Ingredientes únicos: {'tortilla', 'queso', 'salsa'}
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Un diccionario es como el menú de un restaurante donde cada plato (clave) tiene su descripción y precio (valor). Puedes buscar "Chilaquiles al Pastor" y obtener toda su información. Un set es como una lista de ingredientes únicos: si tienes "tortilla, tortilla, queso, queso, salsa", el set te deja solo "tortilla, queso, salsa" sin duplicados. Es como tener un inventario donde cada ingrediente aparece solo una vez, sin importar cuántas veces lo uses.
+:::
+
 :::info Para principiantes
-Piensa en un diccionario como un archivador con etiquetas: cada etiqueta (clave) tiene un archivo (valor) asociado. Un set es como una lista pero sin duplicados y sin orden específico.
+Piensa en un diccionario como un archivador con etiquetas: cada etiqueta (clave) tiene un archivo (valor) asociado. Un set es como una lista pero sin duplicados y sin orden específico. Los diccionarios son perfectos cuando necesitas buscar información por nombre (clave), y los sets son ideales cuando solo te importa si algo existe o no, sin duplicados.
 :::
 
 ## 📚 Paso a paso

@@ -45,6 +45,18 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
   level="intermediate"
 />
 
+## 🎯 ¿Por qué aprender operaciones avanzadas?
+
+Ya dominas listas, tuplas y diccionarios básicos. Pero en código profesional, necesitas técnicas más elegantes y eficientes para trabajar con datos.
+
+Las operaciones avanzadas te permiten:
+- Escribir código más conciso y legible
+- Procesar datos más rápido que con loops tradicionales
+- Aplicar transformaciones complejas en una sola línea
+- Escribir código más "pythónico" y profesional
+
+Estas técnicas son la diferencia entre código de principiante y código profesional.
+
 ## 🌍 Casos reales donde se usa
 
 Estas técnicas avanzadas son fundamentales en código profesional. Las verás en:
@@ -64,17 +76,28 @@ Las comprehensions son una forma elegante y eficiente de crear estructuras de da
 **Lo genial de Python:** Las comprehensions no solo son más legibles, sino que también suelen ser más rápidas que los loops equivalentes.
 
 ```python
-# En lugar de esto:
+# En lugar de esto (4 líneas):
 cuadrados = []
 for x in range(10):
     cuadrados.append(x**2)
 
-# Puedes hacer esto:
+# Puedes hacer esto (1 línea):
 cuadrados = [x**2 for x in range(10)]
+print(cuadrados)
 ```
 
+<ExpectedOutput>
+```
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+</ExpectedOutput>
+
+:::tip 🌮 Analogía culinaria
+Las comprehensions son como tener una receta express que te permite preparar múltiples porciones de chilaquiles al pastor en un solo paso. En lugar de preparar cada plato uno por uno (como un loop tradicional), defines la receta una vez y Python la aplica a todos los ingredientes automáticamente. Es como tener una máquina que toma todas las tortillas, las corta, fríe y sazona en una sola operación, en lugar de hacerlo manualmente para cada una.
+:::
+
 :::info Para principiantes
-Las comprehensions pueden parecer complicadas al principio, pero una vez que las entiendes, hacen tu código mucho más limpio y fácil de leer. Empieza con ejemplos simples y avanza gradualmente.
+Las comprehensions pueden parecer complicadas al principio, pero una vez que las entiendes, hacen tu código mucho más limpio y fácil de leer. Empieza con ejemplos simples y avanza gradualmente. La sintaxis es: `[expresión for elemento in colección]`.
 :::
 
 ## 📚 Paso a paso
