@@ -1,6 +1,14 @@
-# Curso Completo de Python - Autoaprendizaje
+# 🍽️ Pyquiles al Pastor - Curso Completo de Python
 
-Bienvenido al curso de Python diseñado para autoaprendizaje. Este curso te guiará paso a paso desde los conceptos más básicos hasta el desarrollo profesional de software.
+## 🌮 ¿Por qué "Pyquiles al Pastor"?
+
+Así como los **chilaquiles al pastor** combinan ingredientes básicos (tortillas, salsa, queso) con el sabor único del pastor para crear un platillo delicioso y completo, este curso combina los fundamentos de Python con técnicas profesionales para crear un aprendizaje sabroso y completo.
+
+**Los chilaquiles** son la base: conceptos fundamentales que necesitas dominar.
+**El pastor** es el toque especial: técnicas avanzadas y buenas prácticas que elevan tu código.
+**El resultado**: Un curso completo que te lleva desde cero hasta nivel profesional, con el sabor único de la programación en Python.
+
+Bienvenido a **Pyquiles al Pastor**, el curso de Python diseñado para autoaprendizaje que te guiará paso a paso desde los conceptos más básicos hasta el desarrollo profesional de software.
 
 ## 🚀 Inicio Rápido
 
@@ -14,12 +22,12 @@ Bienvenido al curso de Python diseñado para autoaprendizaje. Este curso te guia
 
 ## 📖 Cómo Funciona Este Curso
 
-Este curso está diseñado para **autoaprendizaje**. Cada lección te guía automáticamente al siguiente paso:
+Este curso está diseñado para **autoaprendizaje**. Cada lección te guía automáticamente al siguiente paso, como preparar un buen plato de chilaquiles: primero los ingredientes base, luego la salsa, después el queso y finalmente el toque especial del pastor.
 
-1. **Lee la lección** - Cada archivo explica conceptos con ejemplos prácticos
-2. **Practica** - Completa los ejercicios al final de cada sección
-3. **Aplica** - Trabaja en los proyectos prácticos
-4. **Sigue adelante** - Cada lección tiene enlaces al siguiente tema
+1. **Lee la lección** - Cada archivo explica conceptos con ejemplos prácticos (los ingredientes)
+2. **Practica** - Completa los ejercicios al final de cada sección (prepara la salsa)
+3. **Aplica** - Trabaja en los proyectos prácticos (agrega el queso)
+4. **Sigue adelante** - Cada lección tiene enlaces al siguiente tema (el toque final del pastor)
 
 ### 🔄 Navegación Automática
 

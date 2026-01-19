@@ -5,10 +5,10 @@
   "source": "@site/docs/05_Manejo_de_Errores_y_Buenas_Practicas/03_logging.md",
   "sourceDirName": "05_Manejo_de_Errores_y_Buenas_Practicas",
   "slug": "/Manejo_de_Errores_y_Buenas_Practicas/logging",
-  "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging",
+  "permalink": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/logging",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/05_Manejo_de_Errores_y_Buenas_Practicas/03_logging.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/05_Manejo_de_Errores_y_Buenas_Practicas/03_logging.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 3,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Type Hints",
-    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/type_hints"
   },
   "next": {
     "title": "Calidad de Código",
-    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/quality"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/quality"
   }
 }

@@ -5,10 +5,10 @@
   "source": "@site/docs/04_Programacion_Orientada_a_Objetos/01_clases_objetos.md",
   "sourceDirName": "04_Programacion_Orientada_a_Objetos",
   "slug": "/Programacion_Orientada_a_Objetos/clases_objetos",
-  "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/clases_objetos",
+  "permalink": "/pyquiles-al-pastor/Programacion_Orientada_a_Objetos/clases_objetos",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/04_Programacion_Orientada_a_Objetos/01_clases_objetos.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/04_Programacion_Orientada_a_Objetos/01_clases_objetos.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Módulos y Paquetes",
-    "permalink": "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes"
+    "permalink": "/pyquiles-al-pastor/Funciones_y_Modulos/modulos_paquetes"
   },
   "next": {
     "title": "Dataclasses",
-    "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/dataclasses"
+    "permalink": "/pyquiles-al-pastor/Programacion_Orientada_a_Objetos/dataclasses"
   }
 }

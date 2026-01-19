@@ -153,7 +153,7 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout
-      title="Curso Completo de Python"
+      title="Pyquiles al Pastor - Curso Completo de Python"
       description="Autoaprendizaje desde cero hasta profesional">
       <div className="homePage">
         <div className="container margin-vert--xl">
@@ -161,13 +161,12 @@ export default function Home(): JSX.Element {
           <div className="row">
             <div className="col col--12">
               <div className="homePage__hero">
-                <h1 className="homePage__title">Curso Completo de Python</h1>
+                <h1 className="homePage__title">🍽️ Pyquiles al Pastor</h1>
                 <p className="homePage__tagline">
-                  Autoaprendizaje desde cero hasta profesional
+                  Curso completo de Python - Autoaprendizaje desde cero hasta profesional
                 </p>
                 <p className="homePage__description">
-                  Un curso diseñado para guiarte paso a paso, con rutas personalizadas según tu nivel
-                  y proyectos prácticos que evolucionan contigo.
+                  Como los chilaquiles al pastor combinan ingredientes básicos con el toque especial, este curso combina fundamentos de Python con técnicas profesionales. Un curso diseñado para guiarte paso a paso, con rutas personalizadas según tu nivel y proyectos prácticos que evolucionan contigo.
                 </p>
               </div>
             </div>

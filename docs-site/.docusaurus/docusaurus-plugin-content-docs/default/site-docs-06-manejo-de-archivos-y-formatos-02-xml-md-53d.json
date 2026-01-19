@@ -5,10 +5,10 @@
   "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/02_xml.md",
   "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
   "slug": "/Manejo_de_Archivos_y_Formatos/xml",
-  "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/xml",
+  "permalink": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/xml",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/06_Manejo_de_Archivos_y_Formatos/02_xml.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/06_Manejo_de_Archivos_y_Formatos/02_xml.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Pathlib",
-    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/pathlib"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/pathlib"
   },
   "next": {
     "title": "JSON",
-    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/json"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/json"
   }
 }

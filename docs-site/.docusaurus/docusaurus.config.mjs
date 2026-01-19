@@ -4,13 +4,13 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Curso Completo de Python",
-  "tagline": "Autoaprendizaje desde cero hasta profesional",
+  "title": "Pyquiles al Pastor",
+  "tagline": "Curso completo de Python - Autoaprendizaje desde cero hasta profesional",
   "favicon": "img/favicon.ico",
   "url": "https://pixelead0.github.io",
-  "baseUrl": "/trucos_programacion/",
+  "baseUrl": "/pyquiles-al-pastor/",
   "organizationName": "pixelead0",
-  "projectName": "trucos_programacion",
+  "projectName": "pyquiles-al-pastor",
   "onBrokenLinks": "warn",
   "markdown": {
     "hooks": {
@@ -43,7 +43,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "/home/kubrick/www/trucos_programacion/docs-site/sidebars.js",
-          "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/",
+          "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/",
           "routeBasePath": "/"
         },
         "blog": false,
@@ -56,7 +56,7 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
-      "title": "Curso de Python",
+      "title": "Pyquiles al Pastor",
       "logo": {
         "alt": "Python Logo",
         "src": "img/logo.svg"
@@ -85,7 +85,7 @@ export default {
           "className": "navbar__item--coffee"
         },
         {
-          "href": "https://github.com/pixelead0/trucos_programacion",
+          "href": "https://github.com/pixelead0/pyquiles-al-pastor",
           "label": "GitHub",
           "position": "right"
         }
@@ -130,12 +130,12 @@ export default {
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/pixelead0/trucos_programacion"
+              "href": "https://github.com/pixelead0/pyquiles-al-pastor"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2026 Curso de Python. Construido con Docusaurus."
+      "copyright": "Copyright © 2026 Pyquiles al Pastor. Construido con Docusaurus."
     },
     "prism": {
       "theme": {

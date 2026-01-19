@@ -5,10 +5,10 @@
   "source": "@site/docs/08_Herramientas_Profesionales/00_git_intro.md",
   "sourceDirName": "08_Herramientas_Profesionales",
   "slug": "/Herramientas_Profesionales/git_intro",
-  "permalink": "/trucos_programacion/Herramientas_Profesionales/git_intro",
+  "permalink": "/pyquiles-al-pastor/Herramientas_Profesionales/git_intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/08_Herramientas_Profesionales/00_git_intro.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/08_Herramientas_Profesionales/00_git_intro.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 0,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Performance",
-    "permalink": "/trucos_programacion/Conceptos_Avanzados/performance"
+    "permalink": "/pyquiles-al-pastor/Conceptos_Avanzados/performance"
   },
   "next": {
     "title": "Entornos Virtuales",
-    "permalink": "/trucos_programacion/Herramientas_Profesionales/virtual_envs"
+    "permalink": "/pyquiles-al-pastor/Herramientas_Profesionales/virtual_envs"
   }
 }

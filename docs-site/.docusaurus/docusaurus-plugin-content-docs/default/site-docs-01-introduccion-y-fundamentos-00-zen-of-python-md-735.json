@@ -5,10 +5,10 @@
   "source": "@site/docs/01_Introduccion_y_Fundamentos/00_zen_of_python.md",
   "sourceDirName": "01_Introduccion_y_Fundamentos",
   "slug": "/Introduccion_y_Fundamentos/zen_of_python",
-  "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/zen_of_python",
+  "permalink": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/zen_of_python",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/01_Introduccion_y_Fundamentos/00_zen_of_python.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/01_Introduccion_y_Fundamentos/00_zen_of_python.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 0,
@@ -17,12 +17,8 @@
     "description": "Filosofía y principios fundamentales del lenguaje Python"
   },
   "sidebar": "tutorialSidebar",
-  "previous": {
-    "title": "Curso Completo de Python - Autoaprendizaje",
-    "permalink": "/trucos_programacion/"
-  },
   "next": {
     "title": "Variables y Tipos",
-    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/variables_y_tipos"
+    "permalink": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/variables_y_tipos"
   }
 }

@@ -19,8 +19,8 @@ Hay muchas formas de contribuir, no solo código:
 
 ```bash
 # Fork el repositorio en GitHub, luego:
-git clone https://github.com/TU_USUARIO/construye_python.git
-cd construye_python
+git clone https://github.com/TU_USUARIO/pyquiles-al-pastor.git
+cd pyquiles-al-pastor
 ```
 
 ### 2. Crea una Rama

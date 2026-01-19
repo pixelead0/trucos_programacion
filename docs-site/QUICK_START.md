@@ -21,9 +21,9 @@ El sitio estará disponible en: **http://localhost:3000**
 
 ```javascript
 url: 'https://pixelead0.github.io',
-baseUrl: '/construye_python/',
+baseUrl: '/pyquiles-al-pastor/',
 organizationName: 'pixelead0',
-projectName: 'construye_python',
+projectName: 'pyquiles-al-pastor',
 ```
 
 ✅ **Ya está configurado** con la información del repositorio.

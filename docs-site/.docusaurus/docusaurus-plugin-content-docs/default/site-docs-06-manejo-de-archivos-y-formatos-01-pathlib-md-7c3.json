@@ -5,10 +5,10 @@
   "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/01_pathlib.md",
   "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
   "slug": "/Manejo_de_Archivos_y_Formatos/pathlib",
-  "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/pathlib",
+  "permalink": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/pathlib",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/06_Manejo_de_Archivos_y_Formatos/01_pathlib.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/06_Manejo_de_Archivos_y_Formatos/01_pathlib.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Calidad de Código",
-    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/quality"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/quality"
   },
   "next": {
     "title": "XML",
-    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/xml"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/xml"
   }
 }

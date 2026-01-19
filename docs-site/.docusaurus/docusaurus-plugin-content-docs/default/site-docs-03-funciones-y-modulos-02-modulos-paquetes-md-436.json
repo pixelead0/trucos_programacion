@@ -5,10 +5,10 @@
   "source": "@site/docs/03_Funciones_y_Modulos/02_modulos_paquetes.md",
   "sourceDirName": "03_Funciones_y_Modulos",
   "slug": "/Funciones_y_Modulos/modulos_paquetes",
-  "permalink": "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes",
+  "permalink": "/pyquiles-al-pastor/Funciones_y_Modulos/modulos_paquetes",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/03_Funciones_y_Modulos/02_modulos_paquetes.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/03_Funciones_y_Modulos/02_modulos_paquetes.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Funciones",
-    "permalink": "/trucos_programacion/Funciones_y_Modulos/funciones"
+    "permalink": "/pyquiles-al-pastor/Funciones_y_Modulos/funciones"
   },
   "next": {
     "title": "Clases y Objetos",
-    "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/clases_objetos"
+    "permalink": "/pyquiles-al-pastor/Programacion_Orientada_a_Objetos/clases_objetos"
   }
 }

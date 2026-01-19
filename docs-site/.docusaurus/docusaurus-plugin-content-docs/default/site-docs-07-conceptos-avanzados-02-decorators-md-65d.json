@@ -5,10 +5,10 @@
   "source": "@site/docs/07_Conceptos_Avanzados/02_decorators.md",
   "sourceDirName": "07_Conceptos_Avanzados",
   "slug": "/Conceptos_Avanzados/decorators",
-  "permalink": "/trucos_programacion/Conceptos_Avanzados/decorators",
+  "permalink": "/pyquiles-al-pastor/Conceptos_Avanzados/decorators",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/07_Conceptos_Avanzados/02_decorators.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/07_Conceptos_Avanzados/02_decorators.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Generadores e Iteradores",
-    "permalink": "/trucos_programacion/Conceptos_Avanzados/generadores_iteradores"
+    "permalink": "/pyquiles-al-pastor/Conceptos_Avanzados/generadores_iteradores"
   },
   "next": {
     "title": "Context Managers",
-    "permalink": "/trucos_programacion/Conceptos_Avanzados/context_managers"
+    "permalink": "/pyquiles-al-pastor/Conceptos_Avanzados/context_managers"
   }
 }

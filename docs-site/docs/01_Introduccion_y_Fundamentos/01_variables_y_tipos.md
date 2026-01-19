@@ -62,6 +62,8 @@ Las variables y tipos de datos son la base de todo programa Python. Los verás e
 
 Las variables son como etiquetas que pones a valores para poder usarlos después. Piensa en una variable como una caja con un nombre donde guardas algo.
 
+> 🌮 **Analogía culinaria**: Imagina que estás preparando chilaquiles al pastor. Las variables son como los recipientes donde guardas cada ingrediente: `tortillas = "fritas"`, `salsa = "roja"`, `queso = "fresco"`, `pastor = "marinado"`. Cada variable tiene un nombre claro que describe qué contiene, igual que etiquetas en una cocina profesional.
+
 **Lo genial de Python:** No necesitas decirle qué tipo de dato vas a guardar. Python lo descubre automáticamente cuando le asignas un valor.
 
 ```python

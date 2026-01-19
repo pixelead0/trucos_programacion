@@ -5,10 +5,10 @@
   "source": "@site/docs/03_Funciones_y_Modulos/01_funciones.md",
   "sourceDirName": "03_Funciones_y_Modulos",
   "slug": "/Funciones_y_Modulos/funciones",
-  "permalink": "/trucos_programacion/Funciones_y_Modulos/funciones",
+  "permalink": "/pyquiles-al-pastor/Funciones_y_Modulos/funciones",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/03_Funciones_y_Modulos/01_funciones.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/03_Funciones_y_Modulos/01_funciones.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Operaciones Avanzadas",
-    "permalink": "/trucos_programacion/Estructuras_de_Datos/operaciones_avanzadas"
+    "permalink": "/pyquiles-al-pastor/Estructuras_de_Datos/operaciones_avanzadas"
   },
   "next": {
     "title": "Módulos y Paquetes",
-    "permalink": "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes"
+    "permalink": "/pyquiles-al-pastor/Funciones_y_Modulos/modulos_paquetes"
   }
 }

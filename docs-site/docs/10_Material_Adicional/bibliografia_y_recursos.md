@@ -7,23 +7,23 @@ Este documento consolida todos los recursos de aprendizaje mencionados a lo larg
 ## 📖 Contenido
 
 - [🎓 Cursos y Plataformas de Aprendizaje](#cursos-y-plataformas-de-aprendizaje)
-  - [Cursos Académicos](#cursos-académicos)
+  - [Cursos Académicos](#cursos-acadmicos)
   - [Plataformas con Certificados](#plataformas-con-certificados-gratuitos)
-  - [Canales de YouTube en Español](#canales-de-youtube-en-español)
-- [🌐 Recursos Web y Documentación](#-recursos-web-y-documentación)
-  - [Documentación Oficial](#documentación-oficial-de-python)
+  - [Canales de YouTube en Español](#canales-de-youtube-en-espaol)
+- [🌐 Recursos Web y Documentación](#recursos-web-y-documentacin)
+  - [Documentación Oficial](#documentacin-oficial-de-python)
   - [PEPs](#peps-python-enhancement-proposals)
   - [Herramientas de Desarrollo](#herramientas-de-desarrollo)
   - [Bibliotecas y Frameworks](#bibliotecas-y-frameworks)
-  - [Tutoriales](#tutoriales-y-artículos)
-- [📚 Libros Recomendados](#-libros-recomendados)
-- [📰 Revistas y Artículos](#-revistas-y-artículos)
+  - [Tutoriales](#tutoriales-y-artculos)
+- [📚 Libros Recomendados](#libros-recomendados)
+- [📰 Revistas y Artículos](#revistas-y-artculos)
 
 ---
 
-## 🎓 Cursos y Plataformas de Aprendizaje
+## 🎓 Cursos y Plataformas de Aprendizaje {#cursos-y-plataformas-de-aprendizaje}
 
-### 📚 Cursos Académicos
+### 📚 Cursos Académicos {#cursos-acadmicos}
 
 Cursos universitarios con certificación de prestigio:
 
@@ -33,7 +33,7 @@ Cursos universitarios con certificación de prestigio:
 | [**CS50P: Introduction to Programming with Python**](https://cs50.harvard.edu/python/) | Universidad de Harvard | Introducción a la programación con Python |
 | [**Programación Básica en Python**](https://mooc.tecnm.mx/courses/course-v1:TecNM+PBPY01-001+2025-3/about) | Tecnológico Nacional de México | Curso básico en español |
 
-### 🏆 Plataformas con Certificados Gratuitos
+### 🏆 Plataformas con Certificados Gratuitos {#plataformas-con-certificados-gratuitos}
 
 Plataformas que ofrecen certificados gratuitos al completar sus cursos:
 
@@ -43,7 +43,7 @@ Plataformas que ofrecen certificados gratuitos al completar sus cursos:
 | [**FreeCodeCamp**](https://www.freecodecamp.org/espanol/learn/scientific-computing-with-python/) | Scientific Computing with Python | Computación científica con Python (curso completo) |
 | [**Google Python Class**](https://developers.google.com/edu/python?hl=es-419) | Google Python Class | Clase de Python de Google para desarrolladores |
 
-### 📺 Canales de YouTube en Español
+### 📺 Canales de YouTube en Español {#canales-de-youtube-en-espaol}
 
 Canales de YouTube especializados en Python en español:
 
@@ -58,9 +58,9 @@ Canales de YouTube especializados en Python en español:
 
 ---
 
-## 🌐 Recursos Web y Documentación
+## 🌐 Recursos Web y Documentación {#recursos-web-y-documentacin}
 
-### 📘 Documentación Oficial de Python
+### 📘 Documentación Oficial de Python {#documentacin-oficial-de-python}
 
 La documentación oficial es tu mejor amiga. Aquí encontrarás todo lo que necesitas saber sobre Python.
 
@@ -69,7 +69,7 @@ La documentación oficial es tu mejor amiga. Aquí encontrarás todo lo que nece
 - 📝 [Referencia del lenguaje](https://docs.python.org/3/reference/)
 - 📚 [Biblioteca estándar](https://docs.python.org/3/library/)
 
-### 📜 PEPs (Python Enhancement Proposals)
+### 📜 PEPs (Python Enhancement Proposals) {#peps-python-enhancement-proposals}
 
 Los PEPs son propuestas de mejora para Python. Estos son los más relevantes mencionados en el curso:
 
@@ -110,7 +110,7 @@ Los PEPs son propuestas de mejora para Python. Estos son los más relevantes men
 - [PEP 3134](https://peps.python.org/pep-3134/) - Exception Chaining
 - [PEP 3154](https://peps.python.org/pep-3154/) - Pickle protocol
 
-### 🛠️ Herramientas de Desarrollo
+### 🛠️ Herramientas de Desarrollo {#herramientas-de-desarrollo}
 
 #### 🎨 Calidad de Código
 
@@ -149,7 +149,7 @@ Recursos para empaquetar y distribuir tu código:
 
 - [**venv**](https://docs.python.org/3/library/venv.html) - Módulo estándar para crear entornos virtuales
 
-### 📚 Bibliotecas y Frameworks
+### 📚 Bibliotecas y Frameworks {#bibliotecas-y-frameworks}
 
 #### 📁 Manejo de Archivos
 
@@ -209,7 +209,7 @@ Recursos para empaquetar y distribuir tu código:
 - [**Buenas prácticas de manejo de errores**](https://docs.python-guide.org/writing/style/#exceptions) - Manejo de excepciones
 - [**Buenas Prácticas de Logging**](https://docs.python-guide.org/writing/logging/) - Uso de logging
 
-### 🎓 Tutoriales y Artículos
+### 🎓 Tutoriales y Artículos {#tutoriales-y-artculos}
 
 #### Real Python
 
@@ -264,7 +264,7 @@ Módulos de la biblioteca estándar de Python:
 
 ---
 
-## 📚 Libros Recomendados
+## 📚 Libros Recomendados {#libros-recomendados}
 
 ### 🐍 Python General
 
@@ -341,7 +341,7 @@ Módulos de la biblioteca estándar de Python:
 
 ---
 
-## 📰 Revistas y Artículos
+## 📰 Revistas y Artículos {#revistas-y-artculos}
 
 ### Revista `The Original Hacker`
 
@@ -371,6 +371,6 @@ Página con enlaces a revistas, libros y manuales dedicados al software libre.
 
 <div align="center">
 
-**[← Volver al README](../README.md)**
+**[← Volver al inicio](/)** | **[Ver introducción](/introduccion)**
 
 </div>

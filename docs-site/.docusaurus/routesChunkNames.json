@@ -1,215 +1,215 @@
 {
-  "/trucos_programacion/__docusaurus/debug-726": {
+  "/pyquiles-al-pastor/__docusaurus/debug-ad3": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+      "plugin": "plugin---pyquiles-al-pastor-docusaurus-debugb-38-59d"
     }
   },
-  "/trucos_programacion/__docusaurus/debug/config-0f3": {
+  "/pyquiles-al-pastor/__docusaurus/debug/config-481": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+      "plugin": "plugin---pyquiles-al-pastor-docusaurus-debugb-38-59d"
     }
   },
-  "/trucos_programacion/__docusaurus/debug/content-df8": {
+  "/pyquiles-al-pastor/__docusaurus/debug/content-32e": {
     "__comp": "__comp---theme-debug-contentba-8-ce7",
     "__context": {
-      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+      "plugin": "plugin---pyquiles-al-pastor-docusaurus-debugb-38-59d"
     },
-    "__props": "__props---trucos-programacion-docusaurus-debug-content-729-1c9"
+    "__props": "__props---pyquiles-al-pastor-docusaurus-debug-content-47-e-6a1"
   },
-  "/trucos_programacion/__docusaurus/debug/globalData-445": {
+  "/pyquiles-al-pastor/__docusaurus/debug/globalData-0e0": {
     "__comp": "__comp---theme-debug-global-dataede-0fa",
     "__context": {
-      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+      "plugin": "plugin---pyquiles-al-pastor-docusaurus-debugb-38-59d"
     }
   },
-  "/trucos_programacion/__docusaurus/debug/metadata-fbf": {
+  "/pyquiles-al-pastor/__docusaurus/debug/metadata-615": {
     "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
     "__context": {
-      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+      "plugin": "plugin---pyquiles-al-pastor-docusaurus-debugb-38-59d"
     }
   },
-  "/trucos_programacion/__docusaurus/debug/registry-db9": {
+  "/pyquiles-al-pastor/__docusaurus/debug/registry-712": {
     "__comp": "__comp---theme-debug-registry-679-501",
     "__context": {
-      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+      "plugin": "plugin---pyquiles-al-pastor-docusaurus-debugb-38-59d"
     }
   },
-  "/trucos_programacion/__docusaurus/debug/routes-9fb": {
+  "/pyquiles-al-pastor/__docusaurus/debug/routes-2c3": {
     "__comp": "__comp---theme-debug-routes-946-699",
     "__context": {
-      "plugin": "plugin---trucos-programacion-docusaurus-debugb-38-13a"
+      "plugin": "plugin---pyquiles-al-pastor-docusaurus-debugb-38-59d"
     }
   },
-  "/trucos_programacion/rutas-be9": {
+  "/pyquiles-al-pastor/rutas-62a": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---trucos-programacion-rutasa-74-e62"
+      "plugin": "plugin---pyquiles-al-pastor-rutasa-74-f58"
     },
-    "content": "content---trucos-programacion-rutas-444-3aa"
+    "content": "content---pyquiles-al-pastor-rutas-444-38c"
   },
-  "/trucos_programacion/sobre-el-autor-69f": {
+  "/pyquiles-al-pastor/sobre-el-autor-e98": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---trucos-programacion-rutasa-74-e62"
+      "plugin": "plugin---pyquiles-al-pastor-rutasa-74-f58"
     },
-    "content": "content---trucos-programacion-sobre-el-autorf-28-746"
+    "content": "content---pyquiles-al-pastor-sobre-el-autorf-28-1e8"
   },
-  "/trucos_programacion/-6ef": {
+  "/pyquiles-al-pastor/-866": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "plugin---trucos-programacion-rutasa-74-e62"
+      "plugin": "plugin---pyquiles-al-pastor-rutasa-74-f58"
     },
-    "config": "config---trucos-programacion-5-e-9-236"
+    "config": "config---pyquiles-al-pastor-5-e-9-1f1"
   },
-  "/trucos_programacion/-1f9": {
+  "/pyquiles-al-pastor/-ead": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "plugin---trucos-programacion-aba-980"
+      "plugin": "plugin---pyquiles-al-pastor-aba-cab"
     }
   },
-  "/trucos_programacion/-42c": {
+  "/pyquiles-al-pastor/-e47": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---trucos-programacion-019-605"
+    "__props": "__props---pyquiles-al-pastor-52-d-71f"
   },
-  "/trucos_programacion/-04a": {
+  "/pyquiles-al-pastor/-4ed": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/trucos_programacion/Ciencia_de_Datos_Basica/pandas_basico-42f": {
+  "/pyquiles-al-pastor/Ciencia_de_Datos_Basica/pandas_basico-48d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-ciencia-de-datos-basica-pandas-basico-04-d-7b7"
+    "content": "content---pyquiles-al-pastor-ciencia-de-datos-basica-pandas-basico-04-d-8aa"
   },
-  "/trucos_programacion/Conceptos_Avanzados/context_managers-211": {
+  "/pyquiles-al-pastor/Conceptos_Avanzados/context_managers-828": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-conceptos-avanzados-context-managers-7-eb-b76"
+    "content": "content---pyquiles-al-pastor-conceptos-avanzados-context-managers-7-eb-f67"
   },
-  "/trucos_programacion/Conceptos_Avanzados/decorators-92f": {
+  "/pyquiles-al-pastor/Conceptos_Avanzados/decorators-3fc": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-conceptos-avanzados-decorators-65-d-c86"
+    "content": "content---pyquiles-al-pastor-conceptos-avanzados-decorators-65-d-6d0"
   },
-  "/trucos_programacion/Conceptos_Avanzados/generadores_iteradores-9b8": {
+  "/pyquiles-al-pastor/Conceptos_Avanzados/generadores_iteradores-fe0": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-conceptos-avanzados-generadores-iteradores-29-d-882"
+    "content": "content---pyquiles-al-pastor-conceptos-avanzados-generadores-iteradores-29-d-201"
   },
-  "/trucos_programacion/Conceptos_Avanzados/performance-e97": {
+  "/pyquiles-al-pastor/Conceptos_Avanzados/performance-508": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-conceptos-avanzados-performancebac-b31"
+    "content": "content---pyquiles-al-pastor-conceptos-avanzados-performancebac-476"
   },
-  "/trucos_programacion/Estructuras_de_Datos/diccionarios_sets-5a2": {
+  "/pyquiles-al-pastor/Estructuras_de_Datos/diccionarios_sets-506": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-estructuras-de-datos-diccionarios-setsc-0-e-067"
+    "content": "content---pyquiles-al-pastor-estructuras-de-datos-diccionarios-setsc-0-e-dd6"
   },
-  "/trucos_programacion/Estructuras_de_Datos/listas-67e": {
+  "/pyquiles-al-pastor/Estructuras_de_Datos/listas-83e": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-estructuras-de-datos-listas-4-db-2e1"
+    "content": "content---pyquiles-al-pastor-estructuras-de-datos-listas-4-db-c13"
   },
-  "/trucos_programacion/Estructuras_de_Datos/operaciones_avanzadas-608": {
+  "/pyquiles-al-pastor/Estructuras_de_Datos/operaciones_avanzadas-699": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-estructuras-de-datos-operaciones-avanzadasf-49-c34"
+    "content": "content---pyquiles-al-pastor-estructuras-de-datos-operaciones-avanzadasf-49-b3c"
   },
-  "/trucos_programacion/Estructuras_de_Datos/tuplas-cc5": {
+  "/pyquiles-al-pastor/Estructuras_de_Datos/tuplas-8a1": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-estructuras-de-datos-tuplas-9-ee-e35"
+    "content": "content---pyquiles-al-pastor-estructuras-de-datos-tuplas-9-ee-67d"
   },
-  "/trucos_programacion/Funciones_y_Modulos/funciones-45d": {
+  "/pyquiles-al-pastor/Funciones_y_Modulos/funciones-5b9": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-funciones-y-modulos-funciones-922-c31"
+    "content": "content---pyquiles-al-pastor-funciones-y-modulos-funciones-922-dad"
   },
-  "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes-662": {
+  "/pyquiles-al-pastor/Funciones_y_Modulos/modulos_paquetes-acb": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-funciones-y-modulos-modulos-paquetes-436-a60"
+    "content": "content---pyquiles-al-pastor-funciones-y-modulos-modulos-paquetes-436-ef2"
   },
-  "/trucos_programacion/Herramientas_Profesionales/git_intro-40e": {
+  "/pyquiles-al-pastor/Herramientas_Profesionales/git_intro-6d7": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-herramientas-profesionales-git-intro-766-f74"
+    "content": "content---pyquiles-al-pastor-herramientas-profesionales-git-intro-766-4ed"
   },
-  "/trucos_programacion/Herramientas_Profesionales/packaging-4da": {
+  "/pyquiles-al-pastor/Herramientas_Profesionales/packaging-b84": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-herramientas-profesionales-packagingdc-6-0c2"
+    "content": "content---pyquiles-al-pastor-herramientas-profesionales-packagingdc-6-f81"
   },
-  "/trucos_programacion/Herramientas_Profesionales/security-5e4": {
+  "/pyquiles-al-pastor/Herramientas_Profesionales/security-c41": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-herramientas-profesionales-security-2-cd-4ed"
+    "content": "content---pyquiles-al-pastor-herramientas-profesionales-security-2-cd-6ac"
   },
-  "/trucos_programacion/Herramientas_Profesionales/testing-d5a": {
+  "/pyquiles-al-pastor/Herramientas_Profesionales/testing-362": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-herramientas-profesionales-testing-085-119"
+    "content": "content---pyquiles-al-pastor-herramientas-profesionales-testing-085-1cf"
   },
-  "/trucos_programacion/Herramientas_Profesionales/virtual_envs-f20": {
+  "/pyquiles-al-pastor/Herramientas_Profesionales/virtual_envs-39a": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-herramientas-profesionales-virtual-envs-2-d-2-3e5"
+    "content": "content---pyquiles-al-pastor-herramientas-profesionales-virtual-envs-2-d-2-215"
   },
-  "/trucos_programacion/Introduccion_y_Fundamentos/bucles-d50": {
+  "/pyquiles-al-pastor/introduccion-7bf": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-introduccion-y-fundamentos-bucles-225-d7e"
+    "content": "content---pyquiles-al-pastor-introduccion-054-c6f"
   },
-  "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_avanzados-89a": {
+  "/pyquiles-al-pastor/Introduccion_y_Fundamentos/bucles-752": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-introduccion-y-fundamentos-condicionales-avanzados-986-45a"
+    "content": "content---pyquiles-al-pastor-introduccion-y-fundamentos-bucles-225-529"
   },
-  "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica-165": {
+  "/pyquiles-al-pastor/Introduccion_y_Fundamentos/condicionales_avanzados-86e": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-introduccion-y-fundamentos-condicionales-y-logica-17-c-863"
+    "content": "content---pyquiles-al-pastor-introduccion-y-fundamentos-condicionales-avanzados-986-2f3"
   },
-  "/trucos_programacion/Introduccion_y_Fundamentos/variables_y_tipos-a0b": {
+  "/pyquiles-al-pastor/Introduccion_y_Fundamentos/condicionales_y_logica-782": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-introduccion-y-fundamentos-variables-y-tipos-693-5fe"
+    "content": "content---pyquiles-al-pastor-introduccion-y-fundamentos-condicionales-y-logica-17-c-daa"
   },
-  "/trucos_programacion/Introduccion_y_Fundamentos/zen_of_python-769": {
+  "/pyquiles-al-pastor/Introduccion_y_Fundamentos/variables_y_tipos-aca": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-introduccion-y-fundamentos-zen-of-python-735-39a"
+    "content": "content---pyquiles-al-pastor-introduccion-y-fundamentos-variables-y-tipos-693-3e8"
   },
-  "/trucos_programacion/Manejo_de_Archivos_y_Formatos/json-659": {
+  "/pyquiles-al-pastor/Introduccion_y_Fundamentos/zen_of_python-8d7": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-manejo-de-archivos-y-formatos-json-0-ee-196"
+    "content": "content---pyquiles-al-pastor-introduccion-y-fundamentos-zen-of-python-735-a56"
   },
-  "/trucos_programacion/Manejo_de_Archivos_y_Formatos/pathlib-64d": {
+  "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/json-7e4": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-manejo-de-archivos-y-formatos-pathlib-7-c-3-31a"
+    "content": "content---pyquiles-al-pastor-manejo-de-archivos-y-formatos-json-0-ee-5ce"
   },
-  "/trucos_programacion/Manejo_de_Archivos_y_Formatos/serialization_advanced-8ec": {
+  "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/pathlib-657": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-manejo-de-archivos-y-formatos-serialization-advancedd-41-1f6"
+    "content": "content---pyquiles-al-pastor-manejo-de-archivos-y-formatos-pathlib-7-c-3-d44"
   },
-  "/trucos_programacion/Manejo_de_Archivos_y_Formatos/xml-958": {
+  "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/serialization_advanced-f5c": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-manejo-de-archivos-y-formatos-xml-53-d-248"
+    "content": "content---pyquiles-al-pastor-manejo-de-archivos-y-formatos-serialization-advancedd-41-dad"
   },
-  "/trucos_programacion/Manejo_de_Archivos_y_Formatos/yaml-bda": {
+  "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/xml-162": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-manejo-de-archivos-y-formatos-yaml-77-f-85c"
+    "content": "content---pyquiles-al-pastor-manejo-de-archivos-y-formatos-xml-53-d-cf3"
   },
-  "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/excepciones-bca": {
+  "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/yaml-e88": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-excepcionesb-7-b-ef1"
+    "content": "content---pyquiles-al-pastor-manejo-de-archivos-y-formatos-yaml-77-f-b01"
   },
-  "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging-38c": {
+  "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/excepciones-beb": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-logginga-21-45d"
+    "content": "content---pyquiles-al-pastor-manejo-de-errores-y-buenas-practicas-excepcionesb-7-b-332"
   },
-  "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/quality-f6e": {
+  "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/logging-ec3": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-quality-8-b-1-05b"
+    "content": "content---pyquiles-al-pastor-manejo-de-errores-y-buenas-practicas-logginga-21-739"
   },
-  "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints-f86": {
+  "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/quality-b39": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-manejo-de-errores-y-buenas-practicas-type-hints-147-4ab"
+    "content": "content---pyquiles-al-pastor-manejo-de-errores-y-buenas-practicas-quality-8-b-1-e88"
   },
-  "/trucos_programacion/Material_Adicional/bibliografia_y_recursos-741": {
+  "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/type_hints-ebe": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-material-adicional-bibliografia-y-recursos-44-b-bd5"
+    "content": "content---pyquiles-al-pastor-manejo-de-errores-y-buenas-practicas-type-hints-147-6ac"
   },
-  "/trucos_programacion/Programacion_Orientada_a_Objetos/clases_objetos-3cd": {
+  "/pyquiles-al-pastor/Material_Adicional/bibliografia_y_recursos-3af": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-programacion-orientada-a-objetos-clases-objetoseb-2-c6c"
+    "content": "content---pyquiles-al-pastor-material-adicional-bibliografia-y-recursos-44-b-9c4"
   },
-  "/trucos_programacion/Programacion_Orientada_a_Objetos/dataclasses-4e3": {
+  "/pyquiles-al-pastor/Programacion_Orientada_a_Objetos/clases_objetos-748": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-programacion-orientada-a-objetos-dataclassese-95-517"
+    "content": "content---pyquiles-al-pastor-programacion-orientada-a-objetos-clases-objetoseb-2-bef"
   },
-  "/trucos_programacion/-a9c": {
+  "/pyquiles-al-pastor/Programacion_Orientada_a_Objetos/dataclasses-354": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---trucos-programacion-233-1c3"
+    "content": "content---pyquiles-al-pastor-programacion-orientada-a-objetos-dataclassese-95-bee"
   }
 }

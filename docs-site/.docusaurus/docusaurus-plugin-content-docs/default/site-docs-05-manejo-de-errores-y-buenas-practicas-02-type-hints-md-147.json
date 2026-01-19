@@ -5,10 +5,10 @@
   "source": "@site/docs/05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md",
   "sourceDirName": "05_Manejo_de_Errores_y_Buenas_Practicas",
   "slug": "/Manejo_de_Errores_y_Buenas_Practicas/type_hints",
-  "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints",
+  "permalink": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/type_hints",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Manejo de Errores",
-    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/excepciones"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/excepciones"
   },
   "next": {
     "title": "Logging",
-    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/logging"
   }
 }

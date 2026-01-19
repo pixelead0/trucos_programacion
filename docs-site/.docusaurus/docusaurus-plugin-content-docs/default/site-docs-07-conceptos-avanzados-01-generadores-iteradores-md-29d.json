@@ -5,10 +5,10 @@
   "source": "@site/docs/07_Conceptos_Avanzados/01_generadores_iteradores.md",
   "sourceDirName": "07_Conceptos_Avanzados",
   "slug": "/Conceptos_Avanzados/generadores_iteradores",
-  "permalink": "/trucos_programacion/Conceptos_Avanzados/generadores_iteradores",
+  "permalink": "/pyquiles-al-pastor/Conceptos_Avanzados/generadores_iteradores",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/07_Conceptos_Avanzados/01_generadores_iteradores.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/07_Conceptos_Avanzados/01_generadores_iteradores.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Serialización Avanzada",
-    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/serialization_advanced"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/serialization_advanced"
   },
   "next": {
     "title": "Decoradores",
-    "permalink": "/trucos_programacion/Conceptos_Avanzados/decorators"
+    "permalink": "/pyquiles-al-pastor/Conceptos_Avanzados/decorators"
   }
 }

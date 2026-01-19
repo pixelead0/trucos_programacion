@@ -5,16 +5,16 @@
   "source": "@site/docs/10_Material_Adicional/bibliografia_y_recursos.md",
   "sourceDirName": "10_Material_Adicional",
   "slug": "/Material_Adicional/bibliografia_y_recursos",
-  "permalink": "/trucos_programacion/Material_Adicional/bibliografia_y_recursos",
+  "permalink": "/pyquiles-al-pastor/Material_Adicional/bibliografia_y_recursos",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/10_Material_Adicional/bibliografia_y_recursos.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/10_Material_Adicional/bibliografia_y_recursos.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Pandas Básico",
-    "permalink": "/trucos_programacion/Ciencia_de_Datos_Basica/pandas_basico"
+    "permalink": "/pyquiles-al-pastor/Ciencia_de_Datos_Basica/pandas_basico"
   }
 }

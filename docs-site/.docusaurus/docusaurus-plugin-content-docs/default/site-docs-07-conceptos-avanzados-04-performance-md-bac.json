@@ -5,10 +5,10 @@
   "source": "@site/docs/07_Conceptos_Avanzados/04_performance.md",
   "sourceDirName": "07_Conceptos_Avanzados",
   "slug": "/Conceptos_Avanzados/performance",
-  "permalink": "/trucos_programacion/Conceptos_Avanzados/performance",
+  "permalink": "/pyquiles-al-pastor/Conceptos_Avanzados/performance",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/07_Conceptos_Avanzados/04_performance.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/07_Conceptos_Avanzados/04_performance.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 4,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Context Managers",
-    "permalink": "/trucos_programacion/Conceptos_Avanzados/context_managers"
+    "permalink": "/pyquiles-al-pastor/Conceptos_Avanzados/context_managers"
   },
   "next": {
     "title": "Git y Control de Versiones",
-    "permalink": "/trucos_programacion/Herramientas_Profesionales/git_intro"
+    "permalink": "/pyquiles-al-pastor/Herramientas_Profesionales/git_intro"
   }
 }

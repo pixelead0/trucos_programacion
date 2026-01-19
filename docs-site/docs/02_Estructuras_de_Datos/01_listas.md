@@ -60,6 +60,8 @@ Las listas son la estructura de datos más común en Python. Las verás en:
 
 Las listas son colecciones ordenadas y mutables de elementos. Piensa en una lista como una caja donde puedes agregar, quitar y reorganizar elementos en cualquier momento.
 
+> 🌮 **Analogía culinaria**: Así como no guardas cada tortilla en un plato separado, sino que las organizas en una canasta (lista), las listas te permiten agrupar información relacionada. Una lista es como una canasta de tortillas donde puedes agregar más, quitar algunas, o reorganizarlas según necesites.
+
 **Lo genial de Python:** Las listas son extremadamente flexibles. Pueden contener cualquier tipo de dato, pueden crecer o reducirse, y tienen métodos útiles integrados.
 
 ```python

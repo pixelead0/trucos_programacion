@@ -50,6 +50,8 @@ Imagina que tienes que calcular el área de un rectángulo 10 veces en tu códig
 
 **Las funciones resuelven esto:** escribes la lógica una vez, la nombras, y la reutilizas cuando la necesites.
 
+> 🌮 **Analogía culinaria**: Una función es como la receta para preparar chilaquiles al pastor. Una vez que defines la función `preparar_chilaquiles()`, puedes usarla cada vez que quieras hacer chilaquiles sin tener que recordar todos los pasos. Puedes incluso pasarle diferentes ingredientes como parámetros: `preparar_chilaquiles(salsa="verde", nivel_picante="medio")`. La función encapsula el proceso completo y lo hace reutilizable.
+
 **Beneficios reales:**
 - **Evitas repetir código**: Escribes una vez, usas muchas veces
 - **Más fácil de corregir**: Si hay un error, lo arreglas en un solo lugar

@@ -1,183 +1,182 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/trucos_programacion/",
+      "path": "/pyquiles-al-pastor/",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/trucos_programacion/",
-          "mainDocId": "README",
+          "path": "/pyquiles-al-pastor/",
+          "mainDocId": "Introduccion_y_Fundamentos/zen_of_python",
           "docs": [
             {
               "id": "Ciencia_de_Datos_Basica/pandas_basico",
-              "path": "/trucos_programacion/Ciencia_de_Datos_Basica/pandas_basico",
+              "path": "/pyquiles-al-pastor/Ciencia_de_Datos_Basica/pandas_basico",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Conceptos_Avanzados/context_managers",
-              "path": "/trucos_programacion/Conceptos_Avanzados/context_managers",
+              "path": "/pyquiles-al-pastor/Conceptos_Avanzados/context_managers",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Conceptos_Avanzados/decorators",
-              "path": "/trucos_programacion/Conceptos_Avanzados/decorators",
+              "path": "/pyquiles-al-pastor/Conceptos_Avanzados/decorators",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Conceptos_Avanzados/generadores_iteradores",
-              "path": "/trucos_programacion/Conceptos_Avanzados/generadores_iteradores",
+              "path": "/pyquiles-al-pastor/Conceptos_Avanzados/generadores_iteradores",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Conceptos_Avanzados/performance",
-              "path": "/trucos_programacion/Conceptos_Avanzados/performance",
+              "path": "/pyquiles-al-pastor/Conceptos_Avanzados/performance",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Estructuras_de_Datos/diccionarios_sets",
-              "path": "/trucos_programacion/Estructuras_de_Datos/diccionarios_sets",
+              "path": "/pyquiles-al-pastor/Estructuras_de_Datos/diccionarios_sets",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Estructuras_de_Datos/listas",
-              "path": "/trucos_programacion/Estructuras_de_Datos/listas",
+              "path": "/pyquiles-al-pastor/Estructuras_de_Datos/listas",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Estructuras_de_Datos/operaciones_avanzadas",
-              "path": "/trucos_programacion/Estructuras_de_Datos/operaciones_avanzadas",
+              "path": "/pyquiles-al-pastor/Estructuras_de_Datos/operaciones_avanzadas",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Estructuras_de_Datos/tuplas",
-              "path": "/trucos_programacion/Estructuras_de_Datos/tuplas",
+              "path": "/pyquiles-al-pastor/Estructuras_de_Datos/tuplas",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Funciones_y_Modulos/funciones",
-              "path": "/trucos_programacion/Funciones_y_Modulos/funciones",
+              "path": "/pyquiles-al-pastor/Funciones_y_Modulos/funciones",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Funciones_y_Modulos/modulos_paquetes",
-              "path": "/trucos_programacion/Funciones_y_Modulos/modulos_paquetes",
+              "path": "/pyquiles-al-pastor/Funciones_y_Modulos/modulos_paquetes",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Herramientas_Profesionales/git_intro",
-              "path": "/trucos_programacion/Herramientas_Profesionales/git_intro",
+              "path": "/pyquiles-al-pastor/Herramientas_Profesionales/git_intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Herramientas_Profesionales/packaging",
-              "path": "/trucos_programacion/Herramientas_Profesionales/packaging",
+              "path": "/pyquiles-al-pastor/Herramientas_Profesionales/packaging",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Herramientas_Profesionales/security",
-              "path": "/trucos_programacion/Herramientas_Profesionales/security",
+              "path": "/pyquiles-al-pastor/Herramientas_Profesionales/security",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Herramientas_Profesionales/testing",
-              "path": "/trucos_programacion/Herramientas_Profesionales/testing",
+              "path": "/pyquiles-al-pastor/Herramientas_Profesionales/testing",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Herramientas_Profesionales/virtual_envs",
-              "path": "/trucos_programacion/Herramientas_Profesionales/virtual_envs",
+              "path": "/pyquiles-al-pastor/Herramientas_Profesionales/virtual_envs",
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "introduccion",
+              "path": "/pyquiles-al-pastor/introduccion"
+            },
+            {
               "id": "Introduccion_y_Fundamentos/bucles",
-              "path": "/trucos_programacion/Introduccion_y_Fundamentos/bucles",
+              "path": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/bucles",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Introduccion_y_Fundamentos/condicionales_avanzados",
-              "path": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_avanzados",
+              "path": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/condicionales_avanzados",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Introduccion_y_Fundamentos/condicionales_y_logica",
-              "path": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica",
+              "path": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/condicionales_y_logica",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Introduccion_y_Fundamentos/variables_y_tipos",
-              "path": "/trucos_programacion/Introduccion_y_Fundamentos/variables_y_tipos",
+              "path": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/variables_y_tipos",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Introduccion_y_Fundamentos/zen_of_python",
-              "path": "/trucos_programacion/Introduccion_y_Fundamentos/zen_of_python",
+              "path": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/zen_of_python",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Manejo_de_Archivos_y_Formatos/json",
-              "path": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/json",
+              "path": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/json",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Manejo_de_Archivos_y_Formatos/pathlib",
-              "path": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/pathlib",
+              "path": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/pathlib",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Manejo_de_Archivos_y_Formatos/serialization_advanced",
-              "path": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/serialization_advanced",
+              "path": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/serialization_advanced",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Manejo_de_Archivos_y_Formatos/xml",
-              "path": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/xml",
+              "path": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/xml",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Manejo_de_Archivos_y_Formatos/yaml",
-              "path": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/yaml",
+              "path": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/yaml",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Manejo_de_Errores_y_Buenas_Practicas/excepciones",
-              "path": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/excepciones",
+              "path": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/excepciones",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Manejo_de_Errores_y_Buenas_Practicas/logging",
-              "path": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/logging",
+              "path": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/logging",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Manejo_de_Errores_y_Buenas_Practicas/quality",
-              "path": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/quality",
+              "path": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/quality",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Manejo_de_Errores_y_Buenas_Practicas/type_hints",
-              "path": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/type_hints",
+              "path": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/type_hints",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Material_Adicional/bibliografia_y_recursos",
-              "path": "/trucos_programacion/Material_Adicional/bibliografia_y_recursos",
+              "path": "/pyquiles-al-pastor/Material_Adicional/bibliografia_y_recursos",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Programacion_Orientada_a_Objetos/clases_objetos",
-              "path": "/trucos_programacion/Programacion_Orientada_a_Objetos/clases_objetos",
+              "path": "/pyquiles-al-pastor/Programacion_Orientada_a_Objetos/clases_objetos",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Programacion_Orientada_a_Objetos/dataclasses",
-              "path": "/trucos_programacion/Programacion_Orientada_a_Objetos/dataclasses",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "README",
-              "path": "/trucos_programacion/",
+              "path": "/pyquiles-al-pastor/Programacion_Orientada_a_Objetos/dataclasses",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -185,8 +184,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/trucos_programacion/",
-                "label": "README"
+                "path": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/zen_of_python",
+                "label": "El Zen de Python"
               }
             }
           }

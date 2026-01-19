@@ -5,10 +5,10 @@
   "source": "@site/docs/01_Introduccion_y_Fundamentos/02_condicionales_y_logica.md",
   "sourceDirName": "01_Introduccion_y_Fundamentos",
   "slug": "/Introduccion_y_Fundamentos/condicionales_y_logica",
-  "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_y_logica",
+  "permalink": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/condicionales_y_logica",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/01_Introduccion_y_Fundamentos/02_condicionales_y_logica.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/01_Introduccion_y_Fundamentos/02_condicionales_y_logica.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Variables y Tipos",
-    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/variables_y_tipos"
+    "permalink": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/variables_y_tipos"
   },
   "next": {
     "title": "Condicionales Avanzados",
-    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/condicionales_avanzados"
+    "permalink": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/condicionales_avanzados"
   }
 }

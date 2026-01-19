@@ -5,10 +5,10 @@
   "source": "@site/docs/06_Manejo_de_Archivos_y_Formatos/04_yaml.md",
   "sourceDirName": "06_Manejo_de_Archivos_y_Formatos",
   "slug": "/Manejo_de_Archivos_y_Formatos/yaml",
-  "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/yaml",
+  "permalink": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/yaml",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/06_Manejo_de_Archivos_y_Formatos/04_yaml.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/06_Manejo_de_Archivos_y_Formatos/04_yaml.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 4,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "JSON",
-    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/json"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/json"
   },
   "next": {
     "title": "Serialización Avanzada",
-    "permalink": "/trucos_programacion/Manejo_de_Archivos_y_Formatos/serialization_advanced"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Archivos_y_Formatos/serialization_advanced"
   }
 }

@@ -44,6 +44,8 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
 
 El **Zen de Python** es una colección de 20 principios de software que influyen en el diseño del Lenguaje de Programación Python. Estos principios no son reglas estrictas, sino guías que te ayudarán a escribir código más legible, mantenible y "pythónico".
 
+> 🌮 **Analogía culinaria**: Así como los chilaquiles al pastor tienen ingredientes básicos (tortillas, salsa, queso) que se combinan de forma simple pero efectiva, el Zen de Python promueve la simplicidad y claridad en el código. No necesitas complicar las cosas cuando una solución simple funciona perfectamente.
+
 :::info Para principiantes
 Si esto te suena abstracto, es normal. Piensa en el Zen como "el espíritu de Python": cómo los creadores del lenguaje piensan que debería escribirse código. A medida que avances en el curso, verás estos principios aplicados en cada lección.
 :::

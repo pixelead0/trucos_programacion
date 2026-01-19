@@ -6,22 +6,21 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Curso Completo de Python',
-  tagline: 'Autoaprendizaje desde cero hasta profesional',
+  title: 'Pyquiles al Pastor',
+  tagline: 'Curso completo de Python - Autoaprendizaje desde cero hasta profesional',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://pixelead0.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployments, it is often '/<projectName>/'
-  baseUrl: '/construye_python/',
+  baseUrl: '/pyquiles-al-pastor/',
 
   // GitHub pages deployment config.
   organizationName: 'pixelead0', // Usually your GitHub org/user name.
-  projectName: 'construye_python', // Usually your repo name.
+  projectName: 'pyquiles-al-pastor', // Usually your repo name.
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
@@ -45,7 +44,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/pixelead0/construye_python/tree/main/',
+          editUrl: 'https://github.com/pixelead0/pyquiles-al-pastor/tree/main/',
           routeBasePath: '/', // Serve the docs at the site's root
           // Generar sidebar automáticamente desde la estructura de archivos
           // sidebarCollapsible: true,
@@ -64,7 +63,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Curso de Python',
+        title: 'Pyquiles al Pastor',
         logo: {
           alt: 'Python Logo',
           src: 'img/logo.svg',
@@ -93,7 +92,7 @@ const config = {
             className: 'navbar__item--coffee',
           },
           {
-            href: 'https://github.com/pixelead0/construye_python',
+            href: 'https://github.com/pixelead0/pyquiles-al-pastor',
             label: 'GitHub',
             position: 'right',
           },
@@ -137,12 +136,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/pixelead0/construye_python',
+                href: 'https://github.com/pixelead0/pyquiles-al-pastor',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Curso de Python. Construido con Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Pyquiles al Pastor. Construido con Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

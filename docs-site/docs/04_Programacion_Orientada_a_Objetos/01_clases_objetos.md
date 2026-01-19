@@ -91,6 +91,8 @@ class Usuario:
 - Ejemplo: La clase `Usuario` define que un usuario tiene nombre, email y puede iniciar sesión
 - No es un usuario real, solo la plantilla
 
+> 🌮 **Analogía culinaria**: Una clase es como la receta estándar de chilaquiles al pastor. Define qué ingredientes necesita (atributos) y qué pasos seguir (métodos). Un objeto es como un plato real de chilaquiles que preparas siguiendo esa receta. Puedes crear muchos objetos (muchos platos) usando la misma clase (la misma receta), pero cada uno puede tener sus propias variaciones (diferentes niveles de picante, más o menos queso, etc.).
+
 **Objeto = Instancia real**
 - Es la "cosa" creada a partir de la clase
 - Ejemplo: `usuario1 = Usuario("Ana", "ana@email.com", 25)` crea un objeto usuario real

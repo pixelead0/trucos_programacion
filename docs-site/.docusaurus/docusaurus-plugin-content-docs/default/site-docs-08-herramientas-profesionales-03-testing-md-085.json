@@ -5,10 +5,10 @@
   "source": "@site/docs/08_Herramientas_Profesionales/03_testing.md",
   "sourceDirName": "08_Herramientas_Profesionales",
   "slug": "/Herramientas_Profesionales/testing",
-  "permalink": "/trucos_programacion/Herramientas_Profesionales/testing",
+  "permalink": "/pyquiles-al-pastor/Herramientas_Profesionales/testing",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/08_Herramientas_Profesionales/03_testing.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/08_Herramientas_Profesionales/03_testing.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 3,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Empaquetado",
-    "permalink": "/trucos_programacion/Herramientas_Profesionales/packaging"
+    "permalink": "/pyquiles-al-pastor/Herramientas_Profesionales/packaging"
   },
   "next": {
     "title": "Seguridad",
-    "permalink": "/trucos_programacion/Herramientas_Profesionales/security"
+    "permalink": "/pyquiles-al-pastor/Herramientas_Profesionales/security"
   }
 }

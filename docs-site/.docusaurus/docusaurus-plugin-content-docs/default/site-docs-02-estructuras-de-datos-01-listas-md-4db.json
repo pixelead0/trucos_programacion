@@ -5,10 +5,10 @@
   "source": "@site/docs/02_Estructuras_de_Datos/01_listas.md",
   "sourceDirName": "02_Estructuras_de_Datos",
   "slug": "/Estructuras_de_Datos/listas",
-  "permalink": "/trucos_programacion/Estructuras_de_Datos/listas",
+  "permalink": "/pyquiles-al-pastor/Estructuras_de_Datos/listas",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/02_Estructuras_de_Datos/01_listas.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/02_Estructuras_de_Datos/01_listas.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Bucles",
-    "permalink": "/trucos_programacion/Introduccion_y_Fundamentos/bucles"
+    "permalink": "/pyquiles-al-pastor/Introduccion_y_Fundamentos/bucles"
   },
   "next": {
     "title": "Tuplas",
-    "permalink": "/trucos_programacion/Estructuras_de_Datos/tuplas"
+    "permalink": "/pyquiles-al-pastor/Estructuras_de_Datos/tuplas"
   }
 }

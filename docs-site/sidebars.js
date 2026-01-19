@@ -29,7 +29,6 @@ const sidebars = {
       type: 'html',
       value: '<hr style="margin: 0.5rem 0;" />',
     },
-    'README',
     {
       type: 'category',
       label: '🟢 Módulo 01: Fundamentos',

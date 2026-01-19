@@ -5,10 +5,10 @@
   "source": "@site/docs/08_Herramientas_Profesionales/02_packaging.md",
   "sourceDirName": "08_Herramientas_Profesionales",
   "slug": "/Herramientas_Profesionales/packaging",
-  "permalink": "/trucos_programacion/Herramientas_Profesionales/packaging",
+  "permalink": "/pyquiles-al-pastor/Herramientas_Profesionales/packaging",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/08_Herramientas_Profesionales/02_packaging.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/08_Herramientas_Profesionales/02_packaging.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Entornos Virtuales",
-    "permalink": "/trucos_programacion/Herramientas_Profesionales/virtual_envs"
+    "permalink": "/pyquiles-al-pastor/Herramientas_Profesionales/virtual_envs"
   },
   "next": {
     "title": "Testing",
-    "permalink": "/trucos_programacion/Herramientas_Profesionales/testing"
+    "permalink": "/pyquiles-al-pastor/Herramientas_Profesionales/testing"
   }
 }

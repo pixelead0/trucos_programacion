@@ -5,10 +5,10 @@
   "source": "@site/docs/04_Programacion_Orientada_a_Objetos/02_dataclasses.md",
   "sourceDirName": "04_Programacion_Orientada_a_Objetos",
   "slug": "/Programacion_Orientada_a_Objetos/dataclasses",
-  "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/dataclasses",
+  "permalink": "/pyquiles-al-pastor/Programacion_Orientada_a_Objetos/dataclasses",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/04_Programacion_Orientada_a_Objetos/02_dataclasses.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/04_Programacion_Orientada_a_Objetos/02_dataclasses.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Clases y Objetos",
-    "permalink": "/trucos_programacion/Programacion_Orientada_a_Objetos/clases_objetos"
+    "permalink": "/pyquiles-al-pastor/Programacion_Orientada_a_Objetos/clases_objetos"
   },
   "next": {
     "title": "Manejo de Errores",
-    "permalink": "/trucos_programacion/Manejo_de_Errores_y_Buenas_Practicas/excepciones"
+    "permalink": "/pyquiles-al-pastor/Manejo_de_Errores_y_Buenas_Practicas/excepciones"
   }
 }

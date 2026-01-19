@@ -5,10 +5,10 @@
   "source": "@site/docs/07_Conceptos_Avanzados/03_context_managers.md",
   "sourceDirName": "07_Conceptos_Avanzados",
   "slug": "/Conceptos_Avanzados/context_managers",
-  "permalink": "/trucos_programacion/Conceptos_Avanzados/context_managers",
+  "permalink": "/pyquiles-al-pastor/Conceptos_Avanzados/context_managers",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/pixelead0/trucos_programacion/tree/main/docs/07_Conceptos_Avanzados/03_context_managers.md",
+  "editUrl": "https://github.com/pixelead0/pyquiles-al-pastor/tree/main/docs/07_Conceptos_Avanzados/03_context_managers.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 3,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Decoradores",
-    "permalink": "/trucos_programacion/Conceptos_Avanzados/decorators"
+    "permalink": "/pyquiles-al-pastor/Conceptos_Avanzados/decorators"
   },
   "next": {
     "title": "Performance",
-    "permalink": "/trucos_programacion/Conceptos_Avanzados/performance"
+    "permalink": "/pyquiles-al-pastor/Conceptos_Avanzados/performance"
   }
 }
