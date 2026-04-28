@@ -46,7 +46,7 @@ export default function LessonMap({
           <ul className="lessonMap__list">
             {objectives.map((objective, index) => (
               <li key={index} className="lessonMap__item">
-                {objective}
+                <span dangerouslySetInnerHTML={{ __html: objective }} />
               </li>
             ))}
           </ul>
@@ -58,7 +58,7 @@ export default function LessonMap({
             <ul className="lessonMap__list">
               {useCases.map((useCase, index) => (
                 <li key={index} className="lessonMap__item">
-                  {useCase}
+                  <span dangerouslySetInnerHTML={{ __html: useCase }} />
                 </li>
               ))}
             </ul>

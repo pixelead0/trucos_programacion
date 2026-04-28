@@ -29,7 +29,7 @@ import ProgressIndicator from '@site/src/components/ProgressIndicator';
     "Entender la filosofía que guía el diseño de Python",
     "Conocer los 19 principios fundamentales del Zen de Python",
     "Aplicar estos principios en tu código desde el inicio",
-    "Acceder al Zen desde el intérprete con `import this`"
+    "Acceder al Zen desde el intérprete con <code>import this</code>"
   ]}
   useCases={[
     "Guía para escribir código más legible y mantenible",
