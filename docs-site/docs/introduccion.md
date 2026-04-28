@@ -183,7 +183,7 @@ Marca tu progreso mientras avanzas:
 - [ ] Completé [POO](./04_Programacion_Orientada_a_Objetos/01_clases_objetos.md)
 - [ ] Completé [Manejo de Errores](./05_Manejo_de_Errores_y_Buenas_Practicas/01_excepciones.md)
 - [ ] Completé [Type Hints](./05_Manejo_de_Errores_y_Buenas_Practicas/02_type_hints.md)
-- [ ] Completé [Archivos y Formatos](./06_Manejo_de_Archivos_y_Formatos)
+- [ ] Completé [Archivos y Formatos](./06_Manejo_de_Archivos_y_Formatos/01_pathlib.md)
 
 ### Avanzado
 - [ ] Completé [Decoradores](./07_Conceptos_Avanzados/02_decorators.md)
@@ -264,6 +264,6 @@ Una vez que completes este curso, considera:
 
 <div align="center">
 
-**[← Volver al inicio](#curso-completo-de-python---autoaprendizaje)** | **[Siguiente: El Zen de Python →](./01_Introduccion_y_Fundamentos/00_zen_of_python.md)**
+**[← Volver al inicio](#)** | **[Siguiente: El Zen de Python →](./01_Introduccion_y_Fundamentos/00_zen_of_python.md)**
 
 </div>
