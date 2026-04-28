@@ -270,74 +270,74 @@ Módulos de la biblioteca estándar de Python:
 
 | Libro | Autor | Descripción |
 |-------|-------|-------------|
-| **Python Tricks** | Dan Bader | Trucos y características geniales de Python. |
-| **Effective Python** | Brett Slatkin | 59 formas de escribir mejor Python. |
-| **Fluent Python** | Luciano Ramalho | Guía profunda sobre características avanzadas de Python. |
-| **Python Cookbook, 3rd Ed** | David Beazley & Brian K. Jones | Recetas para problemas comunes en Python. |
-| **Automate the Boring Stuff** | Al Sweigart | Automatización práctica para principiantes. |
-| **Learn Python the Hard Way** | Zed A. Shaw | Aprendizaje basado en repetición. |
-| **The Hitchhiker's Guide to Python** | Kenneth Reitz | Guía completa del ecosistema Python. |
+| **Python Tricks** | Dan Bader | Trucos y características geniales de Python |
+| **Effective Python** | Brett Slatkin | 59 formas de escribir mejor Python |
+| **Fluent Python** | Luciano Ramalho | Guía profunda sobre características avanzadas de Python |
+| **Python Cookbook, 3rd Ed** | David Beazley & Brian K. Jones | Recetas para problemas comunes en Python |
+| **Automate the Boring Stuff** | Al Sweigart | Automatización práctica para principiantes |
+| **Learn Python the Hard Way** | Zed A. Shaw | Aprendizaje basado en repetición |
+| **The Hitchhiker's Guide to Python** | Kenneth Reitz | Guía completa del ecosistema Python |
 
 ### ✨ Calidad de Código y Profesionalismo
 
 | Libro | Autor | Descripción |
 |-------|-------|-------------|
-| **Clean Code** | Robert C. Martin | Principios fundamentales de código limpio. |
-| **The Clean Coder** | Robert C. Martin | Profesionalismo y ética en programación. |
-| **The Pragmatic Programmer** | David Thomas, Andrew Hunt | Clásico sobre maestría en software. |
-| **Refactoring** | Martin Fowler | Técnicas para mejorar código existente. |
-| **Code Complete** | Steve McConnell | Construcción de software profesional. |
-| **El libro negro del programador** | Rafael Gómez Blanes | Consejos y realidades de la profesión. |
+| **Clean Code** | Robert C. Martin | Principios fundamentales de código limpio |
+| **The Clean Coder** | Robert C. Martin | Profesionalismo y ética en programación |
+| **The Pragmatic Programmer** | David Thomas, Andrew Hunt | Clásico sobre maestría en software |
+| **Refactoring** | Martin Fowler | Técnicas para mejorar código existente |
+| **Code Complete** | Steve McConnell | Construcción de software profesional |
+| **El libro negro del programador** | Rafael Gómez Blanes | Consejos y realidades de la profesión |
 
 ### 🏗️ Programación Orientada a Objetos y Diseño
 
 | Libro | Autor | Descripción |
 |-------|-------|-------------|
-| **Design Patterns: Elements of Reusable OOP** | Gang of Four (GoF) | Patrones de diseño clásicos. |
+| **Design Patterns: Elements of Reusable OOP** | Gang of Four (GoF) | Patrones de diseño clásicos |
 
 ### 🧪 Testing
 
 | Libro | Autor | Descripción |
 |-------|-------|-------------|
-| **Test-Driven Development with Python** | Harry Percival | Guía completa de TDD. |
-| **Python Testing with pytest** | Brian Okken | Guía completa de pytest. |
-| **The Art of Unit Testing** | Roy Osherove | Principios de testing. |
+| **Test-Driven Development with Python** | Harry Percival | Guía completa de TDD |
+| **Python Testing with pytest** | Brian Okken | Guía completa de pytest |
+| **The Art of Unit Testing** | Roy Osherove | Principios de testing |
 
 ### 🔒 Seguridad
 
 | Libro | Autor | Descripción |
 |-------|-------|-------------|
-| **Black Hat Python** | Justin Seitz | Python para seguridad y hacking. |
-| **The Web Application Hacker's Handbook** | Stuttard & Pinto | Seguridad web. |
-| **Secure Coding in Python** | Various | Mejores prácticas de seguridad. |
+| **Black Hat Python** | Justin Seitz | Python para seguridad y hacking |
+| **The Web Application Hacker's Handbook** | Stuttard & Pinto | Seguridad web |
+| **Secure Coding in Python** | Various | Mejores prácticas de seguridad |
 
 ### 📊 Ciencia de Datos
 
 | Libro | Autor | Descripción |
 |-------|-------|-------------|
-| **Python for Data Analysis** | Wes McKinney | Guía completa de análisis de datos con Python. |
-| **Pandas in Action** | Boris Paskhaver | Guía práctica de Pandas. |
-| **Effective Pandas** | Matt Harrison | Mejores prácticas con Pandas. |
-| **Data Science from Scratch** | Joel Grus | Fundamentos de ciencia de datos. |
-| **Python Data Science Handbook** | Jake VanderPlas | Guía completa de herramientas de datos. |
+| **Python for Data Analysis** | Wes McKinney | Guía completa de análisis de datos con Python |
+| **Pandas in Action** | Boris Paskhaver | Guía práctica de Pandas |
+| **Effective Pandas** | Matt Harrison | Mejores prácticas con Pandas |
+| **Data Science from Scratch** | Joel Grus | Fundamentos de ciencia de datos |
+| **Python Data Science Handbook** | Jake VanderPlas | Guía completa de herramientas de datos |
 
 ### ⚡ Performance y Optimización
 
 | Libro | Autor | Descripción |
 |-------|-------|-------------|
-| **High Performance Python** | Micha Gorelick & Ian Ozsvald | Guía completa de optimización. |
+| **High Performance Python** | Micha Gorelick & Ian Ozsvald | Guía completa de optimización |
 
 ### 🌐 APIs y Web
 
 | Libro | Autor | Descripción |
 |-------|-------|-------------|
-| **RESTful Web APIs** | Richardson & Amundsen | Uso de JSON y APIs REST. |
+| **RESTful Web APIs** | Richardson & Amundsen | Uso de JSON y APIs REST |
 
 ### 📋 Gestión de Proyectos
 
 | Libro | Autor | Descripción |
 |-------|-------|-------------|
-| **Scrum** | Jeff Sutherland | Gestión ágil de proyectos. |
+| **Scrum** | Jeff Sutherland | Gestión ágil de proyectos |
 
 ---
 
