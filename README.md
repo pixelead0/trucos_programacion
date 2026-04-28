@@ -249,7 +249,7 @@ Marca tu progreso mientras avanzas:
 ## 💡 Consejos para el Autoaprendizaje
 
 1. **Sigue el orden**: Cada lección construye sobre la anterior
-2. **Practica regularmente**: Dedica tiempo diario, aunque sea 30 minutos
+2. **Practica regularmente**: Dedica tiempo diario, aunque sean 30 minutos
 3. **Escribe código**: No solo leas, escribe y experimenta
 4. **Completa los ejercicios**: Cada capítulo tiene ejercicios prácticos
 5. **Construye proyectos**: Aplica lo aprendido en proyectos reales
