@@ -12,7 +12,7 @@ export default function Checkpoint({ items, title = 'Si llegaste aquí, ya puede
       <ul className="checkpoint__list">
         {items.map((item, index) => (
           <li key={index} className="checkpoint__item">
-            ✅ {item}
+            ✅ <span dangerouslySetInnerHTML={{ __html: item }} />
           </li>
         ))}
       </ul>

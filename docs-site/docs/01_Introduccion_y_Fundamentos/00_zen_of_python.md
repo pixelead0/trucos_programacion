@@ -173,7 +173,7 @@ El principio #13 ("Debería haber una, y preferiblemente solo una, manera obvia 
 <Checkpoint
   items={[
     "Sabes qué es el Zen de Python y su origen",
-    "Puedes acceder al Zen desde el intérprete con `import this`",
+    "Puedes acceder al Zen desde el intérprete con <code>import this</code>",
     "Entiendes que estos principios guían el diseño de Python",
     "Estás listo para aplicar estos principios en tu código"
   ]}
