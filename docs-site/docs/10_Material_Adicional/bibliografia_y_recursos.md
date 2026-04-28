@@ -345,7 +345,7 @@ Módulos de la biblioteca estándar de Python:
 
 ### Revista `The Original Hacker`
 
-> "El espíritu de la revista se basa en la libertad y el verdadero hacking con el objetivo de retroalimentar a hacker avanzados y darle un empujoncito a programadores que quieran convertirse en hackers." - Eugenia Bahit
+> “El espíritu de la revista se basa en la libertad y el verdadero hacking con el objetivo de retroalimentar a hacker avanzados y darle un empujoncito a programadores que quieran convertirse en hackers.” - Eugenia Bahit
 
 - 📄 [Sobre la revista](https://www.espaciolinux.com/2013/11/original-hacker-numero-1-nueva-revista-sobre-hacking-y-programacion/)
 - 📥 [Descargar revistas (MCLibre)](https://www.mclibre.org/consultar/documentacion/revistas-titulos/revistas-the-original-hacker.html)
