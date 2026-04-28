@@ -166,7 +166,7 @@ export default function Home(): JSX.Element {
                   Curso completo de Python - Autoaprendizaje desde cero hasta profesional
                 </p>
                 <p className="homePage__description">
-                  Como los chilaquiles al pastor combinan ingredientes básicos con el toque especial, este curso combina fundamentos de Python con técnicas profesionales. Un curso diseñado para guiarte paso a paso, con rutas personalizadas según tu nivel y proyectos prácticos que evolucionan contigo.
+                  Como los chilaquiles al pastor combinan ingredientes básicos con este toque especial, este curso combina fundamentos de Python con técnicas profesionales. Un curso diseñado para guiarte paso a paso, con rutas personalizadas según tu nivel y proyectos prácticos que evolucionan contigo.
                 </p>
               </div>
             </div>
