@@ -78,7 +78,7 @@ export default function Home(): JSX.Element {
       objectives: [
         'Entender clases y objetos en Python',
         'Usar dataclasses para simplificar código',
-        'Aplicar principios OOP',
+        'Aplicar principios POO',
       ],
       time: '1-2 semanas',
       prereqs: ['Funciones'],

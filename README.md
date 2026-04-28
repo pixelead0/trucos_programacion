@@ -94,7 +94,7 @@ Cada lección incluye:
 ---
 
 ### 🟡 Módulo 04: Programación Orientada a Objetos
-**Objetivo**: Dominar el paradigma OOP en Python
+**Objetivo**: Dominar el paradigma POO en Python
 
 1. [Clases y Objetos](./docs-site/docs/04_Programacion_Orientada_a_Objetos/01_clases_objetos.md)
 2. [Dataclasses](./docs-site/docs/04_Programacion_Orientada_a_Objetos/02_dataclasses.md)
