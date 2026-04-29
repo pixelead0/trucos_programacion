@@ -75,7 +75,7 @@ Este documento resume todas las mejoras implementadas para transformar el curso 
 
 **Características:**
 - Enlaces destacados al inicio:
-  - 🏁 Start here (home)
+  - 🏁 Comienza aquí (home)
   - 🧭 Rutas por nivel
 - Separador visual
 - Agrupación por módulos (01-09 + Recursos)

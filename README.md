@@ -94,7 +94,7 @@ Cada lección incluye:
 ---
 
 ### 🟡 Módulo 04: Programación Orientada a Objetos
-**Objetivo**: Dominar el paradigma OOP en Python
+**Objetivo**: Dominar el paradigma POO en Python
 
 1. [Clases y Objetos](./docs-site/docs/04_Programacion_Orientada_a_Objetos/01_clases_objetos.md)
 2. [Dataclasses](./docs-site/docs/04_Programacion_Orientada_a_Objetos/02_dataclasses.md)
@@ -249,7 +249,7 @@ Marca tu progreso mientras avanzas:
 ## 💡 Consejos para el Autoaprendizaje
 
 1. **Sigue el orden**: Cada lección construye sobre la anterior
-2. **Practica regularmente**: Dedica tiempo diario, aunque sea 30 minutos
+2. **Practica regularmente**: Dedica tiempo diario, aunque sean 30 minutos
 3. **Escribe código**: No solo leas, escribe y experimenta
 4. **Completa los ejercicios**: Cada capítulo tiene ejercicios prácticos
 5. **Construye proyectos**: Aplica lo aprendido en proyectos reales

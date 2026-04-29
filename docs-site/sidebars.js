@@ -17,7 +17,7 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'link',
-      label: '🏁 Start here',
+      label: '🏁 Comienza aquí',
       href: '/',
     },
     {
