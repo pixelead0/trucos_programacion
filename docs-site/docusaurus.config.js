@@ -149,7 +149,11 @@ const config = {
         additionalLanguages: ['python', 'bash'],
       },
     }),
-    plugins: ['./src/plugins/pyscript-runner/index.js'],
+    plugins: [
+      ['./src/plugins/pyscript-runner/index.js', {
+        cdn: "https://pyscript.net/releases/2026.3.1/core.js",
+      }]
+    ],
 };
 
 module.exports = config;

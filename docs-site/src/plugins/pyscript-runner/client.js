@@ -1,9 +1,11 @@
 // src/plugins/pyscript-runner/client.js
 if (typeof window !== "undefined") {
-  console.log("[pyscript/pre] Injecting script from CDN");
+  const config = window.__PYSCRIPT_CONFIG__ || {};
+  const cdn = config.cdn || "https://pyscript.net/releases/2026.3.1/core.js";
   const script = document.createElement("script");
+  console.log("[pyscript/pre] Injecting script from CDN");
   script.type = "module";
-  script.src = "https://pyscript.net/releases/2026.3.1/core.js";
+  script.src = cdn;
   script.onload = () => {
     console.log("[pyscript/pre] CDN script loaded");
     const warmup = document.createElement("script");

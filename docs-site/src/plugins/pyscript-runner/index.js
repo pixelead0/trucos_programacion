@@ -1,7 +1,7 @@
 // src/plugins/pyscript-runner/index.js
 const path = require("path");
 
-module.exports = function pluginPyScriptRunner(_context, _options) {
+module.exports = function pluginPyScriptRunner(_context, options) {
   return {
     name: "pyscript-runner",
 
@@ -24,6 +24,19 @@ module.exports = function pluginPyScriptRunner(_context, _options) {
         };
       }
       return extra;
+    },
+
+    injectHtmlTags() {
+      return {
+        headTags: [
+          {
+            tagName: "script",
+            innerHTML: `
+              window.__PYSCRIPT_CONFIG__ = ${JSON.stringify(options)};
+            `,
+          },
+        ],
+      };
     },
   };
 };
