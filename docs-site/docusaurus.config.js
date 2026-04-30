@@ -149,6 +149,7 @@ const config = {
         additionalLanguages: ['python', 'bash'],
       },
     }),
+    plugins: ['./src/plugins/pyscript-runner/index.js'],
 };
 
 module.exports = config;
