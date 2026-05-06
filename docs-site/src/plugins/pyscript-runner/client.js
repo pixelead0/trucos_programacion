@@ -2,6 +2,15 @@
 if (typeof window !== "undefined") {
   const pyConfig = window.__PYSCRIPT__ || {};
   const cdn = pyConfig.cdn || "https://pyscript.net/releases/2026.3.1/core.js";
+
+  const cfg = pyConfig.config || {};
+  if (Object.keys(cfg).length > 0) {
+    const pyConfigEl = document.createElement("py-config");
+    pyConfigEl.setAttribute("type", "json");
+    pyConfigEl.textContent = JSON.stringify(cfg);
+    document.head.appendChild(pyConfigEl);
+  }
+
   const script = document.createElement("script");
   console.log("[pyscript/pre] Injecting script from CDN");
   script.type = "module";

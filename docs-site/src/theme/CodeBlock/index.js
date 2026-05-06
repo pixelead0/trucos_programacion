@@ -13,9 +13,6 @@ export default function CodeBlock(props) {
   return <PyBlock initialCode={String(children).trimEnd()} />;
 }
 
-const pyConfig = window.__PYSCRIPT__ || {};
-const config = JSON.stringify(pyConfig.config || {});
-
 const PHASES = [
   { pct: 15, label: "Descargando Pyodide…" },
   { pct: 35, label: "Cargando intérprete Python…" },
@@ -114,7 +111,6 @@ finally:
     script.type = "py";
     script.id = `pyscript-${uid}-${runId}`;
     script.setAttribute("target", outputId);
-    script.setAttribute("config", config);
     script.textContent = wrapped;
 
     observerRef.current?.disconnect();
