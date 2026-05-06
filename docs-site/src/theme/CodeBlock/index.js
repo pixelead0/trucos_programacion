@@ -174,9 +174,9 @@ finally:
         onChange={(value) => setCode(value)}
         style={s.editor}
         basicSetup={{
-          lineNumbers: false,
-          foldGutter: false,
-          highlightActiveLine: false,
+          lineNumbers: true,
+          foldGutter: true,
+          highlightActiveLine: true,
         }}
       />
 
