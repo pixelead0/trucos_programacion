@@ -32,7 +32,7 @@ module.exports = function pluginPyScriptRunner(_context, options) {
           {
             tagName: "script",
             innerHTML: `
-              window.__PYSCRIPT_CONFIG__ = ${JSON.stringify(options)};
+              window.__PYSCRIPT__ = ${JSON.stringify(options)};
             `,
           },
         ],

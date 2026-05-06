@@ -152,6 +152,11 @@ const config = {
     plugins: [
       ['./src/plugins/pyscript-runner/index.js', {
         cdn: "https://pyscript.net/releases/2026.3.1/core.js",
+        config: {
+          // Check supported packages:
+          // https://pyodide.org/en/stable/usage/packages-in-pyodide.html
+          packages: ["pandas"],
+        },
       }]
     ],
 };
