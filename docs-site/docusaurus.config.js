@@ -149,6 +149,17 @@ const config = {
         additionalLanguages: ['python', 'bash'],
       },
     }),
+    plugins: [
+      ['./src/plugins/pyscript-runner/index.js', {
+        cdn: "https://pyscript.net/releases/2026.3.1/core.js",
+        config: {
+          // Check supported packages:
+          // https://pyodide.org/en/stable/usage/packages-in-pyodide.html
+          packages: ["pandas", "pyyaml", "cryptography", "bcrypt", "pytest", "sqlalchemy", "PyJWT"],
+          // Not browser-compatible (cannot be added): flask, flask_limiter, psycopg2, python-dotenv, line_profiler, requests, setuptools
+        },
+      }]
+    ],
 };
 
 module.exports = config;
