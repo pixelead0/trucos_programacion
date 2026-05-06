@@ -1,6 +1,9 @@
 // src/theme/CodeBlock/index.js
 import { useState, useId, useEffect, useRef } from "react";
 import OriginalCodeBlock from "@theme-original/CodeBlock";
+import CodeMirror from "@uiw/react-codemirror";
+import { dracula } from "@uiw/codemirror-theme-dracula";
+import { python } from "@codemirror/lang-python";
 
 export default function CodeBlock(props) {
   const { className, children } = props;
@@ -9,6 +12,9 @@ export default function CodeBlock(props) {
   if (!isPython) return <OriginalCodeBlock {...props} />;
   return <PyBlock initialCode={String(children).trimEnd()} />;
 }
+
+const pyConfig = window.__PYSCRIPT__ || {};
+const config = JSON.stringify(pyConfig.config || {});
 
 const PHASES = [
   { pct: 15, label: "Descargando Pyodide…" },
@@ -108,6 +114,7 @@ finally:
     script.type = "py";
     script.id = `pyscript-${uid}-${runId}`;
     script.setAttribute("target", outputId);
+    script.setAttribute("config", config);
     script.textContent = wrapped;
 
     observerRef.current?.disconnect();
@@ -140,7 +147,6 @@ finally:
     document.body.appendChild(script);
   };
 
-  const rows = Math.max(3, code.split("\n").length + 1);
   const { pct, label } = PHASES[phase];
 
   let btnLabel, btnStyle;
@@ -165,15 +171,17 @@ finally:
         <span style={s.hint}>editable</span>
       </div>
 
-      <textarea
-        style={s.editor}
+      <CodeMirror
         value={code}
-        onChange={(e) => setCode(e.target.value)}
-        rows={rows}
-        spellCheck={false}
-        autoComplete="off"
-        autoCorrect="off"
-        autoCapitalize="off"
+        theme={dracula}
+        extensions={[python()]}
+        onChange={(value) => setCode(value)}
+        style={s.editor}
+        basicSetup={{
+          lineNumbers: false,
+          foldGutter: false,
+          highlightActiveLine: false,
+        }}
       />
 
       {!ready && supported && (
@@ -250,19 +258,7 @@ const s = {
   },
 
   editor: {
-    display: "block",
-    width: "100%",
-    boxSizing: "border-box",
-    padding: "12px 16px",
-    margin: 0,
-    background: "var(--ifm-pre-background)",
-    color: "var(--ifm-pre-color)",
-    border: "none",
-    outline: "none",
-    resize: "vertical",
     fontSize: "0.875rem",
-    lineHeight: 1.6,
-    fontFamily: "inherit",
   },
 
   barTrack: {
